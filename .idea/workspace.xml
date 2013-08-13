@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb714e30-af84-4406-84df-eb3043469218" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mulab/labmu.png" afterPath="$PROJECT_DIR$/mulab/labmu.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="www.iws" />
@@ -31,8 +30,11 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="41" selection-start="784" selection-end="784" vertical-scroll-proportion="0.29577464">
-              <folding />
+            <state line="64" column="44" selection-start="3350" selection-end="3350" vertical-scroll-proportion="0.48043817">
+              <folding>
+                <element signature="tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#0;tag#div#0;tag#div#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -272,8 +274,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="41" selection-start="784" selection-end="784" vertical-scroll-proportion="0.29577464">
-          <folding />
+        <state line="64" column="44" selection-start="3350" selection-end="3350" vertical-scroll-proportion="0.48043817">
+          <folding>
+            <element signature="tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#0;tag#div#0;tag#div#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
