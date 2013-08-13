@@ -5,6 +5,7 @@
     body {
     padding-bottom: 40px;
     color: #5a5a5a;
+    font-family: 'PT Sans';
 }
 
 
@@ -236,4 +237,19 @@
         line-height: 1.5;
     }
 
+}
+
+/* Customized styles */
+
+.navbar .nav > li > a {
+    padding-top: 25px;
+}
+
+#footer {
+    position: fixed; bottom: 0; width: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.carousel {
+    margin-bottom: 0;
 }

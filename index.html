@@ -17,7 +17,7 @@
     <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
     <div class="container">
 
-        <div class="navbar navbar-inverse">
+        <div class="navbar navbar-inverse" style="font-size: 20px">
             <div class="navbar-inner">
                 <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
                 <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -25,23 +25,27 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="brand" href="#"><img src="mulab/labmu.png"></a>
+
                 <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
                 <div class="nav-collapse collapse">
-                    <ul class="nav">
-                        <li class="active"><a href="#">Home</a></li>
+                    <ul class="nav" style="vertical-align: middle">
+                        <li class="active"><span><a class="brand" href="#"><img src="mulab/labmu.png"></a></span></li>
+                        <!--li class="active"><a href="#"><i class="icon-home"></i>Home</a></li-->
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-flag-checkered"></i>Our Projects</a>
                             <ul class="dropdown-menu">
-                                <li class="nav-header">Our Projects</li>
-                                <li><a href="#">TUNet</a></li>
                                 <li><a href="#">Caμs</a></li>
+                                <li class="divider"></li>
                                 <li><a href="#">maTHμ</a></li>
+                                <li class="divider"></li>
                                 <li><a href="#">edX&nbsp;mobile</a></li>
+                                <li class="divider"></li>
+                                <li class="nav-header">Under Progress</li>
+                                <li><a href="#">TUNet</a></li>
                             </ul>
                         </li>
-                        <li><a href="#about">Members</a></li>
-                        <li><a href="#contact">Join&nbsp;us!</a></li>
+                        <li><a href="#about"><i class="icon-group"></i>Members</a></li>
+                        <li><a href="#contact"><i class="icon-smile"></i>Join&nbsp;us!</a></li>
                         <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
 
                     </ul>
@@ -86,6 +90,12 @@
     </div>
     <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
     <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+</div>
+<div class="well">
+    Lab for campus life.
+</div>
+<div id="footer">
+ <div style="text-align: center; ">Labμ</div>
 </div>
 </body>
 </html>
