@@ -75,7 +75,7 @@
     text-shadow: 0 1px 1px rgba(0,0,0,.4);
     background-color: transparent;
     border: 0;
-    z-index: 10;
+    z-index: 9;
 }
 
 .carousel .item {
@@ -107,7 +107,9 @@
     margin-top: 10px;
 }
 
-
+#logo {
+    display: inline;
+}
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
@@ -165,6 +167,10 @@
 
 @media (max-width: 979px) {
 
+    /*#logo {
+        display: none;
+    } */
+
     .container.navbar-wrapper {
         margin-bottom: 0;
         width: auto;
@@ -197,6 +203,10 @@
 
 
 @media (max-width: 767px) {
+
+    /*#logo {
+        display: none;
+    } */
 
     .navbar-inner {
         margin: -20px;
@@ -243,6 +253,10 @@
 }
 
 @media (max-width: 500px) {
+     /*
+    #logo {
+        display: none;
+    }  */
 
         .navbar-inner {
             margin: -20px;
