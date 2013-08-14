@@ -86,7 +86,7 @@
     top: 0;
     left: 0;
     min-width: 100%;
-    height: 900px;
+    height: auto;
 }
 
 .carousel-caption {
@@ -185,7 +185,7 @@
     }
     .carousel img {
         width: auto;
-        height: 650px;
+        height: auto;
     }
 
     .featurette {
@@ -223,7 +223,7 @@
         height: 500px;
     }
     .carousel img {
-        height: 500px;
+        height: auto;
     }
     .carousel-caption {
         width: 65%;
@@ -251,56 +251,6 @@
     }
 
 }
-
-@media (max-width: 500px) {
-     /*
-    #logo {
-        display: none;
-    }  */
-
-        .navbar-inner {
-            margin: -20px;
-        }
-
-        .carousel {
-            margin-left: -20px;
-            margin-right: -20px;
-        }
-        .carousel .container {
-
-        }
-        .carousel .item {
-            height: 300px;
-        }
-        .carousel img {
-            height: 350px;
-        }
-        .carousel-caption {
-            width: 65%;
-            padding: 0 70px;
-            margin-top: 100px;
-        }
-        .carousel-caption h1 {
-            font-size: 30px;
-        }
-        .carousel-caption .lead,
-        .carousel-caption .btn {
-            font-size: 18px;
-        }
-
-        .marketing .span4 + .span4 {
-            margin-top: 40px;
-        }
-
-        .featurette-heading {
-            font-size: 30px;
-        }
-        .featurette .lead {
-            font-size: 18px;
-            line-height: 1.5;
-        }
-
-    }
 /* Customized styles */
 
 .navbar .nav > li > a {

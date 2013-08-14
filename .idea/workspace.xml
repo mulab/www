@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb714e30-af84-4406-84df-eb3043469218" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
     </list>
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="fb714e30-af84-4406-84df-eb3043469218" time="1376480338193" ignored="false" />
     <file path="/index.html" changelist="fb714e30-af84-4406-84df-eb3043469218" time="1376490681332" ignored="false" />
-    <file path="/style.css" changelist="fb714e30-af84-4406-84df-eb3043469218" time="1376490331287" ignored="false" />
+    <file path="/style.css" changelist="fb714e30-af84-4406-84df-eb3043469218" time="1376491085725" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +45,7 @@
       <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="14" selection-start="1766" selection-end="1766" vertical-scroll-proportion="0.4976452">
+            <state line="252" column="1" selection-start="5004" selection-end="5004" vertical-scroll-proportion="0.52904236">
               <folding />
             </state>
           </provider>
@@ -280,7 +279,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="14" selection-start="1766" selection-end="1766" vertical-scroll-proportion="0.4976452">
+        <state line="252" column="1" selection-start="5004" selection-end="5004" vertical-scroll-proportion="0.52904236">
           <folding />
         </state>
       </provider>
