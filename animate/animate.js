@@ -25,7 +25,7 @@ function DoDisplacement()
     var l = getElementLeft(document.getElementById("imageLabMuIcon"))+26;
     if ($(window).width() >= 980) l += 10;
     var R = $(window).height();
-    var r = getElementTop(document.getElementById("imageLabMuIcon"))+35;
+    var r = getElementTop(document.getElementById("imageLabMuIcon"))+38;
     var a = Math.round(l-(L/2-l)/19);
     var b = Math.round(r-(R/2-r)/19-R/2-10);
     
@@ -44,7 +44,6 @@ function DoAnimate()
     cnt2.style.webkitTransition = "all 1s 1s ease-out";
 }
 $(document).ready(function() {
-    
     if ($(window).width() >= 768 && $(window).height() >= 400) {
         $.blockUI({
             onOverlayClick: $.unblockUI,
@@ -65,7 +64,7 @@ $(document).ready(function() {
                 backgroundColor: '#000',
                 '-webkit-border-radius': '10px',
                 '-moz-border-radius': '10px',
-                opacity: .6,
+                opacity: .8,
                 color: '#fff'
             }
         });
