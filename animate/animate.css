@@ -1,0 +1,35 @@
+#myAnimate_Hi {
+    font-size: 300px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    color: white;
+    position: relative;
+}
+#myAnimate_Mu {
+    font-size: 300px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    color: white;
+    position: relative;
+    -webkit-transform: scale(1, 0) translate(0, 0);
+    border: none;
+}
+span.myAnimate_Up80 {
+    font-family: "Times New Roman";
+    position: relative;
+    top: -80px;
+}
+span.myAnimate_Up70 {
+    position: relative;
+    top: -20px;
+}
+#no {
+    background: red;
+    width: 91px;
+    height: 35px;
+    position: absolute;
+    left: 0px;
+    top: 100px;
+}
