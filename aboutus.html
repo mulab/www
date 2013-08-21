@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.css">
+    <title>About us</title>
+    <script src="jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="navbar-wrapper">
+    <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+    <div class="container">
+
+        <div class="navbar navbar-inverse" style="font-size: 20px">
+            <div class="navbar-inner">
+                <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+                <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="brand" href="index.html"><img id="logo" src="mulab/labmu.png"></a>
+                <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+                <div class="nav-collapse collapse">
+                    <ul class="nav" style="vertical-align: middle">
+                        <!--<li class="active"><a href="#">Lab&nbsp;μ</a></li>-->
+                        <!--li class="active"><a href="#"><i class="icon-home"></i>Home</a></li-->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-flag-checkered"></i>Our Projects</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="http://open.lab.mu"><b>Caμs</b>&nbsp;Open&nbsp;Platform</a></li>
+                                <li><a href="http://www.mathmu.cn"><b>maTHμ</b>&nbsp;CAS</a></li>
+                                <li class="divider"></li>
+                                <li class="nav-header">Under&nbsp;Progress</li>
+                                <li><a href="http://tunet.lab.mu"><b>TUNet</b>&nbsp;App</a></li>
+                                <li><a href="http://edx.lab.mu"><b>edX</b>&nbsp;Mobile&nbsp;App</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="members.html"><i class="icon-group"></i>Members</a></li>
+                        <li><a href="joinus.html"><i class="icon-smile"></i>Join&nbsp;Us!</a></li>
+                        <li><a href="aboutus.html"><i class="icon-rocket"></i>About&nbsp;Us</a></li>
+
+                        <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
+
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div><!-- /.navbar-inner -->
+        </div><!-- /.navbar -->
+
+    </div> <!-- /.container -->
+</div>
+<div class="container" style="padding-top: 200px">
+    <div class="row">
+        <div class="span7">
+            <div style="text-align: center;" class="well">
+                <p><b>Lab μ</b> is a student association in Tsinghua University. Top coders and designers come here to collaborate on interesting projects.</p>
+                <p>Currently we are working on softwares to simplify our campus life. Welcome to join us!</p>
+            </div>
+        </div>
+        <div class="span5">
+            <div style="text-align: center;" class="well">
+                <ul>
+                    <li>Simplify Our Life!</li>
+                    <li>Changing by Coding~</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

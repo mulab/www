@@ -5,15 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
-    <link rel="stylesheet" href="font-diao/css/fontdiao.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.css">
+<<<<<<< HEAD
     <link rel="stylesheet" href="animate/animate.css">
     <title>Hello Labμ!</title>
     <script src="jquery.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="animate/animate.js"></script>
     <script src="animate/jQuery_blockUI.js"></script>
+=======
+    <title>Hello Lab μ!</title>
+    <script src="jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/vnd.microsoft.icon">
+>>>>>>> 8606d6c65d492081a973615976355c6212dfc01d
 </head>
 <body>
 
@@ -25,7 +31,7 @@
     <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
     <div class="container">
 
-        <div class="navbar navbar-inverse">
+        <div class="navbar navbar-inverse" style="font-size: 20px">
             <div class="navbar-inner">
                 <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
                 <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -33,23 +39,31 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
+<<<<<<< HEAD
                 <a id="imageLabMuIcon" class="brand" href="#"><img src="mulab/labmu.png"></a>
+=======
+                <a class="brand" href="index.html"><img id="logo" src="mulab/labmu.png"></a>
+>>>>>>> 8606d6c65d492081a973615976355c6212dfc01d
                 <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
                 <div class="nav-collapse collapse">
-                    <ul class="nav">
-                        <li class="active"><a href="#">Home</a></li>
+                    <ul class="nav" style="vertical-align: middle">
+                        <!--<li class="active"><a href="#">Lab&nbsp;μ</a></li>-->
+                        <!--li class="active"><a href="#"><i class="icon-home"></i>Home</a></li-->
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-flag-checkered"></i>Our Projects</a>
                             <ul class="dropdown-menu">
-                                <li class="nav-header">Our Projects</li>
-                                <li><a href="#">TUNet</a></li>
-                                <li><a href="#">Caμs</a></li>
-                                <li><a href="#">maTHμ</a></li>
-                                <li><a href="#">edX&nbsp;mobile</a></li>
+                                <li><a href="http://open.lab.mu"><b>Caμs</b>&nbsp;Open&nbsp;Platform</a></li>
+                                <li><a href="http://www.mathmu.cn"><b>maTHμ</b>&nbsp;CAS</a></li>
+                                <li class="divider"></li>
+                                <li class="nav-header">Under&nbsp;Progress</li>
+                                <li><a href="http://tunet.lab.mu"><b>TUNet</b>&nbsp;App</a></li>
+                                <li><a href="http://edx.lab.mu"><b>edX</b>&nbsp;Mobile&nbsp;App</a></li>
                             </ul>
                         </li>
-                        <li><a href="#about">Members</a></li>
-                        <li><a href="#contact">Join&nbsp;us!</a></li>
+                        <li><a href="members.html"><i class="icon-group"></i>Members</a></li>
+                        <li><a href="joinus.html"><i class="icon-smile"></i>Join&nbsp;Us!</a></li>
+                        <li><a href="aboutus.html"><i class="icon-rocket"></i>About&nbsp;Us</a></li>
+
                         <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
 
                     </ul>
@@ -61,23 +75,35 @@
 </div>
 <div id="myCarousel" class="carousel slide">
     <div class="carousel-inner">
-        <div class="item">
-            <img src="../assets/img/examples/slide-01.jpg" alt="">
+        <div class="item active">
+            <img src="mulab/tunet-carousel.png" alt="">
             <div class="container">
                 <div class="carousel-caption">
-                    <h1>Example headline.</h1>
-                    <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <a class="btn btn-large btn-primary" href="#">Sign up today</a>
+                    <h1>TUNet</h1>
+                    <p class="lead">Automatic TUNet mobile application.</p>
+                    <p class="lead">Help you to deal with the complex Wi-Fi environment on campus.</p>
+                    <a class="btn btn-large btn-primary" href="http://tunet.lab.mu">Get it!</a>
                 </div>
             </div>
         </div>
-        <div class="item active">
-            <img src="../assets/img/examples/slide-02.jpg" alt="">
+        <div class="item">
+            <img src="mulab/camus-carousel.png">
             <div class="container">
                 <div class="carousel-caption">
-                    <h1>Another example headline.</h1>
-                    <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <a class="btn btn-large btn-primary" href="#">Learn more</a>
+                    <h1>Caμs</h1>
+                    <p class="lead">An online open platform aimed to simplify our school life.</p>
+                    <p class="lead">In the platform you can access various web applications like GPA Calculator, Infu Search Engine etc.</p>
+                    <a class="btn btn-large btn-primary" href="http://open.lab.mu">Learn more</a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="mulab/maTHmu-carousel.png" alt="">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>maTHμ</h1>
+                    <p class="lead">A computer algebra system by Tsinghua students.</p>
+                    <a class="btn btn-large btn-primary" href="http://www.mathmu.cn">Learn more</a>
                 </div>
             </div>
         </div>
@@ -85,9 +111,10 @@
             <img src="../assets/img/examples/slide-03.jpg" alt="">
             <div class="container">
                 <div class="carousel-caption">
-                    <h1>One more for good measure.</h1>
-                    <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <a class="btn btn-large btn-primary" href="#">Browse gallery</a>
+                    <h1>edX&nbsp;mobile</h1>
+                    <p class="lead">edX for mobile devices.</p>
+                    <p class="lead">Never too far to learn!</p>
+                    <a class="btn btn-large btn-primary" href="http://edx.lab.mu">Learn more</a>
                 </div>
             </div>
         </div>
