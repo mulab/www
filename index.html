@@ -7,12 +7,21 @@
     <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.css">
-    <title>Hello Lab μ!</title>
+    <link rel="stylesheet" href="animate/animate.css">
+    <title>Hello Labμ!</title>
     <script src="jquery.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="animate/animate.js"></script>
+    <script src="animate/jQuery_blockUI.js"></script>
+    <title>Hello Lab μ!</title>
     <link rel="shortcut icon" href="./favicon.ico" type="image/vnd.microsoft.icon">
 </head>
 <body>
+
+<div id="myAnimate" style="display:none">
+    <p id="myAnimate_Hi">hi</p>
+    <p id="myAnimate_Mu"><span class="myAnimate_Up80">μ</span><span class="myAnimate_Up70">!</span></p>
+</div>
 <div class="navbar-wrapper">
     <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
     <div class="container">
@@ -25,7 +34,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="brand" href="index.html"><img id="logo" src="mulab/labmu.png"></a>
+                <a id="imageLabMuIcon" class="brand" href="#"><img id="logo" src="mulab/labmu.png"></a>
                 <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
                 <div class="nav-collapse collapse">
                     <ul class="nav" style="vertical-align: middle">
