@@ -1,3 +1,42 @@
+function getCookie(c_name)
+{
+    if (document.cookie.length > 0) {
+        c_start = document.cookie.indexOf(c_name+"=");
+        if (c_start != -1) {
+            c_start += c_name.length+1;
+            c_end = document.cookie.indexOf(";", c_start);
+            if (c_end == -1) c_end = document.cookie.length;
+            return unescape(document.cookie.substring(c_start, c_end));
+        }
+    }
+    return "";
+}
+function setCookie(c_name, c_value)
+{
+	c_start = document.cookie.indexOf(c_name+"=");
+	if (c_start == -1) {
+		if (document.cookie.length > 0)
+			document.cookie += ";";
+		alert(document.cookie.length);
+		document.cookie += c_name+"="+escape(c_value);
+	}
+	else {
+		c_start += c_name.length+1;
+		c_end = document.cookie.indexOf(";", c_start);
+		if (c_end == -1) c_end = document.cookie.length;
+		cnt = document.cookie;
+		document.cookie = cnt.slice(0, c_start)+escape(c_value)+cnt.slice(c_end, cnt.length);
+	}
+}
+function delCookie(c_name)
+{
+	c_start = document.cookie.indexOf(c_name+"=");
+	if (c_start == -1) return;
+	c_end = document.cookie.indexOf(";", c_start+c_name.length+1);
+	if (c_end == -1) c_end = document.cookie.length;
+	cnt = document.cookie;
+	document.cookie = cnt.slice(0, c_start)+cnt.slice(c_end, cnt.length);
+}
 function getElementLeft(element)
 {
     var actualLeft = element.offsetLeft;
@@ -72,6 +111,17 @@ function DoAnimate()
     cnt2.style.transition = "all 1s 1s ease-out";
 }
 $(document).ready(function() {
+	// Check the cookie
+	result = getCookie("lastLogin");
+	var nowDate = new Date();
+	if (result == null || result == "")
+		setCookie("lastLogin", nowDate.toString());
+	else {
+		var preDate = new Date(result);
+		if (nowDate-preDate < 3600000) return;
+		setCookie("lastLogin", nowDate.toString());
+	}
+
     if ($(window).width() >= 768 && $(window).height() >= 400) {
         $.blockUI({
             onOverlayClick: $.unblockUI,
