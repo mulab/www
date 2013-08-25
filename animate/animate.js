@@ -1,3 +1,101 @@
+var broswer = function() {
+    var _broswer = {};
+    var sUserAgent = navigator.userAgent;
+    var isOpera = sUserAgent.indexOf("Opera") > -1;
+    if (isOpera) {
+        /*
+        if (navigator.appName == 'Opera') {
+            _broswer.version = parseFloat(navigator.appVersion);
+        } else {
+            var reOperaVersion = new RegExp("Opera (\\d+.\\d+)");
+            reOperaVersion.test(sUserAgent);
+            _broswer.version = parseFloat(RegExp['$1']);
+        }
+        */
+        var reOperaVersion = new RegExp("Version/(\\d+(?:\\.\\d*)?)");
+        reOperaVersion.test(sUserAgent);
+        var fOperaVersion = parseFloat(RegExp["$1"]);
+        _broswer.version = parseFloat(RegExp['$1']);
+        _broswer.opera = true;
+    }
+    var isChrome = sUserAgent.indexOf("Chrome") > -1;
+    if (isChrome) {
+        var reChorme = new RegExp("Chrome/(\\d+\\.\\d+(?:\\.\\d+\\.\\d+))?");
+        reChorme.test(sUserAgent);
+        _broswer.version = parseFloat(RegExp['$1']);
+        _broswer.chrome = true;
+    }
+    var isKHTML = (sUserAgent.indexOf("KHTML") > -1 || sUserAgent.indexOf("Konqueror") > -1 || sUserAgent.indexOf("AppleWebKit") > -1) && !isChrome;
+    if (isKHTML) {
+        var isSafari = sUserAgent.indexOf("AppleWebKit") > -1;
+        var isKonq = sUserAgent.indexOf("Konqueror") > -1;
+        if (isSafari) {
+            var reAppleWebKit = new RegExp("Version/(\\d+(?:\\.\\d*)?)");
+            reAppleWebKit.test(sUserAgent);
+            var fAppleWebKitVersion = parseFloat(RegExp["$1"]);
+            _broswer.version = parseFloat(RegExp['$1']);
+            _broswer.safari = true;
+        } else if (isKonq) {
+            var reKong = new RegExp("Konqueror/(\\d+(?:\\.\\d+(?\\.\\d)?)?)");
+            reKong.test(sUserAgent);
+            _broswer.version = parseFloat(RegExp['$1']);
+            _broswer.konqueror = true;
+        }
+    }
+    var isIE = sUserAgent.indexOf("compatible") > -1 && sUserAgent.indexOf("MSIE") > -1 && !isOpera;
+    if (isIE) {
+        var reIE = new RegExp("MSIE (\\d+\\.\\d+);");
+        reIE.test(sUserAgent);
+        _broswer.version = parseFloat(RegExp['$1']);
+        _broswer.msie = true;
+    }
+    var isMoz = sUserAgent.indexOf("Gecko") > -1 && !isChrome && !isKHTML;
+    if (isMoz) {
+        var reMoz = new RegExp("rv:(\\d+\\.\\d+(?:\\.\\d+)?)");
+        reMoz.test(sUserAgent);
+        _broswer.version = parseFloat(RegExp['$1']);
+        _broswer.mozilla = true;
+    }
+    return _broswer;
+}
+function getCookie(c_name)
+{
+    if (document.cookie.length > 0) {
+        c_start = document.cookie.indexOf(c_name+"=");
+        if (c_start != -1) {
+            c_start += c_name.length+1;
+            c_end = document.cookie.indexOf(";", c_start);
+            if (c_end == -1) c_end = document.cookie.length;
+            return unescape(document.cookie.substring(c_start, c_end));
+        }
+    }
+    return "";
+}
+function setCookie(c_name, c_value)
+{
+	c_start = document.cookie.indexOf(c_name+"=");
+	if (c_start == -1) {
+		if (document.cookie.length > 0)
+			document.cookie += ";";
+		document.cookie += c_name+"="+escape(c_value);
+	}
+	else {
+		c_start += c_name.length+1;
+		c_end = document.cookie.indexOf(";", c_start);
+		if (c_end == -1) c_end = document.cookie.length;
+		cnt = document.cookie;
+		document.cookie = cnt.slice(0, c_start)+escape(c_value)+cnt.slice(c_end, cnt.length);
+	}
+}
+function delCookie(c_name)
+{
+	c_start = document.cookie.indexOf(c_name+"=");
+	if (c_start == -1) return;
+	c_end = document.cookie.indexOf(";", c_start+c_name.length+1);
+	if (c_end == -1) c_end = document.cookie.length;
+	cnt = document.cookie;
+	document.cookie = cnt.slice(0, c_start)+cnt.slice(c_end, cnt.length);
+}
 function getElementLeft(element)
 {
     var actualLeft = element.offsetLeft;
@@ -71,7 +169,27 @@ function DoAnimate()
 	cnt2.style.transform = "scale(1, 1) translate(0, 0)";
     cnt2.style.transition = "all 1s 1s ease-out";
 }
-$(document).ready(function() {
+function showAnimate()
+{
+    // Check the version of the brower
+    var result = broswer();
+    if (result.safari && result.version < 3.1) return;
+    if (result.msie && result.version < 10.0) return;
+    if (result.chrome && result.version < 2.0) return;
+    if (result.opera && result.version < 10.5) return;
+    if (result.mozilla && result.version < 4.0) return;
+
+	// Check the cookie
+	result = getCookie("lastLogin");
+	var nowDate = new Date();
+	if (result == null || result == "")
+		setCookie("lastLogin", nowDate.toString());
+	else {
+		var preDate = new Date(result);
+		if (nowDate-preDate < 3600000) return;
+		setCookie("lastLogin", nowDate.toString());
+	}
+
     if ($(window).width() >= 768 && $(window).height() >= 400) {
         $.blockUI({
             onOverlayClick: $.unblockUI,
@@ -110,4 +228,7 @@ $(document).ready(function() {
         var t1 = setTimeout("DoAnimate()", 1000);
         var t3 = setTimeout("DoDisplacement()", 3000);
     }
+}
+$(document).ready(function() {
+	showAnimate();
 });
