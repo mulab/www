@@ -75,8 +75,13 @@ body {
     z-index: 9;
 }
 
+.carousel-inner {
+    overflow: visible;
+}
+
 .carousel .item {
-    height: 700px;
+    /* height: 700px; */
+    overflow: visible;
 }
 
 .carousel img {
@@ -186,7 +191,7 @@ div.carousel-caption {
     }
 
     .carousel .item {
-        //height: 600px;
+        /*height: 600px;  */
     }
 
     .carousel img {
@@ -228,7 +233,7 @@ div.carousel-caption {
     }
 
     .carousel .item {
-        //height: 500px;
+        /*height: 500px;   */
     }
 
     .carousel img {
