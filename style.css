@@ -13,7 +13,7 @@ body {
 
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -66,6 +66,7 @@ body {
 }
 
 .carousel-control {
+	position: fixed;
     top: 200px;
     height: 80px;
     margin-top: 0;
@@ -95,7 +96,7 @@ body {
 
 .carousel-caption {
     background-color: transparent;
-    position: static;
+	position: static;
     max-width: 550px;
     padding: 0 20px;
     margin-top: 200px;
