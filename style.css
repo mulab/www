@@ -66,6 +66,7 @@ body {
 }
 
 .carousel-control {
+    top: 200px;
     height: 80px;
     margin-top: 0;
     font-size: 120px;
