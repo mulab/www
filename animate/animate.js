@@ -183,7 +183,7 @@ function showAnimate()
 	result = getCookie("path");
 	if (result == null || result == "") {
 		if (document.cookie.length != 0) document.cookie += ";";
-		document.cookie += "path=/");
+		document.cookie += "path=/";
 	}
 	result = getCookie("domain");
 	if (resule == null || result == "") {
