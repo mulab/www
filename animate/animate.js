@@ -180,11 +180,13 @@ function showAnimate()
     if (result.mozilla && result.version < 4.0) return;
 
 	// Check the cookie
+	/*
 	result = getCookie("path");
 	if (result == null || result == "") {
 		if (document.cookie.length != 0) document.cookie += ";";
 		document.cookie += "path=/";
 	}
+	*/
 	result = getCookie("domain");
 	if (result == null || result == "") {
 		if (document.cookie.length != 0) document.cookie += ";";
