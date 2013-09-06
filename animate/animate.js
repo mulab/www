@@ -186,7 +186,7 @@ function showAnimate()
 		document.cookie += "path=/";
 	}
 	result = getCookie("domain");
-	if (resule == null || result == "") {
+	if (result == null || result == "") {
 		if (document.cookie.length != 0) document.cookie += ";";
 		document.cookie += "domain=lab.mu";
 	}
