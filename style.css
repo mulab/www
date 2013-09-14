@@ -288,3 +288,12 @@ div.carousel-caption {
 .carousel {
     margin-bottom: 0;
 }
+
+.form-container {
+    padding-top: 100px;
+}
+
+.up-4px {
+    position: relative;
+    top: -4px;
+}

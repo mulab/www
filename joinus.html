@@ -55,7 +55,40 @@
 
     </div> <!-- /.container -->
 </div>
-<div class="container" style="padding-top: 200px">
+<div class="form-container">
+    <div class="container">
+        <div class="row">
+            <div class="span4">
+                <img src="mulab/labmu_small.png">
+            </div>
+            <div class="span8">
+                <form action="MAILTO:mulab.thu@gmail.com?subject=Hello LabMu" method="post" enctype="text/plain">
+                    <h3>This form will be sent to LabMu by email</h3>
+                    Your Name:<br>
+                    <input type="text" name="name" size="20">
+                    <br>
+                    Your Student Number:<br>
+                    <input type="text" name="student number" size="20">
+                    <br>
+                    Your Department:<br>
+                    <input type="text" name="department" size="20">
+                    <br>
+                    Your Gender:
+                    <input type="radio" name="gender" value="male" class="up-4px" checked> Male
+                    <input type="radio" name="gender" value="female" class="up-4px"> Female
+                    <br>
+                    <br>
+                    Words To Leave:<br>
+                    <textarea name="words" rows="5" cols="20"></textarea>
+                    <br>
+                    <input type="submit" value="send">
+                    <input type="reset" value="reset">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container" style="padding-top: 100px">
     <div style="text-align: center;" class="well">
         <p><a href="mailto:mulab.thu@gmail.com">Click here to send email: mulab.thu@gmail.com</a></p>
     </div>
