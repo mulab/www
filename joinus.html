@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.css">
     <title>About us</title>
     <script src="jquery.js"></script>
+    <script src="PHPMailer/utility.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
@@ -62,26 +63,27 @@
                 <img src="mulab/labmu_small.png">
             </div>
             <div class="span8">
-                <form action="MAILTO:mulab.thu@gmail.com?subject=Hello LabMu" method="post" enctype="text/plain">
+                <!--<form action="MAILTO:mulab.thu@gmail.com?subject=Hello LabMu" method="post" enctype="text/plain">-->
+                <form name="user_info" action="" method="post">
                     <h3>This form will be sent to LabMu by email</h3>
                     Your Name:<br>
-                    <input type="text" name="name" size="20">
+                    <input type="text" name="user_name" size="20">
                     <br>
                     Your Student Number:<br>
-                    <input type="text" name="student number" size="20">
+                    <input type="text" name="user_number" size="20">
                     <br>
                     Your Department:<br>
-                    <input type="text" name="department" size="20">
+                    <input type="text" name="user_department" size="20">
                     <br>
                     Your Gender:
-                    <input type="radio" name="gender" value="male" class="up-4px" checked> Male
-                    <input type="radio" name="gender" value="female" class="up-4px"> Female
+                    <input type="radio" name="user_gender" value="male" class="up-4px" checked> Male
+                    <input type="radio" name="user_gender" value="female" class="up-4px"> Female
                     <br>
                     <br>
                     Words To Leave:<br>
-                    <textarea name="words" rows="5" cols="20"></textarea>
+                    <textarea name="user_words" rows="5" cols="20"></textarea>
                     <br>
-                    <input type="submit" value="send">
+                    <input type="button" value="send" onClick="sendUserInfo()">
                     <input type="reset" value="reset">
                 </form>
             </div>
@@ -105,3 +107,4 @@
 </script>
 </body>
 </html>
+
