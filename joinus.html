@@ -63,33 +63,47 @@
                 <img src="mulab/labmu_small.png">
             </div>
             <div class="span8">
-                <!--
-                <form name="user_info" action="" method="post">
+                <form class="form-horizontal" name="user_info" action="" method="post">
                     <h3>This form will be sent to LabMu by email</h3>
-                    Your Name:<br>
-                    <input type="text" name="user_name" size="20">
-                    <br>
-                    Your Student Number:<br>
-                    <input type="text" name="user_number" size="20">
-                    <br>
-                    Your Department:<br>
-                    <input type="text" name="user_department" size="20">
-                    <br>
-                    Your Gender:
-                    <input type="radio" name="user_gender" value="male" class="up-4px" checked> Male
-                    <input type="radio" name="user_gender" value="female" class="up-4px"> Female
-                    <br>
-                    <br>
-                    Words To Leave:<br>
-                    <textarea name="user_words" rows="5" cols="20"></textarea>
-                    <br>
-                    <input type="button" value="send" onClick="sendUserInfo()">
-                    <input type="reset" value="reset">
+                    <div class="control-group">
+                        <label class="control-label" for="name_id">Your Name</label>
+                        <div class="controls">
+                            <input type="text" id="name_id" name="user_name" size="20" placeholder="Your Name">
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="number_id">Your Student Number</label>
+                        <div class="controls">
+                            <input type="text" id="number_id" name="user_number" size="20" placeholder="Your Student Number">
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="department_id">Your Department</label>
+                        <div class="controls">
+                            <input type="text" id="department_id" name="user_department" size="20" placeholder="Your Department">
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">Your Gender</label>
+                        <div class="controls">
+                            <input type="radio" name="user_gender" value="male" class="" checked><span class="down-4px"> Male</span>
+                            <input type="radio" name="user_gender" value="female" class=""><span class="down-4px"> Female</span>
+                   
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="words_id">Words To Us</label>
+                        <div class="controls">
+                            <textarea id="words_id" name="user_words" rows="5" cols="20" placeholder="Words To Us"></textarea>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="controls">
+                            <input type="button" value="send" class="btn" onClick="sendUserInfo()">
+                            <input type="reset" value="reset" class="btn">
+                        </div>
+                    </div>
                 </form>
-                -->
-                <div style="text-align: center;" class="well">
-                    To contact with us, please send mails to the email in the bottom.
-                </div>
             </div>
         </div>
     </div>

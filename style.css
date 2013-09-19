@@ -297,3 +297,7 @@ div.carousel-caption {
     position: relative;
     top: -4px;
 }
+.down-4px {
+    position: relative;
+    top: 4px;
+}

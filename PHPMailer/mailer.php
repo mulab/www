@@ -6,7 +6,9 @@
     $mail = new PHPMailer(); //建立邮件发送类
     $mail->CharSet = 'utf8';
     //$address = "mulab.thu@gmail.com";
-    $address = "glassices@gmail.com";
+    //$address = "glassices@gmail.com";
+    //$address = "aluex.cpp@gmail.com";
+    $address = "labmu_thu@163.com";
     $mail->IsSMTP(); // 使用SMTP方式发送
     $mail->Host = "smtp.gmail.com"; // 您的企业邮局域名
     $mail->SMTPAuth = true; // 启用SMTP验证功能
