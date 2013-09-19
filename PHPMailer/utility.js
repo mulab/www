@@ -11,7 +11,6 @@ function sendUserInfo()
 		userGender = "女";
 	var userWords = msg.user_words.value;
 	
-	/*
 	if (userName == "") {
 		alert("Please input your name.");
 		return;
@@ -24,7 +23,10 @@ function sendUserInfo()
 		alert("Please input your department.");
 		return;
 	}
-	*/
+    if (userWords == "") {
+        alert("Please input your leave words.");
+        return;
+    }
 	var postStr = "user_name="+userName+"&user_number="+userNumber+"&user_department="+userDepartment+"&user_gender="+userGender+"&user_words="+userWords;
 	var xmlhttp = false;
 	if (window.XMLHttpRequest) {
