@@ -301,3 +301,10 @@ div.carousel-caption {
     position: relative;
     top: 4px;
 }
+.footer-inform {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    margin-bottom: 0px;
+    text-align: center;
+}
