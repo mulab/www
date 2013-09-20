@@ -2,6 +2,11 @@
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
 body {
     /* padding-bottom: 40px; */
     color: #5a5a5a;
@@ -302,9 +307,13 @@ div.carousel-caption {
     top: 4px;
 }
 .footer-inform {
-    position: absolute;
-    bottom: 0px;
+    position: relative;
+    bottom: 0;
     width: 100%;
     margin-bottom: 0px;
     text-align: center;
+}
+.overall {
+    margin: 0 auto;
+    position:relative;
 }

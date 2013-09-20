@@ -11,8 +11,17 @@
     <title>About us</title>
     <script src="jquery.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var tmp = document.getElementById("overall_id");
+            var footer = document.getElementById("footer_id");
+            tmp.style.minHeight = ($(window).height()-$(footer).height()-38)+"px";
+            alert($(footer).paddingTop());
+        });
+    </script>
 </head>
 <body>
+<div id="overall_id" class="overall">
 <div class="navbar-wrapper">
     <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
     <div class="container">
@@ -55,7 +64,7 @@
 
     </div> <!-- /.container -->
 </div>
-<div class="container" style="padding-top: 100px">
+<div class="container" style="padding-top: 150px">
     <div class="row">
         <div class="span4">
             <img src="mulab/labmu_small.png">
@@ -74,8 +83,9 @@
         </div>
     </div>
 </div>
-<div class="footer-inform well">
-    <p>Designed and built with all the love in the world by <a href="mailto:zmy90320@gmail.com">@zmy</a> and <a href="mailto:aluex.cpp@gmail.com">@xy</a>.</p>
+</div>
+<div id="footer_id" class="footer-inform well">
+    <p>Designed and built with all the love in the world by Labμ.</p>
     <p>Welcome to join us and learn together with progress together.</p>
     <p><a href="mailto:mulab.thu@gmail.com">Click here to send email: mulab.thu@gmail.com</a></p>
 </div>
