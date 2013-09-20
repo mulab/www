@@ -74,11 +74,8 @@ function getCookie(c_name)
 function setCookie(c_name, c_value)
 {
 	c_start = document.cookie.indexOf(c_name+"=");
-	if (c_start == -1) {
-		if (document.cookie.length > 0)
-			document.cookie += ";";
-		document.cookie += c_name+"="+escape(c_value);
-	}
+	if (c_start == -1)
+		document.cookie = c_name+"="+escape(c_value);
 	else {
 		c_start += c_name.length+1;
 		c_end = document.cookie.indexOf(";", c_start);
@@ -187,11 +184,13 @@ function showAnimate()
 		document.cookie += "path=/";
 	}
 	*/
+    /*
 	result = getCookie("domain");
 	if (result == null || result == "") {
 		if (document.cookie.length != 0) document.cookie += ";";
 		document.cookie += "domain=lab.mu";
 	}
+    */
 	result = getCookie("lastLogin");
 	var nowDate = new Date();
 	if (result == null || result == "")
