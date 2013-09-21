@@ -302,10 +302,12 @@ div.carousel-caption {
     position: relative;
     top: -4px;
 }
+
 .down-4px {
     position: relative;
     top: 4px;
 }
+
 .footer-inform {
     position: relative;
     bottom: 0;
@@ -313,7 +315,20 @@ div.carousel-caption {
     margin-bottom: 0px;
     text-align: center;
 }
+
 .overall {
     margin: 0 auto;
     position:relative;
+}
+
+.members-person {
+    margin-bottom: 20px;
+    width: 165px;
+}
+
+.members-img {
+    border-radius: 3px;
+    height: 48px;
+    width: 48px;
+    float: left;
 }

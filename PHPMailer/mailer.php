@@ -24,7 +24,7 @@
     //$mail->AddAttachment("/var/tmp/file.tar.gz"); // 添加附件
     //$mail->IsHTML(true); // set email format to HTML //是否使用HTML格式
     $username = $_POST['user_name'];
-    $usernumber = $_POST['user_number'];
+    $usermail = $_POST['user_mail'];
     $usermobile = $_POST['user_mobile'];
     $userdepartment = $_POST['user_department'];
     $usergender = $_POST['user_gender'];
@@ -32,7 +32,7 @@
 
      
     $mail->Subject = "学生留言邮件"; //邮件标题
-    $mail->Body = "姓名: " . $username . "<br>学号: " . $usernumber . "<br>手机: " . $usermobile . "<br>院系: " . $userdepartment . "<br>性别: " . $usergender . "<br>留言: " . $userwords; //邮件内容
+    $mail->Body = "姓名: " . $username . "<br>邮箱: " . $usermail. "<br>手机: " . $usermobile . "<br>院系: " . $userdepartment . "<br>性别: " . $usergender . "<br>留言: " . $userwords; //邮件内容
     $mail->AltBody = "This is the body in plain text for non-HTML mail clients"; //附加信息，可以省略
      
     if(!$mail->Send()) {

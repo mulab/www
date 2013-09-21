@@ -2,7 +2,7 @@ function sendUserInfo()
 {
 	var msg = document.user_info;
 	var userName = msg.user_name.value;
-	var userNumber = msg.user_number.value;
+	var userMail= msg.user_mail.value;
     var userMobile = msg.user_mobile.value;
 	var userDepartment = msg.user_department.value;
 	var userGender;
@@ -16,7 +16,7 @@ function sendUserInfo()
 		alert("Please input your name.");
 		return;
 	}
-	if (userNumber == "") {
+	if (userMail== "") {
 		alert("Please input your student number.");
 		return;
 	}
@@ -32,7 +32,7 @@ function sendUserInfo()
         alert("Please input your leave words.");
         return;
     }
-	var postStr = "user_name="+userName+"&user_number="+userNumber+"&user_mobile="+userMobile+"&user_department="+userDepartment+"&user_gender="+userGender+"&user_words="+userWords;
+	var postStr = "user_name="+userName+"&user_mail="+userMail+"&user_mobile="+userMobile+"&user_department="+userDepartment+"&user_gender="+userGender+"&user_words="+userWords;
 	var xmlhttp = false;
 	if (window.XMLHttpRequest) {
 		xmlhttp = new XMLHttpRequest();
