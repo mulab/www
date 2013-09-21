@@ -8,8 +8,10 @@ function sendUserInfo()
 	var userGender;
 	if (msg.user_gender.item(0).checked == true)
 		userGender = "男";
-	else
+	else if (msg.user_gender.item(1).checked == true)
 		userGender = "女";
+    else
+        userGender = "其它";
 	var userWords = msg.user_words.value;
 	
 	if (userName == "") {
