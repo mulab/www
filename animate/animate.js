@@ -71,18 +71,15 @@ function getCookie(c_name)
     }
     return "";
 }
-function setCookie(c_name, c_value)
+function setCookie(c_name, c_value, exprireHours)
 {
-	c_start = document.cookie.indexOf(c_name+"=");
-	if (c_start == -1)
-		document.cookie = c_name+"="+escape(c_value);
-	else {
-		c_start += c_name.length+1;
-		c_end = document.cookie.indexOf(";", c_start);
-		if (c_end == -1) c_end = document.cookie.length;
-		cnt = document.cookie;
-		document.cookie = cnt.slice(0, c_start)+escape(c_value)+cnt.slice(c_end, cnt.length);
+	var cookieString = c_name+"="+escape(c_value);
+	if (exprireHours > 0) {
+		var date = new Date();
+		date.setTime(date.getTime+exprireHours*3600*1000);
+		cookieString = cookieString+";expire="+date.toGMTString();
 	}
+	document.cookie = cookieString;
 }
 function delCookie(c_name)
 {
@@ -193,12 +190,13 @@ function showAnimate()
     */
 	result = getCookie("lastLogin");
 	var nowDate = new Date();
-	if (result == null || result == "")
-		setCookie("lastLogin", nowDate.toString());
+	if (result == null || result == "") {
+		setCookie("lastLogin", nowDate.toString(), 24);
+	}
 	else {
 		var preDate = new Date(result);
 		if (nowDate-preDate < 3600000) return;
-		setCookie("lastLogin", nowDate.toString());
+		setCookie("lastLogin", nowDate.toString(), 24);
 	}
 
     if ($(window).width() >= 768 && $(window).height() >= 400) {
