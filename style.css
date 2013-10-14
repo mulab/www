@@ -63,6 +63,7 @@ body {
 /* Carousel base class */
 .carousel {
     /* margin-bottom: 60px; */
+    overflow: hidden;
 }
 
 .carousel .container {
@@ -97,6 +98,7 @@ body {
     left: 0;
     min-width: 100%;
     height: auto;
+    clip: rect(0px 100% 650px 0px);
 }
 
 .carousel-caption {
@@ -204,6 +206,7 @@ div.carousel-caption {
     .carousel img {
         width: auto;
         height: auto;
+
     }
 
     .featurette {
@@ -310,8 +313,9 @@ div.carousel-caption {
 
 .footer-inform {
     position: relative;
-    bottom: 0;
-    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
     margin-bottom: 0px;
     text-align: center;
 }
@@ -332,3 +336,4 @@ div.carousel-caption {
     width: 48px;
     float: left;
 }
+
