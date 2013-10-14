@@ -63,7 +63,7 @@ body {
 /* Carousel base class */
 .carousel {
     /* margin-bottom: 60px; */
-    overflow: hidden;
+    //overflow: hidden;
 }
 
 .carousel .container {
