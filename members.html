@@ -10,13 +10,27 @@
     <title>About us</title>
     <script src="jquery.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="mustache.js"></script>
     <script>
         $(document).ready(function() {
             var tmp = document.getElementById("overall_id");
             var footer = document.getElementById("footer_id");
-            tmp.style.minHeight = ($(window).height()-$(footer).height()-38)+"px";
-            alert($(footer).paddingTop());
+            tmp.style.minHeight = ($(window).height() - $(footer).height() - 38) + "px";
+            //alert($(footer).paddingTop());
+            showMemebers();
         });
+
+        function showMemebers() {
+            $.get('/templates/member.html',function(tmpl){
+                console.log(tmpl);
+                $.getJSON('/static/members.json', function(data, textStatus) {
+                        console.log(data);
+                        var html = Mustache.render(tmpl,data);
+                        console.log(html);
+                        $('#members').append(html);
+                });
+            });
+        }
     </script>
 </head>
 <body>
@@ -25,7 +39,7 @@
     <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
     <div class="container">
 
-        <div class="navbar navbar-inverse" style="font-size: 20px">
+        <div class="navbar navbar-inverse" style="font-size: 20px;">
             <div class="navbar-inner">
                 <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
                 <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -70,174 +84,7 @@
             <img src="mulab/labmu_small.png">
         </div>
         <div class="span8">
-            <div style="text-align: center;" class="well">
-                <!--
-                <table class="table table-striped">
-                    <tr>
-                        <th>Name</th>
-                        <th>Department</th>
-                        <th>Duty</th>
-                        <th>Email</th>
-                    </tr>
-                    <tr>
-                        <td rowspan="2">周梦宇</td>
-                        <td rowspan="2">交叉信息研究院</td>
-
-                        <td>123</td>
-                        <td rowspan="2">123@123.com</th>
-                    </tr>
-                    <tr>
-                        <td>大家好</td>
-                    </tr>
-                    <tr>
-                        <td>夏雨</td>
-                        <td>社科学院</td>
-                        <td>123</td>
-                        <td>123@123.com</td>
-                    </tr>
-                    <tr>
-                        <td>章晔</td>
-                        <td>计算机系</td>
-                        <td>123</td>
-                        <td>123@123.com</td>
-                    </tr>
-
-
-                </table>
-                -->
-                <div class="row-fluid">
-                    <div class="span4">
-                        <div class="members-person">
-                            <img class="members-img" src="https://2.gravatar.com/avatar/1717ca1e95d819b999404eee84da70a8?d=https%3A%2F%2Fidenticons.github.com%2F55e94310b0d691a823b662cf2ac552fc.png&s=140">
-                            </img>
-                            <h4>
-                                <a href="https://github.com/ColinZhang" target="_blank">ColinZhang</a>
-                            </h4>
-                        </div>
-                        <br>
-                        <div class="members-person">
-                            <img class="members-img" src="https://1.gravatar.com/avatar/ea5ae8e03d0abdfbe2150b698a3d5d22?d=https%3A%2F%2Fidenticons.github.com%2F3c79bd1f625d2ff6aa774dd59c8d1443.png&amp;s=140">
-                            </img>
-                            <h4>
-                                <a href="https://github.com/aluex" target="_blank">aluex</a>
-                            </h4>
-                        </div>
-                        <br>
-                        <div class="members-person">
-                            <img class="members-img" src="https://1.gravatar.com/avatar/85cec7e19278074e02f366b6d455e612?d=https%3A%2F%2Fidenticons.github.com%2Fbbf8952dd963b92a63e7f978784e2bea.png&s=140">
-                            </img>
-                            <h4>
-                                <a href="https://github.com/glassices" target="_blank">glassices</a>
-                            </h4>
-                        </div>
-                        <br>
-                        <div class="members-person">
-                            <img class="members-img" src="https://identicons.github.com/16fe0fa93fbaa13b04005c8e6bdc2881.png">
-                            </img>
-                            <h4>
-                                <a href="https://github.com/wzc11" target="_blank">wzc11</a>
-                            </h4>
-                        </div>
-                        <br>
-                        <div class="members-person">
-                            <img class="members-img" src="https://0.gravatar.com/avatar/2096ca102b95edfe85776301043bd583?d=https%3A%2F%2Fidenticons.github.com%2F41d8ea1e667ae4b0253b331df31f5238.png&s=140">
-                            </img>
-                            <h4>
-                                <a href="https://github.com/xxr3376" target="_blank">xxr3376</a>
-                            </h4>
-                        </div>
-                        <br>
-                        <div class="members-person">
-                            <img class="members-img" src="https://0.gravatar.com/avatar/af5bffae4fa8a93a48d290a039c5c5c8?d=https%3A%2F%2Fidenticons.github.com%2Fa8d110739474dd270526cb7fe85413e5.png&s=140">
-                            </img>
-                            <h4>
-                                <a href="https://github.com/zmy" target="_blank">zmy</a>
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="span4">
-                        <div class="members-person">
-                            <img class="members-img" src="https://1.gravatar.com/avatar/fba5848cb64615e4e25dd60a1eced4b3?d=https%3A%2F%2Fidenticons.github.com%2F369188e08636b330bbd368c951c60dcc.png&amp;s=140">
-                            </img>
-                            <h4>
-                                <a href="https://github.com/Maple1000" target="_blank">Maple1000</a>
-                            </h4>
-                        </div>
-                        <br>
-                        <div class="members-person">
-                            <img class="members-img" src="https://identicons.github.com/378c7d8ac29abb061059036bc76fe055.png">
-                            </img>
-                            <h4>
-                                <a href="https://github.com/cgcgbcbc" target="_blank">cgcgbcbc</a>
-                            </h4>
-                        </div>
-                        <br>
-                        <div class="members-person">
-                            <img class="members-img" src="https://0.gravatar.com/avatar/ee710b2c0c4bd5799f1d415ed91fcf71?d=https%3A%2F%2Fidenticons.github.com%2F66594d99fb25b0cad4d47aecf5f0a990.png&s=140">
-                            </img>
-                            <h4>
-                                <a href="https://github.com/lispc" target="_blank">lispc</a>
-                            </h4>
-                        </div>
-                        <br>
-                        <div class="members-person">
-                            <img class="members-img" src="https://identicons.github.com/13ad157626196a7683e9805dcc85e933.png">
-                            </img>
-                            <h4>
-                                <a href="https://github.com/xptree" target="_blank">xptree</a>
-                            </h4>
-                        </div>
-                        <br>
-                        <div class="members-person">
-                            <img class="members-img" src="https://identicons.github.com/37d09b2f56b079ab9b908b12ac968bcd.png">
-                            </img>
-                            <h4>
-                                <a href="https://github.com/zfy0421" target="_blank">zfy0421</a>
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="span4">
-                        <div class="members-person">
-                            <img class="members-img" src="https://1.gravatar.com/avatar/ea7ff256416c53dbfd18e1d4bdcaeb45?d=https%3A%2F%2Fidenticons.github.com%2F27447de6bbd81dc6562a4d5ce338fb6b.png&amp;s=140">
-                            </img>
-                            <h4>
-                                <a href="https://github.com/SimonDu" target="_blank">SimonDu</a>
-                            </h4>
-                        </div>
-                        <br>
-                        <div class="members-person">
-                            <img class="members-img" src="https://identicons.github.com/f4b082f2be625c2efd0db51c2e3b1207.png">
-                            </img>
-                            <h4>
-                                <a href="https://github.com/codewdy" target="_blank">codewdy</a>
-                            </h4>
-                        </div>
-                        <br>
-                        <div class="members-person">
-                            <img class="members-img" src="https://identicons.github.com/f8646638b8a97b53f3ad1827e6fe3ff5.png">
-                            </img>
-                            <h4>
-                                <a href="https://github.com/sx349" target="_blank">sx349</a>
-                            </h4>
-                        </div>
-                        <br>
-                        <div class="members-person">
-                            <img class="members-img" src="https://identicons.github.com/e2c212695245253b0b93713d0ce5958a.png">
-                            </img>
-                            <h4>
-                                <a href="https://github.com/xvblack" target="_blank">xvblack</a>
-                            </h4>
-                        </div>
-                        <br>
-                        <div class="members-person">
-                            <img class="members-img" src="https://identicons.github.com/e6e61f9fc2e9d0a8c5ea1e8640ea72a8.png">
-                            </img>
-                            <h4>
-                                <a href="https://github.com/zhouerjin" target="_blank">zhouerjin</a>
-                            </h4>
-                        </div>
-                    </div>
-                </div>
+            <div style="text-align: center;" class="well" id="members">
             </div>
         </div>
     </div>
