@@ -1,0 +1,3 @@
+[submodule "src/members"]
+	path = src/members
+	url = git@github.com:mulab/member-info.git
