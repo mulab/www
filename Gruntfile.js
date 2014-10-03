@@ -164,8 +164,11 @@ module.exports = function (grunt) {
     wiredep: {
       app: {
         ignorePath: /^\/|\.\.\//,
-        src: ['<%= config.app %>/index.html'],
-        exclude: ['bower_components/bootstrap/dist/js/bootstrap.js']
+        src: ['<%= config.app %>/{,*/}*.html'],
+        // exclude: [
+        //   'bower_components/bootstrap/dist/js/*.js',
+        //   'bower_components/bootstrap-material-design/scripts/*.js'
+        // ]
       }
     },
 
@@ -191,7 +194,7 @@ module.exports = function (grunt) {
       options: {
         dest: '<%= config.dist %>'
       },
-      html: '<%= config.app %>/index.html'
+      html: '<%= config.app %>/{,*/}*.html'
     },
 
     // Performs rewrites based on rev and the useminPrepare configuration
@@ -335,7 +338,7 @@ module.exports = function (grunt) {
 
     grunt.task.run([
       'clean:server',
-      'wiredep',
+      // 'wiredep',
       'concurrent:server',
       'autoprefixer',
       'connect:livereload',
@@ -365,7 +368,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('build', [
     'clean:dist',
-    'wiredep',
+    // 'wiredep',
     'useminPrepare',
     'concurrent:dist',
     'autoprefixer',
