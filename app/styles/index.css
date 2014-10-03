@@ -6,6 +6,14 @@
 	text-align: center;
 }
 
+.goal {
+	text-align: center;
+}
+
+.project {
+	text-align: center;
+}
+
 .join {
 	text-align: center;
 }
@@ -15,5 +23,9 @@
 }
 
 .member {
+	text-align: center;
+}
+
+.footer {
 	text-align: center;
 }
