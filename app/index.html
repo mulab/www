@@ -28,6 +28,16 @@
   <div class="container">
 
     <div id="main" class="row">
+      <div id="dialog" class="col-lg-9 col-md-9 col-sm-9">
+        <div class="animated bounce bubble">
+          <span class="bot"></span>
+          <span class="top"></span>
+          <h1>Simplify Our Campus Life!</h1>
+        </div>
+      </div>
+      <div id="logo" class="col-lg-3 col-md-3 col-sm-3">
+        <img style="position:relaive;width:100%" src="images/Lab mU Meow.svg">
+      </div>
     </div>
 
     <div class="row">
@@ -102,25 +112,6 @@
   <!-- build:js({app,.tmp}) scripts/main.js -->
   <script src="scripts/main.js"></script>
   <!-- endbuild -->
-
-  <script type="text/javascript">
-    $(document).ready(function(){
-      var logo, dialog;
-      $.get("logo.html", function(html) {
-        logo = html;
-        $.get("dialog.html", function(html) {
-          dialog = html;
-          if($(document).width() < 768) {
-            $("#main").append(dialog).append(logo);
-          } else {
-            $("#main").append(logo).append(dialog);
-          }
-          $("#bot").addClass("bot");
-          $("#top").addClass("top");
-        });
-      });
-    });
-  </script>
 
 </body>
 </html>

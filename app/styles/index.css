@@ -37,6 +37,11 @@ body {
     bottom:80px; 
     left:-33px;
 }
+@media screen and (min-width: 768px){
+  #dialog {
+    float: right !important;
+  }
+}
 
 @media screen and (max-width: 768px){
 .bubble span.bot
