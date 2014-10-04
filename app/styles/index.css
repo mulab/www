@@ -49,7 +49,7 @@ body {
 	border-width:20px; 
     border-style:solid dashed dashed; 
     border-color:#beceeb transparent transparent; 
-    left:80px; 
+    left:30%; 
     bottom:-40px;
 }
 
@@ -58,7 +58,7 @@ body {
 	border-width:20px; 
     border-style:solid dashed dashed; 
     border-color:#eeeeee transparent transparent; 
-    left:80px; 
+    left:30%; 
     bottom:-33px;
 }	
 }
