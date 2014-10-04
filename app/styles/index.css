@@ -2,6 +2,27 @@ body {
 	text-align: center;
 }
 
+@media screen and (min-width: 768px){
+  #logo_wrap {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .logo {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .logo {
+    position: relative;
+    width: 20%;
+    left: -12%;
+  }
+}
+
 .bubble
 {
     padding:50px 20px;
@@ -25,7 +46,7 @@ body {
     border-width:20px; 
     border-style:solid dashed dashed; 
     border-color:transparent #beceeb transparent transparent; 
-    bottom:80px; 
+    bottom:30%; 
     left:-40px;
 }
 
@@ -34,9 +55,10 @@ body {
     border-width:20px; 
     border-style:solid dashed dashed; 
     border-color:transparent #eeeeee transparent transparent; 
-    bottom:80px; 
+    bottom:30%;
     left:-33px;
 }
+
 @media screen and (min-width: 768px){
   #dialog {
     float: right !important;
