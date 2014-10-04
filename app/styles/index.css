@@ -38,7 +38,8 @@ body {
     left:-33px;
 }
 
-.bubble span.bot_down
+@media screen and (max-width: 768px){
+.bubble span.bot
 {
 	border-width:20px; 
     border-style:solid dashed dashed; 
@@ -47,7 +48,7 @@ body {
     bottom:-40px;
 }
 
-.bubble span.top_down
+.bubble span.top
 {
 	border-width:20px; 
     border-style:solid dashed dashed; 
@@ -55,3 +56,4 @@ body {
     left:80px; 
     bottom:-33px;
 }	
+}

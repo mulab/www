@@ -112,13 +112,11 @@
           dialog = html;
           if($(document).width() < 768) {
             $("#main").append(dialog).append(logo);
-            $("#bot").addClass("bot_down");
-            $("#top").addClass("top_down");
           } else {
             $("#main").append(logo).append(dialog);
-            $("#bot").addClass("bot");
-            $("#top").addClass("top");
           }
+          $("#bot").addClass("bot");
+          $("#top").addClass("top");
         });
       });
     });
