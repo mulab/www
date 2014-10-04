@@ -27,9 +27,11 @@ body {
 {
     padding:50px 20px;
     margin: 20px;
-    border:5px solid #beceeb;
+    border:2px solid #b1b1b1;
     position:relative;
     border-radius:10px;
+    background-color: #ffffff;
+    /*box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);*/
 }
 
 .bubble span
@@ -45,7 +47,7 @@ body {
 {
     border-width:20px; 
     border-style:solid dashed dashed; 
-    border-color:transparent #beceeb transparent transparent; 
+    border-color:transparent #b1b1b1 transparent transparent; 
     bottom:30%; 
     left:-40px;
 }
@@ -54,9 +56,9 @@ body {
 {
     border-width:20px; 
     border-style:solid dashed dashed; 
-    border-color:transparent #eeeeee transparent transparent; 
+    border-color:transparent #ffffff transparent transparent; 
     bottom:30%;
-    left:-33px;
+    left:-37px;
 }
 
 @media screen and (min-width: 768px){
@@ -70,7 +72,7 @@ body {
 {
 	border-width:20px; 
     border-style:solid dashed dashed; 
-    border-color:#beceeb transparent transparent; 
+    border-color:#b1b1b1 transparent transparent; 
     left:30%; 
     bottom:-40px;
 }
@@ -79,8 +81,8 @@ body {
 {
 	border-width:20px; 
     border-style:solid dashed dashed; 
-    border-color:#eeeeee transparent transparent; 
+    border-color:#ffffff transparent transparent; 
     left:30%; 
-    bottom:-33px;
+    bottom:-37px;
 }	
 }
