@@ -174,3 +174,12 @@ body {
     height: 250px;
     overflow: hidden;
 }
+
+a{
+    color: #000000;
+}
+
+a:hover {
+    color: #000000;
+    text-decoration:none;
+}
