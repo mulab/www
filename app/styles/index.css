@@ -1,5 +1,5 @@
 body {
-	text-align: center;
+    text-align: center;
 }
 
 @media screen and (min-width: 768px){
@@ -25,7 +25,7 @@ body {
 
 .bubble
 {
-    padding:50px 20px;
+    padding:20px 20px;
     margin: 20px;
     border:2px solid #b1b1b1;
     position:relative;
@@ -70,7 +70,7 @@ body {
 @media screen and (max-width: 768px){
 .bubble span.bot
 {
-	border-width:20px; 
+    border-width:20px; 
     border-style:solid dashed dashed; 
     border-color:#b1b1b1 transparent transparent; 
     left:30%; 
@@ -79,15 +79,83 @@ body {
 
 .bubble span.top
 {
-	border-width:20px; 
+    border-width:20px; 
     border-style:solid dashed dashed; 
     border-color:#ffffff transparent transparent; 
     left:30%; 
     bottom:-37px;
-}	
 }
 
 .btn
 {
     padding: 18px 30px 8px 30px;
+}
+
+@media screen and (min-width: 768px){
+/*  #simplify {
+    color: #f35626;
+    background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }*/
+
+  #simplify .first{
+    font-size: 8rem;
+  }
+
+  #simplify .second{
+    font-size: 4rem;
+  }
+
+  #simplify .sign{
+    font-size: 12rem;
+  }
+}
+
+@media screen and (max-width: 768px){
+/*  #simplify {
+    background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
+  }*/
+
+  #simplify .first{
+    font-size: 4rem;
+  }
+
+  #simplify .second{
+    font-size: 2rem;
+  }
+
+  #simplify .sign{
+    font-size: 6rem;
+  }
+}
+
+@media screen and (min-width: 768px){
+  #design_code .design{
+    font-size: 5rem;
+    transform:rotate(-45deg);
+  }
+
+  #design_code .code{
+    font-size: 5rem;
+    transform:rotate(45deg);
+  }
+
+  #design_code .our{
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 768px){
+  #design_code .first{
+    font-size: 4rem;
+  }
+
+  #design_code .second{
+    font-size: 2rem;
+  }
+
+  #design_code .sign{
+    font-size: 6rem;
+  }
 }
