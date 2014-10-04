@@ -160,3 +160,15 @@ body {
     font-size: 6rem;
   }
 }
+
+.circle {
+  border: 0px solid rgba(0, 0, 0, 0.84);
+  width: 150px;
+  height: 150px;
+  /*border-radius: 100%;*/
+}
+
+.blocks {
+    height: 250px;
+    overflow: hidden;
+}
