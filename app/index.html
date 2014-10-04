@@ -25,17 +25,9 @@
   <![endif]-->
 
 
-  <div class="container-fluid">
+  <div class="container">
 
-    <div class="row">
-      <div class="col-lg-4 col-md-4 col-sm-4">
-        <img style="position:relative;width:100%" src="images/Lab mU Meow.svg">
-      </div>
-      <div class="col-lg-8 col-md-8 col-sm-8">
-        <div class="animated bounce">
-          <h1>Simplify Our Campus Life!</h1>
-        </div>
-      </div>
+    <div id="main" class="row">
     </div>
 
     <div class="row">
@@ -110,5 +102,23 @@
   <!-- build:js({app,.tmp}) scripts/main.js -->
   <script src="scripts/main.js"></script>
   <!-- endbuild -->
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      var logo, dialog;
+      $.get("logo.html", function(html) {
+        logo = html;
+        $.get("dialog.html", function(html) {
+          dialog = html;
+          if($(document).width() < 768) {
+            $("#main").append(dialog).append(logo);
+          } else {
+            $("#main").append(logo).append(dialog);
+          }
+        });
+      });
+    });
+  </script>
+
 </body>
 </html>
