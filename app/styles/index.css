@@ -1,5 +1,6 @@
 body {
     text-align: center;
+    background-color: #4f4f4f;
 }
 
 .logo {
@@ -52,37 +53,37 @@ body {
 
 .bubble span.bot
 {
-    border-width:20px; 
-    border-style:solid dashed dashed; 
-    border-color:#b1b1b1 transparent transparent; 
-    left:30%; 
+    border-width:20px;
+    border-style:solid dashed dashed;
+    border-color:#b1b1b1 transparent transparent;
+    left:30%;
     bottom:-40px;
 }
 
 .bubble span.top
 {
-    border-width:20px; 
-    border-style:solid dashed dashed; 
-    border-color:#ffffff transparent transparent; 
-    left:30%; 
+    border-width:20px;
+    border-style:solid dashed dashed;
+    border-color:#ffffff transparent transparent;
+    left:30%;
     bottom:-37px;
 }
 
 @media screen and (min-width: 768px){
 .bubble span.bot
 {
-    border-width:20px; 
-    border-style:solid dashed dashed; 
-    border-color:transparent #b1b1b1 transparent transparent; 
-    bottom:22%; 
+    border-width:20px;
+    border-style:solid dashed dashed;
+    border-color:transparent #b1b1b1 transparent transparent;
+    bottom:22%;
     left:-40px;
 }
 
 .bubble span.top
 {
-    border-width:20px; 
-    border-style:solid dashed dashed; 
-    border-color:transparent #ffffff transparent transparent; 
+    border-width:20px;
+    border-style:solid dashed dashed;
+    border-color:transparent #ffffff transparent transparent;
     bottom:22%;
     left:-37px;
 }
