@@ -1,10 +1,10 @@
 @font-face {
-  font-family: 'fontello';
-  src: url('../font/fontello.eot?92629336');
-  src: url('../font/fontello.eot?92629336#iefix') format('embedded-opentype'),
-       url('../font/fontello.woff?92629336') format('woff'),
-       url('../font/fontello.ttf?92629336') format('truetype'),
-       url('../font/fontello.svg?92629336#fontello') format('svg');
+  font-family: 'mu';
+  src: url('../font/mu.eot?97520752');
+  src: url('../font/mu.eot?97520752#iefix') format('embedded-opentype'),
+       url('../font/mu.woff?97520752') format('woff'),
+       url('../font/mu.ttf?97520752') format('truetype'),
+       url('../font/mu.svg?97520752#mu') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -13,14 +13,14 @@
 /*
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
-    font-family: 'fontello';
-    src: url('../font/fontello.svg?92629336#fontello') format('svg');
+    font-family: 'mu';
+    src: url('../font/mu.svg?97520752#mu') format('svg');
   }
 }
 */
 
- [class^="myicon-"]:before, [class*=" myicon-"]:before {
-  font-family: "fontello";
+ [class^="icon-mu-"]:before, [class*=" icon-mu-"]:before {
+  font-family: "mu";
   font-style: normal;
   font-weight: normal;
   speak: none;
@@ -28,7 +28,7 @@
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
-  margin-right: .2em;
+  margin-right: .1em;
   text-align: center;
   /* opacity: .8; */
 
@@ -41,7 +41,7 @@
 
   /* Animation center compensation - margins should be symmetric */
   /* remove if not needed */
-  margin-left: .2em;
+  margin-left: .1em;
 
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
@@ -50,6 +50,6 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
-.myicon-renren:before { content: '\e800'; } /* '' */
-.myicon-github-circled:before { content: '\e801'; } /* '' */
-.myicon-gmail:before { content: '\e802'; } /* '' */
+.icon-mu-renren-circled:before { content: '\e800'; } /* '' */
+.icon-mu-github-circled:before { content: '\e801'; } /* '' */
+.icon-mu-mail-circled:before { content: '\e802'; } /* '' */
