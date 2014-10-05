@@ -198,3 +198,7 @@ a.myicon-mail {
 a.myicon-mail:hover {
     text-decoration: none;
 }
+
+.footer {
+    border-top: none;
+}
