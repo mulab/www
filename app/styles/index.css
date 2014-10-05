@@ -2,6 +2,13 @@ body {
     text-align: center;
 }
 
+.logo {
+  position: relative;
+  width: 20%;
+  height: 20%;
+  left: -12%;
+}
+
 @media screen and (min-width: 768px){
   #logo_wrap {
     position: absolute;
@@ -16,12 +23,9 @@ body {
   }
 }
 
-@media screen and (max-width: 768px){
-  .logo {
-    position: relative;
-    width: 20%;
-    height: 20%;
-    left: -12%;
+@media screen and (min-width: 768px){
+  #dialog {
+    float: right !important;
   }
 }
 
@@ -48,31 +52,6 @@ body {
 {
     border-width:20px; 
     border-style:solid dashed dashed; 
-    border-color:transparent #b1b1b1 transparent transparent; 
-    bottom:30%; 
-    left:-40px;
-}
-
-.bubble span.top
-{
-    border-width:20px; 
-    border-style:solid dashed dashed; 
-    border-color:transparent #ffffff transparent transparent; 
-    bottom:30%;
-    left:-37px;
-}
-
-@media screen and (min-width: 768px){
-  #dialog {
-    float: right !important;
-  }
-}
-
-@media screen and (max-width: 768px){
-.bubble span.bot
-{
-    border-width:20px; 
-    border-style:solid dashed dashed; 
     border-color:#b1b1b1 transparent transparent; 
     left:30%; 
     bottom:-40px;
@@ -86,11 +65,42 @@ body {
     left:30%; 
     bottom:-37px;
 }
+
+@media screen and (min-width: 768px){
+.bubble span.bot
+{
+    border-width:20px; 
+    border-style:solid dashed dashed; 
+    border-color:transparent #b1b1b1 transparent transparent; 
+    bottom:30%; 
+    left:-40px;
+}
+
+.bubble span.top
+{
+    border-width:20px; 
+    border-style:solid dashed dashed; 
+    border-color:transparent #ffffff transparent transparent; 
+    bottom:30%;
+    left:-37px;
+}
 }
 
 .btn
 {
     padding: 18px 30px 8px 30px;
+}
+
+#simplify .first{
+  font-size: 4rem;
+}
+
+#simplify .second{
+  font-size: 2rem;
+}
+
+#simplify .sign{
+  font-size: 6rem;
 }
 
 @media screen and (min-width: 768px){
@@ -114,22 +124,16 @@ body {
   }
 }
 
-@media screen and (max-width: 768px){
-/*  #simplify {
-    background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
-  }*/
+#design_code .first{
+  font-size: 4rem;
+}
 
-  #simplify .first{
-    font-size: 4rem;
-  }
+#design_code .second{
+  font-size: 2rem;
+}
 
-  #simplify .second{
-    font-size: 2rem;
-  }
-
-  #simplify .sign{
-    font-size: 6rem;
-  }
+#design_code .sign{
+  font-size: 6rem;
 }
 
 @media screen and (min-width: 768px){
@@ -145,20 +149,6 @@ body {
 
   #design_code .our{
     font-size: 4rem;
-  }
-}
-
-@media screen and (max-width: 768px){
-  #design_code .first{
-    font-size: 4rem;
-  }
-
-  #design_code .second{
-    font-size: 2rem;
-  }
-
-  #design_code .sign{
-    font-size: 6rem;
   }
 }
 
