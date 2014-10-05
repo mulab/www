@@ -165,10 +165,9 @@ module.exports = function (grunt) {
       app: {
         ignorePath: /^\/|\.\.\//,
         src: ['<%= config.app %>/{,*/}*.html'],
-        // exclude: [
-        //   'bower_components/bootstrap/dist/js/*.js',
-        //   'bower_components/bootstrap-material-design/scripts/*.js'
-        // ]
+         exclude: [
+           'bower_components/bootstrap/dist/js/*.js',
+         ]
       }
     },
 
@@ -344,7 +343,7 @@ module.exports = function (grunt) {
 
     grunt.task.run([
       'clean:server',
-      // 'wiredep',
+      'wiredep',
       'concurrent:server',
       'autoprefixer',
       'connect:livereload',
@@ -374,7 +373,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('build', [
     'clean:dist',
-    // 'wiredep',
+    'wiredep',
     'useminPrepare',
     'concurrent:dist',
     'autoprefixer',

@@ -12,5 +12,14 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "overrides": {
+    "bootstrap-material-design": {
+      "main": [
+        "scripts/ripples.js",
+        "scripts/material.js",
+        "css-compiled/material.css"
+      ]
+    }
+  }
 }
