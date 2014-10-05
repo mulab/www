@@ -18,7 +18,8 @@
       "main": [
         "scripts/ripples.js",
         "scripts/material.js",
-        "css-compiled/material.css"
+        "css-compiled/material.css",
+        "icons/icons-material-design.css"
       ]
     }
   }
