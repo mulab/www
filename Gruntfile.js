@@ -286,9 +286,10 @@ module.exports = function (grunt) {
           dest: '<%= config.dist %>',
           src: [
             '*.{ico,png,txt}',
-            'images/{,*/}*.webp',
+            'images/{,*/}*.*',
             '{,*/}*.html',
-            'styles/fonts/{,*/}*.*'
+            'styles/fonts/{,*/}*.*',
+            'font/*.*'
           ]
         }, {
           src: 'node_modules/apache-server-configs/dist/.htaccess',
@@ -326,7 +327,7 @@ module.exports = function (grunt) {
       ],
       dist: [
         'copy:styles',
-        'imagemin',
+        //'imagemin',
         'svgmin'
       ]
     }
