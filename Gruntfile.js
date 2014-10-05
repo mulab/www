@@ -179,7 +179,7 @@ module.exports = function (grunt) {
             '<%= config.dist %>/scripts/{,*/}*.js',
             '<%= config.dist %>/styles/{,*/}*.css',
             '<%= config.dist %>/images/{,*/}*.*',
-            //'<%= config.dist %>/styles/fonts/{,*/}*.*',
+            '<%= config.dist %>/styles/fonts/{,*/}*.*',
             '<%= config.dist %>/*.{ico,png}'
           ]
         }
@@ -302,9 +302,9 @@ module.exports = function (grunt) {
         }, {
           expand: true,
           dot: true,
-          cwd: 'bower_components/bootstrap-material-design/icons',
+          cwd: 'bower_components/bootstrap-material-design/dist',
           src: 'fonts/*',
-          dest: '<%= config.dist %>/styles'
+          dest: '<%= config.dist %>'
         }]
       },
       styles: {

@@ -3,7 +3,7 @@
   "dependencies": {
     "jquery": "~2.1.1",
     "bootstrap": "~3.2.0",
-    "bootstrap-material-design": "*",
+    "bootstrap-material-design": "~0.1.0",
     "animate.css": "~3.2.0"
   },
   "ignore": [
@@ -12,15 +12,5 @@
     "bower_components",
     "test",
     "tests"
-  ],
-  "overrides": {
-    "bootstrap-material-design": {
-      "main": [
-        "scripts/ripples.js",
-        "scripts/material.js",
-        "css-compiled/material.css",
-        "icons/icons-material-design.css"
-      ]
-    }
-  }
+  ]
 }
