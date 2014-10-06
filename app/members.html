@@ -29,6 +29,10 @@
         <h2>成员介绍</h2>
         <p>☺</p>
       </div>
+      <div class="col-lg-12">
+      <p id="coders">coders:</p>
+      <p id="designers">designers:</p>
+      </div>
 
       <div class="col-lg-7 col-lg-offset-9">
         <button class="btn btn-primary" onclick="goBack()">Back</button>
@@ -61,6 +65,16 @@
       function goBack() {
         window.location.href = "index.html";
       }
+      function appendElement (data) {
+        for (x in data.coders) {
+          document.getElementById("coders").innerHTML += x.name;
+        };
+        for (x in data.designers) {
+          document.getElementById("designers").innerHTML += x.name;
+        };
+      }
+      var dataroot = "src/members/members.json";
+      document.getElementById("designers").innerHTML = dataroot;
     </script>
 
     <!-- build:js({app,.tmp}) scripts/main.js -->
