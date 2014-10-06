@@ -94,67 +94,6 @@ body {
     padding: 10px 30px 0px 30px;
 }
 
-#simplify .first{
-  font-size: 4rem;
-}
-
-#simplify .second{
-  font-size: 2rem;
-}
-
-#simplify .sign{
-  font-size: 6rem;
-}
-
-@media screen and (min-width: 768px){
-/*  #simplify {
-    color: #f35626;
-    background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }*/
-
-  #simplify .first{
-    font-size: 8rem;
-  }
-
-  #simplify .second{
-    font-size: 4rem;
-  }
-
-  #simplify .sign{
-    font-size: 12rem;
-  }
-}
-
-#design_code .first{
-  font-size: 4rem;
-}
-
-#design_code .second{
-  font-size: 2rem;
-}
-
-#design_code .sign{
-  font-size: 6rem;
-}
-
-@media screen and (min-width: 768px){
-  #design_code .design{
-    font-size: 5rem;
-    transform:rotate(-45deg);
-  }
-
-  #design_code .code{
-    font-size: 5rem;
-    transform:rotate(45deg);
-  }
-
-  #design_code .our{
-    font-size: 4rem;
-  }
-}
-
 .circle {
   border: 0px solid rgba(0, 0, 0, 0.84);
   width: 150px;
