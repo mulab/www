@@ -20,65 +20,99 @@
   <!-- endbuild -->
 </head>
 <body>
-  <!--[if lt IE 10]>
-    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+  <div class="container well">
+    <div class="col-lg-12">
+      <h2>Members</h2>
+    </div>
+    <div class="col-lg-12">
+      <hr>
+      <div id="coders" class="row">
+        <h3 class="title">Developers</h3>
+      </div>
+      <hr>
+      <div id="designers" class="row">
+        <h3 class="title">Designers</h3>
+      </div>
+      <hr>
+      <div id="propaganda" class="row">
+        <h3 class="title">Propaganda</h3>
+      </div>
 
-    <div class="container well">
-      <div class="col-lg-12">
-        <h2>成员介绍</h2>
-        <p>☺</p>
-      </div>
-      <div class="col-lg-12">
-      <p id="coders">coders:</p>
-      <p id="designers">designers:</p>
-      </div>
-
-      <div class="col-lg-7 col-lg-offset-9">
-        <button class="btn btn-primary" onclick="goBack()">Back</button>
-      </div>
     </div>
 
-    <div class="footer">
-      <p><span class="glyphicon"></span>&copy Lab μ, Tsinghua University</p>
+    <div class="col-lg-7 col-lg-offset-9">
+      <button class="btn btn-primary" onclick="goBack()">Back</button>
     </div>
+  </div>
 
-    <!-- build:js(.) scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="bower_components/bootstrap-material-design/dist/js/material.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
+  <div class="footer">
+    <p><span class="glyphicon"></span>&copy Lab μ, Tsinghua University</p>
+  </div>
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='//www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
+  <!-- build:js(.) scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="bower_components/bootstrap-material-design/dist/js/material.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
 
-    <script>
-      function goBack() {
-        window.location.href = "index.html";
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='//www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X');ga('send','pageview');
+  </script>
+
+  <script>
+    function goBack() {
+      window.location.href = "index.html";
+    }
+    $(function (){
+      var dataroot = "members/members.json";
+      function newElement (name, url, page) {
+        var newBlock = document.createElement("div");
+        newBlock.setAttribute("class", "col-lg-4 col-md-4 col-sm-4");
+        var link = document.createElement("a");
+        link.setAttribute("href", page);
+        link.setAttribute("class", "block");
+        var panel = document.createElement("div");
+        panel.setAttribute("class", "panel panel-default blocks");
+        var body = document.createElement("div");
+        body.setAttribute("class", "panel-body");
+        var img = document.createElement("img");
+        img.setAttribute("class", "pic");
+        img.setAttribute("src", url);
+        na = document.createElement("h4");
+        na.setAttribute("class", "name");
+        na.appendChild(document.createTextNode(name));
+        body.appendChild(img);
+        body.appendChild(na);
+        panel.appendChild(body);
+        link.appendChild(panel);
+        newBlock.appendChild(link);
+        return newBlock;
       }
-      function appendElement (data) {
-        for (x in data.coders) {
-          document.getElementById("coders").innerHTML += x.name;
+      $.getJSON(dataroot).done(function(json) {
+        console.log("success");
+        for (x in json.coders) {
+          document.getElementById("coders").appendChild(newElement(json.coders[x].name, json.coders[x].url, json.coders[x].page));
         };
-        for (x in data.designers) {
-          document.getElementById("designers").innerHTML += x.name;
+        for (x in json.designers) {
+          document.getElementById("designers").appendChild(newElement(json.designers[x].name, json.designers[x].url, json.designers[x].page));
         };
-      }
-      var dataroot = "src/members/members.json";
-      document.getElementById("designers").innerHTML = dataroot;
-    </script>
+        for (x in json.propaganda) {
+          document.getElementById("propaganda").appendChild(newElement(json.propaganda[x].name, json.propaganda[x].url, json.propaganda[x].page));
+        };
+      });
+    });
+  </script>
 
-    <!-- build:js({app,.tmp}) scripts/main.js -->
-    <script src="scripts/main.js"></script>
-    <!-- endbuild -->
-  </body>
-  </html>
+  <!-- build:js({app,.tmp}) scripts/main.js -->
+  <script src="scripts/main.js"></script>
+  <!-- endbuild -->
+</body>
+</html>
