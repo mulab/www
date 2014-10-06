@@ -1,0 +1,41 @@
+.footer {
+    text-align: center;
+}
+
+.pic {
+  border: 0px solid rgba(0, 0, 0, 0.84);
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  border-color: rgba(0, 0, 0, 0.2);
+  border-width: 4px;
+}
+
+.blocks {
+    text-align: center;
+    overflow: hidden;
+    transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.blocks:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.28);
+}
+
+h4.name {
+  margin-top: 20px;
+}
+
+a.block{
+    color: #000000;
+}
+
+a.block:hover {
+    color: #000000;
+    text-decoration:none;
+}
+
+h3.title {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  margin-left: 35px;
+}
