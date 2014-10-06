@@ -1,10 +1,16 @@
 'use strict';
 
-var state;
+var state = 1;
 var count = 2;
+var finished = true;
 var stateArray = ['simplify', 'design_code'];
 
 function performAminate() {
+    if(!finished) {
+        return;
+    }
+    finished = false;
+    $('#'+stateArray[state]).show();
     $('#'+stateArray[state]).removeClass().addClass('animated flipOutY').
         one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
             $(this).removeClass();
@@ -14,6 +20,7 @@ function performAminate() {
                     $('#'+stateArray[state]).removeClass().addClass('animated flipInY').
                         one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
                             $(this).removeClass();
+                            finished = true;
                     });
                 });
             });
@@ -21,12 +28,8 @@ function performAminate() {
 }
 
 $(document).ready(function() {
-    state = 0;
-    $('#design_code').hide(0, function() {
-        $('#simplify').removeClass().addClass('animated flipInY').
-            one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-                $(this).removeClass();
-        });
-        window.setInterval(performAminate, 5000);
-    });
+    $('#simplify').hide();
+    $('#design_code').hide();
+    performAminate();
+    window.setInterval(performAminate, 5000);
 });
