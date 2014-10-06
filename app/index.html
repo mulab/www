@@ -17,7 +17,7 @@
   <!-- build:css(.tmp) styles/index.css -->
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/index.css">
-  <link rel="stylesheet" href="styles/mu.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,400italic,700italic,700' rel='stylesheet' type='text/css'>
   <!-- endbuild -->
 </head>
@@ -31,15 +31,15 @@
 
     <div id="main" class="row" style="position:relative;margin-top:30px;">
       <div id="dialog" class="col-lg-9 col-md-9 col-sm-9">
-        <div class="animated bounce bubble">
+        <div class="bubble">
           <span class="bot"></span>
           <span class="top"></span>
           <div id="simplify" class="row">
             <img src="images/simplify.svg" style="width:100%;">
           </div>
-<!--           <div id="design_code"class="row">
+          <div id="design_code"class="row">
             <img src="images/design_code.svg" style="width:100%;">
-          </div> -->
+          </div>
         </div>
       </div>
       <div id="logo_wrap" class="col-lg-3 col-md-3 col-sm-3">
@@ -58,27 +58,28 @@
           </div>
           <div class="list-group panel-body">
             <a href="images/Lab mU Recruit.png" target="_blank">
-            <div class="list-group-item">
-              <div class="row-picture">
-                <img class="circle" src="images/mu2.small.png" alt="icon">
+              <div class="list-group-item">
+                <div class="row-picture">
+                  <i class="icon-material-tag-faces" style="background-color: #5fc2e0;"></i>
+                </div>
+                <div class="row-content">
+                  <h4 class="list-group-item-heading">百团大战高清无码地图</h4>
+                  <p class="list-group-item-text">9、10日欢迎大家到C楼前<b>E5展位</b>和我们交流</p>
+                </div>
               </div>
-              <div class="row-content">
-                <h4 class="list-group-item-heading">百团大战高清无码地图</h4>
-                <p class="list-group-item-text">9、10日欢迎大家到C楼前<b>E5展位</b>加入我们！</p>
-              </div>
-            </div>
             </a>
             <div class="list-group-separator"></div>
-            <div class="list-group-item">
-              <div class="row-picture">
-                <i class="icon-material-person-add"></i>
-
+            <a href="http://www.51qiangda.com/mulab/forms/543154fcb3e57c4ebc003d50" target="_blank">
+              <div class="list-group-item">
+                <div class="row-picture">
+                  <i class="icon-material-person-add" style="background-color: #e39935;"></i>
+                </div>
+                <div class="row-content">
+                  <h4 class="list-group-item-heading">欢迎加入我们！</h4>
+                  <p class="list-group-item-text">清华<b>程序员</b>和<b>设计师</b>们来一起探索业界前沿吧</p>
+                </div>
               </div>
-              <div class="row-content">
-                <h4 class="list-group-item-heading">快点击右侧按钮加入我们吧</h4>
-                <p class="list-group-item-text">欢迎清华<b>程序员</b>和<b>设计师</b>们来一起实践业界前沿！</p>
-              </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>
@@ -93,19 +94,18 @@
           <h4>Join us</h4>
         </a>
         <a href="http://page.renren.com/600002817" target="_blank" class="myicon">
-          <i class="icon-mu-renren-circled" style="color:#4285f4;"></i>
+          <i class="fa fa-renren icon-renren"></i>
         </a>
         <a href="https://github.com/mulab" target="_blank" class="myicon">
-          <i class="icon-mu-github-circled" style="color:#000000;"></i>
+          <i class="fa fa-github icon-github"></i>
         </a>
         <a href="mailto:mulab.thu@gmail.com" target="_blank" class="myicon">
-          <i class="icon-mu-mail-circled" style="color:#ff5722;"></i>
+          <i class="fa fa-envelope-square icon-mail"></i>
         </a>
       </div>
     </div>
 
     <div class="row">
-
       <div class="col-lg-4 col-md-4 col-sm-4">
         <a href="http://www.baidu.com" class="block">
           <div class="panel panel-default blocks">
@@ -115,8 +115,8 @@
               <div class="panel-footer">自动联网助手</div>
             </div>
           </div>
-        </div>
-      </a>
+        </a>
+      </div>
       <div class="col-lg-4 col-md-4 col-sm-4">
         <a href="www.baidu.com" class="block">
           <div class="panel panel-default blocks">
@@ -126,9 +126,8 @@
               <div class="panel-footer">清华人专属的App store</div>
             </div>
           </div>
-        </div>
-      </a>
-
+        </a>
+      </div>
       <div class="col-lg-4 col-md-4 col-sm-4">
         <a href="" class="block">
           <div class="panel panel-default blocks">
@@ -140,11 +139,10 @@
           </div>
         </a>
       </div>
-
     </div>
 
     <div class="footer">
-      <p><span class="glyphicon"></span>&copy Lab μ, Tsinghua University</p>
+      <p>&copy Lab μ, Tsinghua University</p>
     </div>
 
   </div>
@@ -183,8 +181,9 @@
   <script src="bower_components/bootstrap/js/tab.js"></script>
   <!-- endbuild -->
 
-  <!-- build:js({app,.tmp}) scripts/main.js -->
+  <!-- build:js({app,.tmp}) scripts/index.js -->
   <script src="scripts/main.js"></script>
+  <script src="scripts/animate.js"></script>
   <!-- endbuild -->
 
 </body>
