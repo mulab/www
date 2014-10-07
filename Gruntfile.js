@@ -174,7 +174,10 @@ module.exports = function (grunt) {
     wiredep: {
       app: {
         ignorePath: /^\/|\.\.\//,
-        src: ['<%= config.app %>/{,*/}*.html'],
+        src: [
+          '<%= config.app %>/{,*/}*.html',
+          '<%= config.app %>/{,*/}*.hbs'
+        ],
          exclude: [
            'bower_components/bootstrap/dist/js/*.js',
          ]
@@ -365,8 +368,8 @@ module.exports = function (grunt) {
 
     grunt.task.run([
       'clean:server',
-      'compile-handlebars:default',
       'wiredep',
+      'compile-handlebars:default',
       'concurrent:server',
       'autoprefixer',
       'connect:livereload',
@@ -396,8 +399,8 @@ module.exports = function (grunt) {
 
   grunt.registerTask('build', [
     'clean:dist',
-    'compile-handlebars:default',
     'wiredep',
+    'compile-handlebars:default',
     'useminPrepare',
     'concurrent:dist',
     'autoprefixer',
