@@ -26,6 +26,7 @@
   <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
   <div id="back"></div>
+  <div id="back-bottom"></div>
 
   <div id="container" class="container">
     <div id="slogan" class="row">
@@ -133,7 +134,7 @@
       </div>
     </div>
 
-    <div class="footer">
+    <div id="footer" class="footer">
       &copy Lab μ, Tsinghua University
     </div>
 
@@ -161,6 +162,8 @@
   <script>
   $(function() {
     document.getElementById("back").style.height=(document.getElementById("slogan").offsetHeight + document.getElementById("simplify").offsetHeight + parseInt(document.defaultView.getComputedStyle (document.getElementById("container"),null)["margin-top"])) + "px";
+    document.getElementById("back-bottom").style.top = (document.body.offsetHeight + document.getElementById("simplify").offsetHeight - document.getElementById("footer").offsetHeight - 10) + "px";
+    document.getElementById("back-bottom").style.height=document.getElementById("footer").offsetHeight + "px";
   });
   </script>
 

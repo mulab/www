@@ -4,10 +4,8 @@ body {
 }
 
 .container {
-  /*background-color: white;*/
   margin-top: -20px;
   margin-bottom: -20px;
-  /*background-color: #40c4ff;*/
 }
 
 @media screen and (min-width: 768px){
@@ -28,7 +26,6 @@ body {
 }
 
 #back {
-  background-color:#000000;
   position:absolute;
   width:100%;
   margin-top:-20px;
@@ -36,6 +33,13 @@ body {
   background: -moz-linear-gradient(left, #97d0c4, #36a7b7);
   background: -o-linear-gradient(left,#97d0c4, #36a7b7);
   background: -webkit-gradient(linear, 0% 0%, 100% 0%, from(#97d0c4), to(#36a7b7));
+}
+
+#back-bottom {
+  position:absolute;
+  width:100%;
+  background-color: #52565f;
+  z-index: -1;
 }
 
 #slogan {
@@ -211,6 +215,8 @@ a.myicon:hover {
 
 .footer {
   border-top: none;
+  background-color: #454c56;
+  color: #c4c4c4;
 }
 
 .icon-renren {
