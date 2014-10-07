@@ -25,9 +25,9 @@
   <!--[if lt IE 10]>
   <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
+  <div id="back"></div>
 
-
-  <div class="container">
+  <div id="container" class="container">
     <div id="slogan" class="row">
       <div id="dialog" class="col-lg-9 col-md-9 col-sm-9">
         <div class="bubble">
@@ -157,6 +157,11 @@
     e.src='//www.google-analytics.com/analytics.js';
     r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
     ga('create','UA-XXXXX-X');ga('send','pageview');
+  </script>
+  <script>
+  $(function() {
+    document.getElementById("back").style.height=(document.getElementById("slogan").offsetHeight + document.getElementById("simplify").offsetHeight + parseInt(document.defaultView.getComputedStyle (document.getElementById("container"),null)["margin-top"])) + "px";
+  });
   </script>
 
   <!-- build:js(.) scripts/plugins.js -->
