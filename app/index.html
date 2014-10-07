@@ -167,14 +167,6 @@
     ga('send', 'pageview');
   </script>
 
-  <script>
-  $(function() {
-    document.getElementById("back").style.height=(document.getElementById("slogan").offsetHeight + document.getElementById("simplify").offsetHeight + parseInt(document.defaultView.getComputedStyle (document.getElementById("container"),null)["margin-top"])) + "px";
-    document.getElementById("back-bottom").style.top = (document.body.offsetHeight + document.getElementById("simplify").offsetHeight - document.getElementById("footer").offsetHeight - 10) + "px";
-    document.getElementById("back-bottom").style.height=document.getElementById("footer").offsetHeight + "px";
-  });
-  </script>
-
   <!-- build:js(.) scripts/plugins.js -->
   <script src="bower_components/bootstrap/js/affix.js"></script>
   <script src="bower_components/bootstrap/js/alert.js"></script>

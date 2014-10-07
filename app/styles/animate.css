@@ -49,8 +49,9 @@
 
 .flip1 {
   position: absolute;
-  top: 20px;
-  left: 0;
+  top: 0px;
+  left: 0px;
+  margin-top: 20px;
   width: 100%;
   backface-visibility: visible !important;
   animation-name: flip;
@@ -61,8 +62,9 @@
 
 .flip2 {
   position: absolute;
-  top: 20px;
-  left: 0;
+  top: 0px;
+  left: 0px;
+  margin-top: 20px;
   width: 100%;
   backface-visibility: visible !important;
   animation-name: flip;

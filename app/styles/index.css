@@ -1,11 +1,8 @@
 body {
   text-align: center;
   background-color: #dcdcdc;
-}
-
-.container {
-  margin-top: -20px;
-  margin-bottom: -20px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 @media screen and (min-width: 768px){
@@ -20,7 +17,6 @@ body {
   background-color: #ffffff;
   margin-left: -15px;
   margin-right: -15px;
-  margin-bottom: -10px;
   padding-top: 15px;
   padding-bottom: 15px;
 }
@@ -28,7 +24,6 @@ body {
 #back {
   position:absolute;
   width:100%;
-  margin-top:-20px;
   filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#97d0c4',endColorStr='#36a7b7',gradientType='1');
   background: -moz-linear-gradient(left, #97d0c4, #36a7b7);
   background: -o-linear-gradient(left,#97d0c4, #36a7b7);
