@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="styles/members.css">
   <!-- endbuild -->
 </head>
-<body onclick="throwPic()">
+<body>
   <div class="container well">
     <div class="col-lg-12">
       <h2>Members</h2>
@@ -27,20 +27,140 @@
       <hr>
       <div id="coders" class="row">
         <h3 class="title">Developers</h3>
+        <div class="col-lg-4 col-md-4 col-sm-4v">
+          <a href="" class="block">
+            <div class="panel panel-default blocks">
+              <div class="panel-body">
+                <img src="images/members/zhoumy.jpg" alt="周梦宇" class="pic">
+                <h4 class="name">周梦宇</h4>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4v">
+          <a href="" class="block">
+            <div class="panel panel-default blocks">
+              <div class="panel-body">
+                <img src="images/members/cheng.jpg" alt="陈光" class="pic">
+                <h4 class="name">陈光</h4>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4v">
+          <a href="" class="block">
+            <div class="panel panel-default blocks">
+              <div class="panel-body">
+                <img src="images/members/zhangyk.jpg" alt="张阳坤" class="pic">
+                <h4 class="name">张阳坤</h4>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4v">
+          <a href="" class="block">
+            <div class="panel panel-default blocks">
+              <div class="panel-body">
+                <img src="images/members/xiay.jpg" alt="夏雨" class="pic">
+                <h4 class="name">夏雨</h4>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4v">
+          <a href="" class="block">
+            <div class="panel panel-default blocks">
+              <div class="panel-body">
+                <img src="images/members/heqy.jpg" alt="何钦尧" class="pic">
+                <h4 class="name">何钦尧</h4>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4v">
+          <a href="" class="block">
+            <div class="panel panel-default blocks">
+              <div class="panel-body">
+                <img src="images/members/yuedy.jpg" alt="岳大禹" class="pic">
+                <h4 class="name">岳大禹</h4>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4v">
+          <a href="" class="block">
+            <div class="panel panel-default blocks">
+              <div class="panel-body">
+                <img src="images/members/zhufm.jpg" alt="朱俸民" class="pic">
+                <h4 class="name">朱俸民</h4>
+              </div>
+            </div>
+          </a>
+        </div>
       </div>
       <hr>
       <div id="designers" class="row">
         <h3 class="title">Designers</h3>
+        <div class="col-lg-4 col-md-4 col-sm-4v">
+          <a href="" class="block">
+            <div class="panel panel-default blocks">
+              <div class="panel-body">
+                <img src="images/members/sunyh.jpg" alt="孙悦慧" class="pic">
+                <h4 class="name">孙悦慧</h4>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4v">
+          <a href="" class="block">
+            <div class="panel panel-default blocks">
+              <div class="panel-body">
+                <img src="images/members/jiangy.jpg" alt="江颖" class="pic">
+                <h4 class="name">江颖</h4>
+              </div>
+            </div>
+          </a>
+        </div>
       </div>
       <hr>
       <div id="propaganda" class="row">
         <h3 class="title">Propaganda</h3>
+        <div class="col-lg-4 col-md-4 col-sm-4v">
+          <a href="" class="block">
+            <div class="panel panel-default blocks">
+              <div class="panel-body">
+                <img src="images/members/zhangyy.jpg" alt="张艺莹" class="pic">
+                <h4 class="name">张艺莹</h4>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4v">
+          <a href="" class="block">
+            <div class="panel panel-default blocks">
+              <div class="panel-body">
+                <img src="images/members/lipy.jpg" alt="李平允" class="pic">
+                <h4 class="name">李平允</h4>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4v">
+          <a href="" class="block">
+            <div class="panel panel-default blocks">
+              <div class="panel-body">
+                <img src="images/members/tansy.jpg" alt="谭思颖" class="pic">
+                <h4 class="name">谭思颖</h4>
+              </div>
+            </div>
+          </a>
+        </div>
       </div>
       <hr>
     </div>
 
     <div class="col-lg-7 col-lg-offset-9">
-      <button class="btn btn-primary" onclick="goBack()">Back</button>
+     <a href="index.html" class="btn btn-primary">Back</a>
     </div>
   </div>
 
@@ -68,51 +188,13 @@
   </script>
 
   <script>
-    function goBack() {
-      window.location.href = "index.html";
-    }
-    function throwPic () {
+    $(function() {
+      function throwPic () {
       if (document.body.scrollWidth >= 768) {
           $(".pic").throwable({containment:[0,0,document.body.scrollWidth,document.body.scrollHeight],gravity:{x:0,y:1},shape:"circle"});
         };
-    }
-    $(function (){
-      var dataroot = "members/members.json";
-      function newElement (name, url, page) {
-        var newBlock = document.createElement("div");
-        newBlock.setAttribute("class", "col-lg-4 col-md-4 col-sm-4v");
-        var link = document.createElement("a");
-        link.setAttribute("href", page);
-        link.setAttribute("class", "block");
-        var panel = document.createElement("div");
-        panel.setAttribute("class", "panel panel-default blocks");
-        var body = document.createElement("div");
-        body.setAttribute("class", "panel-body");
-        var img = document.createElement("img");
-        img.setAttribute("class", "pic");
-        img.setAttribute("src", url);
-        na = document.createElement("h4");
-        na.setAttribute("class", "name");
-        na.appendChild(document.createTextNode(name));
-        body.appendChild(img);
-        body.appendChild(na);
-        panel.appendChild(body);
-        link.appendChild(panel);
-        newBlock.appendChild(link);
-        return newBlock;
       }
-      $.getJSON(dataroot).done(function(json) {
-        console.log("success");
-        for (x in json.coders) {
-          document.getElementById("coders").appendChild(newElement(json.coders[x].name, json.coders[x].url, json.coders[x].page));
-        };
-        for (x in json.designers) {
-          document.getElementById("designers").appendChild(newElement(json.designers[x].name, json.designers[x].url, json.designers[x].page));
-        };
-        for (x in json.propaganda) {
-          document.getElementById("propaganda").appendChild(newElement(json.propaganda[x].name, json.propaganda[x].url, json.propaganda[x].page));
-        };
-      });
+      $('body').one('click', throwPic);
     });
   </script>
 
