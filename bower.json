@@ -4,7 +4,7 @@
     "jquery": "~2.1.1",
     "bootstrap": "~3.2.0",
     "bootstrap-material-design": "~0.1.0",
-    "jquery.throwable": "*"
+    "jquery.throwable": "e488b2de68240f067412f00aad52885fd9d8bec5"
   },
   "ignore": [
     "**/.*",
