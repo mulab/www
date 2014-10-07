@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="styles/members.css">
   <!-- endbuild -->
 </head>
-<body>
+<body onclick="throwPic()">
   <div class="container well">
     <div class="col-lg-12">
       <h2>Members</h2>
@@ -53,6 +53,8 @@
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
   <script src="bower_components/bootstrap-material-design/dist/js/material.js"></script>
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="scripts/jquery.throwable.js" type="text/javascript"></script>
   <!-- endbower -->
   <!-- endbuild -->
 
@@ -70,11 +72,16 @@
     function goBack() {
       window.location.href = "index.html";
     }
+    function throwPic () {
+      if (document.body.scrollWidth > 768) {
+          $(".pic").throwable({containment:[0,0,document.body.scrollWidth,document.body.scrollHeight],gravity:{x:0,y:1},shape:"circle"});
+        };
+    }
     $(function (){
       var dataroot = "members/members.json";
       function newElement (name, url, page) {
         var newBlock = document.createElement("div");
-        newBlock.setAttribute("class", "col-lg-4 col-md-4 col-sm-4");
+        newBlock.setAttribute("class", "col-lg-4 col-md-4 col-sm-4v");
         var link = document.createElement("a");
         link.setAttribute("href", page);
         link.setAttribute("class", "block");
@@ -109,9 +116,6 @@
       });
     });
   </script>
-
-  <!-- build:js({app,.tmp}) scripts/main.js -->
-  <script src="scripts/main.js"></script>
   <!-- endbuild -->
 </body>
 </html>
