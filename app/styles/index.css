@@ -258,3 +258,11 @@ a.myicon:hover {
   color: white;
   background-color: #555c66;
 }
+
+#project-title {
+  font-size: 5rem;
+}
+
+#project-intro {
+  font-size: 3rem;
+}
