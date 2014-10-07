@@ -73,7 +73,7 @@
       window.location.href = "index.html";
     }
     function throwPic () {
-      if (document.body.scrollWidth > 768) {
+      if (document.body.scrollWidth >= 768) {
           $(".pic").throwable({containment:[0,0,document.body.scrollWidth,document.body.scrollHeight],gravity:{x:0,y:1},shape:"circle"});
         };
     }
