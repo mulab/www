@@ -1,0 +1,118 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <title>Members</title>
+  <meta name="description" content="Labu's Members introduction">
+  <meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css(.) styles/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/material.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/members.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/members.css">
+  <!-- endbuild -->
+</head>
+<body>
+  <div class="container well">
+    <div class="col-lg-12">
+      <h2>Members</h2>
+    </div>
+    <div class="col-lg-12">
+      <hr>
+      <div id="coders" class="row">
+        <h3 class="title">Developers</h3>
+        {{#coders}}
+        <div class="col-lg-4 col-md-4 col-sm-4v">
+          <a href="{{page}}" class="block">
+            <div class="panel panel-default blocks">
+              <div class="panel-body">
+                <img src="{{url}}" alt="{{name}}" class="pic">
+                <h4 class="name">{{name}}</h4>
+              </div>
+            </div>
+          </a>
+        </div>
+        {{/coders}}
+      </div>
+      <hr>
+      <div id="designers" class="row">
+        <h3 class="title">Designers</h3>
+        {{#designers}}
+        <div class="col-lg-4 col-md-4 col-sm-4v">
+          <a href="{{page}}" class="block">
+            <div class="panel panel-default blocks">
+              <div class="panel-body">
+                <img src="{{url}}" alt="{{name}}" class="pic">
+                <h4 class="name">{{name}}</h4>
+              </div>
+            </div>
+          </a>
+        </div>
+        {{/designers}}
+      </div>
+      <hr>
+      <div id="propaganda" class="row">
+        <h3 class="title">Propaganda</h3>
+        {{#propaganda}}
+        <div class="col-lg-4 col-md-4 col-sm-4v">
+          <a href="{{page}}" class="block">
+            <div class="panel panel-default blocks">
+              <div class="panel-body">
+                <img src="{{url}}" alt="{{name}}" class="pic">
+                <h4 class="name">{{name}}</h4>
+              </div>
+            </div>
+          </a>
+        </div>
+        {{/propaganda}}
+      </div>
+      <hr>
+    </div>
+
+    <div class="col-lg-7 col-lg-offset-9">
+     <a href="index.html" class="btn btn-primary">Back</a>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p><span class="glyphicon"></span>&copy Lab μ, Tsinghua University</p>
+  </div>
+
+  <!-- build:js(.) scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="bower_components/bootstrap-material-design/dist/js/material.js"></script>
+  <script src="bower_components/jquery.throwable/public_html/js/jquery.throwable.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='//www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X');ga('send','pageview');
+  </script>
+
+  <script>
+    $(function() {
+      function throwPic () {
+      if (document.body.scrollWidth >= 768) {
+          $(".pic").throwable({containment:[0,0,document.body.scrollWidth,document.body.scrollHeight],gravity:{x:0,y:1},shape:"circle"});
+        };
+      }
+      $('body').one('click', throwPic);
+    });
+  </script>
+
+</body>
+</html>
