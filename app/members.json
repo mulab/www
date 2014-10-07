@@ -1,7 +1,7 @@
 {
   "coders":
   [
-    {"name":"周梦宇", "url":"images/members/zhoumy.jpg", "page":""},
+    {"name":"周梦宇", "url":"images/members/zhoumy.jpg", "page":"http://github.com/zmy"},
     {"name":"陈光", "url":"images/members/cheng.jpg", "page":""},
     {"name":"张阳坤", "url":"images/members/zhangyk.jpg", "page":""},
     {"name":"夏雨", "url":"images/members/xiay.jpg", "page":""},
