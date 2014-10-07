@@ -49,7 +49,7 @@
 
 .flip1 {
   position: absolute;
-  top: 0;
+  top: 20px;
   left: 0;
   width: 100%;
   backface-visibility: visible !important;
@@ -61,7 +61,7 @@
 
 .flip2 {
   position: absolute;
-  top: 0;
+  top: 20px;
   left: 0;
   width: 100%;
   backface-visibility: visible !important;
