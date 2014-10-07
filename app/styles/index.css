@@ -263,10 +263,10 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: "Roboto" "微软雅黑";
 }
 
-#project-title {
-  font-size: 5rem;
+.project-title {
+  font-size: 2rem;
 }
 
-#project-intro {
-  font-size: 3rem;
+.project-intro {
+  font-size: 1.5rem;
 }
