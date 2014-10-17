@@ -51,7 +51,6 @@
   position: absolute;
   top: 0px;
   left: 0px;
-  margin-top: 20px;
   width: 100%;
   backface-visibility: visible !important;
   animation-name: flip;
@@ -64,7 +63,6 @@
   position: absolute;
   top: 0px;
   left: 0px;
-  margin-top: 20px;
   width: 100%;
   backface-visibility: visible !important;
   animation-name: flip;
