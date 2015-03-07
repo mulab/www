@@ -1,0 +1,73 @@
+<!doctype html>
+<head>
+	<title>Our Projects</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css(.) styles/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/material.min.css" />
+  <link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/ripples.min.css" />
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
+  <link rel="stylesheet" href="bower_components/roboto-fontface/roboto-fontface.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/index.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/projects.css">
+  <!-- endbuild -->
+</head>
+<body>
+  <ul id="nav" class="nav nav-pills raw">
+  	<li class="col-lg-2 col-md-2 col-sm-1">
+  	</li>
+  	<li role="presentation" class="hidden-xs">
+  		<img src="images/Lab mU Meow.svg" class="img-responsible" id="logo">
+  	</li>
+  	<li role="presentation">
+  		<a href="./">Home</a>
+  	</li>
+  	<li role="presentation">
+  		<a href="projects.html" id="now">Projects</a>
+  	</li>
+  	<li role="presentation">
+  		<a href="members.html">Members</a>
+  	</li>
+<!--     <li role="presentation"><a href="./">Home</a></li>
+    <li role="presentation"><a href="projects.html">Projects</a></li> -->
+  </ul>
+  <div class="container">
+    <div class="raw">
+			<div class="page-header">
+			  <h1>Our projects</h1>
+			</div>
+			<div ng-app="" ng-init="projects=[
+			{name:'TuNet', src:'images/µ.svg',
+			description:'This is about TuNet'},
+
+			{name:'微信树洞', src:'images/hole.svg',
+			description:'This is about tree hole'},
+			
+			{name:'CapMus', src:'images/camus.svg',
+			description:'This is about CapMus'}]">
+				<div class="panel panel-default project" ng-repeat="x in projects">
+					<div class="raw">
+						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 imageholder">
+							<img class="project-img img-responsible" src={{x.src}}>
+						</div>
+						<div class="description text-center col-lg-9 col-md-9 col-sm-9 col-xs-12">
+							<h3>{{x.name}}</h3>
+							<p>{{x.description}}
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+    </div>
+  </div>
+
+  <script src="bower_components/jquery.throwable/public_html/js/jquery.throwable.js"></script>
+  <script src="bower_components/angular/angular.min.js"></script>
+ </body>
