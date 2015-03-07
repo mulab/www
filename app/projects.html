@@ -35,6 +35,9 @@
   	<li role="presentation">
   		<a href="members.html">Members</a>
   	</li>
+  	<li role="presentation">
+  		<a href="joinus.html">Join Us</a>
+  	</li>
 <!--     <li role="presentation"><a href="./">Home</a></li>
     <li role="presentation"><a href="projects.html">Projects</a></li> -->
   </ul>
@@ -44,30 +47,54 @@
 			  <h1>Our projects</h1>
 			</div>
 			<div ng-app="" ng-init="projects=[
-			{name:'TuNet', src:'images/µ.svg',
-			description:'This is about TuNet'},
+			{name:'TUNet', src:'images/µ.svg',
+			description:'This is about TUNet.',
+			descriptionMore:'This is more about TUNet.'},
 
 			{name:'微信树洞', src:'images/hole.svg',
-			description:'This is about tree hole'},
+			description:'This is about tree hole.',
+			descriptionMore:'This is more about tree hole.'},
 			
 			{name:'CapMus', src:'images/camus.svg',
-			description:'This is about CapMus'}]">
-				<div class="panel panel-default project" ng-repeat="x in projects">
-					<div class="raw">
-						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 imageholder">
-							<img class="project-img img-responsible" src={{x.src}}>
-						</div>
-						<div class="description text-center col-lg-9 col-md-9 col-sm-9 col-xs-12">
-							<h3>{{x.name}}</h3>
-							<p>{{x.description}}
-						</div>
+			description:'This is about CapMus.',
+			descriptionMore:'This is more about camus.'}]">
+				<div class="panel panel-default project raw" ng-repeat="x in projects">
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 image-holder">
+						<img class="project-img img-responsible" src={{x.src}}>
 					</div>
+					<article class="project-description text-center col-lg-9 col-md-9 col-sm-9 col-xs-12">
+						<header><h3>{{x.name}}</h3></header>
+						<p>
+							<span>{{x.description}}</span>
+							<span class="visible-xs-inline"><a href="#" class="show-details">......展开详情</a></span>
+							<span class="hidden-xs">{{x.descriptionMore}}</span>
+							<span class="visible-xs-inline hidden-xs"><a href="#" class="hide-details">收起</a></span>
+						</p>
+					</article>
 					<div class="clearfix"></div>
 				</div>
+				<a href="#" id="return" class="btn btn-default visible-xs-block text-center">
+					返回顶部
+				</a>
 			</div>
     </div>
   </div>
 
   <script src="bower_components/jquery.throwable/public_html/js/jquery.throwable.js"></script>
   <script src="bower_components/angular/angular.min.js"></script>
+  <script src="bower_components/jquery/dist/jquery.min.js
+"></script>
+  <script>
+  	$(document).ready(function () {
+  		$(".show-details").click(function () {
+  			$(this).parent().addClass("hidden-xs").next().removeClass("hidden-xs").next().removeClass("hidden-xs");
+  			event.preventDefault();
+  		});
+
+  		$(".hide-details").click(function () {
+  			$(this).parent().addClass("hidden-xs").prev().addClass("hidden-xs").prev().removeClass("hidden-xs");
+  			event.preventDefault();
+  		});
+  	});
+  </script>
  </body>
