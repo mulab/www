@@ -1,89 +1,149 @@
-.browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
-
-/* Space out content a bit */
 body {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-/* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5;
-}
-
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
-  padding-bottom: 19px;
-}
-
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
-}
-
-.container-narrow > hr {
-  margin: 30px 0;
-}
-
-/* Main marketing message and sign up button */
-.jumbotron {
   text-align: center;
-  border-bottom: 1px solid #e5e5e5;
+  background-color: #dcdcdc;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
-.jumbotron .btn {
-  font-size: 21px;
-  padding: 14px 24px;
+div,ul,li{
+  margin:0;
+  padding:0;
+  border:0;
 }
 
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
+.navbar{
+  width: 100%;
+  display: block;
+  clear:both;
+  background-color: #424242;
+  overflow: visible;
 }
 
-.marketing p + h4 {
-  margin-top: 28px;
+.navbar > div,ul,li{
+  overflow: visible;
 }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
+#labmu-logo{
+  height: 48px;
+  width: 48px;
+}
+
+#list1{
+  width: 244px;
+  display: block;
+  margin-left: 44px;
+}
+
+.navbar-list{
+  float: left;
+}
+
+.navbar-right{
+  float: right;
+}
+
+.navbar a{
+  color: inherit;
+  text-decoration:none; 
+  line-height: 50px;
+  height: 50px;
+  width: inherit;
+  display: block;
+}
+
+.navbar a:hover{
+  text-decoration:none;
+}
+
+.navbar-list ul li{
+  position: relative;
+  text-align: center;
+  float:left;
+  width:100px;
+  line-height: 50px;
+  font-size: 18px;
+  color: #e8e8e8;
+  list-style-type: none;
+  display: block;
+}
+
+.navbar-list ul li.nav-long{
+  width:120px;
+}
+
+.navbar-list ul li.dropdown{
+  
+}
+
+.underline1 {
+  height: 5px;
+  width: 60px;
+  position: absolute;
+  left: 20px;
+  bottom: 0;
+  background-color: #e8e8e8;
+  visibility: hidden;
+}
+
+.nav-long .underline1{
+  width: 80px;
+}
+
+.navbar-list ul li.active .underline1{
+  visibility: visible;
+}
+
+.navbar-list ul li.active{
+  background-color: #322eeb;
+}
+
+.navbar-list ul li.active.important{
+  background-color: #f94120;
+}
+
+.navbar-list ul li.clicked .navdroplist{
+  visibility: visible;
+}
+
+.navdroplist{
+  position: absolute;
+  top: 50px;
+  width: 190px;
+  left: 0;
+  float: left;
+  background-color: #424242;
+  display: block;
+  z-index: 1000;
+  visibility: hidden;
+}
+
+.navdroplist li{
+  z-index: 1000;
+}
+
+.navdroplist li a{
+  margin-left: 30px;
+}
+
+.itemcircle{
+  height: 50px;
+  width: 30px;
+  display: inline;
+  position: absolute;
+  left: 0;
+  margin: 0;
+  color: #322eeb;
+  visibility: hidden;
+}
+
+.navdroplist li.activei .itemcircle{
+  visibility: visible;
+}
+
+@media screen and (min-width: 768px){
   .container {
-    max-width: 730px;
-  }
-
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
   }
 }
