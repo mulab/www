@@ -20,70 +20,124 @@
   <!-- endbuild -->
 </head>
 <body>
-  <ul id="nav" class="nav nav-pills raw">
-  	<li class="col-lg-2 col-md-2 col-sm-1">
-  	</li>
-  	<li role="presentation" class="hidden-xs">
-  		<img src="images/Lab mU Meow.svg" class="img-responsible" id="logo">
-  	</li>
-  	<li role="presentation">
-  		<a href="./">Home</a>
-  	</li>
-  	<li role="presentation">
-  		<a href="projects.html" id="now">Projects</a>
-  	</li>
-  	<li role="presentation">
-  		<a href="members.html">Members</a>
-  	</li>
-  	<li role="presentation">
-  		<a href="joinus.html">Join Us</a>
-  	</li>
-<!--     <li role="presentation"><a href="./">Home</a></li>
-    <li role="presentation"><a href="projects.html">Projects</a></li> -->
-  </ul>
+
+  <!-- header -->
+  <header class="navbar navbar-static-top" data-toggle="collapse" data-target=".bs-navbar-collapse" id="top" role="banner">
+    <div class="container">
+      <div class="nav-header">
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="./" class="navbar-brand">
+          <img id="labmu-logo" src="/images/Lab mU Meow.svg">
+        </a>
+      </div>
+      <nav class="collapse navbar-collapse bs-navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li id="now">
+            <a href="./">Home</a>
+          </li>
+          <li>
+            <a href="projects.html">Projects</a>
+          </li>
+          <li>
+            <a href="members.html">Members</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li role="presentation" class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+              Contact Us <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              <li>
+                <a href="#">
+                  <div>
+                    <p class="itemcircle">●&nbsp;&nbsp;</p>
+                    <i class="fa fa-github icon-github"></i>
+                    By GitHub
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div>
+                    <p class="itemcircle">●&nbsp;&nbsp;</p>
+                    <i class="fa fa-envelope-square icon-mail"></i>
+                    By e-mail
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div>
+                    <p class="itemcircle">●&nbsp;&nbsp;</p>
+                    <i class="fa fa-renren icon-renren"></i>
+                    By Renren
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="joinus.html">Join Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- end heqder -->
+
   <div class="container">
     <div class="raw">
 			<div class="page-header">
 			  <h1>Our projects</h1>
 			</div>
-			<div ng-app="" ng-init="projects=[
-			{name:'TUNet', src:'images/µ.svg',
-			description:'This is about TUNet.',
-			descriptionMore:'This is more about TUNet.'},
+      <div class="container">
+  			<div ng-app="" ng-init="projects=[
+  			{name:'TUNet', src:'images/µ.svg',
+  			description:'This is about TUNet.',
+  			descriptionMore:'This is more about TUNet.'},
 
-			{name:'微信树洞', src:'images/hole.svg',
-			description:'This is about tree hole.',
-			descriptionMore:'This is more about tree hole.'},
-			
-			{name:'CapMus', src:'images/camus.svg',
-			description:'This is about CapMus.',
-			descriptionMore:'This is more about camus.'}]">
-				<div class="panel panel-default project raw" ng-repeat="x in projects">
-					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 image-holder">
-						<img class="project-img img-responsible" src={{x.src}}>
-					</div>
-					<article class="project-description text-center col-lg-9 col-md-9 col-sm-9 col-xs-12">
-						<header><h3>{{x.name}}</h3></header>
-						<p>
-							<span>{{x.description}}</span>
-							<span class="visible-xs-inline"><a href="#" class="show-details">......展开详情</a></span>
-							<span class="hidden-xs">{{x.descriptionMore}}</span>
-							<span class="visible-xs-inline hidden-xs"><a href="#" class="hide-details">收起</a></span>
-						</p>
-					</article>
-					<div class="clearfix"></div>
-				</div>
-				<a href="#" id="return" class="btn btn-default visible-xs-block text-center">
-					返回顶部
-				</a>
-			</div>
+  			{name:'微信树洞', src:'images/hole.svg',
+  			description:'This is about tree hole.',
+  			descriptionMore:'This is more about tree hole.'},
+  			
+  			{name:'CapMus', src:'images/camus.svg',
+  			description:'This is about CapMus.',
+  			descriptionMore:'This is more about camus.'}]">
+  				<div class="panel panel-default project raw" ng-repeat="x in projects">
+  					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 image-holder">
+  						<img class="project-img img-responsible" src={{x.src}}>
+  					</div>
+  					<article class="project-description text-center col-lg-8 col-md-9 col-sm-9 col-xs-12">
+  						<header><h3>{{x.name}}</h3></header>
+  						<p>
+  							<span>{{x.description}}</span>
+  							<span class="visible-xs-inline"><a href="#" class="show-details">......展开详情</a></span>
+  							<span class="hidden-xs">{{x.descriptionMore}}</span>
+  							<span class="visible-xs-inline hidden-xs"><a href="#" class="hide-details">收起</a></span>
+  						</p>
+  					</article>
+  					<div class="clearfix"></div>
+  				</div>
+  				<a href="#" id="return" class="btn btn-default visible-xs-block text-center">
+  					返回顶部
+  				</a>
+  			</div>
+      </div>
     </div>
   </div>
 
-  <script src="bower_components/jquery.throwable/public_html/js/jquery.throwable.js"></script>
   <script src="bower_components/angular/angular.min.js"></script>
-  <script src="bower_components/jquery/dist/jquery.min.js
-"></script>
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="bower_components/bootstrap-material-design/dist/js/material.min.js"></script>
+  <script src="bower_components/bootstrap-material-design/dist/js/ripples.min.js"></script>
+  <script src="bower_components/jquery.throwable/public_html/js/jquery.throwable.js"></script>
+  
+  <script src="scripts/main.js"></script>
   <script>
   	$(document).ready(function () {
   		$(".show-details").click(function () {

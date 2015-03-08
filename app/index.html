@@ -19,15 +19,78 @@
   <!-- build:css(.tmp) styles/index.css -->
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/index.css">
-  <link rel="stylesheet" href="styles/animate.css">
   <!-- endbuild -->
 </head>
 <body>
   <!--[if lt IE 10]>
   <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
-  <div class="navbar">
-    <div class="container">
+<header class="navbar navbar-static-top" data-toggle="collapse" data-target=".bs-navbar-collapse" id="top" role="banner">
+  <div class="container">
+    <div class="nav-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="./" class="navbar-brand">
+        <img id="labmu-logo" src="/images/Lab mU Meow.svg">
+      </a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li id="now">
+          <a href="./">Home</a>
+        </li>
+        <li>
+          <a href="projects.html">Projects</a>
+        </li>
+        <li>
+          <a href="members.html">Members</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+            Contact Us <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a href="#">
+                <div>
+                  <p class="itemcircle">●&nbsp;&nbsp;</p>
+                  <i class="fa fa-github icon-github"></i>
+                  By GitHub
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div>
+                  <p class="itemcircle">●&nbsp;&nbsp;</p>
+                  <i class="fa fa-envelope-square icon-mail"></i>
+                  By e-mail
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div>
+                  <p class="itemcircle">●&nbsp;&nbsp;</p>
+                  <i class="fa fa-renren icon-renren"></i>
+                  By Renren
+                </div>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="joinus.html">Join Us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+     <div class="container">
 	  <div class="navbar-header">
 	    <a id="labmu-icon" href="/index.html">
 		  <img id="labmu-logo" src="/images/Lab mU Meow.svg">
@@ -77,19 +140,17 @@
 		  </li>
 		</ul>
 	  </div>
-	  <div class="navbar-list navbar-right" id="list2">
-	    <ul class="navbar-ul">
 		  <li class="nav-long dropdown" id="nav3">
 		    <a href="#">
 		        <span class="caret"></span>contact us
 			  </a>
-			<div class="underline1">
-			</div>
-		    <ul class="navdroplist">
+	<div class="underline1">
+			</div> -->
+    <ul class="navdroplist">
 		      <li id="nav3nav1">
 			    <p class="itemcircle" id="item31">
 				  ●
-				</p>
+		  		</p>
 		        <a href="http://page.renren.com/600002817l">
 		          by Renren
 		    	</a>
@@ -124,9 +185,12 @@
 	</div>
   </div>
   
-<!--   <div id="back"></div>
-  <div id="back-bottom"></div>
 
+  <!-- footer -->
+  <div id="back"></div>
+  <div id="back-bottom"></div>
+  <!--end footer -->
+<!--
   <div id="container" class="container">
     <div id="slogan" class="row">
       <div id="dialog" class="col-lg-9 col-md-9 col-sm-9">
@@ -270,8 +334,11 @@
     ga('send', 'pageview');
   </script>
 
+  <script src="scripts/main.js"></script>
+
+
   <!-- build:js({app,.tmp}) scripts/index.js -->
-  <script src="scripts/index.js"></script>
+ <!--  // <script src="scripts/index.js"></script> -->
   <!-- endbuild -->
 
 </body>

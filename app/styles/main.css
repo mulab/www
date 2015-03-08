@@ -3,59 +3,62 @@ body {
   background-color: #dcdcdc;
   padding-top: 0px;
   padding-bottom: 0px;
+  font-size: large;
 }
 
-div,ul,li{
-  margin:0;
-  padding:0;
-  border:0;
+#top a {
+  color: rgb(45,136,205);
 }
 
-.navbar{
+.navbar { 
+  padding-top: 0;
+  padding-bottom: 0;
   width: 100%;
   display: block;
   clear:both;
-  background-color: #424242;
+  background-color: rgb(214,214,214);
   overflow: visible;
+  color:blue;
+  box-shadow: 2px 2px 2px rgb(114,114,114);
 }
 
-.navbar > div,ul,li{
-  overflow: visible;
+.navbar-brand {
+  padding: 10px;
 }
 
-#labmu-logo{
-  height: 48px;
-  width: 48px;
+#labmu-logo {
+  height: 120%;
 }
 
-#list1{
-  width: 244px;
-  display: block;
-  margin-left: 44px;
+.dropdown-menu li div {
+  text-align: center;
+  line-height: 40px;
 }
 
-.navbar-list{
-  float: left;
-}
-
-.navbar-right{
-  float: right;
-}
-
-.navbar a{
-  color: inherit;
+.navbar a {
+  color: blue;
   text-decoration:none; 
-  line-height: 50px;
-  height: 50px;
+  /*line-height: 50px;*/
+  /*height: 50px;*/
   width: inherit;
   display: block;
 }
 
-.navbar a:hover{
+.navbar>li>a:link {
+  color: blue;
   text-decoration:none;
 }
 
-.navbar-list ul li{
+.dropdown-menu>li {
+  font-size: 1.1em;
+}
+
+#now a {
+  background-color: rgb(114,114,114);
+  color: white;
+}
+
+/*.navbar-list ul li{
   position: relative;
   text-align: center;
   float:left;
@@ -65,17 +68,17 @@ div,ul,li{
   color: #e8e8e8;
   list-style-type: none;
   display: block;
-}
+}*/
 
-.navbar-list ul li.nav-long{
+/*.navbar-list ul li.nav-long{
   width:120px;
 }
 
 .navbar-list ul li.dropdown{
   
-}
+}*/
 
-.underline1 {
+/*.underline1 {
   height: 5px;
   width: 60px;
   position: absolute;
@@ -84,16 +87,16 @@ div,ul,li{
   background-color: #e8e8e8;
   visibility: hidden;
 }
-
+*//*
 .nav-long .underline1{
   width: 80px;
 }
-
-.navbar-list ul li.active .underline1{
+*/
+/*.navbar-list ul li.active .underline1{
   visibility: visible;
 }
-
-.navbar-list ul li.active{
+*/
+/*.navbar-list ul li.active{
   background-color: #322eeb;
 }
 
@@ -104,8 +107,8 @@ div,ul,li{
 .navbar-list ul li.clicked .navdroplist{
   visibility: visible;
 }
-
-.navdroplist{
+*/
+/*.navdroplist{
   position: absolute;
   top: 50px;
   width: 190px;
@@ -115,35 +118,35 @@ div,ul,li{
   display: block;
   z-index: 1000;
   visibility: hidden;
-}
+}*/
 
-.navdroplist li{
+/*.navdroplist li{
   z-index: 1000;
-}
-
+}*/
+/*
 .navdroplist li a{
   margin-left: 30px;
-}
+}*/
 
 .itemcircle{
   height: 50px;
   width: 30px;
   display: inline;
-  position: absolute;
+/*  position: absolute;
   left: 0;
-  margin: 0;
-  color: #322eeb;
+  margin: 0;*/
+  /*color: #322eeb;*/
   visibility: hidden;
 }
 
-.navdroplist li.activei .itemcircle{
+/*.navdroplist li.activei .itemcircle{
   visibility: visible;
-}
+}*/
 
-@media screen and (min-width: 768px){
+/*@media screen and (min-width: 768px){
   .container {
     padding-left: 0px;
     padding-right: 0px;
     padding-top: 0px;
   }
-}
+}*/

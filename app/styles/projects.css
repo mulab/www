@@ -2,11 +2,11 @@ body {
 	padding-top: 0;
 }
 
-#nav {
+/*#nav {
 	font-size: 1.2em;
 	background-color: rgb(214,214,214);
 }
-
+*/
 #now {
 	background-color: rgb(114,114,114);
 	color: white;
@@ -20,17 +20,17 @@ body {
 	  background: linear-gradient(rgb(230,230,230) 5%, rgb(240,240,240) 10%, rgb(143,202,255) 75%);
 	}
 
-	#nav li {
+/*	#nav li {
 		height: 45px;
 	}
 	#logo {
 		display: inline-block;
 		height: 100%;
 	}
-
-	.project {
-		height: 200px;
-	}
+*/
+/*	.project {
+		height: 220px;
+	}*/
 
 	.image-holder {
 		line-height: 200px;
@@ -38,12 +38,12 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-	#nav li{
+/*	#nav li{
 		display: block;
 		float: none;
 		text-indent: 0.5em;
 	}
-
+*/
 	.project {
 		margin-left: 5%;
 		margin-right: 5%;
@@ -73,6 +73,6 @@ body {
 }
 
 .project-img {
-	width: 100%;
+	width: 95%;
 }
 
