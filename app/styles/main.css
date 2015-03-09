@@ -1,5 +1,5 @@
 body {
-  text-align: center;
+  /*text-align: center;*/
   background-color: #dcdcdc;
   padding-top: 0px;
   padding-bottom: 0px;
@@ -11,6 +11,7 @@ body {
 }
 
 .navbar { 
+  text-align: center;
   padding-top: 0;
   padding-bottom: 0;
   width: 100%;
@@ -69,6 +70,7 @@ body {
 }
 
 footer {
+  text-align: center;
   line-height: 50px;
   font-size: 0.8em;
   color: white;

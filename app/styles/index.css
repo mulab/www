@@ -1,9 +1,128 @@
-#logo {
-	width: 100%;
-}
+
 
 article {
 	text-align: left;
 	width: 80%;
-	margin: 50px auto;
+	margin: 0px auto 40px auto;
+}
+
+@media screen and (min-width: 768px){
+  .container {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+  }
+}
+
+#slogan {
+  position:relative;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 0px;
+  padding-right: 0px;
+  filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#91cdc6',endColorStr='#53b4bd',gradientType='1');
+  background: -moz-linear-gradient(left, #91cdc6, #53b4bd);
+  background: -o-linear-gradient(left,#91cdc6, #53b4bd);
+  background: -webkit-gradient(linear, 0% 0%, 100% 0%, from(#91cdc6), to(#53b4bd));
+}
+
+.logo {
+  position: relative;
+  width: 20%;
+  height: 20%;
+  left: 16%;
+}
+
+.grad {
+  background-clip: text;
+  animation: hue 60s infinite linear;
+}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+
+@media screen and (min-width: 768px){
+  #logo_wrap {
+    position: absolute;
+    bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .logo {
+    width: 100%;
+    height: 100%;
+    left: 0%;
+  }
+}
+
+@media screen and (min-width: 768px){
+  #dialog {
+    float: right !important;
+  }
+}
+
+.bubble
+{
+  margin-bottom: 15px;
+  padding:20px 20px;
+  border:2px solid #b1b1b1;
+  position:relative;
+  border-radius:10px;
+  background-color: #ffffff;
+  /*box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);*/
+}
+
+.bubble span
+{
+  width:0;
+  height:0;
+  font-size:0;
+  overflow:hidden;
+  position:absolute;
+}
+
+.bubble span.bot
+{
+  border-width:20px;
+  border-style:solid dashed dashed;
+  border-color:#b1b1b1 transparent transparent;
+  left:30%;
+  bottom:-40px;
+}
+
+.bubble span.top
+{
+  border-width:20px;
+  border-style:solid dashed dashed;
+  border-color:#ffffff transparent transparent;
+  left:30%;
+  bottom:-37px;
+}
+
+@media screen and (min-width: 768px){
+  .bubble span.bot
+  {
+    border-width:20px;
+    border-style:solid dashed dashed;
+    border-color:transparent #b1b1b1 transparent transparent;
+    bottom:22%;
+    left:-40px;
+  }
+
+  .bubble span.top
+  {
+    border-width:20px;
+    border-style:solid dashed dashed;
+    border-color:transparent #ffffff transparent transparent;
+    bottom:22%;
+    left:-37px;
+  }
 }

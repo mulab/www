@@ -19,6 +19,7 @@
   <!-- build:css(.tmp) styles/index.css -->
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/animate.css">
   <!-- endbuild -->
 </head>
 <body>
@@ -28,7 +29,7 @@
 
   <!-- header -->
   <header class="navbar navbar-static-top" data-toggle="collapse" data-target=".bs-navbar-collapse" id="top" role="banner">
-    <div class="container-fluid">
+    <div class="container">
       <div class="nav-header">
         <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
           <span class="sr-only">Toggle navigation</span>
@@ -87,25 +88,37 @@
               </li>
             </ul>
           </li>
-          <li><a href="joinus.html">Join Us</a></li>
+          <li class="bg-danger" style="background-color: rgb(255,0,37);"><a href="joinus.html">Join Us</a></li>
         </ul>
       </nav>
     </div>
   </header>
   <!-- end header -->
   <div class="container">
-    <div class="raw">
-      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-        <img id="logo" class="img-responsive" src="images/Lab mU Meow.svg" alt="Logo">
+    <div id="slogan" class="row">
+      <div id="dialog" class="col-lg-7 col-md-7 col-sm-7 col-xs-12 col-lg-pull-1 col-md-pull-1 col-sm-pull-1">
+        <div class="bubble">
+          <span class="bot"></span>
+          <span class="top"></span>
+          <div style="position:relative;height:0; padding-top:50%;">
+            <img id="simplify" src="images/simplify.svg" class="grad flip1">
+            <img id="design_code" src="images/design_code.svg" class="grad flip2">
+          </div>
+        </div>
       </div>
-      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 panel">
-        <article>
-          <h2>Lab μ 简介</h2>
-          <p>
-            清华大学学生Lab μ研究协会是校内计算机类科创社团，致力于提高校园生活的便利性。协会通过科技项目的开发、运营和宣传推广引导社员对课堂所学知识进行应用和扩展，锻炼社员的综合能力。目前主要项目为 TUNet 校园自动联网助手，校内使用量逾4000人次，受到广泛好评。此外，iTUNet、微信树洞等项目正在积极开发中。Lab μ 是一个成长中的团队，感谢大家的关注，也随时欢迎新成员的加入~
-          </p>
-        </article>
+      <div id="logo_wrap" class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-3 col-md-3 col-sm-3 col-xs-12">
+        <img class="logo" src="images/Lab mU Meow.svg">
       </div>
+    </div>
+
+      <div class="clearfix"></div>
+      <article class="clearfix">
+        <h2>Lab μ 简介</h2>
+        <p>
+          清华大学学生Lab μ研究协会是校内计算机类科创社团，致力于提高校园生活的便利性。协会通过科技项目的开发、运营和宣传推广引导社员对课堂所学知识进行应用和扩展，锻炼社员的综合能力。目前主要项目为 TUNet 校园自动联网助手，校内使用量逾4000人次，受到广泛好评。此外，iTUNet、微信树洞等项目正在积极开发中。Lab μ 是一个成长中的团队，感谢大家的关注，也随时欢迎新成员的加入~
+        </p>
+      </article>
+
     </div>
   </div>
 
@@ -138,11 +151,13 @@
     ga('send', 'pageview');
   </script>
 
-  <script src="scripts/main.js"></script>
+
 
 
   <!-- build:js({app,.tmp}) scripts/index.js -->
- <!--  // <script src="scripts/index.js"></script> -->
+  <script src="scripts/main.js"></script>
+  <script src="scripts/index.js"></script>
+
   <!-- endbuild -->
 
 </body>
