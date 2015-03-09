@@ -2,24 +2,156 @@
     text-align: center;
 }
 
-.pic {
+#square {
+  border-radius: 0;
+}
+
+img {
   border: 0px solid rgba(0, 0, 0, 0.84);
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   border-radius: 100%;
   border-color: rgba(0, 0, 0, 0.2);
   border-width: 4px;
+  margin-left: -60px;
 }
 
-.blocks {
-    height: 225px;
-    text-align: center;
-    overflow: hidden;
-    transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+.rotate .one {
+  position: absolute;
+  transition: transform 1s;
+  -moz-transition: transform 1s;
+  transform-origin: 50% 150%;
+  transform: rotate(72deg);
 }
 
-.blocks:hover {
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.28);
+.rotate .two {
+  position: absolute;
+  transition: transform 1s;
+  -moz-transition: transform 1s;
+  transform-origin: 50% 150%;
+  transform: rotate(144deg);
+}
+
+.rotate .three {
+  position: absolute;
+  transition: transform 1s;
+  -moz-transition: transform 1s;
+  transform-origin: 50% 150%;
+  transform: rotate(216deg);
+}
+
+.rotate .four {
+  position: absolute;
+  transition: transform 1s;
+  -moz-transition: transform 1s;
+  transform-origin: 50% 150%;
+  transform: rotate(288deg);
+}
+
+.rotate .five {
+  position: absolute;
+  transition: transform 1s;
+  -moz-transition: transform 1s;
+  transform-origin: 50% 150%;
+  transform: rotate(360deg);
+}
+
+.rotate {
+  margin-top: 75px;
+  padding-left: 0;
+  padding-top: 0;
+  height: 500px;
+  text-align: center;
+  animation: spin 20s infinite;
+  -moz-animation: spin 20s infinite;
+  -moz-animation-delay: 2s;
+}
+
+.rotate:hover {
+  animation-play-state: paused;
+}
+
+.one:hover {
+  transform: rotate(72deg) scale(1.5, 1.5);
+}
+
+.two:hover {
+  transform: rotate(144deg) scale(1.5, 1.5);
+}
+
+.three:hover {
+  transform: rotate(216deg) scale(1.5, 1.5);
+}
+
+.four:hover {
+  transform: rotate(288deg) scale(1.5, 1.5);
+}
+
+.five:hover {
+  transform: rotate(360deg) scale(1.5, 1.5);
+}
+
+@keyframes spin
+{
+  0% {
+    transform-origin: 50% 180px;
+    transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+  }
+
+  20% {
+    transform-origin: 50% 180px;
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -moz-transform: rotate(72deg);
+  }
+
+  40% {
+    transform-origin: 50% 180px;
+    transform: rotate(180deg);
+    -ms-trasnform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -moz-transform: rotate(144deg);
+  }
+
+  60% {
+    transform-origin: 50% 180px;
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -moz-transform: rotate(216deg);
+  }
+
+  80% {
+    transform-origin: 50% 180px;
+    transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-trnasform: rotate(360deg);
+    -moz-transform: rotate(288deg);
+  }
+
+  100% {
+    transform-origin: 50% 180px;
+    transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-trnasform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+  }
+}
+
+.intro {
+  text-align: center;
+  margin-top: -100px;
+  height: 100px;
 }
 
 h4.name {
@@ -28,15 +160,6 @@ h4.name {
   position:absolute;
   left: 0;
   right: 0;
-}
-
-a.block{
-    color: #000000;
-}
-
-a.block:hover {
-    color: #000000;
-    text-decoration:none;
 }
 
 h3.title {
