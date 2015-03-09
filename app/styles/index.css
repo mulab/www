@@ -1,8 +1,9 @@
 
 #logo-img {
-    margin-bottom: auto;
-    margin-top: auto;
+/*    margin-bottom: auto;
+    margin-top: auto;*/
     width: 100%;
+    z-index: 1;
 }
 
 .button {
@@ -11,6 +12,12 @@
 
 .lead {
     font-size: 2.7em !important;
+}
+
+#downlaod {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 

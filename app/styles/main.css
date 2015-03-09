@@ -1,89 +1,11 @@
-body {
-  /*text-align: center;*/
-  background-color: #dcdcdc;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  font-size: large;
+.itemcircle {
+	visibility: hidden;
 }
 
-#top a {
-  /*color: rgb(45,136,205);*/
+.navbar-brand:hover {
+	color: rgb(95,49,125) !important;
 }
 
-.navbar { 
-  text-align: center;
-  padding-top: 0;
-  padding-bottom: 0;
-  width: 100%;
-  display: block;
-  clear:both;
-  /*background-color: rgb(214,214,214);*/
-  overflow: visible;
-  /*color:blue;*/
-  box-shadow: 2px 2px 2px rgb(114,114,114);
+.navbar {
+	font-size: 1.2em;
 }
-
-.navbar-brand {
-  padding: 10px;
-}
-
-#labmu-logo {
-  height: 120%;
-}
-
-.dropdown-menu li div {
-  text-align: center;
-  line-height: 40px;
-}
-
-.navbar a {
-  /*color: blue;*/
-  text-decoration:none; 
-  /*line-height: 50px;*/
-  /*height: 50px;*/
-  width: inherit;
-  display: block;
-}
-
-.navbar>li>a:link {
-  /*color: blue;*/
-  text-decoration:none;
-}
-
-.dropdown-menu>li {
-  font-size: 1.1em;
-}
-
-#now a {
-  background-color: rgb(114,114,114);
-  color: white;
-}
-
-.itemcircle{
-  height: 50px;
-  width: 30px;
-  display: inline;
-/*  position: absolute;
-  left: 0;
-  margin: 0;*/
-  visibility: hidden;
-}
-
-footer {
-  text-align: center;
-  line-height: 50px;
-  font-size: 0.8em;
-  color: white;
-  background-color: rgb(55,55,55);
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-}
-
-/*@media screen and (min-width: 768px){
-  .container {
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 0px;
-  }
-}*/
