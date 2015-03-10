@@ -56,7 +56,8 @@ body {
   }
   
   #projects-lead {
-    font-size: 1.7em !important;
+    font-size: 2.3em !important;
+	margin-bottom: 0;
   }
 }
 
