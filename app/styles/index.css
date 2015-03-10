@@ -10,16 +10,23 @@
     text-decoration: none !important;
 }
 
-.lead {
-    font-size: 2.7em !important;
-}
-
 #downlaod {
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
 }
 
+@media  (min-width: 768px) {
+    .lead {
+        font-size: 2.7em !important;
+    }
+}
+
+@media (max-width:767px) {
+    .lead {
+        font-size: 1.7em !important;
+    }
+}
 
 
 /* Bootstrap */

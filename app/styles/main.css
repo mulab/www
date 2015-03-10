@@ -2,10 +2,21 @@
 	visibility: hidden;
 }
 
+.navbar {
+	font-size: 1.2em;
+}
+
 .navbar-brand:hover {
 	color: rgb(95,49,125) !important;
 }
 
-.navbar {
-	font-size: 1.2em;
+.dropdown-menu a {
+	color: rgb(95,49,125) !important;
+}
+
+.version {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
