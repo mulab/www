@@ -69,8 +69,14 @@ p.lead a {
     width:300px;
 }
 
-.contact-ways p {
+@media screen and (min-width: 768px) {
+    .contact-ways p {
     font-size: 2em;
+    }
+}
+
+.contact-ways p {
+    font-size: 3em;
 }
 
 @media screen and (min-width: 992px) {
@@ -81,4 +87,10 @@ p.lead a {
 
 .icon {
     font-size: 8em;
+}
+@media screen and (min-width: 768px) {
+    #qrcode {
+        margin: 20px;
+        width: 25%;
+    }
 }
