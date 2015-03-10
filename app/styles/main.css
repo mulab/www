@@ -32,9 +32,22 @@
     border-color: #f9f9f9
 }
 
-.dropdown-menu a {
+.dropdown-menu p {
 	color: rgb(95,49,125) !important;
-	line-height: 25px !important;
+}
+
+@media screen and (max-width: 767px) {
+	.dropdown-menu p {
+		line-height: 13px !important;
+		font-size: 1.0em;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.dropdown-menu p {
+		line-height: 25px !important;
+		font-size: 1.2em;
+	}
 }
 
 .version {
