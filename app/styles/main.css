@@ -308,6 +308,7 @@ body {
   .footer {
     margin-top: 20px;
   }
+}
 @media (min-width:768px) {
     .bs-navbar-bottom-example .navbar-fixed-bottom, .bs-navbar-top-example .navbar-fixed-top {
         position: absolute
