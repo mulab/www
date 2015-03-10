@@ -1,0 +1,158 @@
+<!doctype html>
+<head>
+	<title>Our Projects</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css(.) styles/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
+  <link rel="stylesheet" href="bower_components/roboto-fontface/roboto-fontface.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/index.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/projects.css">
+  <!-- endbuild -->
+</head>
+<body>
+
+  <!-- header -->
+  <header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
+    <div class="container" id="projects">
+      <div class="navbar-header">
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="index.html" class="navbar-brand">Lab μ</a>
+      </div>
+      <nav class="collapse navbar-collapse bs-navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="nav-active">
+            <a href="projects.html">Projects</a>
+          </li>
+          <li>
+            <a href="members.html">Members</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li role="presentation" class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+              Contact Us <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              <li>
+                <a href="https://github.com/mulab" target="_blank">
+                  <div class="text-center">
+                    <p>
+                      <span class="itemcircle">●&nbsp;&nbsp;</span>
+                      <i class="fa fa-github icon-github"></i>
+                      GitHub
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:mulab.thu@gmail.com">
+                  <div class="text-center">
+                    <p>
+                      <span class="itemcircle">●&nbsp;&nbsp;</span>
+                      <i class="fa fa-envelope-square icon-mail"></i>
+                      E-mail
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="http://page.renren.com/600002817" target="_blank">
+                  <div class="text-center">
+                    <p>
+                      <span class="itemcircle">●&nbsp;&nbsp;</span>
+                      <i class="fa fa-renren icon-renren"></i>
+                      Renren
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="joinus.html" target="_blank">Join Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- end heqder -->
+
+  <main class="bs-docs-masthead" id="content" role="main">
+    <div class="container">
+<!--       <span class="bs-docs-booticon bs-docs-booticon-lg bs-docs-booticon-outline">
+        <img src="images/LabmU喵透明.png" alt="logo" id="logo-img">
+      </span> -->
+      <h1 class="lead">
+        Our Projects
+      </h1>
+    </div>
+  </main>
+  <div class="container">
+		<div ng-app="" ng-init="projects=[
+		{name:'TUNet', src:'images/µ.svg',
+		description:'This is about TUNet.',
+		descriptionMore:'This is more about TUNet.'},
+
+		{name:'微信树洞', src:'images/hole.svg',
+		description:'This is about tree hole.',
+		descriptionMore:'This is more about tree hole.'},
+		
+		{name:'CapMus', src:'images/camus2.svg',
+		description:'This is about CapMus.',
+		descriptionMore:'This is more about camus.'}]">
+			<div class="panel panel-default project row" ng-repeat="x in projects">
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 image-holder">
+					<img class="project-img img-responsible" src={{x.src}}>
+				</div>
+				<article class="project-description text-center col-lg-8 col-md-9 col-sm-9 col-xs-12">
+					<header><h3>{{x.name}}</h3></header>
+					<p>
+						<span>{{x.description}}</span>
+						<span class="visible-xs-inline"><a href="#" class="show-details">......展开详情</a></span>
+						<span class="hidden-xs">{{x.descriptionMore}}</span>
+						<span class="visible-xs-inline hidden-xs"><a href="#" class="hide-details">收起</a></span>
+					</p>
+				</article>
+				<div class="clearfix"></div>
+			</div>
+			<a href="#" id="return" class="btn btn-default visible-xs-block text-center">
+				返回顶部
+			</a>
+		</div>
+  </div>
+
+
+  <!-- build:js(.) scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+  
+  <script src="scripts/main.js"></script>
+  <script>
+  	$(document).ready(function () {
+  		$(".show-details").click(function () {
+  			$(this).parent().addClass("hidden-xs").next().removeClass("hidden-xs").next().removeClass("hidden-xs");
+  			event.preventDefault();
+  		});
+
+  		$(".hide-details").click(function () {
+  			$(this).parent().addClass("hidden-xs").prev().addClass("hidden-xs").prev().removeClass("hidden-xs");
+  			event.preventDefault();
+  		});
+  	});
+  </script>
+ </body>

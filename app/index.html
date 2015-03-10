@@ -10,8 +10,6 @@
   <!-- build:css(.) styles/vendor.css -->
   <!-- bower:css -->
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-  <link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/material.css" />
-  <link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/ripples.css" />
   <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
   <link rel="stylesheet" href="bower_components/roboto-fontface/roboto-fontface.css" />
   <!-- endbower -->
@@ -19,146 +17,117 @@
   <!-- build:css(.tmp) styles/index.css -->
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/index.css">
-  <link rel="stylesheet" href="styles/animate.css">
   <!-- endbuild -->
 </head>
 <body>
   <!--[if lt IE 10]>
   <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
-  <div id="back"></div>
-  <div id="back-bottom"></div>
 
-  <div id="container" class="container">
-    <div id="slogan" class="row">
-      <div id="dialog" class="col-lg-9 col-md-9 col-sm-9">
-        <div class="bubble">
-          <span class="bot"></span>
-          <span class="top"></span>
-          <div style="position:relative;height:0; padding-top:50%;">
-            <img id="simplify" src="images/simplify.svg" class="grad flip1">
-            <img id="design_code" src="images/design_code.svg" class="grad flip2">
-          </div>
-        </div>
+  <!-- header -->
+  <header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
+    <div class="container">
+      <div class="navbar-header">
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="index.html" class="navbar-brand">Lab μ</a>
       </div>
-      <div id="logo_wrap" class="col-lg-3 col-md-3 col-sm-3">
-        <img class="logo" src="images/Lab mU Meow.svg">
-      </div>
-    </div>
-
-    <div id="middle" class="row">
-      <div id="news" class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
-        <div class="panel panel-success">
-          <div class="panel-heading">
-            <h3 class="panel-title">NEWS</h3>
-          </div>
-          <div class="list-group panel-body">
-            <a href="http://j.map.baidu.com/Ri6Vw" target="_blank">
-              <div class="list-group-item">
-                <div class="row-picture">
-                  <i class="icon-material-tag-faces" style="background-color: #5fc2e0;"></i>
-                </div>
-                <div class="row-content">
-                  <h4 class="list-group-item-heading">第一次活动与技术沙龙</h4>
-                  <p class="list-group-item-text">12日（周日）晚7点四教4406，迎新与协作流程介绍</p>
-                </div>
-              </div>
+      <nav class="collapse navbar-collapse bs-navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="projects.html">Projects</a>
+          </li>
+          <li>
+            <a href="members.html">Members</a>
+          </li>     
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li role="presentation" class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+              Contact Us <span class="caret"></span>
             </a>
-            <div class="list-group-separator"></div>
-            <a href="http://www.51qiangda.com/mulab/forms/543154fcb3e57c4ebc003d50" target="_blank">
-              <div class="list-group-item">
-                <div class="row-picture">
-                  <i class="icon-material-person-add" style="background-color: #e39935;"></i>
-                </div>
-                <div class="row-content">
-                  <h4 class="list-group-item-heading">欢迎加入我们！</h4>
-                  <p class="list-group-item-text">清华<b>程序员</b>和<b>设计师</b>们来一起探索业界前沿吧</p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-        <a href="members.html" class="btn btn-primary" style="width:100%;">
-          <i class="icon icon-material-people" style="color:rgba(255, 255, 255, 0.84);"></i>
-          <h4>Members</h4>
-        </a>
-        <br>
-        <a href="http://www.51qiangda.com/mulab/forms/543154fcb3e57c4ebc003d50" target="_blank" class="btn btn-warning" style="width:100%;">
-          <i class="icon icon-material-plus-one" style="color:rgba(255, 255, 255, 0.84);"></i>
-          <h4 style="color:rgba(255, 255, 255, 0.84);">Join us</h4>
-        </a>
-        <div class="row">
-          <a href="http://page.renren.com/600002817" target="_blank" class="myicon col-lg-4 col-md-4 col-sm-4 col-xs-4">
-            <i class="fa fa-renren icon-renren"></i>
-          </a>
-          <a href="https://github.com/mulab" target="_blank" class="myicon col-lg-4 col-md-4 col-sm-4 col-xs-4">
-            <i class="fa fa-github icon-github"></i>
-          </a>
-          <a href="mailto:mulab.thu@gmail.com" target="_blank" class="myicon col-lg-4 col-md-4 col-sm-4 col-xs-4">
-            <i class="fa fa-envelope-square icon-mail"></i>
-          </a>
-        </div>
+            <ul class="dropdown-menu" role="menu">
+              <li>
+                <a href="https://github.com/mulab" target="_blank">
+                  <div class="text-center">
+                    <p>
+                      <span class="itemcircle">●&nbsp;&nbsp;</span>
+                      <i class="fa fa-github icon-github"></i>
+                      GitHub
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:mulab.thu@gmail.com">
+                  <div class="text-center">
+                    <p>
+                      <span class="itemcircle">●&nbsp;&nbsp;</span>
+                      <i class="fa fa-envelope-square icon-mail"></i>
+                      E-mail
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="http://page.renren.com/600002817" target="_blank">
+                  <div class="text-center">
+                    <p>
+                      <span class="itemcircle">●&nbsp;&nbsp;</span>
+                      <i class="fa fa-renren icon-renren"></i>
+                      Renren
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="joinus.html" target="_blank">Join Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- end header -->
+
+  <main class="bs-docs-masthead" id="content" role="main">
+    <div class="container">
+      <span class="bs-docs-booticon bs-docs-booticon-lg bs-docs-booticon-outline">
+        <img src="images/LabmU喵透明.png" alt="logo" id="logo-img">
+      </span>
+      <h1 class="lead">
+        清华大学学生Lab μ研究协会</h1>
+      <p class="lead">
+        <a href="http://blog.lab.mu" target="_blank" class="button btn-outline-inverse btn-lg">Our Blog</a>
+      </p>
+      <p class="version">&copy; Lab μ, Tsinghua University</p>
       </div>
     </div>
+  </main>
 
-    <div id="project" class="row">
-      <div class="col-lg-4 col-md-4 col-sm-4">
-        <a href="http://tunet.lab.mu/" class="block">
-          <div class="panel panel-default blocks">
-            <div class="panel-body">
-              <img class="circle" src="images/µ.svg">
-              <div class="panel-footer">
-                <p class="project-title">TUNet</p>
-                <p class="project-intro">自动联网助手</p>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-4">
-        <a href="" class="block">
-          <div class="panel panel-default blocks">
-            <div class="panel-body">
-              <img src="images/camus.svg" class="circle">
-              <div class="panel-footer">
-                <p class="project-title">Caμs</p>
-                <p class="project-intro">校园应用开放平台</p>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-4">
-        <a href="" class="block">
-          <div class="panel panel-default blocks">
-            <div class="panel-body">
-              <img src="images/hole.svg" class="circle">
-              <div class="panel-footer">
-                <p class="project-title">微信树洞</p>
-                <p class="project-intro">新的吐槽点就要复活了</p>
-              </div>
-            </div>
-          </div>
-        </a>
+  <div class="container-fluid" ng-app="" ng-init="items=[
+  {title: '人人为我，我为人人'},
+  {},
+  {}
+  ]">
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" ng-repeat="x in items">
+        <img class="img-responsible" src={{x.src}}>
+        <h2>{{x.title}}</h2>
       </div>
     </div>
-
-    <div id="footer" class="footer">
-      &copy Lab μ, Tsinghua University
-    </div>
-
   </div>
+
 
 
   <!-- build:js(.) scripts/vendor.js -->
   <!-- bower:js -->
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-  <script src="bower_components/bootstrap-material-design/dist/js/material.js"></script>
-  <script src="bower_components/bootstrap-material-design/dist/js/ripples.js"></script>
-  <script src="bower_components/jquery.throwable/public_html/js/jquery.throwable.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
   <!-- endbower -->
   <!-- endbuild -->
 
@@ -173,7 +142,12 @@
     ga('send', 'pageview');
   </script>
 
+
+
+
+
   <!-- build:js({app,.tmp}) scripts/index.js -->
+  <script src="scripts/main.js"></script>
   <script src="scripts/index.js"></script>
   <!-- endbuild -->
 
