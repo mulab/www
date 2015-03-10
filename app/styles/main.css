@@ -2,16 +2,39 @@
 	visibility: hidden;
 }
 
-.navbar {
+.navbar a {
 	font-size: 1.2em;
+	color: rgb(95,49,125) !important;
+}
+
+.navbar {
+	background-color: white !important;
 }
 
 .navbar-brand:hover {
 	color: rgb(95,49,125) !important;
 }
 
+.navbar .nav-active {
+	background-color: rgb(238,238,238);
+}
+
+.bs-docs-nav .navbar-toggle .icon-bar {
+    background-color: #563d7c
+}
+
+.bs-docs-nav .navbar-header .navbar-toggle {
+    border-color: #fff
+}
+
+.bs-docs-nav .navbar-header .navbar-toggle:focus, .bs-docs-nav .navbar-header .navbar-toggle:hover {
+    background-color: #f9f9f9;
+    border-color: #f9f9f9
+}
+
 .dropdown-menu a {
 	color: rgb(95,49,125) !important;
+	line-height: 25px !important;
 }
 
 .version {
