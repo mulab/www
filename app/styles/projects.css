@@ -19,6 +19,10 @@ body {
   #projects-lead {
     font-size: 3.3em !important;
   }
+  
+  span {
+    text-align: left
+  }
 }
 
 @media screen and (max-width: 767px) {
