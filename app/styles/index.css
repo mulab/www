@@ -20,6 +20,15 @@
     margin-top: 20px;
 }
 
+p.lead a:hover {
+    background-color: white;
+    color: rgb(59,18,64);
+}
+
+p.lead a {
+    color: white;
+}
+
 @media  (min-width: 768px) {
     .lead {
         font-size: 2.7em !important;

@@ -109,14 +109,19 @@
   </main>
 
   <div class="container-fluid" ng-app="" ng-init="items=[
-  {title: '人人为我，我为人人'},
-  {},
-  {}
+  {title: '简介',
+  text:' Lab μ 是清华大学学生科创社团，致力于以各种应用来提高校园生活的便利性。协会通过项目的设计、开发、宣传、运营，锻炼社员的综合能力。'},
+  {title:'广泛使用',
+  text:'我们的作品在全校范围内被广泛地使用。TUNet 校园联网助手，在学校内有4000+的装机量。'},
+  {title:}
   ]">
     <div class="row">
-      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" ng-repeat="x in items">
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 panel" ng-repeat="x in items">
         <img class="img-responsible" src={{x.src}}>
         <h2>{{x.title}}</h2>
+        <p>
+          {{x.text}}
+        </p>
       </div>
     </div>
   </div>
