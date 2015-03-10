@@ -1,8 +1,10 @@
 <!doctype html>
+<html class="no-js">
 <head>
-	<title>Our Projects</title>
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width">
+  <meta charset="utf-8">
+  <title>Our Projects</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
   <link rel="shortcut icon" href="/favicon.ico">
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
   <!-- build:css(.) styles/vendor.css -->
@@ -12,7 +14,7 @@
   <link rel="stylesheet" href="bower_components/roboto-fontface/roboto-fontface.css" />
   <!-- endbower -->
   <!-- endbuild -->
-  <!-- build:css(.tmp) styles/index.css -->
+  <!-- build:css(.tmp) styles/projects.css -->
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/projects.css">
   <!-- endbuild -->
@@ -86,7 +88,7 @@
       </nav>
     </div>
   </header>
-  <!-- end heqder -->
+  <!-- end header -->
 
   <main class="bs-docs-masthead" id="project-heading" role="main">
     <div class="container">
@@ -99,41 +101,43 @@
     </div>
   </main>
   <div class="container">
-		<div ng-app="" ng-init="projects=[
-		{name:'TUNet', src:'images/µ.svg',
-		description:'TUNet是清华校园网自动联网助手，',
-		descriptionMore:'能够处理各种复杂的网络情况并帮助你自动登录校园网。在全校师生中广受好评。目前已经推出了安卓客户端，iOS和windows版也在开发之中。'},
+    <div ng-app="" ng-init="projects=[
+    {name:'TUNet', src:'images/µ.svg',
+    description:'TUNet是清华校园网自动联网助手，',
+    descriptionMore:'能够处理各种复杂的网络情况并帮助你自动登录校园网。在全校师生中广受好评。目前已经推出了安卓客户端，iOS和windows版也在开发之中。'},
 
-		{name:'微信树洞', src:'images/hole.svg',
-		description:'一个校内匿名社交平台，',
-		descriptionMore:'比原来的树洞支持更多的功能，正在孵化中。'},
+    {name:'微信树洞', src:'images/hole.svg',
+    description:'一个校内匿名社交平台，',
+    descriptionMore:'比原来的树洞支持更多的功能，正在孵化中。'},
 
-		{name:'Caμs', src:'images/camus2.svg',
-		description:'Caμs是我们尚在进行的项目，',
-		descriptionMore:'目标是打造一个清华内的应用平台，提供给全校的开发者各种数据的接口，供他们开发出各种方便大家的应用。'}]">
-			<div class="panel panel-default project row" ng-repeat="x in projects">
-				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 image-holder">
-					<img class="project-img img-responsible" src={{x.src}}>
-				</div>
-				<article class="project-description col-lg-8 col-md-9 col-sm-9 col-xs-12">
-					<header><h3 class="text-center">{{x.name}}</h3></header>
-					<p id="projects-text">
-					    <span class="hidden-xs">&nbsp;&nbsp;&nbsp;&nbsp;</span>
-						<span>{{x.description}}</span>
-						<span class="visible-xs-inline"><a href="#" class="show-details">......展开详情</a></span>
-						<span class="span-back hidden-xs">{{x.descriptionMore}}</span>
-						<span class="visible-xs-inline hidden-xs"><a href="#" class="hide-details">收起</a></span>
-					</p>
-				</article>
-				<div class="clearfix"></div>
-			</div>
-			<a href="#" id="return" class="btn btn-default visible-xs-block text-center">
-				返回顶部
-			</a>
-		</div>
+    {name:'Caμs', src:'images/camus2.svg',
+    description:'Caμs是我们尚在进行的项目，',
+    descriptionMore:'目标是打造一个清华内的应用平台，提供给全校的开发者各种数据的接口，供他们开发出各种方便大家的应用。'}]">
+      <div class="panel panel-default project row" ng-repeat="x in projects">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 image-holder">
+          <img class="project-img img-responsible" src={{x.src}}>
+        </div>
+        <article class="project-description col-lg-8 col-md-9 col-sm-9 col-xs-12">
+          <header><h3 class="text-center">{{x.name}}</h3></header>
+          <p id="projects-text">
+              <span class="hidden-xs">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span>{{x.description}}</span>
+            <span class="visible-xs-inline"><a href="#" class="show-details">......展开详情</a></span>
+            <span class="span-back hidden-xs">{{x.descriptionMore}}</span>
+            <span class="visible-xs-inline hidden-xs"><a href="#" class="hide-details">收起</a></span>
+          </p>
+        </article>
+        <div class="clearfix"></div>
+      </div>
+      <a href="#" id="return" class="btn btn-default visible-xs-block text-center">
+        返回顶部
+      </a>
+    </div>
   </div>
 
-  <div id="footer" class="footer"> &copy; Lab μ, Tsinghua University </div>
+  <div class="container-fluid">
+    <div id="footer" class="footer"> &copy; Lab μ, Tsinghua University </div>
+  </div>
 
 
   <!-- build:js(.) scripts/vendor.js -->
@@ -144,18 +148,10 @@
   <!-- endbower -->
   <!-- endbuild -->
 
+  <!-- build:js({app,.tmp}) scripts/projects.js -->
   <script src="scripts/main.js"></script>
-  <script>
-  	$(document).ready(function () {
-  		$(".show-details").click(function () {
-  			$(this).parent().addClass("hidden-xs").next().removeClass("hidden-xs").next().removeClass("hidden-xs");
-  			event.preventDefault();
-  		});
+  <script src="scripts/projects.js"></script>
+  <!-- endbuild -->
 
-  		$(".hide-details").click(function () {
-  			$(this).parent().addClass("hidden-xs").prev().addClass("hidden-xs").prev().removeClass("hidden-xs");
-  			event.preventDefault();
-  		});
-  	});
-  </script>
  </body>
+ </html>
