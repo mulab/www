@@ -61,16 +61,6 @@ module.exports = function (grunt) {
           '.tmp/styles/{,*/}*.css',
           '<%= config.app %>/images/{,*/}*'
         ]
-      },
-      handlebars: {
-        files: [
-          '<%= config.app %>/*.hbs',
-          '<%= config.app %>/*.json'
-        ],
-        tasks: ['compile-handlebars:default'],
-        options: {
-          livereload: true
-        }
       }
     },
 
@@ -354,18 +344,11 @@ module.exports = function (grunt) {
         'imagemin',
         'svgmin'
       ]
-    },
+    }
 
     // compile handlebars
     // if you do not wish to check the output in your repo, you can mannually ignore them.
     // the out put must be put in the same directory since wiredep and usemin need to detect the output
-    'compile-handlebars': {
-      default: {
-        template: '<%= config.app %>/*.hbs',
-        templateData: '<%= config.app %>/*.json',
-        output: '<%= config.app %>/*.html'
-      }
-    }
   });
 
 
@@ -380,7 +363,6 @@ module.exports = function (grunt) {
     grunt.task.run([
       'clean:server',
       'wiredep',
-      'compile-handlebars:default',
       'concurrent:server',
       'autoprefixer',
       'connect:livereload',
@@ -411,7 +393,6 @@ module.exports = function (grunt) {
   grunt.registerTask('build', [
     'clean:dist',
     'wiredep',
-    'compile-handlebars:default',
     'useminPrepare',
     'concurrent:dist',
     'autoprefixer',
