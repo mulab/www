@@ -21,7 +21,7 @@
 
   <!-- header -->
   <header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
-    <div class="container">
+    <div class="container" id="projects">
       <div class="navbar-header">
         <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
           <span class="sr-only">Toggle navigation</span>
@@ -88,52 +88,50 @@
   </header>
   <!-- end heqder -->
 
-  <div class="container">
-    <div class="row">
-			<div class="page-header">
-			  <h1>Our projects</h1>
-			</div>
-      <div class="container">
-  			<div ng-app="" ng-init="projects=[
-  			{name:'TUNet', src:'images/µ.svg',
-  			description:'This is about TUNet.',
-  			descriptionMore:'This is more about TUNet.'},
-
-  			{name:'微信树洞', src:'images/hole.svg',
-  			description:'This is about tree hole.',
-  			descriptionMore:'This is more about tree hole.'},
-  			
-  			{name:'CapMus', src:'images/camus2.svg',
-  			description:'This is about CapMus.',
-  			descriptionMore:'This is more about camus.'}]">
-  				<div class="panel panel-default project row" ng-repeat="x in projects">
-  					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 image-holder">
-  						<img class="project-img img-responsible" src={{x.src}}>
-  					</div>
-  					<article class="project-description text-center col-lg-8 col-md-9 col-sm-9 col-xs-12">
-  						<header><h3>{{x.name}}</h3></header>
-  						<p>
-  							<span>{{x.description}}</span>
-  							<span class="visible-xs-inline"><a href="#" class="show-details">......展开详情</a></span>
-  							<span class="hidden-xs">{{x.descriptionMore}}</span>
-  							<span class="visible-xs-inline hidden-xs"><a href="#" class="hide-details">收起</a></span>
-  						</p>
-  					</article>
-  					<div class="clearfix"></div>
-  				</div>
-  				<a href="#" id="return" class="btn btn-default visible-xs-block text-center">
-  					返回顶部
-  				</a>
-  			</div>
-      </div>
+  <main class="bs-docs-masthead" id="content" role="main">
+    <div class="container">
+<!--       <span class="bs-docs-booticon bs-docs-booticon-lg bs-docs-booticon-outline">
+        <img src="images/LabmU喵透明.png" alt="logo" id="logo-img">
+      </span> -->
+      <h1 class="lead">
+        Our Projects
+      </h1>
     </div>
+  </main>
+  <div class="container">
+		<div ng-app="" ng-init="projects=[
+		{name:'TUNet', src:'images/µ.svg',
+		description:'This is about TUNet.',
+		descriptionMore:'This is more about TUNet.'},
+
+		{name:'微信树洞', src:'images/hole.svg',
+		description:'This is about tree hole.',
+		descriptionMore:'This is more about tree hole.'},
+		
+		{name:'CapMus', src:'images/camus2.svg',
+		description:'This is about CapMus.',
+		descriptionMore:'This is more about camus.'}]">
+			<div class="panel panel-default project row" ng-repeat="x in projects">
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 image-holder">
+					<img class="project-img img-responsible" src={{x.src}}>
+				</div>
+				<article class="project-description text-center col-lg-8 col-md-9 col-sm-9 col-xs-12">
+					<header><h3>{{x.name}}</h3></header>
+					<p>
+						<span>{{x.description}}</span>
+						<span class="visible-xs-inline"><a href="#" class="show-details">......展开详情</a></span>
+						<span class="hidden-xs">{{x.descriptionMore}}</span>
+						<span class="visible-xs-inline hidden-xs"><a href="#" class="hide-details">收起</a></span>
+					</p>
+				</article>
+				<div class="clearfix"></div>
+			</div>
+			<a href="#" id="return" class="btn btn-default visible-xs-block text-center">
+				返回顶部
+			</a>
+		</div>
   </div>
 
-  <!-- footer -->
-  <footer>
-    &copy; Lab μ, Tsinghua University
-  </footer>
-  <!--end footer -->
 
   <!-- build:js(.) scripts/vendor.js -->
   <!-- bower:js -->

@@ -3,13 +3,6 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-	body {
-	  background: -webkit-linear-gradient(rgb(230,230,230) 5%, rgb(240,240,240) 10%, rgb(143,202,255) 75%);
-	  background: -o-linear-gradient(rgb(230,230,230) 5%, rgb(240,240,240) 10%, rgb(143,202,255) 75%);
-	  background: -moz-linear-gradient(rgb(230,230,230) 5%, rgb(240,240,240) 10%, rgb(143,202,255) 75%);
-	  background: linear-gradient(rgb(230,230,230) 5%, rgb(240,240,240) 10%, rgb(143,202,255) 75%);
-	}
-
 	.image-holder {
 		line-height: 200px;
 	}
