@@ -1,42 +1,55 @@
 #logo-img {
-    width: 100%;
-    z-index: 1;
+  width: 100%;
+  z-index: 1;
 }
 
 .button {
-    text-decoration: none !important;
+  text-decoration: none !important;
 }
 
 .version {
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 p.lead a:hover {
-    background-color: white;
-    color: rgb(59,18,64);
+  background-color: white;
+  color: rgb(59,18,64);
 }
 
 p.lead a {
-    color: white;
+  color: white;
 }
 
 @media screen and (min-width: 768px) {
-    .lead {
-        font-size: 2.7em !important;
-    }
+  .lead {
+    font-size: 2.7em !important;
+  }
 }
 
 @media screen and (max-width:767px) {
-    .lead {
-        font-size: 1.7em !important;
-    }
+  .lead {
+    font-size: 1.7em !important;
+  }
 }
 
 .introduction {
-    padding: 50px;
-    font-size: 1.2em;
+  padding: 50px;
+  font-size: 1.2em;
+}
+
+.introduction-header {
+  padding: 50px;
+  padding-bottom: 0px;
+}
+
+.introduction-header-title {
+  font-size: 4em;
+}
+
+.introduction-header-content {
+  font-size: 1.5em;
 }
 
 #invitation,
@@ -46,25 +59,25 @@ p.lead a {
 }
 
 @media screen and (min-width: 768px) {
-    #invitation,
-    #contact {
-        font-size: 2em !important;
-    }
+  #invitation,
+  #contact {
+    font-size: 2em !important;
+  }
 }
 
 @media screen and (max-width:767px) {
-    #invitation,
-    #contact {
-        font-size: 1.5em !important;
-    }
+  #invitation,
+  #contact {
+    font-size: 1.5em !important;
+  }
 }
 
 #joinus {
-    font-size: 1.3em;
-    background-color: rgb(115,38,80);
-    color: white;
-    padding: 10px;
-    width: 300px;
+  font-size: 1.3em;
+  background-color: rgb(115,38,80);
+  color: white;
+  padding: 10px;
+  width: 300px;
 }
 
 @media screen and (min-width: 768px) {
@@ -78,28 +91,34 @@ p.lead a {
 }
 
 .contact-ways p {
-    font-size: 1em;
+  font-size: 1em;
+  color: #4e254a;
 }
 
 .contact-ways .fa {
-    font-size: 2em;
-  }
+  font-size: 2em;
+  color: #4e254a;
+}
 
 @media screen and (min-width: 992px) {
-    .icon {
-        font-size: 10em;
-    }
+  .icon {
+    font-size: 10em;
+  }
 }
 
 .icon {
-    font-size: 8em;
+  font-size: 8em;
+  color: #3f1d45;
+  /*background-image: linear-gradient(45deg,#020031 0,#6d3353 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;*/
 }
 
 @media screen and (min-width: 768px) {
-    #qrcode {
-        margin: 20px;
-        width: 25%;
-    }
+  #qrcode {
+    margin: 20px;
+    width: 25%;
+  }
 }
 
 .border {
