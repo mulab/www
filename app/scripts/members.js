@@ -5,49 +5,49 @@ var presentID = '0';
 $(document).ready(function () {
   $(window).resize(function () {
     if ($(window).width() < 768) {
-      window.location = "members_mobile.html";
+      window.location = 'members_mobile.html';
     }
   });
 
-  $('p.intro').hide();
+  // $('p.intro').hide();
   $('img.profile').hide();
 
-  $('img#pointOne').mouseover(function () {
-    $('p.intro1').fadeIn();
-  });
-  $('img#pointTwo').mouseover(function () {
-    $('p.intro2').fadeIn();
-  });
-  $('img#pointThree').mouseover(function () {
-    $('p.intro3').fadeIn();
-  });
-  $('img#pointFour').mouseover(function () {
-    $('p.intro4').fadeIn();
-  });
-  $('img#pointFive').mouseover(function () {
-    $('p.intro5').fadeIn();
-  });
+  // $('img#pointOne').mouseover(function () {
+  //   $('p.intro1').fadeIn();
+  // });
+  // $('img#pointTwo').mouseover(function () {
+  //   $('p.intro2').fadeIn();
+  // });
+  // $('img#pointThree').mouseover(function () {
+  //   $('p.intro3').fadeIn();
+  // });
+  // $('img#pointFour').mouseover(function () {
+  //   $('p.intro4').fadeIn();
+  // });
+  // $('img#pointFive').mouseover(function () {
+  //   $('p.intro5').fadeIn();
+  // });
 
   $('p#intro11').click(function () {
-    window.location = "https://github.com/zmy" ;
+    window.location = 'https://github.com/zmy' ;
   });
   $('p#intro12').click(function () {
-    window.location = "https://github.com/cgcgbcbc" ;
+    window.location = 'https://github.com/cgcgbcbc' ;
   });
   $('p#intro13').click(function () {
-    window.location = "https://github.com/hqythu" ;
+    window.location = 'https://github.com/hqythu' ;
   });
   $('p#intro14').click(function () {
-    window.location = "https://github.com/HubertZhang" ;
+    window.location = 'https://github.com/HubertZhang' ;
   });
   $('p#intro15').click(function () {
-    window.location = "https://github.com/YueDayu" ;
+    window.location = 'https://github.com/YueDayu' ;
   });
   $('p#intro16').click(function () {
-    window.location = "http://www.renren.com/391274145/profile" ;
+    window.location = 'http://www.renren.com/391274145/profile' ;
   });
   $('p#intro17').click(function () {
-    window.location = "http://www.renren.com/559326682/profile" ;
+    window.location = 'http://www.renren.com/559326682/profile' ;
   });
 
   $('p#intro11').mouseover(function () {

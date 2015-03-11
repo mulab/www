@@ -1,8 +1,10 @@
+'use strict';
+
 $(document).ready(function(){
 
   $(window).resize(function () {
     if ($(window).width() >= 768) {
-      window.location = "members.html";
+      window.location = 'members.html';
     }
   });
 
