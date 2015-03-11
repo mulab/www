@@ -10,8 +10,9 @@ body {
   background-color: #ffffff;
 }
 
-.lead {
-  text-align: left;
+#container {
+  margin-bottom: -20px;
+  margin-top: -40px;
 }
 
 .pic {

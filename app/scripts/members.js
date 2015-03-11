@@ -3,6 +3,12 @@
 var presentID = '0';
 
 $(document).ready(function () {
+  $(window).resize(function () {
+    if ($(window).width() < 768) {
+      window.location = "members_mobile.html";
+    }
+  });
+
   $('p.intro').hide();
   $('img.profile').hide();
 
