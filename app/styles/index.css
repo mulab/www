@@ -7,14 +7,10 @@
     text-decoration: none !important;
 }
 
-#downlaod {
+.version {
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
-}
-
-#projects {
-    margin-top: 20px;
 }
 
 p.lead a:hover {
