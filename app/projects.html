@@ -39,7 +39,7 @@
             <a href="projects.html">Projects</a>
           </li>
           <li>
-            <a href="members.html">Members</a>
+            <a class="members" href="members.html">Members</a>
           </li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
@@ -113,45 +113,45 @@
     {name:'Caμs', src:'images/camus2.svg',
     description:'Caμs是我们尚在进行的项目，',
     descriptionMore:'目标是打造一个清华内的应用平台，提供给全校的开发者各种数据的接口，供他们开发出各种方便大家的应用。'}]">
-      <div class="panel panel-default project row" ng-repeat="x in projects">
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 image-holder">
-          <img class="project-img img-responsible" src={{x.src}}>
-        </div>
-        <article class="project-description col-lg-8 col-md-9 col-sm-9 col-xs-12">
-          <header><h3 class="text-center">{{x.name}}</h3></header>
-          <p id="projects-text">
-              <span class="hidden-xs">&nbsp;&nbsp;&nbsp;&nbsp;</span>
-            <span>{{x.description}}</span>
-            <span class="visible-xs-inline"><a href="#" class="show-details">......展开详情</a></span>
-            <span class="span-back hidden-xs">{{x.descriptionMore}}</span>
-            <span class="visible-xs-inline hidden-xs"><a href="#" class="hide-details">收起</a></span>
-          </p>
-        </article>
-        <div class="clearfix"></div>
+    <div class="panel panel-default project row" ng-repeat="x in projects">
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 image-holder">
+        <img class="project-img img-responsible" src={{x.src}}>
       </div>
-      <a href="#" id="return" class="btn btn-default visible-xs-block text-center">
-        返回顶部
-      </a>
+      <article class="project-description col-lg-8 col-md-9 col-sm-9 col-xs-12">
+        <header><h3 class="text-center">{{x.name}}</h3></header>
+        <p id="projects-text">
+          <span class="hidden-xs">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+          <span>{{x.description}}</span>
+          <span class="visible-xs-inline"><a href="#" class="show-details">......展开详情</a></span>
+          <span class="span-back hidden-xs">{{x.descriptionMore}}</span>
+          <span class="visible-xs-inline hidden-xs"><a href="#" class="hide-details">收起</a></span>
+        </p>
+      </article>
+      <div class="clearfix"></div>
     </div>
+    <a href="#" id="return" class="btn btn-default visible-xs-block text-center">
+      返回顶部
+    </a>
   </div>
+</div>
 
-  <div class="container-fluid">
-    <div id="footer" class="footer"> &copy; Lab μ, Tsinghua University </div>
-  </div>
+<div class="container-fluid">
+  <div id="footer" class="footer">Designed and built with all the love in the world by Lab μ</div>
+</div>
 
 
-  <!-- build:js(.) scripts/vendor.js -->
-  <!-- bower:js -->
-  <script src="bower_components/jquery/dist/jquery.js"></script>
-  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-  <script src="bower_components/angular/angular.js"></script>
-  <!-- endbower -->
-  <!-- endbuild -->
+<!-- build:js(.) scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
 
-  <!-- build:js({app,.tmp}) scripts/projects.js -->
-  <script src="scripts/main.js"></script>
-  <script src="scripts/projects.js"></script>
-  <!-- endbuild -->
+<!-- build:js({app,.tmp}) scripts/projects.js -->
+<script src="scripts/main.js"></script>
+<script src="scripts/projects.js"></script>
+<!-- endbuild -->
 
- </body>
- </html>
+</body>
+</html>
