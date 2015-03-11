@@ -1,5 +1,5 @@
-body{
-  /*font-family: "微软雅黑";*/
+body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Roboto" "微软雅黑";
 }
 
 
@@ -301,7 +301,7 @@ body {
   font-weight: 300;
   font-size: 14px;
   text-align: center;
-  
+
 }
 
 @media (max-width:767px) {
