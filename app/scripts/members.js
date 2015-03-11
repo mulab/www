@@ -32,7 +32,7 @@ $(document).ready(function () {
     window.location = "https://github.com/hqythu" ;
   });
   $('p#intro14').click(function () {
-    window.location = "https://github.com/cgcgbcbc" ;
+    window.location = "https://github.com/HubertZhang" ;
   });
   $('p#intro15').click(function () {
     window.location = "https://github.com/YueDayu" ;
