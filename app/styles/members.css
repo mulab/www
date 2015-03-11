@@ -1,26 +1,25 @@
+.point {
+  position: absolute;
+}
+
 #pointOne {
   height: 200px;
-  float: left;
 }
 
 #pointTwo {
   height: 200px;
-  float: right;
 }
 
 #pointThree {
   height: 200px;
-  float: left;
 }
 
 #pointFour {
   height: 200px;
-  float: right;
 }
 
 #pointFive {
   height: 200px;
-  float: left;
 }
 
 .members p {
@@ -47,32 +46,32 @@
 
 .profile1 {
   position: absolute;
-  margin-top: 16%;
-  margin-left: 17%;
+  margin-top: 45px;
+  margin-left: 50px;
 }
 
 .profile2 {
   position: absolute;
-  margin-top: 15%;
-  margin-left: 29%;
+  margin-top: 40px;
+  margin-left: 40px;
 }
 
 .profile3 {
   position: absolute;
-  margin-top: 12%;
-  margin-left: 18%;
+  margin-top: 40px;
+  margin-left: 55px;
 }
 
 .profile4 {
   position: absolute;
-  margin-top: 13%;
-  margin-left: 33%;
+  margin-top: 40px;
+  margin-left: 45px;
 }
 
 .profile5 {
   position: absolute;
-  margin-top: 9%;
-  margin-left: 15%;
+  margin-top: 30px;
+  margin-left: 45px;
 }
 
 h4.name {
