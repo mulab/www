@@ -1,17 +1,17 @@
 $(document).ready(function(){
   $('#btn1').click(function(){
-    $(window).scrollTop($('#btn1').offset().top);
+    $(window).scrollTop(203);
   });
   $('#btn2').click(function(){
-    $(window).scrollTop($('#btn2').offset().top);
+    $(window).scrollTop(280);
   });
   $('#btn3').click(function(){
-    $(window).scrollTop($('#btn3').offset().top);
+    $(window).scrollTop(355);
   });
   $('#btn4').click(function(){
-    $(window).scrollTop($('#btn4').offset().top);
+    $(window).scrollTop(432);
   });
   $('#btn5').click(function(){
-    $(window).scrollTop($('#btn5').offset().top);
+    $(window).scrollTop(530);
   })
 })
