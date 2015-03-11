@@ -1,0 +1,17 @@
+$(document).ready(function(){
+  $('#btn1').click(function(){
+    $(window).scrollTop($('#btn1').offset().top);
+  });
+  $('#btn2').click(function(){
+    $(window).scrollTop($('#btn2').offset().top);
+  });
+  $('#btn3').click(function(){
+    $(window).scrollTop($('#btn3').offset().top);
+  });
+  $('#btn4').click(function(){
+    $(window).scrollTop($('#btn4').offset().top);
+  });
+  $('#btn5').click(function(){
+    $(window).scrollTop($('#btn5').offset().top);
+  })
+})
