@@ -55,6 +55,10 @@ body {
 	color: white;
   }
 
+  .project-description header h3 {
+      font-size: 2.3em !important;
+  }
+
   .project-description p{
     text-indent: 2em;
   }
