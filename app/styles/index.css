@@ -48,6 +48,12 @@ p.lead a {
   font-size: 4em;
 }
 
+@media screen and (max-width: 767px) {
+  .introduction-header-title {
+    font-size: 3em;
+  }
+}
+
 .introduction-header-content {
   font-size: 1.5em;
 }
