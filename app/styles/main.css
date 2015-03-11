@@ -292,3 +292,11 @@ body {
     position: absolute
   }
 }
+
+.dropdown-menu {
+  text-indent: 0.2em;
+}
+
+.itemcircle {
+  visibility: hidden;
+}
