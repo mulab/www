@@ -1,7 +1,4 @@
-
 #logo-img {
-/*    margin-bottom: auto;
-    margin-top: auto;*/
     width: 100%;
     z-index: 1;
 }
@@ -46,38 +43,51 @@ p.lead a {
     font-size: 1.2em;
 }
 
+#invitation,
+#contact {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 @media screen and (min-width: 768px) {
     #invitation,
     #contact {
-        font-size: 2.7em !important;
+        font-size: 2em !important;
     }
 }
 
 @media screen and (max-width:767px) {
     #invitation,
     #contact {
-        font-size: 1.7em !important;
+        font-size: 1.5em !important;
     }
 }
 
 #joinus {
-    font-size:1.3em; 
-    background-color: rgb(115,38,80); 
-    color:white; 
-    margin:30px; 
-    padding:10px; 
-    width:300px;
+    font-size: 1.3em;
+    background-color: rgb(115,38,80);
+    color: white;
+    padding: 10px;
+    width: 300px;
 }
 
 @media screen and (min-width: 768px) {
-    .contact-ways p {
+  .contact-ways p {
+    font-size: 1em;
+  }
+
+  .contact-ways .fa {
     font-size: 2em;
-    }
+  }
 }
 
 .contact-ways p {
-    font-size: 3em;
+    font-size: 1em;
 }
+
+.contact-ways .fa {
+    font-size: 2em;
+  }
 
 @media screen and (min-width: 992px) {
     .icon {
@@ -88,9 +98,14 @@ p.lead a {
 .icon {
     font-size: 8em;
 }
+
 @media screen and (min-width: 768px) {
     #qrcode {
         margin: 20px;
         width: 25%;
     }
+}
+
+.border {
+  border-bottom: 1px solid #e5e5e5;
 }
