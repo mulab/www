@@ -1,265 +1,132 @@
-body {
-  text-align: center;
-  background-color: #dcdcdc;
-  padding-top: 0px;
+#logo-img {
+  width: 100%;
+  z-index: 1;
+}
+
+.button {
+  text-decoration: none !important;
+}
+
+.version {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+p.lead a:hover {
+  background-color: white;
+  color: rgb(59,18,64);
+}
+
+p.lead a {
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .lead {
+    font-size: 2.7em !important;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .lead {
+    font-size: 1.7em !important;
+  }
+}
+
+.introduction {
+  padding: 50px;
+  font-size: 1.2em;
+}
+
+.introduction-header {
+  padding: 50px;
   padding-bottom: 0px;
 }
 
-@media screen and (min-width: 768px){
-  .container {
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 0px;
+.introduction-header-title {
+  font-size: 4em;
+}
+
+@media screen and (max-width: 767px) {
+  .introduction-header-title {
+    font-size: 3em;
   }
 }
 
-.footer {
-  background-color: #ffffff;
-  margin-left: -15px;
-  margin-right: -15px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+.introduction-header-content {
+  font-size: 1.5em;
 }
 
-#back {
-  position:absolute;
-  width:100%;
-  filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#97d0c4',endColorStr='#36a7b7',gradientType='1');
-  background: -moz-linear-gradient(left, #97d0c4, #36a7b7);
-  background: -o-linear-gradient(left,#97d0c4, #36a7b7);
-  background: -webkit-gradient(linear, 0% 0%, 100% 0%, from(#97d0c4), to(#36a7b7));
+#invitation,
+#contact {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
-#back-bottom {
-  position:absolute;
-  width:100%;
-  background-color: #52565f;
-  z-index: -1;
-}
-
-#slogan {
-  position:relative;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 0px;
-  padding-right: 0px;
-  filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#91cdc6',endColorStr='#53b4bd',gradientType='1');
-  background: -moz-linear-gradient(left, #91cdc6, #53b4bd);
-  background: -o-linear-gradient(left,#91cdc6, #53b4bd);
-  background: -webkit-gradient(linear, 0% 0%, 100% 0%, from(#91cdc6), to(#53b4bd));
-}
-
-#middle {
-  position:relative;
-  background-color: #ffffff;
-  padding-top: 30px;
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-#project {
-  position:relative;
-  background-color: #ffffff;
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-.logo {
-  position: relative;
-  width: 20%;
-  height: 20%;
-  left: -16%;
-}
-
-.grad {
-  background-clip: text;
-  animation: hue 60s infinite linear;
-}
-
-@-webkit-keyframes hue {
-  from {
-    -webkit-filter: hue-rotate(0deg);
-  }
-
-  to {
-    -webkit-filter: hue-rotate(-360deg);
+@media screen and (min-width: 768px) {
+  #invitation,
+  #contact {
+    font-size: 2em !important;
   }
 }
 
-@media screen and (min-width: 768px){
-  #logo_wrap {
-    position: absolute;
-    bottom: 30px;
+@media screen and (max-width:767px) {
+  #invitation,
+  #contact {
+    font-size: 1.5em !important;
   }
 }
 
-@media screen and (min-width: 768px){
-  .logo {
-    width: 100%;
-    height: 100%;
-    left: 0%;
-  }
-}
-
-@media screen and (min-width: 768px){
-  #dialog {
-    float: right !important;
-  }
-}
-
-.bubble
-{
-  margin-bottom: 15px;
-  padding:20px 20px;
-  border:2px solid #b1b1b1;
-  position:relative;
-  border-radius:10px;
-  background-color: #ffffff;
-  /*box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);*/
-}
-
-.bubble span
-{
-  width:0;
-  height:0;
-  font-size:0;
-  overflow:hidden;
-  position:absolute;
-}
-
-.bubble span.bot
-{
-  border-width:20px;
-  border-style:solid dashed dashed;
-  border-color:#b1b1b1 transparent transparent;
-  left:30%;
-  bottom:-40px;
-}
-
-.bubble span.top
-{
-  border-width:20px;
-  border-style:solid dashed dashed;
-  border-color:#ffffff transparent transparent;
-  left:30%;
-  bottom:-37px;
-}
-
-@media screen and (min-width: 768px){
-  .bubble span.bot
-  {
-    border-width:20px;
-    border-style:solid dashed dashed;
-    border-color:transparent #b1b1b1 transparent transparent;
-    bottom:22%;
-    left:-40px;
-  }
-
-  .bubble span.top
-  {
-    border-width:20px;
-    border-style:solid dashed dashed;
-    border-color:transparent #ffffff transparent transparent;
-    bottom:22%;
-    left:-37px;
-  }
-}
-
-.btn
-{
-  padding: 10px 30px 0px 30px;
-}
-
-.circle {
-  border: 0px solid rgba(0, 0, 0, 0.84);
-  width: 150px;
-  height: 150px;
-  /*border-radius: 100%;*/
-}
-
-.blocks {
-  margin-top:20px;
-  height: 255px;
-  overflow: hidden;
-  transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.blocks:hover {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.28);
-}
-
-a.block{
-  color: #000000;
-}
-
-a.block:hover {
-  color: #000000;
-  text-decoration:none;
-}
-
-a.myicon {
-  color: #000000;
-  font-size:2.5em;
-}
-
-a.myicon:hover {
-  text-decoration: none;
-}
-
-.footer {
-  border-top: none;
-  background-color: #454c56;
-  color: #c4c4c4;
-}
-
-.icon-renren {
-  color: #7d7d7d;
-}
-
-.icon-renren:hover {
-  color: #4285f4;
-}
-
-.icon-github {
-  color: #7d7d7d;
-}
-
-.icon-github:hover {
-  color: #000000;
-}
-
-.icon-mail {
-  color: #7d7d7d;
-}
-
-.icon-mail:hover {
-  color: #ff5722;
-}
-
-#news > .panel-success > .panel-heading {
+#joinus {
+  font-size: 1.3em;
+  background-color: rgb(115,38,80);
   color: white;
-  background-color: #424242;
-  border-color: #d6e9c6;
+  padding: 10px;
+  width: 300px;
 }
 
-#project .panel-body {
-  padding-left: 0px;
-  padding-right: 0px;
+@media screen and (min-width: 768px) {
+  .contact-ways p {
+    font-size: 1em;
+  }
+
+  .contact-ways .fa {
+    font-size: 2em;
+  }
 }
 
-#project .panel-body > .panel-footer {
-  color: white;
-  background-color: #555c66;
+.contact-ways p {
+  font-size: 1em;
+  color: #4e254a;
 }
 
-body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "Roboto" "微软雅黑";
+.contact-ways .fa {
+  font-size: 2em;
+  color: #4e254a;
 }
 
-.project-title {
-  font-size: 2rem;
+@media screen and (min-width: 992px) {
+  .icon {
+    font-size: 10em;
+  }
 }
 
-.project-intro {
-  font-size: 1.5rem;
+.icon {
+  font-size: 8em;
+  color: #3f1d45;
+  /*background-image: linear-gradient(45deg,#020031 0,#6d3353 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;*/
+}
+
+@media screen and (min-width: 768px) {
+  #qrcode {
+    margin: 20px;
+    width: 25%;
+  }
+}
+
+.border {
+  border-bottom: 1px solid #e5e5e5;
 }

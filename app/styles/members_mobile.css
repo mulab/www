@@ -1,0 +1,46 @@
+body {
+  background: #dcdcdc;
+}
+
+#btn1, #btn2, #btn3, #btn4, #btn5 {
+  width: 50%;
+}
+
+#top, #container {
+  background-color: #ffffff;
+}
+
+#container {
+  margin-bottom: -20px;
+  margin-top: -40px;
+}
+
+.pic {
+  border: 4px solid rgba(0, 0, 0, 0.2);
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}
+
+.blocks {
+  height: 175px;
+  text-align: center;
+}
+
+h4.name {
+  margin-top: 20px;
+  bottom: 20px;
+
+  left: 0;
+  right: 0;
+}
+
+a.block {
+  color: #000000;
+}
+
+h3.title {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  margin-left: 35px;
+}

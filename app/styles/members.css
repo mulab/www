@@ -1,25 +1,77 @@
-.footer {
-    text-align: center;
+.point {
+  position: absolute;
 }
 
-.pic {
+#pointOne {
+  height: 200px;
+}
+
+#pointTwo {
+  height: 200px;
+}
+
+#pointThree {
+  height: 200px;
+}
+
+#pointFour {
+  height: 200px;
+}
+
+#pointFive {
+  height: 200px;
+}
+
+.members p {
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.introduction {
+  text-align: center;
+  font-size: 40px;
+  padding-top: 25%;
+}
+
+.profile {
   border: 0px solid rgba(0, 0, 0, 0.84);
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   border-radius: 100%;
   border-color: rgba(0, 0, 0, 0.2);
   border-width: 4px;
+  margin-left: 0px;
 }
 
-.blocks {
-    height: 225px;
-    text-align: center;
-    overflow: hidden;
-    transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+.profile1 {
+  position: absolute;
+  margin-top: 45px;
+  margin-left: 50px;
 }
 
-.blocks:hover {
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.28);
+.profile2 {
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.profile3 {
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 55px;
+}
+
+.profile4 {
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 45px;
+}
+
+.profile5 {
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 45px;
 }
 
 h4.name {
@@ -30,21 +82,8 @@ h4.name {
   right: 0;
 }
 
-a.block{
-    color: #000000;
-}
-
-a.block:hover {
-    color: #000000;
-    text-decoration:none;
-}
-
 h3.title {
   margin-top: 0px;
   margin-bottom: 20px;
   margin-left: 35px;
-}
-
-body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "Roboto" "微软雅黑";
 }
