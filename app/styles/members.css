@@ -1,8 +1,8 @@
 .photos {
 	border: 2px solid rgba(0, 0, 0, 0.84);
     border-radius: 100%;
-    width: 200px;
-    height: 200px;
+    width: 120px;
+    height: 120px;
     border-color: rgba(0, 0, 0, 0.2);
     border-width: 2px;
     margin: auto;
@@ -15,19 +15,19 @@
 }
 
 .subtitle {
-	font-size: 80px;
+	font-size: 50px;
 	margin-top: 50px;
 	margin-bottom: 100px;
 }
 
 .name {
-	font-size: 40px;
+	font-size: 17px;
 	margin: 10px;
 	color: black;
 }
 
 .post {
-	font-size: 25px;
+	font-size: 10px;
 	color: #777777;
 	margin-bottom: 50px;
 }
@@ -42,23 +42,3 @@
 a:hover {
     text-decoration: none;
 }
-
-@media (min-width: 1000px) {
-	.photos {
-        width: 120px;
-        height: 120px;
-    }
-
-    .subtitle {
-    	font-size: 50px;
-    }
-
-    .name {
-    	font-size: 17px;
-    }
-
-    .post {
-    	font-size: 10px;
-    }
-}
-
