@@ -64,12 +64,12 @@ body {
 }
 
 .page1 {
-  background: #31b0d5;
+  background: #2196f3;
 }
 
 .page5 {
   text-align: center;
-  background: #31b0d5;
+  background: #2196f3;
 }
 
 #navBar {
@@ -125,7 +125,7 @@ body {
 .btn-primary:hover {
   background: #ffffff;
   border-color: #ffffff;
-  color: #31b0d5;
+  color: #2196f3;
 }
 
 .divpic {
