@@ -9,7 +9,7 @@
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
   <!-- build:css(.) styles/vendor.css -->
   <!-- bower:css -->
-  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />,
   <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
   <link rel="stylesheet" href="bower_components/roboto-fontface/roboto-fontface.css" />
   <!-- endbower -->
@@ -20,6 +20,8 @@
   <!-- build:css(.tmp) styles/index.css -->
   <link rel="stylesheet" href="styles/index.css">
   <!-- endbuild -->
+
+  <!--<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />-->
 </head>
 <body>
   <!--[if lt IE 10]>
@@ -27,92 +29,101 @@
   <![endif]-->
 
   <!-- header -->
-  <header class="navbar navbar-fixed-top bs-docs-nav">
-    <div class="container">
-      <div class="navbar-header">
-        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a href="index.html" class="navbar-brand">Lab μ</a>
-      </div>
-      <nav class="collapse navbar-collapse bs-navbar-collapse">
-        <ul class="nav navbar-nav">
-          <li>
-            <a href="projects.html">Projects</a>
-          </li>
-          <li>
-            <a class="members" href="members.html">Members</a>
-          </li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li role="presentation" class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
-              Contact Us <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu" role="menu">
-              <li>
-                <a href="https://github.com/mulab" target="_blank">
-                  <p>
-                    <span class="itemcircle">●&nbsp;&nbsp;</span>
-                    <i class="fa fa-github icon-github"></i>
-                    GitHub
-                  </p>
-                </a>
-              </li>
-              <li>
-                <a href="mailto:mulab.thu@gmail.com">
-                  <p>
-                    <span class="itemcircle">●&nbsp;&nbsp;</span>
-                    <i class="fa fa-envelope-square icon-mail"></i>
-                    E-mail
-                  </p>
-                </a>
-              </li>
-              <li>
-                <a href="http://page.renren.com/600002817" target="_blank">
-                  <p>
-                    <span class="itemcircle">●&nbsp;&nbsp;</span>
-                    <i class="fa fa-renren icon-renren"></i>
-                    Renren
-                  </p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li><a href="https://jinshuju.net/f/aWTf5c" target="_blank">Join Us</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <div style="height: 50px;"></div>
+  <!--<header class="navbar navbar-fixed-top bs-docs-nav">-->
+    <!--<div class="container">-->
+      <!--<div class="navbar-header">-->
+        <!--<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">-->
+          <!--<span class="sr-only">Toggle navigation</span>-->
+          <!--<span class="icon-bar"></span>-->
+          <!--<span class="icon-bar"></span>-->
+          <!--<span class="icon-bar"></span>-->
+        <!--</button>-->
+        <!--<a href="index.html" class="navbar-brand">Lab μ</a>-->
+      <!--</div>-->
+      <!--<nav class="collapse navbar-collapse bs-navbar-collapse">-->
+        <!--<ul class="nav navbar-nav">-->
+          <!--<li>-->
+            <!--<a href="projects.html">Projects</a>-->
+          <!--</li>-->
+          <!--<li>-->
+            <!--<a class="members" href="members.html">Members</a>-->
+          <!--</li>-->
+        <!--</ul>-->
+        <!--<ul class="nav navbar-nav navbar-right">-->
+          <!--<li role="presentation" class="dropdown">-->
+            <!--<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">-->
+              <!--Contact Us <span class="caret"></span>-->
+            <!--</a>-->
+            <!--<ul class="dropdown-menu" role="menu">-->
+              <!--<li>-->
+                <!--<a href="https://github.com/mulab" target="_blank">-->
+                  <!--<p>-->
+                    <!--<span class="itemcircle">●&nbsp;&nbsp;</span>-->
+                    <!--<i class="fa fa-github icon-github"></i>-->
+                    <!--GitHub-->
+                  <!--</p>-->
+                <!--</a>-->
+              <!--</li>-->
+              <!--<li>-->
+                <!--<a href="mailto:mulab.thu@gmail.com">-->
+                  <!--<p>-->
+                    <!--<span class="itemcircle">●&nbsp;&nbsp;</span>-->
+                    <!--<i class="fa fa-envelope-square icon-mail"></i>-->
+                    <!--E-mail-->
+                  <!--</p>-->
+                <!--</a>-->
+              <!--</li>-->
+              <!--<li>-->
+                <!--<a href="http://page.renren.com/600002817" target="_blank">-->
+                  <!--<p>-->
+                    <!--<span class="itemcircle">●&nbsp;&nbsp;</span>-->
+                    <!--<i class="fa fa-renren icon-renren"></i>-->
+                    <!--Renren-->
+                  <!--</p>-->
+                <!--</a>-->
+              <!--</li>-->
+            <!--</ul>-->
+          <!--</li>-->
+          <!--<li><a href="https://jinshuju.net/f/aWTf5c" target="_blank">Join Us</a></li>-->
+        <!--</ul>-->
+      <!--</nav>-->
+    <!--</div>-->
+  <!--</header>-->
+  <!--<div style="height: 50px;"></div>-->
+
   <!-- end header -->
 
-  <div class="bs-docs-masthead">
-    <div class="container">
-      <span class="bs-docs-booticon bs-docs-booticon-lg bs-docs-booticon-outline">
-        <img src="images/LabmU_Meow.png" alt="logo" id="logo-img">
-      </span>
-      <h1 class="lead">清华大学Lab μ校园极客社</h1>
-      <p class="lead">
-        <a href="http://blog.lab.mu" target="_blank" class="button btn-outline-inverse btn-lg">Our Blog</a>
-      </p>
-      <p class="version">&copy; Lab μ, Tsinghua University</p>
+  <!--<div class="bs-docs-masthead">-->
+    <!--<div class="container">-->
+      <!--<span class="bs-docs-booticon bs-docs-booticon-lg bs-docs-booticon-outline">-->
+        <!--<img src="images/LabmU_Meow.png" alt="logo" id="logo-img">-->
+      <!--</span>-->
+      <!--<h1 class="lead">清华大学Lab μ校园极客社</h1>-->
+      <!--<p class="lead">-->
+        <!--<a href="http://blog.lab.mu" target="_blank" class="button btn-outline-inverse btn-lg">Our Blog</a>-->
+      <!--</p>-->
+      <!--<p class="version">&copy; Lab μ, Tsinghua University</p>-->
+    <!--</div>-->
+  <!--</div>-->
+
+  <div class="jumbotron" id="header">
+    <div id="logo-holder" class="center-block">
+      <img src="images/LabmU_Meow.png" alt="logo" id="logo-img">
     </div>
+    <h1 class="text-white center-block text-center">清华大学 Lab μ 校园极客社</h1>
+    <a type="button" href="http://blog.lab.mu/" class="btn btn-primary btn-lg center-block">Our Blog</a>
   </div>
 
   <div class="container">
-
     <div class="row border">
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 introduction-header">
         <h1 class="introduction-header-title text-center">
-          Welcome to Lab μ
+          创造实用有趣的产品<br>
+          简化校园学习生活
         </h1>
       </div>
       <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 introduction">
-        <div class="icon text-center">
+        <div id="icon1" class="icon text-center">
           <i class="fa fa-info-circle"></i>
         </div>
         <h2 class="text-center">简介</h2>
@@ -121,7 +132,7 @@
         </p>
       </div>
       <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 introduction">
-        <div  class="icon text-center">
+        <div id="icon2" class="icon text-center">
           <i class="fa fa-laptop"></i>
         </div>
         <h2 class="text-center">产品</h2>
@@ -130,7 +141,7 @@
         </p>
       </div>
       <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 introduction">
-        <div class="icon text-center">
+        <div id="icon3" class="icon text-center">
           <i class="fa fa-users"></i>
         </div>
         <h2 class="text-center">成员</h2>
@@ -139,7 +150,32 @@
         </p>
       </div>
     </div>
+  </div>
 
+  <div class="container-fluid">
+    <div id="projects" class="row">
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+        <div class="img-holder center-block text-center"><img src="images/mu.svg" alt="TUNet"
+                                                  class="project-image img-responsible"/>
+        </div>
+        <article class="project-text">简化联网流程</article>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+        <div class="img-holder center-block text-center"><img src="images/hole.svg" alt="now"
+                                                  class="project-image img-responsible"/>
+        </div>
+        <article class="project-text">整合校内信息，第一时间推送</article>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+        <div class="img-holder center-block text-center"><img src="images/camus.svg" alt="camus"
+                                                  class="project-image img-responsible"/>
+        </div>
+        <article class="project-text">应用开放平台</article>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
     <div id="invitation" class="row border text-center">
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
         <p>
