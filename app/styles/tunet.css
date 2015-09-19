@@ -1,4 +1,5 @@
 body,  div,  p {
+  overflow: hidden;
 	margin: 0;
 	padding: 0;
 	color: #ffffff;
@@ -20,7 +21,7 @@ body {
 }
 
 #pageContain {
-	overflow: hidden;
+  overflow: hidden;
 }
 
 .page {
@@ -66,6 +67,11 @@ body {
   background: #31b0d5;
 }
 
+.page5 {
+  text-align: center;
+  background: #31b0d5;
+}
+
 #navBar {
 	z-index: 3;
 	position: absolute;
@@ -91,13 +97,13 @@ body {
 }
 
 .ttitle {
-  margin-top: 150px;
+  margin-top: 120px;
   font-size: 36px;
   text-align: center;
 }
 
 .tdesc {
-  font-size: 12px;
+  font-size: 20px;
   text-align: center;
 }
 
@@ -201,5 +207,13 @@ body {
   -moz-filter: blur(10px);
   -ms-filter: blur(10px);
   filter: blur(10px);
-  z-index: -100;
+  z-index: -10000;
+}
+
+.lastpic1 {
+  margin-top: -500px;
+}
+
+.lastpic2 {
+
 }
