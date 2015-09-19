@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>Tunet —— 校园联网助手</title>
+<!-- build:js scripts/main.js -->
+<script src="scripts/jquery.min.js"></script>
+<script src="scripts/fullPage.min.js"></script>
+<script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<!-- endbuild -->
+<!-- build:css styles/tunet.css -->
+<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
+<link rel="stylesheet" href="styles/font-awesome.min.css">
+<link rel="stylesheet" href="styles/tunet.css">
+<link rel="stylesheet" href="styles/animate.css">
+<!-- endbuild -->
+</head>
+
+<body>
+<div id="pageContain">
+	<div class="page page1 current row">
+        <div class="navbar">
+            <span class="indexlink">Lab.mu</span>
+            <span class="github"><i class="fa fa-github">&nbsp&nbspGithub</i></span>
+        </div>
+		<div class="contain">
+      <h1 class="ttitle">Tunet —— 校园联网助手</h1>
+      <p class="tdesc">让联网成为一件乐事</p>
+      <div class="dlbtn">
+        <a href="#" class="btn btn-primary">下载Android版本</a>
+        <a href="#" class="btn btn-primary">下载iOS版本</a>
+      </div>
+      <div class="divpic">
+        <a href="#"><img src="images/TUNet_iOS.png" alt="" class="tunetpic ios"/></a>
+        <a href="#"><img src="images/TUNet_Android.png" alt="" class="tunetpic android"/></a>
+      </div>
+		</div>
+	</div>
+
+	<div class="page page2">
+    <img src="images/tunet2.jpg" alt="" class="bgimg"/>
+		<div class="contain">
+            <div class="intro animated flash">
+                <h1>TUNet</h1>
+                <p>TUNet是清华校园网自动联网助手， 能够处理各种复杂的网络情况并帮助你自动登录校园网。在全校师生中广受好评。目前已经推出了安卓客户端，iOS和windows版也在开发之中。</p>
+            </div>
+			<div class="tunetpng animated">
+				<img src="TUNet_Phone.png" alt="" class="png1"/>
+			</div>
+			<div class="tunetsvg animated flash">
+				<img src="µ.svg" alt="" class="svg1"/>
+			</div>
+		</div>
+	</div>
+
+	<div class="page page3">
+    <img src="images/tunet3.jpg" alt="" class="bgimg"/>
+		<div class="contain">
+      <div class="intro">
+        <p>Tsinghua Now</p>
+      </div>
+		</div>
+	</div>
+
+	<div class="page page4">
+    <img src="images/tunet4.jpg" alt="" class="bgimg"/>
+		<div class="contain">
+			<div class="intro">
+				<h2>清华树洞</h2>
+				<p>一个校内匿名社交平台， 比原来的树洞支持更多的功能，正在孵化中。</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="page page5">
+    <img src="images/tunet5.jpg" alt="" class="bgimg"/>
+		<div class="contain">
+			<div class="intro">
+				<h2>Caμs</h2>
+				<p>Caμs是我们尚在进行的项目， 目标是打造一个清华内的应用平台，提供给全校的开发者各种数据的接口，供他们开发出各种方便大家的应用。</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<ul id="navBar">
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+</ul>
+
+<script>
+var runPage;
+runPage = new FullPage({
+	id: 'pageContain',
+	slideTime: 800,
+	effect: {
+		transform: {
+			translate: 'Y'
+		},
+		opacity: [0, 1]
+	},
+	mode: 'wheel, touch, nav:navBar',
+	easing: 'ease'
+});
+</script>
+
+</body>
+</html>
