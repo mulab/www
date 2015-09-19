@@ -18,6 +18,10 @@
   border-color: transparent;
 }
 
+#brand-logo {
+  height: 110%;
+}
+
 #nav .navbar-brand,
 #nav-right > li > a,
 #nav-left > li > a {
