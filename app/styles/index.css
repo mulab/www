@@ -59,11 +59,16 @@
 #header > a {
   width: 200px;
   border-radius: 30px;
-  background-color: rgb(0,156,255);
+  border: solid white 2px;
+  text-align: center;
+  color: white;
+  text-decoration: none !important;
+  cursor: pointer;
 }
 
-.button {
-  text-decoration: none !important;
+#header > a:hover {
+  background-color: white;
+  color: black;
 }
 
 .version {
