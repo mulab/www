@@ -1,3 +1,45 @@
+/* Helper class */
+
+.text-white {
+  color: white !important;
+}
+
+/* end helper */
+
+#header {
+  /*background-size: 400% 400%,auto auto;*/
+  /*background: radial-gradient(circle at bottom right, #33b1f8 0, #aa81f3 100%);*/
+  background-image: linear-gradient(to top left,rgba(170,129,243,.1) 10%,rgba(95,142,224,.2) 100%), url(/images/map-dark.png);
+  /*background: -webkit-linear-gradient(90deg, #43cea2 10%, #185a9d 90%); /!* Chrome 10+, Saf5.1+ *!/*/
+  /*background: -webkit-linear-gradient(0deg, #ddd6f3 10%, #faaca8 90%); /!* Chrome 10+, Saf5.1+ *!/*/
+  /*background: -webkit-linear-gradient(90deg, #50C9C3 10%, #96DEDA 90%); /!* Chrome 10+, Saf5.1+ *!/*/
+  /*background: -webkit-linear-gradient(45deg, #4776E6 10%, #8E54E9 90%); /!* Chrome 10+, Saf5.1+ *!/*/
+}
+
+
+#logo-holder {
+  width: 10%;
+  border: 2px white solid;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#logo-holder > img {
+  width: 100%;
+}
+
+#header > h1 {
+  font-size: 3em;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+#header > button {
+  width: 20%;
+  border-radius: 30px;
+  background-color: rgb(0,156,255);
+}
+
 #logo-img {
   width: 100%;
   z-index: 1;
