@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="styles/members.css" />
+</head>
+<body>
+	<div class="container">
+	    <div class="row groups">
+	        <div class="subtitle">核心管理</div>
+	        {{#manager}}
+	        <div class="col-xs-6 col-sm-6 col-md-2 member">
+	        	<a href="{{page}}" class="block">
+	        	    <div class="photo">
+	        		    <img class="photos" src="{{url}}" alt="{{name}}">
+	        	    </div>
+	        	    <div class="name">{{name}}</div>
+	        	    <div class="post">{{post}}</div>
+	            </a>
+	        </div>
+	        {{/manager}}
+        </div>
+        <div class="row groups">
+	        <div class="subtitle">顾问团</div>
+	        {{#consultant}}
+	        <div class="col-xs-6 col-sm-6 col-md-2 member">
+	        	<a href="{{page}}" class="block">
+	        	    <div class="photo">
+	        		    <img class="photos" src="{{url}}" alt="{{name}}">
+	        	    </div>
+	        	    <div class="name">{{name}}</div>
+	        	    <div class="post">{{post}}</div>
+	            </a>
+	        </div>
+	        {{/consultant}}
+        </div>
+        <div class="row groups">
+	        <div class="subtitle">技术开发</div>
+	        {{#developer}}
+	        <div class="col-xs-6 col-sm-6 col-md-2 member">
+	        	<a href="{{page}}" class="block">
+	        	    <div class="photo">
+	        		    <img class="photos" src="{{url}}" alt="{{name}}">
+	        	    </div>
+	        	    <div class="name">{{name}}</div>
+	        	    <div class="post">{{post}}</div>
+	            </a>
+	        </div>
+	        {{/developer}}
+        </div>
+        <div class="row groups">
+	        <div class="subtitle">市场&#183;设计&#183;行政</div>
+	        {{#others}}
+	        <div class="col-xs-6 col-sm-6 col-md-2 member">
+	        	<a href="{{page}}" class="block">
+	        	    <div class="photo">
+	        		    <img class="photos" src="{{url}}" alt="{{name}}">
+	        	    </div>
+	        	    <div class="name">{{name}}</div>
+	        	    <div class="post">{{post}}</div>
+	            </a>
+	        </div>
+	        {{/others}}
+        </div>
+        <div class="row groups">
+	        <div class="subtitle">以往成员</div>
+	        {{#former}}
+	        <div class="col-xs-6 col-sm-6 col-md-2 member">
+	        	<a href="{{page}}" class="block">
+	        	    <div class="photo">
+	        		    <img class="photos" src="{{url}}" alt="{{name}}">
+	        	    </div>
+	        	    <div class="name">{{name}}</div>
+	        	    <div class="post">{{post}}</div>
+	            </a>
+	        </div>
+	        {{/former}}
+        </div>
+    </div>
+</body>
+</html>
