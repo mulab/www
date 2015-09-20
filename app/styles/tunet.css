@@ -218,6 +218,21 @@ body {
   margin-top: -500px;
 }
 
-.lastpic2 {
-
+.code {
+  height: 150px;
+  width: 150px;
 }
+
+.dlbtns {
+  float: left;
+}
+
+.dlcode {
+  float: left;
+}
+
+.dlbtn-last {
+  margin: auto;
+  width: 350px;
+}
+
