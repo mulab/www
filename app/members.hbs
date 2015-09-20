@@ -64,76 +64,89 @@
     <a href="http://blog.lab.mu/" target="_blank" class="btn-lg center-block blog-btn">Our Blog</a>
   </div>
 	<div class="container">
-	    <div class="row groups">
-	        <div class="subtitle">核心管理</div>
-	        {{#manager}}
-	        <div class="col-xs-6 col-sm-6 col-md-2 member">
-	        	<a href="{{page}}" class="block">
-	        	    <div class="photo">
-	        		    <img class="photos" src="{{url}}" alt="{{name}}">
-	        	    </div>
-	        	    <div class="name">{{name}}</div>
-	        	    <div class="post">{{post}}</div>
-	            </a>
+	  <div class="row groups">
+	    <div class="subtitle">核心管理</div>
+	    {{#manager}}
+	    <div class="col-xs-6 col-sm-6 col-md-2 member">
+	      <a href="{{page}}" class="block">
+	        <div class="photo">
+	        	<img class="photos" src="{{url}}" alt="{{name}}">
 	        </div>
-	        {{/manager}}
-        </div>
-        <div class="row groups">
-	        <div class="subtitle">顾问团</div>
-	        {{#consultant}}
-	        <div class="col-xs-6 col-sm-6 col-md-2 member">
-	        	<a href="{{page}}" class="block">
-	        	    <div class="photo">
-	        		    <img class="photos" src="{{url}}" alt="{{name}}">
-	        	    </div>
-	        	    <div class="name">{{name}}</div>
-	        	    <div class="post">{{post}}</div>
-	            </a>
-	        </div>
-	        {{/consultant}}
-        </div>
-        <div class="row groups">
-	        <div class="subtitle">技术开发</div>
-	        {{#developer}}
-	        <div class="col-xs-6 col-sm-6 col-md-2 member">
-	        	<a href="{{page}}" class="block">
-	        	    <div class="photo">
-	        		    <img class="photos" src="{{url}}" alt="{{name}}">
-	        	    </div>
-	        	    <div class="name">{{name}}</div>
-	        	    <div class="post">{{post}}</div>
-	            </a>
-	        </div>
-	        {{/developer}}
-        </div>
-        <div class="row groups">
-	        <div class="subtitle">市场&#183;设计&#183;行政</div>
-	        {{#others}}
-	        <div class="col-xs-6 col-sm-6 col-md-2 member">
-	        	<a href="{{page}}" class="block">
-	        	    <div class="photo">
-	        		    <img class="photos" src="{{url}}" alt="{{name}}">
-	        	    </div>
-	        	    <div class="name">{{name}}</div>
-	        	    <div class="post">{{post}}</div>
-	            </a>
-	        </div>
-	        {{/others}}
-        </div>
-        <div class="row groups">
-	        <div class="subtitle">以往成员</div>
-	        {{#former}}
-	        <div class="col-xs-6 col-sm-6 col-md-2 member">
-	        	<a href="{{page}}" class="block">
-	        	    <div class="photo">
-	        		    <img class="photos" src="{{url}}" alt="{{name}}">
-	        	    </div>
-	        	    <div class="name">{{name}}</div>
-	        	    <div class="post">{{post}}</div>
-	            </a>
-	        </div>
-	        {{/former}}
-        </div>
+	        <div class="name">{{name}}</div>
+	        <div class="post">{{post}}</div>
+	      </a>
+	    </div>
+	    {{/manager}}
     </div>
+    <div class="row groups">
+	    <div class="subtitle">顾问团</div>
+	    {{#consultant}}
+	    <div class="col-xs-6 col-sm-6 col-md-2 member">
+	      <a href="{{page}}" class="block">
+	        <div class="photo">
+	        	<img class="photos" src="{{url}}" alt="{{name}}">
+	        </div>
+	        <div class="name">{{name}}</div>
+	        <div class="post">{{post}}</div>
+	      </a>
+	    </div>
+	    {{/consultant}}
+    </div>
+    <div class="row groups">
+	    <div class="subtitle">技术开发</div>
+	    {{#developer}}
+	    <div class="col-xs-6 col-sm-6 col-md-2 member">
+	      <a href="{{page}}" class="block">
+	        <div class="photo">
+	        	<img class="photos" src="{{url}}" alt="{{name}}">
+	        </div>
+	        <div class="name">{{name}}</div>
+	        <div class="post">{{post}}</div>
+	      </a>
+	    </div>
+	    {{/developer}}
+    </div>
+    <div class="row groups">
+	    <div class="subtitle">市场&#183;设计&#183;行政</div>
+	    {{#others}}
+	    <div class="col-xs-6 col-sm-6 col-md-2 member">
+	      <a href="{{page}}" class="block">
+	        <div class="photo">
+	        	<img class="photos" src="{{url}}" alt="{{name}}">
+	        </div>
+	        <div class="name">{{name}}</div>
+	        <div class="post">{{post}}</div>
+	      </a>
+	    </div>
+	    {{/others}}
+    </div>
+    <div class="row groups">
+	    <div class="subtitle">以往成员</div>
+	    {{#former}}
+	    <div class="col-xs-6 col-sm-6 col-md-2 member">
+	      <a href="{{page}}" class="block">
+	        <div class="photo">
+	        	<img class="photos" src="{{url}}" alt="{{name}}">
+	        </div>
+	        <div class="name">{{name}}</div>
+	        <div class="post">{{post}}</div>
+	      </a>
+	    </div>
+	    {{/former}}
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div id="footer" class="footer">Designed and built with all the love in the world by Lab μ</div>
+  </div>
+
+
+  <!-- build:js(.) scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 </body>
 </html>
