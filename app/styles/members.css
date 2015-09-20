@@ -9,13 +9,29 @@
     z-index: 10;
 }
 
-.subtitle, .name, .post, .photo{
+.main-title {
+	text-align: center;
+	font-size: 85px;
+	margin-top: 80px;
+	margin-bottom: 20px;
+	font-weight: 100;
+}
+
+.intro {
+	text-align: center;
+	font-size: 45px;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	font-weight: 100;
+}
+
+.subtitle, .name, .post, .photo {
 	text-align: center;
 	font-family: Helvetica Neue, tahoma, arial, "Hiragino Sans GB", Microsoft YaHei;
 }
 
 .subtitle {
-	font-size: 50px;
+	font-size: 40px;
 	margin-top: 50px;
 	margin-bottom: 100px;
 }
