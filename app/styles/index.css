@@ -1,7 +1,7 @@
 #header {
   /*background-size: 400% 400%,auto auto;*/
   /*background: radial-gradient(circle at bottom right, #33b1f8 0, #aa81f3 100%);*/
-  background-image: linear-gradient(to top left, rgba(170, 129, 243, .1) 10%, rgba(95, 142, 224, .2) 100%), url(/images/map-dark.png);
+  background-image: linear-gradient(to top left, rgba(170, 129, 243, .1) 10%, rgba(95, 142, 224, .2) 100%), url(../images/map-dark.png);
   padding-top: 0;
 }
 
