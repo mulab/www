@@ -1,8 +1,8 @@
 .photos {
 	border: 2px solid rgba(0, 0, 0, 0.84);
     border-radius: 100%;
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     border-color: rgba(0, 0, 0, 0.2);
     border-width: 2px;
     margin: auto;
@@ -11,7 +11,7 @@
 
 .main-title {
 	text-align: center;
-	font-size: 85px;
+	font-size: 55px;
 	margin-top: 80px;
 	margin-bottom: 20px;
 	font-weight: 100;
@@ -19,7 +19,7 @@
 
 .intro {
 	text-align: center;
-	font-size: 45px;
+	font-size: 40px;
 	margin-top: 30px;
 	margin-bottom: 20px;
 	font-weight: 100;
@@ -51,10 +51,29 @@
 .groups {
     border-bottom: 3px solid #bbbbbb;
     padding-bottom: 80px;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom: 50px;
 }
 
 a:hover {
     text-decoration: none;
+}
+
+@media (min-width: 1000px) {
+	.photos {
+		width: 120px;
+        height: 120px;
+	}
+
+	.main-title {
+		font-size: 85px;
+	}
+
+	.intro {
+		font-size: 45px;
+	}
+
+	.groups {
+		margin-top: 50px;
+	}
 }

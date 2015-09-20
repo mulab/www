@@ -1,24 +1,45 @@
 {
   "manager":
   [
-    {"name":"周梦宇", "post":"会长", "url":"images/members/zhoumy.jpg", "page":""},
-    {"name":"何钦尧", "post":"项目经理", "url":"images/members/heqy.jpg", "page":""}
+    {"name":"何 钦 尧", "post":"执行副会长", "url":"images/members/heqy.jpg", "page":""},
+    {"name":"岳 大 禹", "post":"技术副会长", "url":"images/members/yuedy.jpg", "page":""},
+    {"name":"张 阳 坤", "post":"技术副会长", "url":"images/members/zhangyk.jpg", "page":""},
+    {"name":"张 艺 莹", "post":"宣传副会长", "url":"images/members/zhangyy.jpg", "page":""}
   ],
   "consultant":
   [
-    {"name":"陈光", "post":"技术顾问", "url":"images/members/cheng.jpg", "page":""}
+    {"name":"陈 光", "post":"技术总监", "url":"images/members/cheng.jpg", "page":""},
+    {"name":"贾 志 鹏", "post":"技术顾问", "url":"images/members/null-boy.png", "page":""},
+    {"name":"谭 思 颖", "post":"市场顾问", "url":"images/members/tansy.jpg", "page":""}
   ],
   "developer":
   [
-    {"name":"庄天翼", "post":"Web前端", "url":"images/members/zhuangty.jpg", "page":""},
-    {"name":"杨松洲", "post":"Web前端", "url":"images/members/yangsz.jpg", "page":""}
+    {"name":"胡 皓 宇", "post":"Android开发组长", "url":"images/members/null-boy.png", "page":""},
+    {"name":"王 启 睿", "post":"Android开发", "url":"images/members/null-boy.png", "page":""},
+    {"name":"杨 松 洲", "post":"Web开发组长", "url":"images/members/yangsz.jpg", "page":""},
+    {"name":"方 燠", "post":"Desktop组长", "url":"images/members/fangy.jpg", "page":""},
+    {"name":"叶 曦", "post":"Desktop开发", "url":"images/members/yex.jpg", "page":""},
+    {"name":"黄 维 啸", "post":"Desktop开发", "url":"images/members/huangwx.jpg", "page":""},
+    {"name":"韦 毅 龙", "post":"Desktop开发", "url":"images/members/null-boy.png", "page":""},
+    {"name":"蔡 立 崴", "post":"Desktop开发", "url":"images/members/cailw.jpg", "page":""},
+    {"name":"赵 金 昊", "post":"Web开发", "url":"images/members/zhaojh.jpg", "page":""},
+    {"name":"耿 正 霖", "post":"Web开发", "url":"images/members/null-boy.png", "page":""},
+    {"name":"庄 天 翼", "post":"Web开发", "url":"images/members/zhuangty.jpg", "page":""},
+    {"name":"卫 国 扬", "post":"Web开发", "url":"images/members/weigy.jpg", "page":""},
+    {"name":"何 晓 楠", "post":"Web开发", "url":"images/members/null-girl.png", "page":""},
+    {"name":"刘 家 硕", "post":"Web开发", "url":"images/members/liujs.jpg", "page":""}
   ],
   "others":
   [
-    {"name":"张艺莹", "post":"宣传", "url":"images/members/zhangyy.jpg", "page":""}
+    {"name":"陶 君 宇", "post":"市场部长", "url":"images/members/null-boy.png", "page":""},
+    {"name":"任 桐 正", "post":"人力资源部长", "url":"images/members/null-boy.png", "page":""},
+    {"name":"焦 靖", "post":"设计师", "url":"images/members/null-girl.png", "page":""},
+    {"name":"母 娇 颖", "post":"市场部成员", "url":"images/members/null-girl.png", "page":""}
   ],
   "former":
   [
-    {"name":"夏雨", "post":"Former Member", "url":"images/members/xiay.jpg", "page":""}
+    {"name":"张 宸 宸", "post":"市场推广", "url":"images/members/null-boy.png", "page":""},
+    {"name":"夏 雨", "post":"Web开发", "url":"images/members/xiay.jpg", "page":""},
+    {"name":"孙 悦 慧", "post":"设计师", "url":"images/members/sunyh.jpg", "page":""}
   ]
 }
