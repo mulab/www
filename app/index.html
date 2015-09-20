@@ -25,288 +25,236 @@
   <!--<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />-->
 </head>
 <body>
-  <!--[if lt IE 10]>
-  <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
+<!--[if lt IE 10]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+  your browser</a> to improve your experience.</p>
+<![endif]-->
 
+<div class="jumbotron" id="header">
+  <nav class="navbar navbar-default" id="nav">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html"><img id="brand-logo" src="images/LabmU_Meow.png"> Lab μ</a>
+      </div>
 
-  <!-- header -->
-  <!--<header class="navbar navbar-fixed-top bs-docs-nav">-->
-    <!--<div class="container">-->
-      <!--<div class="navbar-header">-->
-        <!--<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">-->
-          <!--<span class="sr-only">Toggle navigation</span>-->
-          <!--<span class="icon-bar"></span>-->
-          <!--<span class="icon-bar"></span>-->
-          <!--<span class="icon-bar"></span>-->
-        <!--</button>-->
-        <!--<a href="index.html" class="navbar-brand">Lab μ</a>-->
-      <!--</div>-->
-      <!--<nav class="collapse navbar-collapse bs-navbar-collapse">-->
-        <!--<ul class="nav navbar-nav">-->
-          <!--<li>-->
-            <!--<a href="projects.html">Projects</a>-->
-          <!--</li>-->
-          <!--<li>-->
-            <!--<a class="members" href="members.html">Members</a>-->
-          <!--</li>-->
-        <!--</ul>-->
-        <!--<ul class="nav navbar-nav navbar-right">-->
-          <!--<li role="presentation" class="dropdown">-->
-            <!--<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">-->
-              <!--Contact Us <span class="caret"></span>-->
-            <!--</a>-->
-            <!--<ul class="dropdown-menu" role="menu">-->
-              <!--<li>-->
-                <!--<a href="https://github.com/mulab" target="_blank">-->
-                  <!--<p>-->
-                    <!--<span class="itemcircle">●&nbsp;&nbsp;</span>-->
-                    <!--<i class="fa fa-github icon-github"></i>-->
-                    <!--GitHub-->
-                  <!--</p>-->
-                <!--</a>-->
-              <!--</li>-->
-              <!--<li>-->
-                <!--<a href="mailto:mulab.thu@gmail.com">-->
-                  <!--<p>-->
-                    <!--<span class="itemcircle">●&nbsp;&nbsp;</span>-->
-                    <!--<i class="fa fa-envelope-square icon-mail"></i>-->
-                    <!--E-mail-->
-                  <!--</p>-->
-                <!--</a>-->
-              <!--</li>-->
-              <!--<li>-->
-                <!--<a href="http://page.renren.com/600002817" target="_blank">-->
-                  <!--<p>-->
-                    <!--<span class="itemcircle">●&nbsp;&nbsp;</span>-->
-                    <!--<i class="fa fa-renren icon-renren"></i>-->
-                    <!--Renren-->
-                  <!--</p>-->
-                <!--</a>-->
-              <!--</li>-->
-            <!--</ul>-->
-          <!--</li>-->
-          <!--<li><a href="https://jinshuju.net/f/aWTf5c" target="_blank">Join Us</a></li>-->
-        <!--</ul>-->
-      <!--</nav>-->
-    <!--</div>-->
-  <!--</header>-->
-  <!--<div style="height: 50px;"></div>-->
-  <!-- end header -->
-
-  <!--<div class="bs-docs-masthead">-->
-    <!--<div class="container">-->
-      <!--<span class="bs-docs-booticon bs-docs-booticon-lg bs-docs-booticon-outline">-->
-        <!--<img src="images/LabmU_Meow.png" alt="logo" id="logo-img">-->
-      <!--</span>-->
-      <!--<h1 class="lead">清华大学Lab μ校园极客社</h1>-->
-      <!--<p class="lead">-->
-        <!--<a href="http://blog.lab.mu" target="_blank" class="button btn-outline-inverse btn-lg">Our Blog</a>-->
-      <!--</p>-->
-      <!--<p class="version">&copy; Lab μ, Tsinghua University</p>-->
-    <!--</div>-->
-  <!--</div>-->
-
-  <div class="jumbotron" id="header">
-    <nav class="navbar navbar-default" id="nav">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html"><img id="brand-logo" src="images/LabmU_Meow.png"> Lab μ</a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav" id="nav-left">
-            <li><a href="tunet.html">TUNet<span class="sr-only">(current)</span></a></li>
-            <li><a href="now.html">Tsinghua Now</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right" id="nav-right">
-            <li><a href="members.html">Members</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact Us <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="https://github.com/mulab" target="_blank">Github</a></li>
-                <li><a href="mailto:mulab.thu@gmail.com">Email</a></li>
-              </ul>
-            </li>
-            <li><a href="https://jinshuju.net/f/aWTf5c" target="_blank">Join Us</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
-
-    <div id="logo-holder" class="center-block">
-      <img src="images/LabmU_Meow.png" alt="logo" id="logo-img">
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav" id="nav-left">
+          <li><a href="#">TUNet<span class="sr-only">(current)</span></a></li>
+          <li><a href="#">Tsinghua Now</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right" id="nav-right">
+          <li><a href="members.html">Members</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+               aria-expanded="false">Contact Us <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="https://github.com/mulab" target="_blank">Github</a></li>
+              <li><a href="mailto:mulab.thu@gmail.com">Email</a></li>
+            </ul>
+          </li>
+          <li><a href="https://jinshuju.net/f/aWTf5c" target="_blank">Join Us</a></li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
     </div>
-    <h1 class="text-white center-block text-center">清华大学 <br class="visible-xs"> Lab μ 校园极客社</h1>
-    <a href="http://blog.lab.mu/" target="_blank" class="btn-lg center-block blog-btn">Our Blog</a>
-  </div>
+    <!-- /.container-fluid -->
+  </nav>
 
+  <div id="logo-holder" class="center-block">
+    <img src="images/LabmU_Meow.png" alt="logo" id="logo-img">
+  </div>
+  <h1 class="text-white center-block text-center">清华大学 <br class="visible-xs"> Lab μ 校园极客社</h1>
+  <a href="http://blog.lab.mu/" target="_blank" class="btn-lg center-block blog-btn">Our Blog</a>
+</div>
+
+<div class="container">
+  <div class="row border">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 introduction-header">
+      <h1 class="introduction-header-title text-center">
+        创造实用有趣的产品<br>
+        简化校园学习生活
+      </h1>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 introduction">
+      <div id="icon1" class="icon text-center">
+        <i class="fa fa-info-circle"></i>
+      </div>
+      <h2 class="text-center">简介</h2>
+
+      <p>
+        Lab μ 是清华大学学生科创社团，致力于以各种应用来提高校园生活的便利性。协会通过项目的设计、开发、宣传、运营，锻炼社员的综合能力。
+      </p>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 introduction">
+      <div id="icon2" class="icon text-center">
+        <i class="fa fa-laptop"></i>
+      </div>
+      <h2 class="text-center">产品</h2>
+
+      <p>
+        我们的作品在全校范围内被广泛地使用。TUNet校园自动联网助手安卓版，在学校内有4000+的装机量。iOS版和桌面版也正在开发当中。
+      </p>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 introduction">
+      <div id="icon3" class="icon text-center">
+        <i class="fa fa-users"></i>
+      </div>
+      <h2 class="text-center">成员</h2>
+
+      <p>
+        协会的成员来自不同的背景，各个专业的同学一起合作，涵盖了项目开发过程中的方方面面。我们同样欢迎拥有创意与热情的你，来与我们一起实现各种更多的可能。
+      </p>
+    </div>
+  </div>
+</div>
+
+<div id="projects">
   <div class="container">
-    <div class="row border">
-      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 introduction-header">
-        <h1 class="introduction-header-title text-center">
-          创造实用有趣的产品<br>
-          简化校园学习生活
-        </h1>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 introduction">
-        <div id="icon1" class="icon text-center">
-          <i class="fa fa-info-circle"></i>
-        </div>
-        <h2 class="text-center">简介</h2>
-        <p>
-          Lab μ 是清华大学学生科创社团，致力于以各种应用来提高校园生活的便利性。协会通过项目的设计、开发、宣传、运营，锻炼社员的综合能力。
-        </p>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 introduction">
-        <div id="icon2" class="icon text-center">
-          <i class="fa fa-laptop"></i>
-        </div>
-        <h2 class="text-center">产品</h2>
-        <p>
-          我们的作品在全校范围内被广泛地使用。TUNet校园自动联网助手安卓版，在学校内有4000+的装机量。iOS版和桌面版也正在开发当中。
-        </p>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 introduction">
-        <div id="icon3" class="icon text-center">
-          <i class="fa fa-users"></i>
-        </div>
-        <h2 class="text-center">成员</h2>
-        <p>
-          协会的成员来自不同的背景，各个专业的同学一起合作，涵盖了项目开发过程中的方方面面。我们同样欢迎拥有创意与热情的你，来与我们一起实现各种更多的可能。
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="container-fluid">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 introduction-header">
       <h1 class="introduction-header-title text-center text-white">
         我们创造<br>
         校园中千万人使用的应用
       </h1>
     </div>
-    <div id="projects" class="row text-white">
-      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+    <div class="row text-white">
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 introduction">
         <div class="img-holder center-block text-center"><img src="images/mu-white.svg" alt="TUNet"
-                                                  class="project-image img-responsible"/>
+                                                              class="project-image img-responsible"/>
         </div>
         <article class="project-text">
-          <h3 class="text-center">TUNet</h3>
+          <h2 class="text-center">TUNet</h2>
+
           <p>简化联网流程</p>
         </article>
       </div>
-      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-        <div class="img-holder center-block text-center"><img style="visibility: hidden;" src="images/hole.svg" alt="now"
-                                                  class="project-image img-responsible"/>
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 introduction">
+        <div class="img-holder center-block text-center"><img style="visibility: hidden;" src="images/hole.svg"
+                                                              alt="now"
+                                                              class="project-image img-responsible"/>
         </div>
         <article class="project-text">
-          <h3 class="text-center">Tsinghua Now</h3>
+          <h2 class="text-center">Tsinghua Now</h2>
+
           <p>整合校内信息，第一时间推送</p>
         </article>
       </div>
-      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 introduction">
         <div class="img-holder center-block text-center"><img src="images/camus-white.svg" alt="camus"
-                                                  class="project-image img-responsible"/>
+                                                              class="project-image img-responsible"/>
         </div>
         <article class="project-text">
-          <h3 class="text-center">Camus</h3>
+          <h2 class="text-center">Camus</h2>
+
           <p>应用开发平台</p>
         </article>
       </div>
     </div>
   </div>
+</div>
 
-  <div class="container">
-    <div id="invitation" class="row border text-center">
-      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <p>
-          Lab μ 是一个成长中的团队，我们诚挚欢迎你的加入
-        </p>
-        <br>
-        <a href="https://jinshuju.net/f/aWTf5c" target="_blank" class="btn btn-default" id="joinus">Join Us</a>
-      </div>
+<div class="container">
+  <div id="invitation" class="row border text-center">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <p>
+        Lab μ 是一个成长中的团队，我们诚挚欢迎你的加入
+      </p>
+      <br>
+      <a href="https://jinshuju.net/f/aWTf5c" target="_blank" class="btn btn-default" id="joinus">Join Us</a>
     </div>
+  </div>
 
-    <div id="contact" class="row border text-center">
-      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <div class="row">
-          <p>联系我们</p>
-        </div>
-        <br>
-        <div class="row">
-          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-3 col-sm-offset-3 col-md-offset-3 col-lg-offset-3">
-            <div class="row">
-              <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 text-center contact-ways">
-                <a href="https://github.com/mulab" target="_blank">
-                  <p><i class="fa fa-github icon-github"></i></p>
-                  <p><span class="hidden-xs">GitHub</span></p>
-                </a>
-              </div>
-              <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 text-center contact-ways">
-                <a href="mailto:mulab.thu@gmail.com">
-                  <p><i class="fa fa-envelope-square icon-mail"></i></p>
-                  <p><span class="hidden-xs">E-mail</span></p>
-                </a>
-              </div>
-              <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 text-center contact-ways">
-                <a href="http://page.renren.com/600002817" target="_blank">
-                  <p><i class="fa fa-renren icon-renren"></i></p>
-                  <p><span class="hidden-xs">Renren</span></p>
-                </a>
-              </div>
+  <div id="contact" class="row border text-center">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <div class="row">
+        <p>联系我们</p>
+      </div>
+      <br>
+
+      <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-3 col-sm-offset-3 col-md-offset-3 col-lg-offset-3">
+          <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 text-center contact-ways">
+              <a href="https://github.com/mulab" target="_blank">
+                <p><i class="fa fa-github icon-github"></i></p>
+
+                <p><span class="hidden-xs">GitHub</span></p>
+              </a>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 text-center contact-ways">
+              <a href="mailto:mulab.thu@gmail.com">
+                <p><i class="fa fa-envelope-square icon-mail"></i></p>
+
+                <p><span class="hidden-xs">E-mail</span></p>
+              </a>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 text-center contact-ways">
+              <a href="http://page.renren.com/600002817" target="_blank">
+                <p><i class="fa fa-renren icon-renren"></i></p>
+
+                <p><span class="hidden-xs">Renren</span></p>
+              </a>
             </div>
           </div>
         </div>
-        <br>
-        <div class="row text-center">
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <img id="qrcode" src="images/wechat.png">
-          </div>
+      </div>
+      <br>
+
+      <div class="row text-center">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <img id="qrcode" src="images/wechat.png">
         </div>
       </div>
     </div>
-
   </div>
 
-  <div class="container-fluid">
-    <div id="footer" class="footer">Designed and built with all the love in the world by Lab μ</div>
-  </div>
+</div>
+
+<div class="container-fluid">
+  <div id="footer" class="footer">Designed and built with all the love in the world by Lab μ</div>
+</div>
 
 
-  <!-- build:js(.) scripts/vendor.js -->
-  <!-- bower:js -->
-  <script src="bower_components/jquery/dist/jquery.js"></script>
-  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-  <!-- endbower -->
-  <!-- endbuild -->
+<!-- build:js(.) scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
 
-  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function () {
+              (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-    ga('create', 'UA-43044519-1', 'auto');
-    ga('send', 'pageview');
-  </script>
+  ga('create', 'UA-43044519-1', 'auto');
+  ga('send', 'pageview');
+</script>
 
 
-  <!-- build:js({app,.tmp}) scripts/main.js -->
-  <!--<script src="scripts/main.js"></script>-->
-  <!-- endbuild -->
-  <!-- build:js({app,.tmp}) scripts/index.js -->
-  <!--<script src="scripts/index.js"></script>-->
-  <!-- endbuild -->
+<!-- build:js({app,.tmp}) scripts/main.js -->
+<!--<script src="scripts/main.js"></script>-->
+<!-- endbuild -->
+<!-- build:js({app,.tmp}) scripts/index.js -->
+<!--<script src="scripts/index.js"></script>-->
+<!-- endbuild -->
 
 </body>
 </html>
