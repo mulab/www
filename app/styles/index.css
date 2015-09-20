@@ -205,7 +205,8 @@
 #projects {
   /*background: radial-gradient(circle at bottom right,#33b1f8 0,#aa81f3 100%);*/
   /*background:         linear-gradient(90deg, #00C9FF 10%, #92FE9D 90%); /!* W3C *!/*/
-  background:         linear-gradient(90deg, #00c6ff 10%, #0072ff 90%); /* W3C */
+  /*background:         linear-gradient(90deg, #00c6ff 10%, #0072ff 90%); /!* W3C *!/*/
+  background-image: linear-gradient(to top left,rgb(85,85,100) 10%,rgb(81,86,101) 100%);
   padding-bottom: 40px;
   padding-top: 40px;
   /*background: -webkit-linear-gradient(0deg, #43cea2 10%, #185a9d 90%); /!* Chrome 10+, Saf5.1+ *!/*/
