@@ -142,11 +142,15 @@ body {
 
 .ios {
   z-index: 10;
+  width: 25%;
+  height: 25%;
 }
 
 .android {
   z-index: -10;
   margin-left: -120px;
+  width: 25%;
+  height: 25%;
 }
 
 .navbar {
