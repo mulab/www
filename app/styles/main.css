@@ -2,25 +2,24 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: "Roboto" "微软雅黑";
 }
 
-
 #logo-img {
-/*    margin-bottom: auto;
-margin-top: auto;*/
-width: 100%;
-z-index: 1;
+  /*    margin-bottom: auto;
+  margin-top: auto;*/
+  width: 100%;
+  z-index: 1;
 }
 
 .button {
   text-decoration: none !important;
 }
 
-@media  (min-width: 768px) {
+@media (min-width: 768px) {
   .lead {
     font-size: 2.7em !important;
   }
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .lead {
     font-size: 1.7em !important;
   }
@@ -74,12 +73,12 @@ body {
   display: none
 }
 
-.bs-docs-nav .navbar-brand, .bs-docs-nav .navbar-nav>li>a {
+.bs-docs-nav .navbar-brand, .bs-docs-nav .navbar-nav > li > a {
   font-weight: 500;
   color: #563d7c
 }
 
-.bs-docs-nav .navbar-nav>.active>a, .bs-docs-nav .navbar-nav>.active>a:hover, .bs-docs-nav .navbar-nav>li>a:hover {
+.bs-docs-nav .navbar-nav > .active > a, .bs-docs-nav .navbar-nav > .active > a:hover, .bs-docs-nav .navbar-nav > li > a:hover {
   color: #463265;
   background-color: #f9f9f9
 }
@@ -97,7 +96,7 @@ body {
   border-color: #f9f9f9
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .bs-docs-footer p {
     margin-bottom: 0
   }
@@ -140,7 +139,7 @@ body {
   color: #cdbfe3;
   text-align: center;
   text-shadow: 0 1px 0 rgba(0, 0, 0, .1);
-  background: linear-gradient(45deg,#020031 0,#6d3353 100%);
+  background: linear-gradient(45deg, #020031 0, #6d3353 100%);
   background-repeat: repeat-x
 }
 
@@ -172,13 +171,13 @@ body {
   font-size: 20px
 }
 
-@media (min-width:480px) {
+@media (min-width: 480px) {
   .bs-docs-masthead .button {
     width: auto
   }
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .bs-docs-masthead {
     padding: 80px 0
   }
@@ -192,7 +191,7 @@ body {
   }
 }
 
-@media (min-width:992px) {
+@media (min-width: 992px) {
   .bs-docs-masthead .lead {
     width: 80%;
     font-size: 30px
@@ -213,15 +212,15 @@ body {
   font-size: 20px;
 }
 
-.bs-docs-header .lead{
+.bs-docs-header .lead {
   color: #fff;
 }
 
-.bs-docs-header p{
+.bs-docs-header p {
   color: #fff;
 }
 
-@media (min-width:480px) {
+@media (min-width: 480px) {
   .carbonad {
     width: 330px !important;
     margin: 20px auto !important;
@@ -287,7 +286,7 @@ body {
 
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .bs-navbar-bottom-example .navbar-fixed-bottom, .bs-navbar-top-example .navbar-fixed-top {
     position: absolute
   }
