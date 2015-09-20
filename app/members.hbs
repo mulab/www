@@ -1,82 +1,152 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8" />
-	<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
+	<meta charset="utf-8">
+  <title>Lab μ - 清华科创学生社团</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css(.) styles/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
+  <link rel="stylesheet" href="bower_components/roboto-fontface/roboto-fontface.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/index.css -->
+  <link rel="stylesheet" href="styles/index.css">
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/common.css -->
+  <link rel="stylesheet" href="styles/common.css"/>
 	<link rel="stylesheet" type="text/css" href="styles/members.css" />
 </head>
 <body>
-	<div class="container">
-	    <div class="row groups">
-	        <div class="subtitle">核心管理</div>
-	        {{#manager}}
-	        <div class="col-xs-6 col-sm-6 col-md-2 member">
-	        	<a href="{{page}}" class="block">
-	        	    <div class="photo">
-	        		    <img class="photos" src="{{url}}" alt="{{name}}">
-	        	    </div>
-	        	    <div class="name">{{name}}</div>
-	        	    <div class="post">{{post}}</div>
-	            </a>
-	        </div>
-	        {{/manager}}
+	<div class="jumbotron" id="header">
+    <nav class="navbar navbar-default" id="nav">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><img id="brand-logo" src="images/LabmU_Meow.png"> Lab μ</a>
         </div>
-        <div class="row groups">
-	        <div class="subtitle">顾问团</div>
-	        {{#consultant}}
-	        <div class="col-xs-6 col-sm-6 col-md-2 member">
-	        	<a href="{{page}}" class="block">
-	        	    <div class="photo">
-	        		    <img class="photos" src="{{url}}" alt="{{name}}">
-	        	    </div>
-	        	    <div class="name">{{name}}</div>
-	        	    <div class="post">{{post}}</div>
-	            </a>
-	        </div>
-	        {{/consultant}}
-        </div>
-        <div class="row groups">
-	        <div class="subtitle">技术开发</div>
-	        {{#developer}}
-	        <div class="col-xs-6 col-sm-6 col-md-2 member">
-	        	<a href="{{page}}" class="block">
-	        	    <div class="photo">
-	        		    <img class="photos" src="{{url}}" alt="{{name}}">
-	        	    </div>
-	        	    <div class="name">{{name}}</div>
-	        	    <div class="post">{{post}}</div>
-	            </a>
-	        </div>
-	        {{/developer}}
-        </div>
-        <div class="row groups">
-	        <div class="subtitle">市场&#183;设计&#183;行政</div>
-	        {{#others}}
-	        <div class="col-xs-6 col-sm-6 col-md-2 member">
-	        	<a href="{{page}}" class="block">
-	        	    <div class="photo">
-	        		    <img class="photos" src="{{url}}" alt="{{name}}">
-	        	    </div>
-	        	    <div class="name">{{name}}</div>
-	        	    <div class="post">{{post}}</div>
-	            </a>
-	        </div>
-	        {{/others}}
-        </div>
-        <div class="row groups">
-	        <div class="subtitle">以往成员</div>
-	        {{#former}}
-	        <div class="col-xs-6 col-sm-6 col-md-2 member">
-	        	<a href="{{page}}" class="block">
-	        	    <div class="photo">
-	        		    <img class="photos" src="{{url}}" alt="{{name}}">
-	        	    </div>
-	        	    <div class="name">{{name}}</div>
-	        	    <div class="post">{{post}}</div>
-	            </a>
-	        </div>
-	        {{/former}}
-        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav" id="nav-left">
+            <li><a href="#">TUNet<span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Tsinghua Now</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right" id="nav-right">
+            <li><a href="members.html">Members</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact Us <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="https://github.com/mulab" target="_blank">Github</a></li>
+                <li><a href="mailto:mulab.thu@gmail.com">Email</a></li>
+              </ul>
+            </li>
+            <li><a href="https://jinshuju.net/f/aWTf5c" target="_blank">Join Us</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div id="logo-holder" class="center-block">
+      <img src="images/LabmU_Meow.png" alt="logo" id="logo-img">
     </div>
+    <h1 class="text-white center-block text-center">清华大学 <br class="visible-xs"> Lab μ 校园极客社</h1>
+    <a href="http://blog.lab.mu/" target="_blank" class="btn-lg center-block blog-btn">Our Blog</a>
+  </div>
+	<div class="container">
+	  <div class="row groups">
+	    <div class="subtitle">核心管理</div>
+	    {{#manager}}
+	    <div class="col-xs-6 col-sm-6 col-md-2 member">
+	      <a href="{{page}}" class="block">
+	        <div class="photo">
+	        	<img class="photos" src="{{url}}" alt="{{name}}">
+	        </div>
+	        <div class="name">{{name}}</div>
+	        <div class="post">{{post}}</div>
+	      </a>
+	    </div>
+	    {{/manager}}
+    </div>
+    <div class="row groups">
+	    <div class="subtitle">顾问团</div>
+	    {{#consultant}}
+	    <div class="col-xs-6 col-sm-6 col-md-2 member">
+	      <a href="{{page}}" class="block">
+	        <div class="photo">
+	        	<img class="photos" src="{{url}}" alt="{{name}}">
+	        </div>
+	        <div class="name">{{name}}</div>
+	        <div class="post">{{post}}</div>
+	      </a>
+	    </div>
+	    {{/consultant}}
+    </div>
+    <div class="row groups">
+	    <div class="subtitle">技术开发</div>
+	    {{#developer}}
+	    <div class="col-xs-6 col-sm-6 col-md-2 member">
+	      <a href="{{page}}" class="block">
+	        <div class="photo">
+	        	<img class="photos" src="{{url}}" alt="{{name}}">
+	        </div>
+	        <div class="name">{{name}}</div>
+	        <div class="post">{{post}}</div>
+	      </a>
+	    </div>
+	    {{/developer}}
+    </div>
+    <div class="row groups">
+	    <div class="subtitle">市场&#183;设计&#183;行政</div>
+	    {{#others}}
+	    <div class="col-xs-6 col-sm-6 col-md-2 member">
+	      <a href="{{page}}" class="block">
+	        <div class="photo">
+	        	<img class="photos" src="{{url}}" alt="{{name}}">
+	        </div>
+	        <div class="name">{{name}}</div>
+	        <div class="post">{{post}}</div>
+	      </a>
+	    </div>
+	    {{/others}}
+    </div>
+    <div class="row groups">
+	    <div class="subtitle">以往成员</div>
+	    {{#former}}
+	    <div class="col-xs-6 col-sm-6 col-md-2 member">
+	      <a href="{{page}}" class="block">
+	        <div class="photo">
+	        	<img class="photos" src="{{url}}" alt="{{name}}">
+	        </div>
+	        <div class="name">{{name}}</div>
+	        <div class="post">{{post}}</div>
+	      </a>
+	    </div>
+	    {{/former}}
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div id="footer" class="footer">Designed and built with all the love in the world by Lab μ</div>
+  </div>
+
+
+  <!-- build:js(.) scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 </body>
 </html>
