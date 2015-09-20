@@ -1,9 +1,10 @@
 {
   "name": "www",
   "dependencies": {
-    "jquery": "~2.1.1",
+    "animate.css": "~3.4.0",
     "bootstrap": "~3.2.0",
     "font-awesome": "~4.4.0",
+    "jquery": "~2.1.1",
     "roboto-fontface": "~0.2.4"
   },
   "ignore": [
