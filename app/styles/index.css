@@ -71,6 +71,17 @@
   color: black;
 }
 
+.footer {
+  border-top: none;
+  background-color: #454c56;
+  color: #c4c4c4;
+  padding: 15px 0;
+  margin: 0 -15px;
+  font-weight: 300;
+  font-size: 14px;
+  text-align: center;
+}
+
 .version {
   -moz-user-select: none;
   -webkit-user-select: none;
