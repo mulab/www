@@ -11,4 +11,11 @@ h1 {
 
 h2 {
   font-size: 48px;
+  color: #ccc;
+}
+
+h3 {
+  margin-top: -60px;
+  font-size: 24px;
+  color: #fff;
 }
