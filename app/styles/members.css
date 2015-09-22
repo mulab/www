@@ -80,6 +80,7 @@ a:hover {
 
 #contactus:link,
 #contactus:visited,
+#contactus:hover,
 #contactus:active {
-  color: #ffffff;
+  color: #ffffff !important;
 }
