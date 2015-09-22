@@ -145,6 +145,8 @@
   color: rgb(164, 171, 176);
 }
 
-.dropdown-toggle:visited {
+#contactus:link,
+#contactus:visited,
+#contactus:active {
   color: #ffffff;
 }

@@ -77,3 +77,9 @@ a:hover {
     margin-top: 50px;
   }
 }
+
+#contactus:link,
+#contactus:visited,
+#contactus:active {
+  color: #ffffff;
+}
