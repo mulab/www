@@ -127,3 +127,18 @@
 .border {
   border-bottom: 1px solid #e5e5e5;
 }
+
+.githublink,
+.emaillink:visited,
+.githublink:hover,
+.emaillink,
+.emaillink:visited,
+.emaillink:hover,
+.renrenlink,
+.renrenlink:visited,
+.renrenlink:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+
