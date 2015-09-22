@@ -141,4 +141,6 @@
   text-decoration: none;
 }
 
-
+.project-text > p {
+  color: rgb(164, 171, 176);
+}
