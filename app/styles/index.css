@@ -151,3 +151,20 @@
 #contactus:active {
   color: #ffffff !important;
 }
+
+.musvg {
+  background: lightseagreen;
+  border-radius: 100px;
+}
+
+.etasvg {
+  background: #E91E63;
+  border-radius: 100px;
+}
+
+.camussvg {
+  background: deepskyblue;
+  border-radius: 100px;
+}
+
+.musvg > img {}
