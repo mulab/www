@@ -114,7 +114,7 @@
 }
 
 .project-image {
-  width: 50%;
+  width: 80%;
 }
 
 @media screen and (min-width: 768px) {
@@ -152,19 +152,34 @@
   color: #ffffff !important;
 }
 
+.musvg,
+.camussvg,
+.etasvg {
+  border-radius: 30px;
+  height: 180px;
+  width: 70%;
+}
+
 .musvg {
   background: lightseagreen;
-  border-radius: 100px;
 }
 
 .etasvg {
   background: #E91E63;
-  border-radius: 100px;
 }
 
 .camussvg {
   background: deepskyblue;
-  border-radius: 100px;
 }
 
-.musvg > img {}
+.musvg > img {
+  height: 85%;
+}
+
+.etasvg > img {
+  height: 97%;
+}
+
+.camussvg > img {
+  height: 97%;
+}

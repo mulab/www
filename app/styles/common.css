@@ -4,6 +4,12 @@
   color: white !important;
 }
 
+.vertical-helper {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
 /* End Helper */
 
 body {
