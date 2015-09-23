@@ -1,8 +1,8 @@
 body {
   margin: 0 auto;
   text-align: center;
-  background: #6cc;
-  color: #fff;
+  background: #CCCCCC;
+  color: #FF6666;
 }
 
 h1 {
@@ -11,11 +11,35 @@ h1 {
 
 h2 {
   font-size: 48px;
-  color: #ccc;
+  color: #0099CC;
 }
 
 h3 {
-  margin-top: -60px;
   font-size: 24px;
-  color: #fff;
+  color: #FF6666;
+}
+
+p {
+  margin-top: 30px;
+  font-size: 2em;
+  color: #0099CC;
+}
+
+.top {
+  margin-top: 50px;
+}
+
+a {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h1 {
+    font-size: 5em;
+    padding-bottom: 10px;
+  }
 }
