@@ -116,7 +116,21 @@ header .carousel-indicators li {
     visibility: visible !important;
 }
 
+.footer {
+    border-top: none;
+    color: #454c56;
+    padding: 15px 0;
+    margin-top: 150px;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: center;
+}
+
 @media (max-width: 768px) {
+    .footer {
+        display: none;
+    }
+
     header h1 {
         font-size: 70px;
     }
@@ -134,6 +148,16 @@ header .carousel-indicators li {
     .navbar-nav {
         float: left;
         text-align: left;
+    }
+}
+
+@media (max-width: 330px) {
+    header .carousel-iphone {
+        width: 280px;
+    }
+    header .carousel {
+        padding: 86px 0 0 3px;
+        width: 244px;
     }
 }
 
