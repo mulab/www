@@ -4,7 +4,7 @@ body {
 }
 
 header h1 {
-    color: #ffa726;
+    color: #b71c1c;
 }
 
 nav.navbar {
@@ -88,20 +88,20 @@ header .carousel {
 }
 
 header .carousel-indicators .active {
-    width: 15px;
-    height: 15px;
+    width: 10px;
+    height: 10px;
     background: #444444;
 }
 
 header .carousel-indicators {
-    bottom: -63px;
+    bottom: -40px;
 }
 
 header .carousel-indicators li {
     display: inline-block;
     margin: 1px;
-    width: 15px;
-    height: 15px;
+    width: 10px;
+    height: 10px;
     border: 1px solid #666666;
     border-radius: 10px;
     text-indent: -999px;
