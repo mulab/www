@@ -4,7 +4,7 @@ body {
 }
 
 header h1 {
-  color: #4a148c;
+  color: #1565c0;
 }
 
 nav.navbar {
@@ -52,7 +52,7 @@ nav.navbar.fixed-to-top {
 }
 
 header {
-  padding: 150px 0 0 0;
+  padding: 50px 0 0 0;
   margin-bottom: 70px;
   height: 960px;
   background: url('../images/background.jpg');
@@ -74,9 +74,9 @@ header p.lead {
 header .carousel-iphone {
   margin-right: auto;
   margin-left: auto;
-  width: 320px;
+  width: 336px;
   height: 672px;
-  background: url('../images/nexus_5_front.png') no-repeat;
+  background: url('../images/Nexus_5_Front_View.png') no-repeat 1px 26px;
   background-size: 100%;
 }
 
@@ -84,7 +84,7 @@ header .carousel {
   position: relative;
   margin-right: auto;
   margin-left: auto;
-  padding: 95px 0 0 4px;
+  padding: 95px 0 0 0;
   width: 282px;
 }
 
@@ -145,6 +145,10 @@ header .carousel-indicators li {
   margin-top: 50px;
 }
 
+.header-icon {
+  width: 100px;
+}
+
 @media (max-width: 768px) {
   .slogan h1 {
     margin: 50px 0 20px 0;
@@ -175,6 +179,7 @@ header .carousel-indicators li {
   }
 
   header {
+    overflow: hidden;
     margin-bottom: 0;
     padding-bottom: 50px;
     min-height: 910px;
@@ -186,15 +191,19 @@ header .carousel-indicators li {
     float: left;
     text-align: left;
   }
+
+  header .carousel-iphone {
+    padding-left: -25px;
+  }
 }
 
 @media (max-width: 330px) {
   header .carousel-iphone {
-    width: 280px;
+    width: 289px;
   }
 
   header .carousel {
-    padding: 86px 0 0 3px;
+    padding: 86px 0 0 2px;
     width: 244px;
   }
 }
