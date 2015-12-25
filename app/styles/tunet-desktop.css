@@ -4,8 +4,8 @@ body {
 
 header {
   background-image: url("../images/desktop-bg.jpg");
-  background-repeat: round;
-  height: 600px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 #logo-wrapper {
@@ -28,12 +28,9 @@ header {
 
 #screenshot {
   display: block;
+  max-width: 80%;
   margin-top: 80px;
   margin-bottom: 100px;
-}
-
-#downloads {
-  /*width: 60%;*/
 }
 
 #downloads a {
