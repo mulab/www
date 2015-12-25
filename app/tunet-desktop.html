@@ -28,31 +28,8 @@
   your browser</a> to improve your experience.</p>
 <![endif]-->
 
-<!--<nav class="navbar navbar-default" role="navigation">-->
-  <!--<div class="container">-->
-    <!--<div class="navbar-header">-->
-      <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">-->
-        <!--<span class="sr-only">Toggle navigation</span>-->
-        <!--<span class="icon-bar"></span>-->
-        <!--<span class="icon-bar"></span>-->
-        <!--<span class="icon-bar"></span>-->
-      <!--</button>-->
-
-      <!--<a class="navbar-brand" href="index.html">Lab μ</a>-->
-
-    <!--</div>-->
-    <!--<div class="collapse navbar-collapse navbar-ex1-collapse">-->
-      <!--<ul class="nav navbar-nav">-->
-        <!--<li><a href="http://now.lab.mu/latest">Download</a></li>-->
-        <!--<li><a href="http://blog.lab.mu/" target="_blank">Blog</a></li>-->
-        <!--<li><a href="members.html" target="_blank">Members</a></li>-->
-      <!--</ul>-->
-    <!--</div>-->
-  <!--</div>-->
-<!--</nav>-->
-
-<header>
-  <div class="container">
+<main>
+  <div class="container" id="main">
     <div class="row">
       <div class="col-sm-7 col-xs-12 text-center">
         <div id="logo-wrapper">
@@ -68,17 +45,21 @@
           </p>
         </div>
         <div id="downloads" class="row">
-          <div>
-            <a href="#" class="col-sm-offset-3 col-sm-2 hidden-xs">
+          <a href="#" class="col-sm-offset-3 col-sm-2 hidden-xs">
+            <div class="icon-wrapper">
               <img src="images/windows.svg" alt="windows">
-            </a>
-            <a href="#" class="col-sm-2 hidden-xs">
+            </div>
+          </a>
+          <a href="#" class="col-sm-2 hidden-xs">
+            <div class="icon-wrapper">
               <img src="images/apple.svg" alt="">
-            </a>
-            <a href="#" class="col-sm-2 hidden-xs">
+            </div>
+          </a>
+          <a href="#" class="col-sm-2 hidden-xs">
+            <div class="icon-wrapper">
               <img src="images/linux.svg" alt="">
-            </a>
-          </div>
+            </div>
+          </a>
         </div>
       </div>
       <div class="col-sm-5 hidden-xs">
@@ -86,6 +67,22 @@
       </div>
     </div>
   </div>
-</header>
+
+  <footer class="text-center">
+    Designed and built with all the love in the world by Lab μ
+  </footer>
+</main>
+
+<!-- build:js(.) scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js scripts/tunet-desktop.js -->
+<script src="scripts/tunet-desktop.js"></script>
+<!-- endbuild -->
+
 </body>
 </html>
