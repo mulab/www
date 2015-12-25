@@ -1,0 +1,45 @@
+body {
+  font-family: "Roboto", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+}
+
+header {
+  background-image: url("../images/desktop-bg.jpg");
+  background-repeat: round;
+  height: 600px;
+}
+
+#logo-wrapper {
+  /*width: 150px;*/
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+#logo-wrapper img {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+}
+
+#intro {
+  margin-bottom: 60px;
+}
+
+#screenshot {
+  display: block;
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+#downloads {
+  /*width: 60%;*/
+}
+
+#downloads a {
+  display: block;
+}
+
+#downloads img {
+  width: 50px;
+  height: 50px;
+}
