@@ -9,16 +9,17 @@ header {
 }
 
 #logo-wrapper {
-  /*width: 150px;*/
-  width: 100%;
-  margin-top: 100px;
-  margin-bottom: 30px;
+  width: 200px;
+  height: 200px;
+  margin: 100px auto 30px auto;
+  border-radius: 20px;
+  background: rgb(111, 182, 252);
 }
 
 #logo-wrapper img {
-  display: block;
-  width: 200px;
-  margin: 0 auto;
+  height: 80%;
+  width: 80%;
+  margin: 10%;
 }
 
 #intro {
