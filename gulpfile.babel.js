@@ -4,13 +4,26 @@ import gulpLoadPlugins from 'gulp-load-plugins';
 import browserSync from 'browser-sync';
 import del from 'del';
 import {stream as wiredep} from 'wiredep';
+import swig from 'gulp-swig';
+import data from 'gulp-data';
+import path from 'path'
+import fs from 'fs';
 
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
-var swig = require('gulp-swig');
+
+function getJsonData(file) {
+  var filepath = './app/' + path.basename(file.path) + '.json';
+  if (fs.existsSync(filepath)) {
+    return require(filepath);
+  } else {
+    return {};
+  }
+}
 
 gulp.task('templates', () => {
   return gulp.src('app/*.html')
+    .pipe(data(getJsonData))
     .pipe(swig())
     .pipe(gulp.dest('.tmp'))
 });
