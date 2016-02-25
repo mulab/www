@@ -40,6 +40,10 @@
         2,
         "single"
       ]
+    },
+    "globals": {
+      "window": true,
+      "$": true
     }
   }
 }

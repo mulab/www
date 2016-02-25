@@ -1,3 +1,5 @@
+'use strict';
+
 $(document).ready(function () {
 
   $('.navbar-nav>li').mouseover(function () {
