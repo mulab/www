@@ -7,6 +7,13 @@ import {stream as wiredep} from 'wiredep';
 
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
+var swig = require('gulp-swig');
+
+gulp.task('templates', () => {
+  return gulp.src('app/*.html')
+    .pipe(swig())
+    .pipe(gulp.dest('.tmp'))
+});
 
 gulp.task('styles', () => {
   return gulp.src('app/styles/*.scss')
@@ -94,7 +101,7 @@ gulp.task('extras', () => {
 
 gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
 
-gulp.task('serve', ['wiredep', 'styles', 'scripts', 'fonts'], () => {
+gulp.task('serve', ['wiredep', 'templates', 'styles', 'scripts', 'fonts'], () => {
   browserSync({
     notify: false,
     port: 9000,
@@ -164,7 +171,7 @@ gulp.task('wiredep', () => {
     .pipe(gulp.dest('app'));
 });
 
-gulp.task('build', ['wiredep', 'lint', 'html', 'images', 'fonts', 'extras'], () => {
+gulp.task('build', ['wiredep', 'templates', 'lint', 'html', 'images', 'fonts', 'extras'], () => {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 
