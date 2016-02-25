@@ -1,31 +1,42 @@
-developing branch of www
-===
+# The Official Website of Lab μ
 
-new from master
 
-The official website of Lab μ
+## Development Guide
+This website is developed using the [Gulp Building System](http://gulpjs.com/) and
+[Bower Package Manager](http://bower.io/), which is based on [Node.js](https://nodejs.org).
 
-Development Guide
-===
+We use [Swig Template Engine](http://paularmstrong.github.io/swig/). All *.html file is 
+Swig template. View the documentation before you start developing.
 
-Preparetion
----
+### Environment
+First install Node.js. Any version beyond 0.12.0 is supported (but the latest version is 
+encouraged). Make nodejs and npm is in your system path (which is automatically configured by
+the installer by default, or you can make it your self).
+
+Then run
+```bash
+$ npm install -g gulp-cli
+$ npm install -g bower
+```
+to install gulp and bower.
+
+### Preparation
 ```bash
 $ npm install
 $ bower install
-$ cd test & bower install
 ```
+to install all development dependencies and used library.
 
-Preview
----
+### Preview
 ```bash
-$ grunt serve
-or
-$ grunt serve --allow-remote # then you can use your phone visiting the site
+$ gulp serve
 ```
+it automatically open your default browser to the index.
 
-Release
----
+Changes on files is automatically reloaded.
+
+### Release
 ```bash
-$ grunt build
+$ gulp build
 ```
+and checkout the pages in *dest* directory.

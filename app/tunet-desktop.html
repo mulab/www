@@ -1,32 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>TUNet Desktop</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+{% extends 'base.html' %}
 
-  <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+{% block title %}TUNet Desktop{% endblock %}
 
-  <!-- build:css(.) styles/vendor.css -->
-  <!-- bower:css -->
-  <link rel="stylesheet" href="bower_components/animate.css/animate.css" />
-  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
-  <link rel="stylesheet" href="bower_components/roboto-fontface/roboto-fontface.css" />
-  <!-- endbower -->
-  <!-- endbuild -->
-  <!-- build:css(.tmp) styles/tunet-desktop.css -->
-  <link rel="stylesheet" href="styles/tunet-desktop.css">
-  <!-- endbuild -->
-</head>
-<body>
-<!--[if lt IE 10]>
-<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
-  your browser</a> to improve your experience.</p>
-<![endif]-->
+{% block styles %}
+<!-- build:css styles/tunet-desktop.css -->
+<link rel="stylesheet" href="styles/tunet-desktop.css">
+<!-- endbuild -->
+{% endblock %}
+
+{% block maincss %}
+{% endblock %}
+
+{% block content %}
 
 <main>
   <div class="container" id="main">
@@ -68,21 +53,13 @@
     </div>
   </div>
 
-  <footer class="text-center">
-    Designed and built with all the love in the world by Lab μ
-  </footer>
+  {% include 'footer.html' %}
 </main>
 
-<!-- build:js(.) scripts/vendor.js -->
-<!-- bower:js -->
-<script src="bower_components/jquery/dist/jquery.js"></script>
-<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-<!-- endbower -->
-<!-- endbuild -->
+{% endblock %}
 
+{% block scripts %}
 <!-- build:js scripts/tunet-desktop.js -->
 <script src="scripts/tunet-desktop.js"></script>
 <!-- endbuild -->
-
-</body>
-</html>
+{% endblock %}
