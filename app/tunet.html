@@ -1,25 +1,18 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-  <meta charset="utf-8">
-  <title>TUNet —— 校园联网助手</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width">
-  <link rel="shortcut icon" href="favicon.ico">
-  <!-- build:css(.) styles/vendor.css -->
-  <!-- bower:css -->
-  <link rel="stylesheet" href="/bower_components/roboto-fontface/css/roboto-fontface.css" />
-  <!-- endbower -->
-  <!-- endbuild -->
-  <!-- build:css styles/tunet.css -->
-  <link rel="stylesheet" href="styles/tunet.css">
-  <!-- endbuild -->
-  <!-- build:css(.tmp) styles/common.css -->
-  <link rel="stylesheet" href="styles/common.css"/>
-  <!-- endbuild -->
-</head>
+{% extends 'base.html' %}
 
-<body>
+{% block title %}TUNet —— 校园联网助手{% endblock %}
+
+{% block styles %}
+<!-- build:css styles/tunet.css -->
+<link rel="stylesheet" href="styles/tunet.css">
+<!-- endbuild -->
+{% endblock %}
+
+{% block maincss %}
+{% endblock %}
+
+{% block content %}
+
 <div id="pageContain">
   <div class="page page1 current">
     <div class="contain">
@@ -137,14 +130,10 @@
   <li></li>
 </ul>
 
-<!-- build:js(.) scripts/vendor.js -->
-<!-- bower:js -->
-<script src="/bower_components/modernizr/modernizr.js"></script>
-<script src="/bower_components/jquery/dist/jquery.js"></script>
-<!-- endbower -->
-<!-- endbuild -->
+{% endblock %}
 
-<!-- build:js({app,.tmp}) scripts/tunet.js -->
+{% block scripts %}
+<!-- build:js scripts/tunet.js -->
 <script src="scripts/fullPage.min.js"></script>
 <!-- endbuild -->
 
@@ -163,6 +152,4 @@
     easing: 'ease'
   });
 </script>
-
-</body>
-</html>
+{% endblock %}
