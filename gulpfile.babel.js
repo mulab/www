@@ -26,6 +26,7 @@ gulp.task('templates', () => {
     .pipe(data(getJsonData))
     .pipe(swig())
     .pipe(gulp.dest('.tmp'))
+    .pipe(reload({stream: true}));
 });
 
 gulp.task('styles', () => {
@@ -106,7 +107,9 @@ gulp.task('fonts', () => {
 gulp.task('extras', () => {
   return gulp.src([
     'app/*.*',
-    '!app/*.html'
+    '!app/*.html',
+    'Dockerfile',
+    '.dockerignore'
   ], {
     dot: true
   }).pipe(gulp.dest('dist'));
@@ -127,12 +130,13 @@ gulp.task('serve', ['wiredep', 'templates', 'styles', 'scripts', 'fonts'], () =>
   });
 
   gulp.watch([
-    'app/*.html',
+    '.tmp/**/*.html',
     '.tmp/scripts/**/*.js',
     'app/images/**/*',
     '.tmp/fonts/**/*'
   ]).on('change', reload);
 
+  gulp.watch('app/**/*.html', ['templates']);
   gulp.watch('app/styles/**/*.scss', ['styles']);
   gulp.watch('app/scripts/**/*.js', ['scripts']);
   gulp.watch('app/fonts/**/*', ['fonts']);
