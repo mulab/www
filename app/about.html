@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+
+{% block title %}Lab μ - 清华科创学生社团{% endblock %}
+
+{% block styles %}
+<!-- build:css styles/about.css -->
+<link rel="stylesheet" href="styles/about.css">
+<!-- endbuild -->
+{% endblock %}
+{% block content %}
+<div class="jumbotron" id="header">
+    {% include 'navbar.html' %}
+</div>
+<div class="ex-rg" id="ex">
+    <div class="inner-ex-rg">
+        <p>我们用工匠与画家的眼光</p>
+        <p>来重新设计和塑造身边的日常</p>
+        <p>简化校园生活</p>
+    </div>
+    <p><a id="info-link" href="#info">&darr;</a></p>
+</div>
+<div class="info-rg">
+    <h1>ABOUT US</h1>
+    <div class="inner-info-rg">
+    <a name="info"></a>
+        <div class="desc-info-rg">
+            <p>Lab μ是清华大学内部具有极客精神的同学们组成的科创团体，汇集了校园顶尖的工程师、设计师和创造力行动力max的同学。我们用工匠与画家的眼光来重新设计和塑造身边的日常，并通过协力开发全新的互联网、移动和桌面应用来简化校园生活。</p>
+            <p class="note-block">
+                    多个深受师生欢迎的应用已在发布或开发中，如TUNet校园网自动联网助手、Tsinghua Now即刻清华应用、CaμsKit校园活动套件等，更多有趣实用的想法正被一步步实现！<br>
+                    我们通过多种平台大型项目的设计、开发、宣传、运营等活动，为团队成员提供了有效的交流和学习机会。
+            </p>
+        </div>
+        <div class="name-info-rg">
+            Lab μ<br>
+            清华大学学生校园极客社
+        </div>
+    </div>
+</div>
+<div class="col-rg">
+    <div class="inner-col-rg">
+        <div class="col-rg-item" id="item-products">
+            <p class="title"><a href="products.html">PRODUCTS&nbsp;&nbsp;&nbsp;&nbsp;&gt;</a></p>
+            <p>我们的作品在全校范围被广泛地使用。<br>
+            TUNet校园自动联网助手现有Android、iOS和桌面版本，在校内共有11000+的用户数量。</p>
+        </div>
+        <div class="col-rg-item" id="item-awards">
+            <p class="title"><a href="awards.html">AWARD WINNING&nbsp;&nbsp;&nbsp;&nbsp;&gt;</a></p>
+            <p>哈哈</p>
+        </div>
+        <div class="col-rg-item" id="item-members">
+            <p class="title"><a href="members.html">MEMBERS&nbsp;&nbsp;&nbsp;&nbsp;&gt;</a></p>
+            <p>来自不同专业的协会成员共同合作，涵盖了项目开发过程中的方方面面。我们同样欢迎拥有创意与热情的你，来与我们一起实现各种更多的可能。</p>
+        </div>
+    </div>
+</div>
+<div class="slogan-rg">
+    <div class="inner-slogan-rg">
+        <p>
+        创造实用有趣的产品。<br>
+        简化校园学习生活
+        </p>
+        <p>
+        我们创造<br>
+        校园中千万人使用的应用
+        </p>
+        <p>
+        Lab μ是一个成长中的团队。<br>我们诚挚欢迎你的加入
+        </p>
+    </div>
+</div>
+<div class="invitation-rg">
+    <p><img src="images/about/logo_purple.png" id="logo"></p>
+    <p>欢迎加入Lab μ<br>一起实现无限种可能</p>
+    <p><a id="join-btn" href="https://jinshuju.net/f/aWTf5c">JOIN US</a></p>
+</div>
+{% include 'footer.html' %}
+{% endblock %}
+
