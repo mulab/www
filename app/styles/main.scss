@@ -1,7 +1,8 @@
 /* navbar */
 
 #header {
-  background-image: linear-gradient(to top left, rgba(170, 129, 243, .1) 10%, rgba(95, 142, 224, .2) 100%), url(../images/map-dark.png);
+//  background-image: linear-gradient(to top left, rgba(170, 129, 243, .1) 10%, rgba(95, 142, 224, .2) 100%), url(../images/map-dark.png);
+  background-color: #222;
   padding-top: 0;
 }
 
@@ -73,14 +74,32 @@
 /* footer */
 
 .footer {
+  display: inline-block;
+  width: 100%;
   border-top: none;
-  background-color: #454c56;
-  color: #c4c4c4;
-  padding: 15px 0;
-  margin: 0 -15px;
+  background-color: #222;
+  color: #eee;
+  margin: 0;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.footer-note { 
+  margin: 0;
   font-weight: 300;
   font-size: 14px;
-  text-align: center;
+  font-family: sans-serif;
+}
+
+.footer-left {
+  float: left;
+  margin-left: 90px;
+}
+
+.footer-right {
+  float: right;
+  margin-right: 90px;
 }
 
 /* End footer */
