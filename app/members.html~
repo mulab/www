@@ -12,10 +12,10 @@
     {% include 'navbar.html' %}
     <div style="width:100%; position:relative;">
       <img src="images/members/members.jpg" style="width:100%; z-index:-1;">
-      <div style="position:absolute; top:10%; left:7%;">
+      <div style="position:absolute; top:15%; left:7%;">
         <h5 style="color:white;">MEMBERS</h5>
       </div>
-      <div style="position:absolute; top:20%; left:7%; width:30%">
+      <div style="position:absolute; top:30%; left:7%; width:40%">
         <p style="color:white;font-size:24px">我们由来自不同背景，不同学院的同学们组成</p>
       </div>
       <div style="position:absolute; top:20%; left:50%; width:20%">
@@ -23,32 +23,32 @@
       </div>
       <div style="position:absolute; top:25%; left:50%; width:20%">
         <h5 style="color:white;font-size:20px;">污师</h5>
-        <h5 style="color:white;">在那山的那边海的那边有一群拉布喵～</h5>
+        <h5 style="color:white;font-size:12px;">在那山的那边海的那边有一群拉布喵～</h5>
       </div>
       <div style="position:absolute; top:40%; left:50%; width:20%">
         <HR align="left" width="80%" color=#ffffff SIZE=40 />
       </div>
       <div style="position:absolute; top:45%; left:50%; width:20%">
         <h5 style="color:white;font-size:20px;">药师</h5>
-        <h5 style="color:white;">他们调皮又机灵～</h5>
+        <h5 style="color:white;font-size:12px;">他们调皮又机灵～</h5>
       </div>
       <div style="position:absolute; top:20%; left:75%; width:20%">
         <HR align="left" width="80%" color=#ffffff SIZE=40 />
       </div>
       <div style="position:absolute; top:25%; left:75%; width:20%">
         <h5 style="color:white;font-size:20px;">膜法师</h5>
-        <h5 style="color:white;">他们活泼又聪明～</h5>
+        <h5 style="color:white;font-size:12px;">他们活泼又聪明～</h5>
       </div>
       <div style="position:absolute; top:40%; left:75%; width:20%">
         <HR align="left" width="80%" color=#ffffff SIZE=40 />
       </div>
       <div style="position:absolute; top:45%; left:75%; width:20%">
         <h5 style="color:white;font-size:20px;">老司机</h5>
-        <h5 style="color:white;">他们自由自在生活在那清华大学里～</h5>
+        <h5 style="color:white;font-size:12px;">他们自由自在生活在那清华大学里～</h5>
       </div>
     </div>
     <div style="background:white;padding-bottom:5%">
-      <div style="float:left; margin-left:15%;margin-right:10%;"><img src="images/LabmU_Meow_black.svg" ></div>
+      <div style="float:left; margin-left:15%;margin-right:10%;width:15%"><img src="images/LabmU_Meow_black.svg" style="width:100%;" ></div>
       <div>hhh</div>
       <div style="clear:both;"></div>
     </div>
