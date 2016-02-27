@@ -1,7 +1,8 @@
 /* navbar */
 
 #header {
-  background-image: linear-gradient(to top left, rgba(170, 129, 243, .1) 10%, rgba(95, 142, 224, .2) 100%), url(../images/map-dark.png);
+//  background-image: linear-gradient(to top left, rgba(170, 129, 243, .1) 10%, rgba(95, 142, 224, .2) 100%), url(../images/map-dark.png);
+  background-color: #222;
   padding-top: 0;
 }
 
@@ -74,7 +75,7 @@
 
 .footer {
   border-top: none;
-  background-color: #454c56;
+  background-color: #222;
   color: #c4c4c4;
   padding: 15px 0;
   margin: 0 -15px;
