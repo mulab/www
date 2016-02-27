@@ -10,8 +10,8 @@
 
 {% block content %}
   <div>
-      {% include 'navbar.html' %}
     <!--<div class="header">
+      {% include 'navbar.html' %}
       <div style="width:50%; float:left;">
         <h5 style="color:white; margin-left:10%; margin-top:7%;">MEMBERS</h5>
         <p style="color:white; margin-left:10%; margin-top:7%;text-size:40px;">我们由来自不同背景，不同学院的同学们组成</p>
