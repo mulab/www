@@ -3,6 +3,7 @@ body{background-color:#f3f3f3; margin:0;}
   width:100%;
   color:white;
 }
+svg { fill: #000; }
 .tag{
   width:100%;
   clear:both;
