@@ -1,0 +1,121 @@
+{% extends 'base.html' %}
+
+{% block title %}Lab μ - 清华科创学生社团{% endblock %}
+
+{% block styles %}
+<!-- build:css styles/index.css -->
+<link rel="stylesheet" href="styles/products-now.css">
+<!-- endbuild -->
+{% endblock %}
+
+{% block content %}
+
+{% include 'navbar.html' %}
+
+<header>
+  <div class="top-intro dodge">
+    <h2>Tsinghua Now —— <span class="new-line"><br></span>智能校园信息助理</h2>
+    将校内各处分散的有用信息集中整合在一起，<br>并在最合适的时间向你展示最合适的信息。
+  </div>
+  <div id="carousel-phone">
+    <div id="carousel" class="carousel slide">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel" data-slide-to="1"></li>
+        <li data-target="#carousel" data-slide-to="2"></li>
+        <li data-target="#carousel" data-slide-to="3"></li>
+        <li data-target="#carousel" data-slide-to="4"></li>
+        <li data-target="#carousel" data-slide-to="5"></li>
+      </ol>
+      <!-- Inner -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="images/page1.png">
+        </div>
+        <div class="item">
+          <img src="images/page2.png">
+        </div>
+        <div class="item">
+          <img src="images/page3.png">
+        </div>
+        <div class="item">
+          <img src="images/page4.png">
+        </div>
+        <div class="item">
+          <img src="images/page5.png">
+        </div>
+        <div class="item">
+          <img src="images/page6.png">
+        </div>
+      </div>
+    </div>
+    <div class="intro left top dodge">
+      <h4>DDL倒计时提醒</h4>
+      求文案求装逼赶紧来个<br>
+      厉害的三段式或四段式装逼文稿啊啊啊啊啊啊啊<br>
+      逼格是你社的灵魂<br>
+      一二三四二二三四
+    </div>
+    <div class="intro right top dodge">
+      <h4>GPA双法计算</h4>
+      求文案求装逼赶紧来个<br>
+      厉害的三段式或四段式装逼文稿啊啊啊啊啊啊啊<br>
+      逼格是你社的灵魂<br>
+      一二三四二二三四
+    </div>
+    <div class="intro left bottom dodge">
+      <h4>DDL课表公告一键link</h4>
+      求文案求装逼赶紧来个<br>
+      厉害的三段式或四段式装逼文稿啊啊啊啊啊啊啊<br>
+      逼格是你社的灵魂<br>
+      一二三四二二三四
+    </div>
+    <div class="intro right bottom dodge">
+      <h4>作业天气随时看</h4>
+      求文案求装逼赶紧来个<br>
+      厉害的三段式或四段式装逼文稿啊啊啊啊啊啊啊<br>
+      逼格是你社的灵魂<br>
+      一二三四二二三四
+    </div>
+  </div>
+</header>
+
+<div>
+  <h1>All information. <span class="new-line"><br></span>One place.</h1>
+  <div class="container">
+    <div>
+      <p class="big">大家快来装个逼<br>吹一吹你们的安卓版</p>
+      <img src="images/products/now/now.png" alt="2d-code" class="code"></img>
+      <p class="right-align small dodge">Android版现已上线，<br>点此下载或扫描二维码：</p>
+      <a class="download-button">下载Android版&gt&gt</a>
+      
+    </div>
+    <img src="images/products/now/Samsung.png" class="phone">
+  </div>
+</div>
+
+
+<div>
+  <div class="container">
+    <img src="images/products/now/iPhone-6-Device.png" class="phone"></img>
+    <div>
+      我们还在做更多：
+      <p>iOS版即将上线，<br>敬请期待……</p>
+    </div>
+  </div>
+  <p>
+    详细地装个逼，两排最佳大约这么长长长长长长长长长长长长长长长长长长长长长长长长长
+  </p>
+</div>
+
+
+{% include 'footer.html' %}
+
+{% endblock %}
+
+{% block scripts %}
+<!-- build:js scripts/index.js -->
+<script src="scripts/products-now.js"></script>
+<!-- endbuild -->
+{% endblock %}
