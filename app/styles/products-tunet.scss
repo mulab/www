@@ -197,14 +197,15 @@ nav {
   }
 
   #block1 .container {
-    width: 1150px;
+    max-width: 1150px;
     height: 1000px;
   }
 
   #block1 .container>div {
     position: absolute;
     top: 170px;
-    width: 500px;
+    width: 52%;
+    max-width: 500px;
   }
 
   #block1 .container>div>div p {
@@ -215,8 +216,8 @@ nav {
   #block1 .phone {
     position: absolute;
     top: 120px;
-    right: 20px;
-    width: 450px;
+    right: 0;
+    width: 45%;
   }
 
 
@@ -225,7 +226,7 @@ nav {
   }
 
   #block2 .container {
-    width: 1250px;
+    max-width: 1250px;
   }
 
   #block2 .container #Android-intro {
@@ -257,12 +258,6 @@ nav {
     position: absolute;
     top: 80px;
   }
-
-/*
-  #block3 {
-    height: 1200px;
-  }
-*/
 
 }
 
