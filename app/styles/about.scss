@@ -235,16 +235,17 @@
     }
 }
 
-@media screen and (max-width: 500px){
-    .inner-ex-rg {
-        font-size: xx-small;
-    }
-    .info-rg {
-        padding-bottom: 50%;
-    }
-    #info-link{
-        font-size: xx-small;
-        width: 10px;
-        height: 10px;
-        line-height: 10px;
-    }
+@media screen and (max-width: 500px) {
+  .inner-ex-rg {
+    font-size: xx-small;
+  }
+  .info-rg {
+    padding-bottom: 50%;
+  }
+  #info-link {
+    font-size: xx-small;
+    width: 10px;
+    height: 10px;
+    line-height: 10px;
+  }
+}
