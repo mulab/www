@@ -92,7 +92,9 @@ nav {
   top: 0;
 }
 
-
+#block2 {
+  height: 1000px;
+}
 
 #block2 .container #Android-intro h4 {
   font-weight: bold;
@@ -221,9 +223,6 @@ nav {
   }
 
 
-  #block2 {
-    height: 1000px;
-  }
 
   #block2 .container {
     max-width: 1250px;
@@ -231,32 +230,25 @@ nav {
 
   #block2 .container #Android-intro {
     float: right;
-    margin-top: 50px;
-    margin-right: 180px;
-    width: 470px;
+    margin-top: 4%;
+    margin-right: 14%;
+    width: 38%;
     clear: both;
   }
-  
-  #block2 .container #before-Android-intro {
-    width: 680px;
-    margin-top:150px;
-    float: right;
-    position: relative;
+
+  #block2 .phone {
+    width: 40%;
+    margin-left: -5%;
   }
   
   #block2 .container #before-Android-intro .small {
     margin-left: 170px;
   }
 
-  #block2 #before-Android-intro .code {
-    position: absolute;
-    top: 0;
-    right: 50px;
-  }
-
   #block2 .phone {
     position: absolute;
     top: 80px;
+    min-width: 330px;
   }
 
 }
@@ -282,7 +274,6 @@ nav {
 
   #block1 .container>div>div {
     position: relative;
-    background: blue;
   }
 
   #block1 .container>div>div p {
@@ -313,6 +304,10 @@ nav {
     margin: 0 auto;
     margin-top: 10px;
     width: 95%;
+  }
+
+  #block2 {
+    height: 1300px;
   }
 
   #block2 .container {
@@ -403,5 +398,56 @@ nav {
 
   #block3 h3+p {
     padding: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  #block2 .container #before-Android-intro {
+    width: 61%;
+    margin-top: 150px;
+    float: right;
+    margin-right: -5%;
+    position: relative;
+  }
+
+  #block2 #before-Android-intro .code {
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    height: 50%;
+    width: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  #block2 .container #before-Android-intro {
+    width: 680px;
+    margin-top:150px;
+    float: right;
+    position: relative;
+  }
+
+  #block2 #before-Android-intro .code {
+    position: absolute;
+    top: -10px;
+    right: 0;
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  #block2 {
+    height: 950px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  #block2 {
+    height: 900px;
+  }
+
+  #block2 .phone {
+    margin-top: 60px;
   }
 }
