@@ -1,0 +1,259 @@
+.carousel-indicators li {
+  display: none;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.carousel-control {
+  display: none;
+}
+
+body {
+  letter-spacing: 0.14em;
+}
+
+.container {
+  position: relative;
+}
+
+.dodge {
+  color: #605C5C;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: black;
+}
+
+.top-intro {
+  text-align: center;
+  margin-top: 150px;
+}
+
+#carousel-phone {
+  position: relative;
+  margin: 65px auto;
+  width: 336px;
+  height: 672px;
+  padding: 27px;
+  padding-top: 70px;
+
+  background: url(../images/Nexus_5_Front_View.png) no-repeat top left;
+  background-size: 100%;
+}
+
+header+div {
+  background: #EFEFEF;
+  overflow: hidden;
+}
+
+header+div h1 {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 40px;
+  color: #585858;
+}
+
+header+div .container .code {
+  width: 90px;
+  height: 90px;
+  float: right;
+  margin-right: 12px;
+}
+
+header+div p.big {
+  font-size: 26px;
+}
+
+header+div p.small {
+  float: left;
+  font-size: 15px;
+}
+
+header+div .download-button,  header+div .download-button:visited {
+  float: left;
+  margin-left: 20px;
+  padding: 13px;
+  padding-top: 7px;
+  height: 33px;
+  color: white;
+  background: #1E1E1E;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 3px;
+  -o-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+}
+
+header+div .download-button:hover {
+  background: white;
+  color: black;
+  border: solid 1px;
+}
+
+header+div+div {
+  height: 700px;
+  overflow: hidden;
+  position: relative;
+}
+
+header+div+div .container>div {
+  font-size: 13px;
+}
+
+header+div+div .container>div p {
+  margin-top: 10px;
+  font-size: 30px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 800px;
+  }
+
+  .new-line {
+    display: none;
+  }
+
+  header {
+    height: 900px;
+  }
+
+  header+div {
+    height: 500px;
+  }
+
+  .intro {
+    position: absolute;
+  }
+
+  .intro.left {
+    text-align: right;
+    left: -340px;
+  }
+
+  .intro.right {
+    text-align: left;
+    right: -340px;
+  }
+
+  .intro.top {
+    top: 200px;
+  }
+
+  .intro.bottom {
+    top: 400px;
+  }
+
+
+  header+div p.big {
+    text-align: right;
+  }
+
+  header+div .container>div {
+    position: absolute;
+    width: 300px;
+    top: 60px;
+    left: 50px;
+  }
+  
+  header+div .container .phone {
+    width: 300px;
+    position: absolute;
+    top: 30px;
+    right: 86px;
+  }
+
+
+  header+div+div .container>div {
+    position: absolute;
+    width: 300px;
+    top: 150px;
+    right: 50px;
+  }
+
+  header+div+div .container .phone {
+    width: 300px;
+    position: absolute;
+    top: -230px;
+    left: 30px;
+  }
+
+  header+div+div>p {
+    position: relative;
+    top: 420px;
+    width: 600px;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 300px;
+    padding: 6px;
+  }
+
+  header {
+    height: 1500px;
+  }
+
+  header+div {
+    height: 623px;
+  }
+
+  header h2 {
+    line-height: 37px;
+  }
+
+  .dash {
+    display: none;
+    background: red;
+  }
+  
+  .intro {
+    position: static;
+    text-align: center;
+    margin: 30px;
+  }
+
+  .intro.left.top {
+    margin-top: 100px;
+  }
+
+
+  header+div p.big {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  header+div .container>div {
+    width: 300px;
+  }
+
+  header+div .container .phone {
+    margin-left: 11px;
+    width: 278px;
+  }
+
+
+  header+div+div .container>div {
+    margin-top: 40px;
+    width: 300px;
+  }
+
+  header+div+div .container .phone {
+    width: 279px;
+    margin-left: 10px;
+    margin-top: -260px;
+  }
+
+  header+div+div>p {
+    max-width: 400px;
+    padding: 20px;
+    text-align: center;
+    margin: 40px auto;
+  }
+}
