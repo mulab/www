@@ -1,23 +1,34 @@
 {
-  "name": "www",
+  "name": "web",
+  "private": true,
   "dependencies": {
-    "jquery": "~2.1.1",
-    "bootstrap": "~3.2.0",
-    "font-awesome": "~4.2.0",
-    "roboto-fontface": "~0.2.4"
+    "bootstrap-sass": "~3.3.5",
+    "modernizr": "~2.8.1",
+    "roboto-fontface": "~0.4.3",
+    "font-awesome": "~4.5.0"
   },
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
   "overrides": {
+    "bootstrap-sass": {
+      "main": [
+        "assets/stylesheets/_bootstrap.scss",
+        "assets/fonts/bootstrap/*",
+        "assets/javascripts/bootstrap.js"
+      ]
+    },
     "font-awesome": {
       "main": [
-        "css/font-awesome.css"
+        "less/font-awesome.less",
+        "scss/font-awesome.scss",
+        "fonts/fontawesome-webfont.eot",
+        "fonts/fontawesome-webfont.svg",
+        "fonts/fontawesome-webfont.ttf",
+        "fonts/fontawesome-webfont.woff",
+        "fonts/fontawesome-webfont.woff2"
       ]
     }
+  },
+  "devDependencies": {
+    "chai": "~3.5.0",
+    "mocha": "~2.4.5"
   }
 }

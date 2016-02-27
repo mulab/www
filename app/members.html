@@ -1,234 +1,102 @@
-<!doctype html>
-<html class="no-js">
-<head>
-  <meta charset="utf-8">
-  <title>Μembers of Lab μ</title>
-  <meta name="description" content="Μembers Introductions of Lab μ">
-  <meta name="viewport" content="width=device-width">
-  <link rel="shortcut icon" href="/favicon.ico">
-  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-  <!-- build:css(.) styles/vendor.css -->
-  <!-- bower:css -->
-  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
-  <link rel="stylesheet" href="bower_components/roboto-fontface/roboto-fontface.css" />
-  <!-- endbower -->
-  <!-- endbuild -->
-  <!-- build:css(.tmp) styles/members.css -->
-  <link rel="stylesheet" href="styles/main.css">
-  <link rel="stylesheet" href="styles/members.css">
-  <!-- endbuild -->
-</head>
-<body>
-  <header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
-    <div class="container">
-      <div class="navbar-header">
-        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a href="index.html" class="navbar-brand">Lab μ</a>
-      </div>
-      <nav class="collapse navbar-collapse bs-navbar-collapse">
-        <ul class="nav navbar-nav">
-          <li>
-            <a href="projects.html">Projects</a>
-          </li>
-          <li>
-            <a class="members" href="members.html">Members</a>
-          </li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li role="presentation" class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
-              Contact Us <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu" role="menu">
-              <li>
-                <a href="https://github.com/mulab" target="_blank">
-                  <div class="text-center">
-                    <p>
-                      <span class="itemcircle">●&nbsp;&nbsp;</span>
-                      <i class="fa fa-github icon-github"></i>
-                      GitHub
-                    </p>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="mailto:mulab.thu@gmail.com">
-                  <div class="text-center">
-                    <p>
-                      <span class="itemcircle">●&nbsp;&nbsp;</span>
-                      <i class="fa fa-envelope-square icon-mail"></i>
-                      E-mail
-                    </p>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="http://page.renren.com/600002817" target="_blank">
-                  <div class="text-center">
-                    <p>
-                      <span class="itemcircle">●&nbsp;&nbsp;</span>
-                      <i class="fa fa-renren icon-renren"></i>
-                      Renren
-                    </p>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li><a href="https://jinshuju.net/f/aWTf5c" target="_blank">Join Us</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <!-- end header -->
+{% extends 'base.html' %}
 
-  <main class="bs-docs-header" id="members-heading" role="main">
-    <div class="container">
-      <h1 class="lead">Members</h1>
-      <p>Our team members</p>
-    </div>
-  </main>
+{% block title %}Lab μ - 清华科创学生社团{% endblock %}
 
-  <div class="container">
-    <div class="members">
-      <hr>
-      <div class="row" style="height:400px;">
-        <div class="col-lg-3 col-md-3 col-sm-12">
-          <p class="introduction">Leaders</p>
+{% block styles %}
+<!-- build:css styles/members.css -->
+<link rel="stylesheet" href="styles/members.css">
+<!-- endbuild -->
+{% endblock %}
+
+{% block content %}
+
+<div class="jumbotron" id="header">
+  {% include 'navbar.html' %}
+  <div class="main-title text-white">成 员 列 表</div>
+  <div class="intro text-white">Our Team Members</div>
+</div>
+<div class="container">
+  <div class="row groups">
+    <div class="subtitle">核心管理</div>
+    <div class="col-xs-12 col-sm-12 col-md-4 member">
+      <a href="" class="block">
+        <div class="photo">
+          <img class="photos" src="images/members/zhoumy.jpg" alt="周梦宇">
         </div>
-        <div class="col-lg-3 col-md-3 col-sm-12">
-          <img src="images/type-1.png" id="pointOne" class="point">
-          <img src="images/members/zhoumy.jpg" class="profile profile1" id="profile11">
-          <img src="images/members/cheng.jpg" class="profile profile1" id="profile12">
-          <img src="images/members/heqy.jpg" class="profile profile1" id="profile13">
-          <img src="images/members/zhangyk.jpg" class="profile profile1" id="profile14">
-          <img src="images/members/yuedy.jpg" class="profile profile1" id="profile15">
-          <img src="images/members/zhangyy.jpg" class="profile profile1" id="profile16">
-          <img src="images/members/lipy.jpg" class="profile profile1" id="profile17">
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 info1" >
-          <p class="intro intro1" id="intro11">周梦宇：会&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;长</p>
-          <p class="intro intro1" id="intro12">陈&nbsp;&nbsp;&nbsp;&nbsp;光：技术顾问</p>
-          <p class="intro intro1" id="intro13">何钦尧：项目经理</p>
-          <p class="intro intro1" id="intro14">张阳坤：项目主管</p>
-          <p class="intro intro1" id="intro15">岳大禹：项目主管</p>
-          <p class="intro intro1" id="intro16">张艺莹：宣传主管</p>
-          <p class="intro intro1" id="intro17">李平允：人力主管</p>
-        </div>
-      </div>
-      <div class="row" style="height:400px;">
-        <div class="col-lg-6 col-md-6 col-sm-6 info2" style="text-align: right">
-          <p class="intro intro2" id="intro21">黄维啸：桌面开发</p>
-          <p class="intro intro2" id="intro22">叶&nbsp;&nbsp;&nbsp;&nbsp;曦：桌面开发</p>
-          <p class="intro intro2" id="intro23">方&nbsp;&nbsp;&nbsp;&nbsp;燠：桌面开发</p>
-          <p class="intro intro2" id="intro24">蔡立崴：桌面开发</p>
-          <p class="intro intro2" id="intro25">涂金正：iOS&nbsp;&nbsp;开发</p>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-3">
-          <img src="images/type-2.png" id="pointTwo" class="point">
-          <img src="images/members/huangwx.jpg" class="profile profile2" id="profile21" alt="          黄维啸">
-          <img src="images/members/yex.jpg" class="profile profile2" id="profile22" alt="          叶  曦">
-          <img src="images/members/null-boy.png" class="profile profile2" id="profile23" alt="          方  燠">
-          <img src="images/members/cailw.jpg" class="profile profile2" id="profile24" alt="          蔡立崴">
-          <img src="images/members/null-boy.png" class="profile profile2" id="profile25" alt="          涂金正">
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-3">
-          <p class="introduction">TUNet</p>
-        </div>
-      </div>
-      <div class="row" style="height:400px;">
-        <div class="col-lg-3 col-md-3 col-sm-12">
-          <p class="introduction">Web</p>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-12">
-          <img src="images/type-3.png" id="pointThree" class="point">
-          <img src="images/members/zhuangty.jpg" class="profile profile3" id="profile31" alt="          庄天翼">
-          <img src="images/members/zhaojh.jpg" class="profile profile3" id="profile32" alt="          赵金昊">
-          <img src="images/members/yangsz.jpg" class="profile profile3" id="profile33" alt="          杨松洲">
-          <img src="images/members/weigy.jpg" class="profile profile3" id="profile34" alt="          卫国扬">
-          <img src="images/members/liujs.jpg" class="profile profile3" id="profile35" alt="          刘家硕">
-          <img src="images/members/null-boy.png" class="profile profile3" id="profile36" alt="          耿正霖">
-          <img src="images/members/null-boy.png" class="profile profile3" id="profile37" alt="          贾志鹏">
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 info3" >
-          <p class="intro intro3" id="intro31">庄天翼：Web前端开发</p>
-          <p class="intro intro3" id="intro32">赵金昊：Web前端开发</p>
-          <p class="intro intro3" id="intro33">杨松洲：Web前端开发</p>
-          <p class="intro intro3" id="intro34">卫国扬：Web前端开发</p>
-          <p class="intro intro3" id="intro35">刘家硕：Web前端开发</p>
-          <p class="intro intro3" id="intro36">耿正霖：Web后端开发</p>
-          <p class="intro intro3" id="intro37">贾志鹏：Web后端开发</p>
-        </div>
-      </div>
-      <div class="row" style="height:400px;">
-        <div class="col-lg-6 col-md-6 col-sm-12 info4" style="text-align: right">
-          <p>&nbsp;&nbsp;</p>
-          <p class="intro intro4" id="intro41">谭思颖</p>
-          <p class="intro intro4" id="intro42">陶君宇</p>
-          <p class="intro intro4" id="intro43">任桐正</p>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-12">
-          <img src="images/type-4.png" id="pointFour" class="point">
-          <img src="images/members/tansy.jpg" class="profile profile4" id="profile41">
-          <img src="images/members/null-girl.png" class="profile profile4" id="profile42" alt="          陶君宇">
-          <img src="images/members/null-boy.png" class="profile profile4" id="profile43" alt="          任桐正">
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-12">
-          <p class="introduction">Marketing</p>
-        </div>
-      </div>
-      <div class="row" style="height:400px;">
-        <div class="col-lg-3 col-md-3 col-sm-12">
-          <p class="introduction">Design</p>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-12">
-          <img src="images/type-5.png" id="pointFive" class="point">
-          <img src="images/members/sunyh.jpg" class="profile profile5" id="profile51" >
-          <img src="images/members/jiangy.jpg" class="profile profile5" id="profile52">
-          <img src="images/members/null-girl.png" class="profile profile5" id="profile53" alt="          郭  倩">
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 info5">
-          <p>&nbsp;&nbsp;</p>
-          <p class="intro intro5" id="intro51">孙悦慧</p>
-          <p class="intro intro5" id="intro52">江&nbsp;&nbsp;&nbsp;&nbsp;颖</p>
-          <p class="intro intro5" id="intro53">郭&nbsp;&nbsp;&nbsp;&nbsp;倩</p>
-        </div>
-      </div>
+        <div class="name">周 梦 宇</div>
+        <div class="post">会长</div>
+      </a>
     </div>
+    {% for p in manager %}
+    <div class="col-xs-6 col-sm-6 col-md-2 member">
+      <a href="{{ p.page }}" class="block">
+        <div class="photo">
+          <img class="photos" src="{{ p.url }}" alt="{{ p.name }}">
+        </div>
+        <div class="name">{{ p.name }}</div>
+        <div class="post">{{ p.post }}</div>
+      </a>
+    </div>
+    {% endfor %}
   </div>
-
-  <div class="container-fluid">
-    <div id="footer" class="footer">Designed and built with all the love in the world by Lab μ</div>
+  <div class="row groups">
+    <div class="subtitle">顾问团</div>
+    {% for p in consultant %}
+    <div class="col-xs-6 col-sm-6 col-md-4 member">
+      <a href="{{ p.page }}" class="block">
+        <div class="photo">
+          <img class="photos" src="{{ p.url }}" alt="{{ p.name }}">
+        </div>
+        <div class="name">{{ p.name }}</div>
+        <div class="post">{{ p.post }}</div>
+      </a>
+    </div>
+    {% endfor %}
   </div>
+  <div class="row groups">
+    <div class="subtitle">技术开发</div>
+    {% for p in developer %}
+    <div class="col-xs-6 col-sm-6 col-md-2 member">
+      <a href="{{ p.page }}" class="block">
+        <div class="photo">
+          <img class="photos" src="{{ p.url }}" alt="{{ p.name }}">
+        </div>
+        <div class="name">{{ p.name }}</div>
+        <div class="post">{{ p.post }}</div>
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+  <div class="row groups">
+    <div class="subtitle">市场&#183;设计&#183;常务</div>
+    {% for p in others %}
+    <div class="col-xs-6 col-sm-6 col-md-3 member">
+      <a href="{{ p.page }}" class="block">
+        <div class="photo">
+          <img class="photos" src="{{ p.url }}" alt="{{ p.name }}">
+        </div>
+        <div class="name">{{ p.name }}</div>
+        <div class="post">{{ p.post }}</div>
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+  <div class="row groups">
+    <div class="subtitle">以往成员</div>
+    {% for p in former %}
+    <div class="col-xs-6 col-sm-6 col-md-4 member">
+      <a href="{{ p.page }}" class="block">
+        <div class="photo">
+          <img class="photos" src="{{ p.url }}" alt="{{ p.name }}">
+        </div>
+        <div class="name">{{ p.name }}</div>
+        <div class="post">{{ p.post }}</div>
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+</div>
 
-  <!-- build:js(.) scripts/vendor.js -->
-  <!-- bower:js -->
-  <script src="bower_components/jquery/dist/jquery.js"></script>
-  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-  <!-- endbower -->
-  <!-- endbuild -->
+{% include 'footer.html' %}
 
-  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-43044519-1', 'auto');
-    ga('send', 'pageview');
-  </script>
-
-  <!-- build:js({app,.tmp}) scripts/members.js -->
-  <script src="scripts/main.js"></script>
-  <script src="scripts/members.js"></script>
-  <!-- endbuild -->
-
-</body>
-</html>
+{%  endblock %}
