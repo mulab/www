@@ -208,6 +208,11 @@ header+div+div .container>div p {
     line-height: 37px;
   }
 
+  .dash {
+    display: none;
+    background: red;
+  }
+  
   .intro {
     position: static;
     text-align: center;
