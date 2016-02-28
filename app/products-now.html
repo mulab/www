@@ -3,16 +3,18 @@
 {% block title %}Lab μ - 清华科创学生社团{% endblock %}
 
 {% block styles %}
-<!-- build:css styles/index.css -->
+<!-- build:css styles/products-now.css -->
 <link rel="stylesheet" href="styles/products-now.css">
 <!-- endbuild -->
 {% endblock %}
 
 {% block content %}
 
-{% include 'navbar.html' %}
+<div class="jumbotron" id="header">
+  {% include 'navbar.html' %}
+</div>
 
-<header>
+<div class="container">
   <div class="top-intro dodge">
     <h2>
       Tsinghua Now <span class="dash">——</span>
@@ -82,7 +84,7 @@
       一二三四二二三四
     </div>
   </div>
-</header>
+</div>
 
 <div>
   <h1>All information. <span class="new-line"><br></span>One place.</h1>
@@ -92,7 +94,7 @@
       <img src="images/products/now/now.png" alt="2d-code" class="code">
       <p class="right-align small dodge">Android版现已上线，<br>点此下载或扫描二维码：</p>
       <a class="download-button">下载Android版&gt&gt</a>
-      
+
     </div>
     <img src="images/products/now/Samsung.png" class="phone">
   </div>

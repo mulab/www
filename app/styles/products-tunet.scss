@@ -26,15 +26,6 @@ body>div {
   margin-top: 10px;
 }
 
-nav {
-  position: fixed;
-  top: 0;
-  z-index: 3;
-  width: 100%;
-  height: 54px;
-  background: #292929;
-}
-
 #block1 .container>div>h2 {
   margin-bottom: 30px;
 }
@@ -240,7 +231,7 @@ nav {
     width: 40%;
     margin-left: -5%;
   }
-  
+
   #block2 .container #before-Android-intro .small {
     margin-left: 170px;
   }
@@ -330,7 +321,7 @@ nav {
   #block2 .container #before-Android-intro .small {
     margin-top: 60px;
   }
-  
+
   #block2 #before-Android-intro .code {
     position: absolute;
     top: 30px;
@@ -362,7 +353,7 @@ nav {
     height: 50px;
     margin-bottom: 10px;
   }
-  
+
   #block3 .button-box>div>p {
     font-size: 14px;
     font-weight: bold;
@@ -373,25 +364,25 @@ nav {
     top: 0;
     left: 30px;
   }
-  
+
   #block3 #Windows p {
     margin-left: -11px;
   }
-  
+
   #block3 #OS-X {
     margin: 0 auto;
   }
-  
+
   #block3 #OS-X p {
     margin-left: -17px;
   }
-  
+
   #block3 #Linux {
     position: absolute;
     top: 0;
     right: 28px;
   }
-  
+
   #block3 #Linux p {
     margin-left: -20px;
   }

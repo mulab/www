@@ -3,12 +3,16 @@
 {% block title %}Lab μ - 清华科创学生社团{% endblock %}
 
 {% block styles %}
-<!-- build:css styles/index.css -->
+<!-- build:css styles/products-tunet.css -->
 <link rel="stylesheet" href="styles/products-tunet.css">
 <!-- endbuild -->
 {% endblock %}
 
 {% block content %}
+
+<div class="jumbotron" id="header">
+  {% include 'navbar.html' %}
+</div>
 
 <div id="block1">
   <div class="container">
@@ -17,10 +21,10 @@
       <p class="dodge">
         最智能好用的清华校园网助手客户端。可自动联网，智能下线过期连接，管理当前线设备，并处理了多种复杂情况下的网络环境优化。
       </p>
-      
+
       <div>
         <img src="images/products/tunet/tunet-latest.png" class="code">
-        
+
         <p class="small">
           iOS版现已上线，点此可下载或扫描二维码<br>
          （类似的话，可以写多）
