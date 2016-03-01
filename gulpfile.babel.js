@@ -24,9 +24,9 @@ function getJsonData(file) {
 gulp.task('templates', () => {
   return gulp.src('app/*.html')
     .pipe(data(getJsonData))
-    .pipe(swig())
+    .pipe(swig({defaults: { cache: false }}))
     .pipe(gulp.dest('.tmp'))
-    .pipe(reload({stream: true}));
+    .pipe(browserSync.stream());
 });
 
 gulp.task('styles', () => {
@@ -41,7 +41,7 @@ gulp.task('styles', () => {
     .pipe($.autoprefixer({browsers: ['> 1%', 'last 2 versions', 'Firefox ESR']}))
     .pipe($.sourcemaps.write())
     .pipe(gulp.dest('.tmp/styles'))
-    .pipe(reload({stream: true}));
+    .pipe(browserSync.stream());
 });
 
 gulp.task('scripts', () => {
@@ -51,7 +51,7 @@ gulp.task('scripts', () => {
     .pipe($.babel())
     .pipe($.sourcemaps.write('.'))
     .pipe(gulp.dest('.tmp/scripts'))
-    .pipe(reload({stream: true}));
+    .pipe(browserSync.stream());
 });
 
 function lint(files, options) {
@@ -117,6 +117,8 @@ gulp.task('extras', () => {
 
 gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
 
+gulp.task('templates-reload', ['templates'], browserSync.reload);
+
 gulp.task('serve', ['wiredep', 'templates', 'styles', 'scripts', 'fonts'], () => {
   browserSync({
     notify: false,
@@ -130,13 +132,12 @@ gulp.task('serve', ['wiredep', 'templates', 'styles', 'scripts', 'fonts'], () =>
   });
 
   gulp.watch([
-    '.tmp/**/*.html',
     '.tmp/scripts/**/*.js',
     'app/images/**/*',
     '.tmp/fonts/**/*'
   ]).on('change', reload);
 
-  gulp.watch('app/**/*.html', ['templates']);
+  gulp.watch('app/**/*.html', ['templates-reload']);
   gulp.watch('app/styles/**/*.scss', ['styles']);
   gulp.watch('app/scripts/**/*.js', ['scripts']);
   gulp.watch('app/fonts/**/*', ['fonts']);
