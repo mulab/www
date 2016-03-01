@@ -93,32 +93,21 @@ body {
 /* footer */
 
 .footer {
-  display: inline-block;
-  width: 100%;
-  border-top: none;
   background-color: #222;
   color: #eee;
   margin: 0;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 20px;
   padding-bottom: 20px;
-}
-
-.footer-note {
-  margin: 0;
-  font-weight: 300;
   font-size: 14px;
-  font-family: sans-serif;
 }
 
 .footer-left {
-  float: left;
-  margin-left: 90px;
+  text-align: left;
 }
 
 .footer-right {
-  float: right;
-  margin-right: 90px;
+  text-align: right;
 }
 
 /* End footer */
