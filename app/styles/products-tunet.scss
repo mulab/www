@@ -1,3 +1,9 @@
+#header {
+  #nav {
+    margin-bottom: 0;
+  }
+}
+
 .dodge {
   color: #8B8787;
 }
@@ -7,16 +13,16 @@
 }
 
 body {
-  letter-spacing: 0.14em;
+  #block1, #block3 {
+    overflow: hidden;
+    position: relative;
+  }
 }
 
-body>div {
-  overflow: hidden;
-  position: relative;
-}
-
-.container {
-  position: relative;
+#block1, #block2, #block3 {
+  .container {
+    position: relative;
+  }
 }
 
 .code {
@@ -26,20 +32,20 @@ body>div {
   margin-top: 10px;
 }
 
-#block1 .container>div>h2 {
+#block1 .container > div > h2 {
   margin-bottom: 30px;
 }
 
-#block1 .container>div .dodge {
+#block1 .container > div .dodge {
   width: 100%;
 }
 
-#block1 .container>div>div p {
+#block1 .container > div > div p {
   font-size: 12px;
   line-height: 20px;
 }
 
-#block1 .container>div>div #App-Store {
+#block1 .container > div > div #App-Store {
   float: left;
   margin-left: 20px;
 }
@@ -57,7 +63,7 @@ body>div {
   line-height: 20px;
 }
 
-#block2 .download-button,  #block2 .download-button:visited {
+#block2 .download-button, #block2 .download-button:visited {
   float: left;
   padding: 13px;
   padding-top: 10px;
@@ -177,12 +183,6 @@ body>div {
   margin-left: 2px;
 }
 
-.footer {
-  height: 40px;
-  background: #292929;
-}
-
-
 @media (min-width: 768px) {
 
   #block1 {
@@ -288,7 +288,6 @@ body>div {
   #block1 .container>div>h2 {
     font-size: 19.5px;
     font-weight: bold;
-    margin-right: -20px;
   }
 
   #block1 .phone {
@@ -311,7 +310,6 @@ body>div {
   }
 
   #block2 .container #before-Android-intro {
-    width: 400;
   }
 
   #block2 .container #before-Android-intro p:first-child {
@@ -336,7 +334,6 @@ body>div {
   }
 
   #block2 .small {
-    margin-right: -10px;
   }
 
   #block2 .container #Android-intro {
