@@ -10,10 +10,6 @@
   display: none;
 }
 
-body {
-  letter-spacing: 0.14em;
-}
-
 .container {
   position: relative;
 }
@@ -158,7 +154,7 @@ header+div+div .container>div p {
     top: 60px;
     left: 50px;
   }
-  
+
   header+div .container .phone {
     width: 300px;
     position: absolute;
@@ -212,7 +208,7 @@ header+div+div .container>div p {
     display: none;
     background: red;
   }
-  
+
   .intro {
     position: static;
     text-align: center;
