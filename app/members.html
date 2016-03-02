@@ -3,78 +3,100 @@
 {% block title %}Lab μ - 清华科创学生社团{% endblock %}
 
 {% block styles %}
-<!-- build:css styles/index.css -->
+<!-- build:css styles/members.css -->
 <link rel="stylesheet" href="styles/members.css">
 <!-- endbuild -->
 {% endblock %}
 
 {% block content %}
-    {% include 'navbar.html' %}
-    <div style="width:100%; position:relative;">
-      <img src="images/members/members.jpg" style="width:100%; z-index:-1;">
-      <div style="position:absolute; top:10%; left:7%;">
-        <h5 style="color:white;">MEMBERS</h5>
-      </div>
-      <div style="position:absolute; top:25%; left:7%; width:40%">
-        <p style="color:white;font-size:24px">我们由来自不同背景，不同学院的同学们组成</p>
-      </div>
-      <div style="position:absolute; top:20%; left:50%; width:20%">
-        <HR align="left" width="80%" color=#ffffff SIZE=40 />
-      </div>
-      <div style="position:absolute; top:25%; left:50%; width:20%">
-        <h5 style="color:white;font-size:20px;">污师</h5>
-        <h5 style="color:white;font-size:12px;">在那山的那边海的那边有一群拉布喵～</h5>
-      </div>
-      <div style="position:absolute; top:40%; left:50%; width:20%">
-        <HR align="left" width="80%" color=#ffffff SIZE=40 />
-      </div>
-      <div style="position:absolute; top:45%; left:50%; width:20%">
-        <h5 style="color:white;font-size:20px;">药师</h5>
-        <h5 style="color:white;font-size:12px;">他们调皮又机灵～</h5>
-      </div>
-      <div style="position:absolute; top:20%; left:75%; width:20%">
-        <HR align="left" width="80%" color=#ffffff SIZE=40 />
-      </div>
-      <div style="position:absolute; top:25%; left:75%; width:20%">
-        <h5 style="color:white;font-size:20px;">膜法师</h5>
-        <h5 style="color:white;font-size:12px;">他们活泼又聪明～</h5>
-      </div>
-      <div style="position:absolute; top:40%; left:75%; width:20%">
-        <HR align="left" width="80%" color=#ffffff SIZE=40 />
-      </div>
-      <div style="position:absolute; top:45%; left:75%; width:20%">
-        <h5 style="color:white;font-size:20px;">老司机</h5>
-        <h5 style="color:white;font-size:12px;">他们自由自在生活在那清华大学里～</h5>
-      </div>
+
+<div class="jumbotron" id="header">
+  {% include 'navbar.html' %}
+  <div class="main-title text-white">成 员 列 表</div>
+  <div class="intro text-white">Our Team Members</div>
+</div>
+<div class="container">
+  <div class="row groups">
+    <div class="subtitle">核心管理</div>
+    <div class="col-xs-12 col-sm-12 col-md-4 member">
+      <a href="" class="block">
+        <div class="photo">
+          <img class="photos" src="images/members/zhoumy.jpg" alt="周梦宇">
+        </div>
+        <div class="name">周 梦 宇</div>
+        <div class="post">会长</div>
+      </a>
     </div>
-    <div style="background:white;padding-bottom:5%">
-      <div style="float:left; margin-left:15%;margin-right:10%;width:15%"><img src="images/LabmU_Meow_black.svg" style="width:100%;" ></div>
-      <div>hhh</div>
-      <div style="clear:both;"></div>
+    {% for p in manager %}
+    <div class="col-xs-6 col-sm-6 col-md-2 member">
+      <a href="{{ p.page }}" class="block">
+        <div class="photo">
+          <img class="photos" src="{{ p.url }}" alt="{{ p.name }}">
+        </div>
+        <div class="name">{{ p.name }}</div>
+        <div class="post">{{ p.post }}</div>
+      </a>
     </div>
-  <div style="padding-left:5%;padding-right:5%;padding-top:7%;padding-bottom:7%;">  
-        
-    <div id = "manager" style="clear:both">
-      <div class="left">核</br>心</br>管</br>理</div>
-    </div>
-    <div id="consultant" style="clear:both">
-      <div class="left">顾</br>问</br>团</div>
-    </div>
-    <div id="developer" style="clear:both">
-      <div class="left">研</br>发</br>部</div>
-    </div>
-    <div id = "others" style="clear:both">
-      <div class="left">设</br>计</br>部</div>
-    </div>
-    <div style="clear:both"></div>
+    {% endfor %}
   </div>
+  <div class="row groups">
+    <div class="subtitle">顾问团</div>
+    {% for p in consultant %}
+    <div class="col-xs-6 col-sm-6 col-md-4 member">
+      <a href="{{ p.page }}" class="block">
+        <div class="photo">
+          <img class="photos" src="{{ p.url }}" alt="{{ p.name }}">
+        </div>
+        <div class="name">{{ p.name }}</div>
+        <div class="post">{{ p.post }}</div>
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+  <div class="row groups">
+    <div class="subtitle">技术开发</div>
+    {% for p in developer %}
+    <div class="col-xs-6 col-sm-6 col-md-2 member">
+      <a href="{{ p.page }}" class="block">
+        <div class="photo">
+          <img class="photos" src="{{ p.url }}" alt="{{ p.name }}">
+        </div>
+        <div class="name">{{ p.name }}</div>
+        <div class="post">{{ p.post }}</div>
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+  <div class="row groups">
+    <div class="subtitle">市场&#183;设计&#183;常务</div>
+    {% for p in others %}
+    <div class="col-xs-6 col-sm-6 col-md-3 member">
+      <a href="{{ p.page }}" class="block">
+        <div class="photo">
+          <img class="photos" src="{{ p.url }}" alt="{{ p.name }}">
+        </div>
+        <div class="name">{{ p.name }}</div>
+        <div class="post">{{ p.post }}</div>
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+  <div class="row groups">
+    <div class="subtitle">以往成员</div>
+    {% for p in former %}
+    <div class="col-xs-6 col-sm-6 col-md-3 member">
+      <a href="{{ p.page }}" class="block">
+        <div class="photo">
+          <img class="photos" src="{{ p.url }}" alt="{{ p.name }}">
+        </div>
+        <div class="name">{{ p.name }}</div>
+        <div class="post">{{ p.post }}</div>
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+</div>
 
 {% include 'footer.html' %}
 
-{% endblock %}
-
-{% block scripts %}
-<!-- build:js scripts/index.js -->
-<script src="scripts/members.js"></script>
-<!-- endbuild -->
-{% endblock %}
+{%  endblock %}
