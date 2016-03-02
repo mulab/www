@@ -1,0 +1,1 @@
+"use strict";$(function(){var i=$("#main");$(window).on("load resize",function(){var t=$(window).height()-i.height()-$("footer").height();i.css("margin-top",(t>0?t/2.3:0).toString()+"px")})});
