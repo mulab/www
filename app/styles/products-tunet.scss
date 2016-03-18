@@ -64,15 +64,13 @@ body {
 
 #block2 .download-button, #block2 .download-button:visited {
   float: left;
-  padding: 13px;
-  padding-top: 10px;
+  padding: 10px 13px 13px 13px;
   height: 40px;
   color: white;
   background: #1E1E1E;
   text-decoration: none;
   cursor: pointer;
   border-radius: 3px;
-  -o-border-radius: 3px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
 }
@@ -256,7 +254,6 @@ body {
     width: 100%;
     margin-top: 80px;
     padding-bottom: 60px;
-    overflow: hidden;
   }
 
   #block1 .container > div > div {
@@ -287,8 +284,7 @@ body {
   }
 
   #block1 .phone {
-    margin: 0 auto;
-    margin-top: 10px;
+    margin: 10px 0 0 0;
     width: 95%;
   }
 
