@@ -1,0 +1,1 @@
+"use strict";$(function(){$("#carousel").carousel({interval:2e3,wrap:!0})});
