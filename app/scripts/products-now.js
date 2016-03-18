@@ -1,6 +1,6 @@
 'use strict';
 
-$(function() {
+$(function () {
   $('#carousel').carousel({
     interval: 2000,
     wrap: true

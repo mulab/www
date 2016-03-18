@@ -50,7 +50,6 @@ body {
   margin-left: 20px;
 }
 
-
 #block2 {
   background: #EFEFEF;
 }
@@ -113,7 +112,7 @@ body {
   margin-top: -20%;
 }
 
-#block3 .img-wrapper .mac+img {
+#block3 .img-wrapper .mac + img {
   position: absolute;
   top: 2.5%;
   right: 30%;
@@ -129,7 +128,7 @@ body {
   margin-bottom: 17px;
 }
 
-#block3 h3+p {
+#block3 h3 + p {
   max-width: 500px;
   margin: 0 auto;
   margin-bottom: 15px;
@@ -141,7 +140,7 @@ body {
   margin-bottom: 90px;
 }
 
-#block3 .button-box>div {
+#block3 .button-box > div {
   width: 70px;
 }
 
@@ -151,8 +150,8 @@ body {
   margin-bottom: 10px;
 }
 
-#block3 .button-box>div>p {
-  font-size:20px;
+#block3 .button-box > div > p {
+  font-size: 20px;
 }
 
 #block3 #Windows {
@@ -194,14 +193,14 @@ body {
     height: 1000px;
   }
 
-  #block1 .container>div {
+  #block1 .container > div {
     position: absolute;
     top: 170px;
     width: 52%;
     max-width: 500px;
   }
 
-  #block1 .container>div>div p {
+  #block1 .container > div > div p {
     float: left;
     margin: 8px -10px 8px 20px;
   }
@@ -212,8 +211,6 @@ body {
     right: 0;
     width: 45%;
   }
-
-
 
   #block2 .container {
     max-width: 1250px;
@@ -244,7 +241,6 @@ body {
 
 }
 
-
 @media (max-width: 768px) {
 
   #block1 {
@@ -255,7 +251,7 @@ body {
     max-width: 390px;
   }
 
-  #block1 .container>div {
+  #block1 .container > div {
     overflow: auto;
     width: 100%;
     margin-top: 80px;
@@ -263,11 +259,11 @@ body {
     overflow: hidden;
   }
 
-  #block1 .container>div>div {
+  #block1 .container > div > div {
     position: relative;
   }
 
-  #block1 .container>div>div p {
+  #block1 .container > div > div p {
     position: absolute;
     top: 10px;
     left: 80px;
@@ -285,7 +281,7 @@ body {
     left: -20px;
   }
 
-  #block1 .container>div>h2 {
+  #block1 .container > div > h2 {
     font-size: 19.5px;
     font-weight: bold;
   }
@@ -351,7 +347,7 @@ body {
     margin-bottom: 10px;
   }
 
-  #block3 .button-box>div>p {
+  #block3 .button-box > div > p {
     font-size: 14px;
     font-weight: bold;
   }
@@ -384,7 +380,7 @@ body {
     margin-left: -20px;
   }
 
-  #block3 h3+p {
+  #block3 h3 + p {
     padding: 20px;
   }
 }
@@ -410,7 +406,7 @@ body {
 @media (min-width: 1200px) {
   #block2 .container #before-Android-intro {
     width: 680px;
-    margin-top:150px;
+    margin-top: 150px;
     float: right;
     position: relative;
   }

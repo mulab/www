@@ -39,35 +39,35 @@ h1, h2, h3, h4, h5, h6 {
   background-size: 100%;
 }
 
-header+div {
+header + div {
   background: #EFEFEF;
   overflow: hidden;
 }
 
-header+div h1 {
+header + div h1 {
   text-align: center;
   padding-top: 30px;
   font-size: 40px;
   color: #585858;
 }
 
-header+div .container .code {
+header + div .container .code {
   width: 90px;
   height: 90px;
   float: right;
   margin-right: 12px;
 }
 
-header+div p.big {
+header + div p.big {
   font-size: 26px;
 }
 
-header+div p.small {
+header + div p.small {
   float: left;
   font-size: 15px;
 }
 
-header+div .download-button,  header+div .download-button:visited {
+header + div .download-button, header + div .download-button:visited {
   float: left;
   margin-left: 20px;
   padding: 13px;
@@ -83,23 +83,23 @@ header+div .download-button,  header+div .download-button:visited {
   -moz-border-radius: 3px;
 }
 
-header+div .download-button:hover {
+header + div .download-button:hover {
   background: white;
   color: black;
   border: solid 1px;
 }
 
-header+div+div {
+header + div + div {
   height: 700px;
   overflow: hidden;
   position: relative;
 }
 
-header+div+div .container>div {
+header + div + div .container > div {
   font-size: 13px;
 }
 
-header+div+div .container>div p {
+header + div + div .container > div p {
   margin-top: 10px;
   font-size: 30px;
 }
@@ -117,7 +117,7 @@ header+div+div .container>div p {
     height: 900px;
   }
 
-  header+div {
+  header + div {
     height: 500px;
   }
 
@@ -143,41 +143,39 @@ header+div+div .container>div p {
     top: 400px;
   }
 
-
-  header+div p.big {
+  header + div p.big {
     text-align: right;
   }
 
-  header+div .container>div {
+  header + div .container > div {
     position: absolute;
     width: 300px;
     top: 60px;
     left: 50px;
   }
 
-  header+div .container .phone {
+  header + div .container .phone {
     width: 300px;
     position: absolute;
     top: 30px;
     right: 86px;
   }
 
-
-  header+div+div .container>div {
+  header + div + div .container > div {
     position: absolute;
     width: 300px;
     top: 150px;
     right: 50px;
   }
 
-  header+div+div .container .phone {
+  header + div + div .container .phone {
     width: 300px;
     position: absolute;
     top: -230px;
     left: 30px;
   }
 
-  header+div+div>p {
+  header + div + div > p {
     position: relative;
     top: 420px;
     width: 600px;
@@ -196,7 +194,7 @@ header+div+div .container>div p {
     height: 1500px;
   }
 
-  header+div {
+  header + div {
     height: 623px;
   }
 
@@ -219,34 +217,32 @@ header+div+div .container>div p {
     margin-top: 100px;
   }
 
-
-  header+div p.big {
+  header + div p.big {
     text-align: center;
     margin-top: 30px;
   }
 
-  header+div .container>div {
+  header + div .container > div {
     width: 300px;
   }
 
-  header+div .container .phone {
+  header + div .container .phone {
     margin-left: 11px;
     width: 278px;
   }
 
-
-  header+div+div .container>div {
+  header + div + div .container > div {
     margin-top: 40px;
     width: 300px;
   }
 
-  header+div+div .container .phone {
+  header + div + div .container .phone {
     width: 279px;
     margin-left: 10px;
     margin-top: -260px;
   }
 
-  header+div+div>p {
+  header + div + div > p {
     max-width: 400px;
     padding: 20px;
     text-align: center;
