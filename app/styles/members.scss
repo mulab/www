@@ -112,6 +112,9 @@ body {
 #main-content {
   background: white;
   padding-bottom: 5%;
+  .content {
+    font-size: 36px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -132,11 +135,15 @@ body {
     font-size: 8px;
     margin-top: 5px;
   }
+
+  #main-content .content {
+    font-size: 11px;
+  }
 }
 
 #logo-img {
   float: left;
-  margin-left: 15%;
+  margin-left: 5%;
   margin-right: 10%;
   width: 15%;
   img {
