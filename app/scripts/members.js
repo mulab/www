@@ -27,7 +27,7 @@ $(document).ready(function () {
         'width': '100%'
       })));
       img.append((($('<div></div>').addClass('back')).append($('<h3></h3>').text(member[i].name))).append($('<h5></h5>').text(member[i].post)));
-      tr.append(($('<div></div>').addClass('headimg')).append((($('<div></div>').addClass('flip-container')).attr('ontouchstart', "this.classList.toggle(\'hover\');").val(i)).append(img)));
+      tr.append(($('<div></div>').addClass('headimg')).append((($('<div></div>').addClass('flip-container')).attr('ontouchstart', 'this.classList.toggle(\'hover\');').val(i)).append(img)));
       j++;
       if (j === w || i === (l - 1)) {
         manager.append(tr);
@@ -49,7 +49,7 @@ $(document).ready(function () {
         'width': '100%'
       })));
       img.append((($('<div></div>').addClass('back')).append($('<h3></h3>').text(member[i].name))).append($('<h5></h5>').text(member[i].post)));
-      tr.append(($('<div></div>').addClass('headimg')).append((($('<div></div>').addClass('flip-container')).attr('ontouchstart', "this.classList.toggle(\'hover\');").val(i)).append(img)));
+      tr.append(($('<div></div>').addClass('headimg')).append((($('<div></div>').addClass('flip-container')).attr('ontouchstart', 'this.classList.toggle(\'hover\');').val(i)).append(img)));
       j++;
       if (j === w || i === (l - 1)) {
         manager.append(tr);
@@ -71,7 +71,7 @@ $(document).ready(function () {
         'width': '100%'
       })));
       img.append((($('<div></div>').addClass('back')).append($('<h3></h3>').text(member[i].name))).append($('<h5></h5>').text(member[i].post)));
-      tr.append(($('<div></div>').addClass('headimg')).append((($('<div></div>').addClass('flip-container')).attr('ontouchstart', "this.classList.toggle(\'hover\');").val(i)).append(img)));
+      tr.append(($('<div></div>').addClass('headimg')).append((($('<div></div>').addClass('flip-container')).attr('ontouchstart', 'this.classList.toggle(\'hover\');').val(i)).append(img)));
       j++;
       if (j === w || i === (l - 1)) {
         manager.append(tr);
@@ -92,7 +92,7 @@ $(document).ready(function () {
         'width': '100%'
       })));
       img.append((($('<div></div>').addClass('back')).append($('<h3></h3>').text(member[i].name))).append($('<h5></h5>').text(member[i].post)));
-      tr.append(($('<div></div>').addClass('headimg')).append((($('<div></div>').addClass('flip-container')).attr('ontouchstart', "this.classList.toggle(\'hover\');").val(i)).append(img)));
+      tr.append(($('<div></div>').addClass('headimg')).append((($('<div></div>').addClass('flip-container')).attr('ontouchstart', 'this.classList.toggle(\'hover\');').val(i)).append(img)));
       j++;
       if (j === w || i === (l - 1)) {
         manager.append(tr);
