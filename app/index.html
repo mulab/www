@@ -71,9 +71,9 @@
 
 <div id="footer">
   CONTACT US
-  <a href="now.html" target="_blank" class="blog-btn">Github</a>
+  <a href="https://github.com/mulab/" target="_blank" class="blog-btn">Github</a>
   |
-  <a href="now.html" target="_blank" class="blog-btn">Email</a>
+  <a href="mailto:mulab.thu@gmail.com" target="_blank" class="blog-btn">Email</a>
 </div>
 
 {% endblock %}
@@ -86,6 +86,9 @@
     var mySwiper = new Swiper('.swiper-container', {
       prevButton: '.swiper-button-prev',
       nextButton: '.swiper-button-next'
+    });
+    $('.swiper-button-prev, .swiper-button-next').click(function () {
+      $('#header').css('background-color', $('.swiper-slide-active').css('background-color'));
     });
   });
 </script>

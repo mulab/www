@@ -111,21 +111,6 @@ a:hover {
   font-size: 12px;
 }
 
-@media screen and (max-width: 767px) {
-  #pic1-1 {
-    margin-left: -220px;
-  }
-
-  #pic1-2 {
-    margin-right: -250px;
-  }
-
-  #mid1 {
-    margin-left: -156px;
-    margin-right: -500px;
-  }
-}
-
 .slide2 {
   background-color: rgb(181, 105, 106);
   height: 890px;
@@ -167,20 +152,6 @@ a:hover {
   color: #ffffff;
   margin-top: 20px;
   font-size: 12px;
-}
-
-@media screen and (max-width: 767px) {
-  #pic2-1 {
-    margin-left: -70px;
-  }
-
-  #pic2-2 {
-    margin-right: -100px;
-  }
-
-  #mid2 {
-    margin-left: -190px;
-  }
 }
 
 .slide3 {
@@ -227,16 +198,60 @@ a:hover {
 }
 
 @media screen and (max-width: 767px) {
+  #pic1-1 {
+    visibility: hidden;
+    margin-left: -220px;
+  }
+
+  #pic1-2 {
+    visibility: hidden;
+    margin-right: -250px;
+  }
+
+  #mid1 {
+    margin-left: -156px;
+    margin-right: -500px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  #pic2-1 {
+    visibility: hidden;
+    margin-left: -70px;
+  }
+
+  #pic2-2 {
+    visibility: hidden;
+    margin-right: -100px;
+  }
+
+  #mid2 {
+    margin-left: -190px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+
   #pic3-1 {
+    visibility: hidden;
     margin-left: -70px;
   }
 
   #pic3-2 {
+    visibility: hidden;
     margin-right: -100px;
   }
 
   #mid3 {
     margin-left: -242px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
   }
 }
 

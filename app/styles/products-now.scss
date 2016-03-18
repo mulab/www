@@ -106,7 +106,7 @@ header + div + div .container > div p {
   font-size: 30px;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .container {
     width: 800px;
   }
@@ -186,10 +186,14 @@ header + div + div .container > div p {
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .container {
     width: 300px;
     padding: 6px;
+  }
+
+  #footer .container {
+    width: 100%;
   }
 
   header {

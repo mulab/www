@@ -114,6 +114,26 @@ body {
   padding-bottom: 5%;
 }
 
+@media screen and (max-width: 767px) {
+  #head-slogan p {
+    color: white;
+    font-size: 21px;
+  }
+
+  .slogan-head {
+    color: white;
+    font-size: 12px;
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
+
+  .slogan-content {
+    color: white;
+    font-size: 8px;
+    margin-top: 5px;
+  }
+}
+
 #logo-img {
   float: left;
   margin-left: 15%;
