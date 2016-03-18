@@ -10,6 +10,10 @@
   display: none;
 }
 
+body {
+  letter-spacing: 0.14em;
+}
+
 .container {
   position: relative;
 }
@@ -32,8 +36,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 65px auto;
   width: 336px;
   height: 672px;
-  padding: 27px;
-  padding-top: 70px;
+  padding: 70px 27px 27px 27px;
 
   background: url(../images/Nexus_5_Front_View.png) no-repeat top left;
   background-size: 100%;
@@ -70,15 +73,13 @@ header + div p.small {
 header + div .download-button, header + div .download-button:visited {
   float: left;
   margin-left: 20px;
-  padding: 13px;
-  padding-top: 7px;
+  padding: 7px 13px 13px 13px;
   height: 33px;
   color: white;
   background: #1E1E1E;
   text-decoration: none;
   cursor: pointer;
   border-radius: 3px;
-  -o-border-radius: 3px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
 }
