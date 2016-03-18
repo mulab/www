@@ -10,7 +10,7 @@
   display: none;
 }
 
-body {
+header {
   letter-spacing: 0.14em;
 }
 
@@ -74,6 +74,7 @@ header + div .download-button, header + div .download-button:visited {
   float: left;
   margin-left: 20px;
   padding: 7px 13px 13px 13px;
+
   height: 33px;
   color: white;
   background: #1E1E1E;
