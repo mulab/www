@@ -1,24 +1,25 @@
 $(document).ready(function () {
   var $head = $("<div></div>").addClass("header");
-  $head.css({height: $(document).width() * 656 / 1300 + "px"})
+  $head.css({height: $(document).width() * 656 / 1300 + "px"});
   $("#nav").after();
+  var w;
   if ($(document).width() > 768) {
-    var w = 5;
+    w = 5;
   }
   else {
-    var w = 3;
+    w = 3;
   }
   $.getJSON("members.html.json", function (data) {
     var manager = $("#manager");
-    var i = 0;
+    var i, j = 0;
     var l = data["manager"].length;
-    var j = 0;
     var member = data["manager"];
+    var tr, img;
     for (i = 0; i < l; i++) {
       if (j == 0) {
-        var tr = $("<div></div>").addClass("mytr");
+        tr = $("<div></div>").addClass("mytr");
       }
-      var img = ($("<div></div>").addClass("flipper"));
+      img = ($("<div></div>").addClass("flipper"));
       img.append(($("<div></div>").addClass("front")).append($("<img>").attr({
         "src": member[i]["url"],
         "width": "100%"
@@ -32,16 +33,15 @@ $(document).ready(function () {
       }
     }
 
-    var manager = $("#consultant");
-    var i = 0;
-    var l = data["consultant"].length;
-    var j = 0;
-    var member = data["consultant"];
+    manager = $("#consultant");
+    l = data["consultant"].length;
+    j = 0;
+    member = data["consultant"];
     for (i = 0; i < l; i++) {
       if (j == 0) {
-        var tr = $("<div></div>").addClass("mytr");
+        tr = $("<div></div>").addClass("mytr");
       }
-      var img = ($("<div></div>").addClass("flipper"));
+      img = ($("<div></div>").addClass("flipper"));
       img.append(($("<div></div>").addClass("front")).append($("<img>").attr({
         "src": member[i]["url"],
         "width": "100%"
@@ -55,16 +55,15 @@ $(document).ready(function () {
       }
     }
 
-    var manager = $("#developer");
-    var i = 0;
-    var l = data["developer"].length;
-    var j = 0;
-    var member = data["developer"];
+    manager = $("#developer");
+    l = data["developer"].length;
+    j = 0;
+    member = data["developer"];
     for (i = 0; i < l; i++) {
       if (j == 0) {
-        var tr = $("<div></div>").addClass("mytr");
+        tr = $("<div></div>").addClass("mytr");
       }
-      var img = ($("<div></div>").addClass("flipper"));
+      img = ($("<div></div>").addClass("flipper"));
       img.append(($("<div></div>").addClass("front")).append($("<img>").attr({
         "src": member[i]["url"],
         "width": "100%"
@@ -78,15 +77,14 @@ $(document).ready(function () {
       }
     }
 
-    var manager = $("#others");
-    var i = 0;
-    var l = data["others"].length;
-    var member = data["others"];
+    manager = $("#others");
+    l = data["others"].length;
+    member = data["others"];
     for (i = 0; i < l; i++) {
       if (j == 0) {
-        var tr = $("<div></div>").addClass("mytr");
+        tr = $("<div></div>").addClass("mytr");
       }
-      var img = ($("<div></div>").addClass("flipper"));
+      img = ($("<div></div>").addClass("flipper"));
       img.append(($("<div></div>").addClass("front")).append($("<img>").attr({
         "src": member[i]["url"],
         "width": "100%"
@@ -102,23 +100,24 @@ $(document).ready(function () {
   });
   var display = false;
   $("body").on("click", ".flip-container", function () {
+    var $tag = $(".tag");
     if (!$(this).hasClass("hover")) {
       if (display) {
-        $(".tag").slideToggle("fast");
-        $(".tag").remove();
+        $tag.slideToggle("fast");
+        $tag.remove();
         $(".hover").removeClass("hover");
       }
       display = true;
       $(this).addClass("hover");
-      var $em = $("<em></em>");
+      var $em = $("<em></em>"), hw;
       if (w == 5) {
-        var hw = 20;
+        hw = 20;
       }
       else {
-        var hw = 7;
+        hw = 7;
       }
       $em.css({
-        left: ($(this).parent()).position().left + ($(this).width() / 2) - hw + "px",
+        left: ($(this).parent()).position().left + ($(this).width() / 2) - hw + "px"
       });
       var block = ($("<div></div>").addClass("tag")).append($em);
       var card = ($("<div></div>").addClass("card"));
@@ -145,8 +144,8 @@ $(document).ready(function () {
     }
     else {
       $(this).removeClass("hover");
-      $(".tag").slideToggle("fast");
-      $(".tag").remove();
+      $tag.slideToggle("fast");
+      $tag.remove();
     }
   });
 });

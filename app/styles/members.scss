@@ -8,6 +8,129 @@ body {
   color: white;
 }
 
+#head {
+  margin-top: -20px;
+  width: 100%;
+  position: relative;
+}
+
+#head-img {
+  width: 100%;
+  z-index: -1;
+}
+
+#head-members {
+  position: absolute;
+  top: 10%;
+  left: 7%;
+  h5 {
+    color: white;
+  }
+}
+
+#head-slogan {
+  position: absolute;
+  top: 25%;
+  left: 7%;
+  width: 40%;
+  p {
+    color: white;
+    font-size: 24px;
+  }
+}
+
+#hr1 {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  width: 20%;
+}
+
+#slogan1 {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  width: 20%;
+}
+
+#hr2 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 20%;
+}
+
+#slogan2 {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  width: 20%;
+}
+
+#hr3 {
+  position: absolute;
+  top: 20%;
+  left: 75%;
+  width: 20%;
+}
+
+#slogan3 {
+  position: absolute;
+  top: 25%;
+  left: 75%;
+  width: 20%;
+}
+
+#hr4 {
+  position: absolute;
+  top: 40%;
+  left: 75%;
+  width: 20%;
+}
+
+#slogan4 {
+  position: absolute;
+  top: 45%;
+  left: 75%;
+  width: 20%;
+}
+
+.slogan-head {
+  color: white;
+  font-size: 20px;
+}
+
+.slogan-content {
+  color: white;
+  font-size: 12px;
+}
+
+.clear-both {
+  clear: both;
+}
+
+#main-content {
+  background: white;
+  padding-bottom: 5%;
+}
+
+#logo-img {
+  float: left;
+  margin-left: 15%;
+  margin-right: 10%;
+  width: 15%;
+  img {
+    width: 100%;
+  }
+}
+
+#members {
+  padding: 7% 5%;
+  img {
+    width: 100%;
+  }
+}
+
 .tag {
   width: 100%;
   clear: both;
@@ -28,19 +151,13 @@ body {
   line-height: 0;
 }
 
-.tag left {
-}
-
-.tag right {
-}
-
 .tag .clear {
   clear: both;
 }
 
 .headimg {
   float: left;
-  line-height: 0px;
+  line-height: 0;
   margin-left: 5%;
   margin-right: -5%;
 }
@@ -50,14 +167,6 @@ body {
   float: left;
   width: 5%;
   margin-right: -5%;
-}
-
-/* entire container, keeps perspective */
-.flip-container {
-  perspective: 1000;
-  -webkit-perspective: 1000;
-  width: 100%;
-  line-height: 0px;
 }
 
 /* flip the pane when hovered */
@@ -95,7 +204,7 @@ body {
   transform: rotateY(180deg);
 }
 
-@media screen and (min-width: 0px) {
+@media screen and (min-width: 0) {
   .headimg {
     width: 30%;
   }
@@ -125,7 +234,7 @@ body {
     float: left;
     width: 30%;
     margin-right: 10%;
-    padding: 0px;
+    padding: 0;
   }
   .tag right {
     float: left;
@@ -152,7 +261,7 @@ body {
 }
 
 .card .img {
-  line-height: 0px;
+  line-height: 0;
 }
 
 .card .tail {
@@ -165,9 +274,9 @@ body {
 
 .card .button {
   border: none;
-  -moz-box-shadow: 0px 1px 0px 0px #ccc;
-  -webkit-box-shadow: 0px 1px 0px 0px #ccc;
-  box-shadow: 0px 1px 0px 0px #ccc;
+  -moz-box-shadow: 0 1px 0 0 #ccc;
+  -webkit-box-shadow: 0 1px 0 0 #ccc;
+  box-shadow: 0 1px 0 0 #ccc;
   text-align: center;
   width: 80px;
   background-color: #8173bc;
@@ -176,7 +285,6 @@ body {
   border-radius: 18px;
   cursor: pointer;
   color: #ffffff;
-  font-family: Arial;
   font-size: 17px;
   padding: 5px 10px;
   text-decoration: none;
@@ -189,5 +297,3 @@ body {
 .discription {
   width: 100%;
 }
-
-

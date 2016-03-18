@@ -10,93 +10,86 @@
 
 {% block content %}
 
-<div class="jumbotron" id="header">
+<div id="header">
   {% include 'navbar.html' %}
-  <div class="main-title text-white">成 员 列 表</div>
-  <div class="intro text-white">Our Team Members</div>
 </div>
-<div class="container">
-  <div class="row groups">
-    <div class="subtitle">核心管理</div>
-    <div class="col-xs-12 col-sm-12 col-md-4 member">
-      <a href="" class="block">
-        <div class="photo">
-          <img class="photos" src="images/members/zhoumy.jpg" alt="周梦宇">
-        </div>
-        <div class="name">周 梦 宇</div>
-        <div class="post">会长</div>
-      </a>
-    </div>
-    {% for p in manager %}
-    <div class="col-xs-6 col-sm-6 col-md-2 member">
-      <a href="{{ p.page }}" class="block">
-        <div class="photo">
-          <img class="photos" src="{{ p.url }}" alt="{{ p.name }}">
-        </div>
-        <div class="name">{{ p.name }}</div>
-        <div class="post">{{ p.post }}</div>
-      </a>
-    </div>
-    {% endfor %}
+
+<div id="head">
+  <img id="head-img" src="images/members/members.jpg">
+
+  <div id="head-members">
+    <h5>MEMBERS</h5>
   </div>
-  <div class="row groups">
-    <div class="subtitle">顾问团</div>
-    {% for p in consultant %}
-    <div class="col-xs-6 col-sm-6 col-md-4 member">
-      <a href="{{ p.page }}" class="block">
-        <div class="photo">
-          <img class="photos" src="{{ p.url }}" alt="{{ p.name }}">
-        </div>
-        <div class="name">{{ p.name }}</div>
-        <div class="post">{{ p.post }}</div>
-      </a>
-    </div>
-    {% endfor %}
+
+  <div id="head-slogan">
+    <p>我们由来自不同背景，不同学院的同学们组成</p>
   </div>
-  <div class="row groups">
-    <div class="subtitle">技术开发</div>
-    {% for p in developer %}
-    <div class="col-xs-6 col-sm-6 col-md-2 member">
-      <a href="{{ p.page }}" class="block">
-        <div class="photo">
-          <img class="photos" src="{{ p.url }}" alt="{{ p.name }}">
-        </div>
-        <div class="name">{{ p.name }}</div>
-        <div class="post">{{ p.post }}</div>
-      </a>
-    </div>
-    {% endfor %}
+
+  <div id="hr1">
+    <hr align="left" width="80%" color=#ffffff size=40/>
   </div>
-  <div class="row groups">
-    <div class="subtitle">市场&#183;设计&#183;常务</div>
-    {% for p in others %}
-    <div class="col-xs-6 col-sm-6 col-md-3 member">
-      <a href="{{ p.page }}" class="block">
-        <div class="photo">
-          <img class="photos" src="{{ p.url }}" alt="{{ p.name }}">
-        </div>
-        <div class="name">{{ p.name }}</div>
-        <div class="post">{{ p.post }}</div>
-      </a>
-    </div>
-    {% endfor %}
+  <div id="slogan1">
+    <h5 class="slogan-head">污师</h5>
+    <h5 class="slogan-content">在那山的那边海的那边有一群拉布喵～</h5>
   </div>
-  <div class="row groups">
-    <div class="subtitle">以往成员</div>
-    {% for p in former %}
-    <div class="col-xs-6 col-sm-6 col-md-3 member">
-      <a href="{{ p.page }}" class="block">
-        <div class="photo">
-          <img class="photos" src="{{ p.url }}" alt="{{ p.name }}">
-        </div>
-        <div class="name">{{ p.name }}</div>
-        <div class="post">{{ p.post }}</div>
-      </a>
-    </div>
-    {% endfor %}
+
+  <div id="hr2">
+    <hr align="left" width="80%" color=#ffffff size=40/>
   </div>
+  <div id="slogan2">
+    <h5 class="slogan-head">药师</h5>
+    <h5 class="slogan-content">他们调皮又机灵～</h5>
+  </div>
+
+  <div id="hr3">
+    <hr align="left" width="80%" color=#ffffff size=40/>
+  </div>
+  <div id="slogan3">
+    <h5 class="slogan-head">膜法师</h5>
+    <h5 class="slogan-content">他们活泼又聪明～</h5>
+  </div>
+
+  <div id="hr4">
+    <hr align="left" width="80%" color=#ffffff size=40/>
+  </div>
+  <div id="slogan4">
+    <h5 class="slogan-head">老司机</h5>
+    <h5 class="slogan-content">他们自由自在生活在那清华大学里～</h5>
+  </div>
+</div>
+
+<div id="main-content">
+  <div id="logo-img">
+    <img src="images/LabmU_Meow_black.svg">
+  </div>
+  <div>
+    hhh
+  </div>
+  <div class="clear-both"></div>
+</div>
+
+<div id="members">
+  <div id="manager" class="clear-both">
+    <div class="left">核<br>心<br>管<br>理</div>
+  </div>
+  <div id="consultant" class="clear-both">
+    <div class="left">顾<br>问<br>团</div>
+  </div>
+  <div id="developer" class="clear-both">
+    <div class="left">研<br>发<br>部</div>
+  </div>
+  <div id="others" class="clear-both">
+    <div class="left">设<br>计<br>部</div>
+  </div>
+  <div class="clear-both"></div>
 </div>
 
 {% include 'footer.html' %}
 
-{%  endblock %}
+{% endblock %}
+
+{% block scripts %}
+<!-- build:js scripts/members.js -->
+<script src="scripts/members.js"></script>
+<!-- endbuild -->
+{% endblock %}
