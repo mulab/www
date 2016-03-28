@@ -37,6 +37,6 @@ Changes on files is automatically reloaded.
 
 ### Release
 ```bash
-$ gulp build
+$ gulp
 ```
 and checkout the pages in *dest* directory.
