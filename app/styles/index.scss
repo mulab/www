@@ -1,3 +1,8 @@
+body {
+  position: relative;
+  overflow: hidden;
+}
+
 .navbar {
   z-index: 3;
 }
@@ -41,7 +46,7 @@ a:hover {
 
 #footer {
   z-index: 2;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   height: 100px;
   width: 100%;
@@ -71,7 +76,7 @@ a:hover {
 
 .slide1 {
   background-color: rgb(117, 101, 148);
-  height: 890px;
+  height: 100vh;
 }
 
 #pic1-1 {
@@ -88,7 +93,7 @@ a:hover {
 
 #pic1-3 {
   width: 100%;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 #mid1 {
@@ -131,7 +136,7 @@ a:hover {
 
 #pic2-3 {
   width: 100%;
-  margin-top: 20px;
+  // margin-top: 20px;
 }
 
 #mid2 {
@@ -174,7 +179,7 @@ a:hover {
 
 #pic3-3 {
   width: 100%;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 #mid3 {
