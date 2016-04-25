@@ -14,7 +14,7 @@ header {
   letter-spacing: 0.14em;
 }
 
-.container {
+.block-container {
   position: relative;
 }
 
@@ -54,7 +54,7 @@ header + div h1 {
   color: #585858;
 }
 
-header + div .container .code {
+header + div .block-container .code {
   width: 90px;
   height: 90px;
   float: right;
@@ -92,22 +92,22 @@ header + div .download-button:hover {
 }
 
 header + div + div {
-  height: 700px;
+  height: 550px;
   overflow: hidden;
   position: relative;
 }
 
-header + div + div .container > div {
+header + div + div .block-container > div {
   font-size: 13px;
 }
 
-header + div + div .container > div p {
+header + div + div .block-container > div p {
   margin-top: 10px;
   font-size: 30px;
 }
 
 @media screen and (min-width: 768px) {
-  .container {
+  .block-container {
     width: 800px;
   }
 
@@ -150,28 +150,28 @@ header + div + div .container > div p {
     text-align: right;
   }
 
-  header + div .container > div {
+  header + div .block-container > div {
     position: absolute;
     width: 300px;
     top: 60px;
     left: 50px;
   }
 
-  header + div .container .phone {
+  header + div .block-container .phone {
     width: 300px;
     position: absolute;
     top: 30px;
     right: 86px;
   }
 
-  header + div + div .container > div {
+  header + div + div .block-container > div {
     position: absolute;
     width: 300px;
     top: 150px;
     right: 50px;
   }
 
-  header + div + div .container .phone {
+  header + div + div .block-container .phone {
     width: 300px;
     position: absolute;
     top: -230px;
@@ -188,12 +188,12 @@ header + div + div .container > div p {
 }
 
 @media screen and (max-width: 767px) {
-  .container {
+  .block-container {
     width: 300px;
     padding: 6px;
   }
 
-  #footer .container {
+  #footer .block-container {
     width: 100%;
   }
 
@@ -229,21 +229,21 @@ header + div + div .container > div p {
     margin-top: 30px;
   }
 
-  header + div .container > div {
+  header + div .block-container > div {
     width: 300px;
   }
 
-  header + div .container .phone {
+  header + div .block-container .phone {
     margin-left: 11px;
     width: 278px;
   }
 
-  header + div + div .container > div {
+  header + div + div .block-container > div {
     margin-top: 40px;
     width: 300px;
   }
 
-  header + div + div .container .phone {
+  header + div + div .block-container .phone {
     width: 279px;
     margin-left: 10px;
     margin-top: -260px;
