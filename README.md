@@ -1,5 +1,7 @@
 # The Official Website of Lab μ
 
+&copy; 2014-2016 [Lab μ](http://lab.mu).
+
 
 ## Development Guide
 This website is developed using the [Gulp Building System](http://gulpjs.com/) and
