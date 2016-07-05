@@ -1,3 +1,5 @@
+@import "variable";
+
 body {
   position: relative;
   overflow: hidden;
@@ -9,8 +11,6 @@ body {
 
 #header {
   background-color: transparent;
-  margin-bottom: 0;
-  padding-bottom: 0;
 }
 
 @media screen and (max-width: 767px) {
@@ -20,11 +20,12 @@ body {
 }
 
 .slides {
-  margin-top: -80px;
+  transform: translate(0, - $navbar-height - $navbar-margin-bottom - 2px);
 }
 
 .swiper-slide {
   overflow: hidden;
+  height: 100vh;
 }
 
 #slide {
@@ -75,7 +76,6 @@ a:hover {
 
 .slide1 {
   background-color: rgb(117, 101, 148);
-  height: 100vh;
 }
 
 #pic1-1 {
@@ -118,7 +118,6 @@ a:hover {
 
 .slide2 {
   background-color: rgb(181, 105, 106);
-  height: 890px;
 }
 
 #pic2-1 {
@@ -161,7 +160,6 @@ a:hover {
 
 .slide3 {
   background-color: rgb(87, 151, 189);
-  height: 890px;
 }
 
 #pic3-1 {
