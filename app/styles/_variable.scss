@@ -1,1 +1,16 @@
+$font-family-sans-serif:"Roboto", "Heiti SC", "Microsoft YaHei", "微软雅黑", "黑体", "宋体", sans-serif;
+
+$navbar-default-bg: #222;
+$navbar-default-border: transparent;
+$navbar-default-link-color: white;
+$navbar-default-link-hover-color: $navbar-default-link-color;
+$navbar-default-link-active-color: $navbar-default-link-color;
+$navbar-default-link-hover-bg: rgba(255,255,255,0.1);
+$navbar-default-link-active-bg: rgba(255,255,255,0.2);
+$navbar-default-brand-hover-bg: $navbar-default-link-hover-bg;
+$navbar-default-toggle-hover-bg: rgba(255,255,255,0.3);
+$navbar-default-toggle-icon-bar-bg: $navbar-default-link-color;
+$navbar-default-toggle-border-color: $navbar-default-toggle-icon-bar-bg;
+$navbar-border-radius:0;
+
 @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables";

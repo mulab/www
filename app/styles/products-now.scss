@@ -189,7 +189,7 @@ header + div + div .block-container > div p {
   }
 }
 
-@media screen and (max-width: $screen-sm-max) {
+@media screen and (max-width: $screen-xs-max) {
   .block-container {
     width: 300px;
     padding: 6px;

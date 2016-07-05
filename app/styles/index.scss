@@ -14,7 +14,7 @@ body {
   z-index: 3;
 }
 
-#header {
+#header,.navbar-default {
   background-color: transparent;
 }
 
@@ -118,6 +118,10 @@ a:hover {
   z-index: 1;
 }
 
+.pic-mid>img {
+  max-width: 100vw
+}
+
 .text-main {
   color: #ffffff;
   font-size: 30px;
@@ -173,7 +177,7 @@ a:hover {
   transform: translate(-50%,-440px);
 }
 
-@media screen and (max-width: $screen-sm-max) {
+@media screen and (max-width: $screen-xs-max) {
   .mid {
     top: 45%;
   }
