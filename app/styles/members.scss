@@ -5,106 +5,49 @@ body {
   margin: 0;
 }
 
-.header {
-  width: 100%;
-  color: white;
-}
-
 #head {
-  margin-top: -20px;
+  margin-top: - $navbar-margin-bottom;
   width: 100%;
+  padding-top: 150px;
+  padding-bottom: 200px;
+  // height: 50vh;
   position: relative;
-}
-
-#head-img {
-  width: 100%;
-  z-index: -1;
+  background-image: url(../images/members/members.jpg);
+  background-size: cover;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
 }
 
 #head-members {
-  position: absolute;
-  top: 10%;
-  left: 7%;
   h5 {
     color: white;
   }
 }
 
 #head-slogan {
-  position: absolute;
-  top: 25%;
-  left: 7%;
-  width: 40%;
   p {
     color: white;
-    font-size: 24px;
+    font-size: 2em;
   }
 }
 
-#hr1 {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  width: 20%;
+hr{
+  margin-top: 0;
+  border-top-width: 2px;
 }
 
-#slogan1 {
-  position: absolute;
-  top: 25%;
-  left: 50%;
-  width: 20%;
-}
-
-#hr2 {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  width: 20%;
-}
-
-#slogan2 {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  width: 20%;
-}
-
-#hr3 {
-  position: absolute;
-  top: 20%;
-  left: 75%;
-  width: 20%;
-}
-
-#slogan3 {
-  position: absolute;
-  top: 25%;
-  left: 75%;
-  width: 20%;
-}
-
-#hr4 {
-  position: absolute;
-  top: 40%;
-  left: 75%;
-  width: 20%;
-}
-
-#slogan4 {
-  position: absolute;
-  top: 45%;
-  left: 75%;
-  width: 20%;
+.slogan{
+  margin-bottom: 20px;
 }
 
 .slogan-head {
   color: white;
-  font-size: 20px;
+  font-size: 1.5em;
 }
 
 .slogan-content {
   color: white;
-  font-size: 12px;
+  font-size: 1em;
 }
 
 .clear-both {
@@ -113,41 +56,13 @@ body {
 
 #main-content {
   background: white;
-  padding-bottom: 5%;
+  padding-bottom: 40px;
   .content {
-    font-size: 36px;
-  }
-}
-
-@media screen and (max-width: $screen-xs-max) {
-  #head-slogan p {
-    color: white;
-    font-size: 21px;
-  }
-
-  .slogan-head {
-    color: white;
-    font-size: 12px;
-    margin-top: 15px;
-    margin-bottom: 0;
-  }
-
-  .slogan-content {
-    color: white;
-    font-size: 8px;
-    margin-top: 5px;
-  }
-
-  #main-content .content {
-    font-size: 11px;
+    font-size: 1.8em;
   }
 }
 
 #logo-img {
-  float: left;
-  margin-left: 5%;
-  margin-right: 10%;
-  width: 15%;
   img {
     width: 100%;
   }
