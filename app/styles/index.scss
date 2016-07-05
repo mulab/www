@@ -173,7 +173,7 @@ a:hover {
   transform: translate(-50%,-440px);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $screen-sm-max) {
   .mid {
     top: 45%;
   }

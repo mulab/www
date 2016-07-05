@@ -182,7 +182,7 @@ body {
   margin-left: 2px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $screen-sm-min) {
 
   #block1 {
     height: 630px;
@@ -240,7 +240,7 @@ body {
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: $screen-sm-max) {
 
   #block1 {
     height: 710px;
@@ -382,7 +382,7 @@ body {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: $screen-sm-min) and (max-width: $screen-lg-max) {
   #block2 .container #before-Android-intro {
     width: 61%;
     margin-top: 150px;
@@ -400,7 +400,7 @@ body {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $screen-lg-min) {
   #block2 .container #before-Android-intro {
     width: 680px;
     margin-top: 150px;
@@ -417,13 +417,13 @@ body {
   }
 }
 
-@media (min-width: 992px) and (max-width: 1200px) {
+@media (min-width: $screen-md-min) and (max-width: $screen-lg-max) {
   #block2 {
     height: 950px;
   }
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: $screen-sm-min) and (max-width: $screen-md-max) {
   #block2 {
     height: 900px;
   }
