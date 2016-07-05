@@ -2,31 +2,52 @@
 
 .ex-rg {
   position: relative;
-  margin-top: - $navbar-margin-bottom;
+  margin-top: - $navbar-height - $navbar-margin-bottom - 2px;
   width: 100%;
-  height: 400px;
-  background-image: url('../images/about/frame.png'),url('../images/about/ex-bg.jpg');
-  background-size: contain,cover;
-  background-repeat: no-repeat,repeat;
-  background-position: 50% 50%,50% 75%;
+  height: 100vh;
+  background-image: url('../images/about/ex-bg.jpg');
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: 50% 75%;
   text-align: center;
 
-  .inner-ex-rg {
+  .frame-rg {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    color: #fff;
-    font-size: 1.5em;
+    bottom: 10%;
+    width: 100%;
+    height: 90%;
+    background-image: url('../images/about/frame.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+    .inner-ex-rg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      color: #fff;
+      font-size: 1.5em;
+      @media screen and (min-width: $screen-sm-min){
+        font-size: 1.8em;
+      }
+      @media screen and (min-width: $screen-md-min){
+        font-size: 2em;
+        font-weight: bold;
+      }
+      @media screen and (min-width: $screen-lg-min){
+        font-size: 2.5em;
+      }
+    }
   }
+
 
   #info-link {
     position: absolute;
-    bottom: 0;
+    bottom: 5%;
     left: 0;
     right: 0;
     margin: auto;
-    transform: translateY(50%);
     font-size: small;
     width: 50px;
     height: 50px;
