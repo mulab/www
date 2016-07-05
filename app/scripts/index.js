@@ -4,11 +4,11 @@ $(document).ready(function () {
 
   window.mySwipwer = new Swiper('.swiper-container', {
     prevButton: '.swiper-button-prev',
-    nextButton: '.swiper-button-next'
-  });
-
-  $('.swiper-button-prev, .swiper-button-next').click(function () {
-    $('#header').css('background-color', $('.swiper-slide-active').css('background-color'));
+    nextButton: '.swiper-button-next',
+    simulateTouch: false,
+    onSlideChangeEnd: function () {
+      $('body').css('background-color', $('.swiper-slide-active').css('background-color'));
+    }
   });
 
 });
