@@ -78,29 +78,43 @@
     </div>
   </div>
 </div>
-
-<div id="members">
-  <div id="manager" class="clear-both">
-    <div class="left">核<br>心<br>管<br>理</div>
+<div id="members" class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="data-wrap">
+        {% for type in data %}
+        <div id="{{type.catalog}}" class="type">
+          <div class="left">{{type.name}}</div>
+          <div class="mytr">
+            {% for people in type.member %}
+            <div class="headimg" data-people="{{JSON.stringify(people)|escape}}">
+              <div class="flip-container">
+                <div class="flipper">
+                  <div class="front">
+                    <img src="{{people.url}}">
+                  </div>
+                  <div class="back">
+                    <h3>{{people.name}}</h3>
+                    <h5>{{people.post}}</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
   </div>
-  <div id="consultant" class="clear-both">
-    <div class="left">顾<br>问<br>团</div>
-  </div>
-  <div id="developer" class="clear-both">
-    <div class="left">研<br>发<br>部</div>
-  </div>
-  <div id="others" class="clear-both">
-    <div class="left">设<br>计<br>部</div>
-  </div>
-  <div class="clear-both"></div>
 </div>
-
+</div>
 {% include 'footer.html' %}
 
 {% endblock %}
 
 {% block scripts %}
 <!-- build:js scripts/members.js -->
-<script src="scripts/members.js"></script>
+<!--<script src="scripts/members.js"></script>-->
 <!-- endbuild -->
 {% endblock %}

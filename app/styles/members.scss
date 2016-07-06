@@ -8,9 +8,8 @@ body {
 #head {
   margin-top: - $navbar-margin-bottom;
   width: 100%;
-  padding-top: 150px;
+  padding-top: 100px;
   padding-bottom: 200px;
-  // height: 50vh;
   position: relative;
   background-image: url(../images/members/members.jpg);
   background-size: cover;
@@ -22,6 +21,7 @@ body {
   h5 {
     color: white;
   }
+  padding-bottom: 50px;
 }
 
 #head-slogan {
@@ -50,9 +50,7 @@ hr{
   font-size: 1em;
 }
 
-.clear-both {
-  clear: both;
-}
+
 
 #main-content {
   background: white;
@@ -69,10 +67,9 @@ hr{
 }
 
 #members {
-  padding: 7% 5%;
-  img {
-    width: 100%;
-  }
+  padding-top: 40px;
+  padding-bottom: 40px;
+
 }
 
 .tag {
@@ -99,19 +96,34 @@ hr{
   clear: both;
 }
 
-.headimg {
-  float: left;
-  line-height: 0;
-  margin-left: 5%;
-  margin-right: -5%;
-}
-
 .left {
   text-align: center;
-  float: left;
-  width: 5%;
-  margin-right: -5%;
+  position: absolute;
+  // float: left;
+  margin-left: 0.6em;
+  width: 1.2em;
+  // margin-right: -5%;
 }
+
+.mytr {
+  margin-left: 2.4em;
+  &::before,&::after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+.headimg {
+  img {
+    width: 200px
+  }
+  float: left;
+  line-height: 0;
+  // margin-left: 5%;
+  // margin-right: -5%;
+}
+
 
 /* flip the pane when hovered */
 .flip-container:hover .flipper, .flip-container.hover .flipper {
@@ -149,9 +161,9 @@ hr{
 }
 
 @media screen and (min-width: 0) {
-  .headimg {
-    width: 30%;
-  }
+  // .headimg {
+  //   width: 30%;
+  // }
   .tag {
     padding: 10%;
   }
@@ -168,9 +180,9 @@ hr{
 }
 
 @media screen and (min-width: $screen-sm-min) {
-  .headimg {
-    width: 18%;
-  }
+  // .headimg {
+  //   width: 18%;
+  // }
   .tag {
     padding: 3%;
   }
