@@ -73,37 +73,11 @@ hr{
 
 }
 
-.tag {
-  // width: 100%;
-  clear: both;
-  position: relative;
-  background-color: #fff;
-  // padding: 3%;
-}
-
-.tag em {
-  display: block;
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  border-bottom: 40px solid #FFF;
-  font-size: 0;
-  line-height: 0;
-}
-
-.tag .clear {
-  clear: both;
-}
-
 .left {
   text-align: center;
   position: absolute;
-  // float: left;
   margin-left: 0.6em;
   width: 1.2em;
-  // margin-right: -5%;
 }
 
 .mytr {
@@ -124,52 +98,70 @@ hr{
   }
   float: left;
   line-height: 0;
-  // margin-left: 5%;
-  // margin-right: -5%;
+  /* flip speed goes here */
+  .flipper {
+    transition: 0.3s;
+    transform-style: preserve-3d;
+    transform-origin: right center;
+    position: relative;
+    & .back::after{
+      content: "";
+      display: block;
+      height:0;
+      width:0;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      border-width: 0;
+      border-style: solid;
+      border-color: transparent;
+      border-bottom-color: white;
+      transition: border-width 300ms;
+    }
+  }
+  /* flip the pane when hovered */
+  .flip-container:hover .flipper, .flip-container.hover .flipper, &.selected .flipper {
+    transform: translateX(-100%) rotateY(180deg);
+  }
+  &.selected .flipper .back::after{
+    border-width: 0 12px 24px;
+    @media screen and (max-width:$screen-xs-max){
+      border-width: 0 6px 12px;
+    }
+  }
+  /* hide back of pane during swap */
+  .front, .back {
+    backface-visibility: hidden;
+    transform-origin: 50% 50%;
+  }
+  .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #8173bc;
+    color: white;
+    padding-top: 15%;
+    text-align: center;
+    /* back, initially hidden pane */
+    transform: rotateY(180deg);
+  }
 }
 
 
-/* flip the pane when hovered */
-.flip-container:hover .flipper, .flip-container.hover .flipper {
-  transform: translateX(-100%) rotateY(180deg);
-}
-
-/* flip speed goes here */
-.flipper {
-  transition: 0.3s;
-  transform-style: preserve-3d;
-  transform-origin: right center;
-  position: relative;
-}
-
-/* hide back of pane during swap */
-.front, .back {
-  backface-visibility: hidden;
-  transform-origin: 50% 50%;
-}
-
-.back {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #8173bc;
-  color: white;
-  padding-top: 15%;
-  text-align: center;
-}
-
-/* back, initially hidden pane */
-.back {
-  transform: rotateY(180deg);
-}
 
 .tag{
+  clear: both;
+  position: relative;
+  background-color: #fff;
   padding-top: 40px;
   padding-bottom: 40px;
+  overflow: hidden;
   transition-property: max-height,padding;
-  max-height: 100vh;
+  max-height: 800px;
   transition-duration: 300ms;
   &::after,&::before{
     content: "";
@@ -226,11 +218,11 @@ hr{
   .description {
     width: 100%;
   }
+  &.closed{
+    max-height: 0;
+    padding: 0;
+    overflow: hidden;
+  }
 }
 
-.tag.closed{
-  max-height: 0;
-  padding: 0;
-  overflow: hidden;
-}
 

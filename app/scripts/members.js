@@ -12,26 +12,22 @@ $(document).ready(function () {
     itemPerLine = parseInt($('.mytr').width() / $('.headimg').width());
     var distance = $('.mytr').width() % $('.headimg').width();
     $('.data-wrap').css('transform', 'translateX(' + distance / 2 + 'px)');
+    $('#tag').css('transform', 'translateX(-' + distance / 2 + 'px)');
   };
   var resetTransform = function(){
     $('.headimg').css('transform', '');
     $('.type').css('transform', '');
     if(currentElementIndex >= 0 && currentTypeIndex >= 0) {
-      var linePerType = itemPerType.map(function(_, e){
-        return 1 + (e - 1 - (e - 1) % itemPerLine) / itemPerLine;
-      });
       var currentLineNumber = (currentElementIndex - currentElementIndex % itemPerLine) / itemPerLine;
       var $currentType = $($('.type')[currentTypeIndex]);
-      var transformDistance = Math.max($('.tag-left').height(), $('.tag-right').height()) + 80;//padding
-      $currentType.nextAll().css('transform', 'translateY(' + transformDistance + 'px)');
-      $($currentType.find('.headimg')[itemPerLine * (1 + currentLineNumber) - 1]).nextAll().css('transform', 'translateY(' + transformDistance + 'px)');
-      var totalLineNumber = 0;
-      for(var i = currentTypeIndex; i < linePerType.length; i++){
-        totalLineNumber += linePerType[i];
+      var insertIndex = itemPerLine * (1 + currentLineNumber) - 1;
+      if(insertIndex > itemPerType[currentTypeIndex] - 1){
+        insertIndex = itemPerType[currentTypeIndex] - 1;
       }
-      totalLineNumber -= (currentLineNumber + 1);
-      console.log(totalLineNumber);
-      $('#tag').css('transform', 'translateY(-' + (totalLineNumber * $('.headimg').height()) + 'px)');
+      var $target = $($currentType.find('.headimg')[insertIndex]);
+      $target.after($('#tag').detach());
+    } else {
+      $('.data-wrap').after($('#tag').detach());
     }
   };
   recenter();
@@ -41,16 +37,9 @@ $(document).ready(function () {
   });
   var removeOld = function(callback){
     if(current !== null){
+      $($($('.type')[currentTypeIndex]).find('.headimg')[currentElementIndex]).removeClass('selected');
       $('#tag').addClass('closed');
       $('#tag').one('transitionend', callback);
-      $('.headimg').css('transition', 'transform 300ms');
-      $('.type').css('transition', 'transform 300ms');
-      $('.headimg').css('transform', '');
-      $('.type').css('transform', '');
-      $('.data-wrap').one('transitionend', function(){
-        $('.headimg').css('transition', '');
-        $('.type').css('transition', '');
-      });
     } else {
       callback();
     }
@@ -60,32 +49,27 @@ $(document).ready(function () {
       current = $(target).data('people').name;
       var $headimg = $(target);
       var data = $headimg.data('people');
+      $headimg.addClass('selected');
       $('#tag-name').html(data.name);
       $('#tag-img').prop('src', data.url);
       $('#tag-link').prop('href', data.page);
-      $('#tag').removeClass('closed');
-      console.log($('#tag').height());
       currentElementIndex = $headimg.prevAll().length;
       currentTypeIndex = $headimg.parent().parent().prevAll().length;
-      $('.headimg').css('transition', 'transform 300ms');
-      $('.type').css('transition', 'transform 300ms');
       resetTransform();
-      $('.data-wrap').one('transitionend', function(){
-        $('.headimg').css('transition', '');
-        $('.type').css('transition', '');
-      });
+      $('#tag').offset();//force rerender
+      $('#tag').removeClass('closed');
     } else {
       current = null;
       currentElementIndex = -1;
       currentTypeIndex = -1;
+      resetTransform();
     }
   };
   $('.headimg').on('click', function(event){
     if( current === null || current !== $(event.currentTarget).data('people').name){
       removeOld(loadNew.bind(this, event.currentTarget));
+    } else {
+      removeOld(loadNew.bind(this, null));
     }
-  });
-  $('.fliper').on('transitionend', function(event){
-    event.stopPropagation();
   });
 });
