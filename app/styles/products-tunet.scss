@@ -1,11 +1,5 @@
 @import "variable";
 
-#header {
-  #nav {
-    margin-bottom: 0;
-  }
-}
-
 .dodge {
   color: #8B8787;
 }
@@ -14,422 +8,130 @@
   color: #B9B7B7;
 }
 
-body {
-  #block1, #block3 {
-    overflow: hidden;
-    position: relative;
-  }
-}
-
-#block1, #block2, #block3 {
-  .container {
-    position: relative;
-  }
+.block {
+  overflow: hidden;
 }
 
 .code {
   width: 90px;
   height: 90px;
   float: left;
-  margin-top: 10px;
+  margin-right: 20px
 }
 
-#block1 .container > div > h2 {
-  margin-bottom: 30px;
+#block1 {
+  height: 600px;
+  .left {
+    margin-top: 160px;
+    &:before,&:after{
+      content:"";
+      display: block;
+      clear: both;
+    }
+  }
+  img.phone {
+    width: 100%;
+    margin-top: 100px;
+  }
+  @media screen and (max-width:$screen-xs-max){
+    height: 720px;
+    .left {
+      margin-top: 60px
+    }
+    img.phone{
+      margin-top: 0;
+    }
+  }
 }
 
-#block1 .container > div .dodge {
-  width: 100%;
-}
-
-#block1 .container > div > div p {
-  font-size: 12px;
-  line-height: 20px;
-}
-
-#block1 .container > div > div #App-Store {
-  float: left;
-  margin-left: 20px;
-}
-
-#block2 {
-  background: #EFEFEF;
-}
-
-#block2 .container #before-Android-intro p:first-child {
-  font-size: 22px;
-}
-
-#block2 .container #before-Android-intro .small {
-  line-height: 20px;
-}
-
-#block2 .download-button, #block2 .download-button:visited {
-  float: left;
-  padding: 10px 13px 13px 13px;
-  height: 40px;
-  color: white;
-  background: #1E1E1E;
-  text-decoration: none;
-  cursor: pointer;
-  border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-}
-
-#block2 .download-button:hover {
-  background: white;
-  color: black;
-  border: solid 1px;
-}
-
-#block2 #before-Android-intro .code {
-  position: absolute;
-  top: 0;
-}
 
 #block2 {
-  height: 1000px;
+  min-height: 850px;
+  background-color: #efefef;
+  .row {
+    position: relative;
+  }
+  .img {
+    img{
+      width:100%;
+    }
+  }
+  .download-button{
+    display: inline-block;
+    width:135px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 16px;
+    color: #fff;
+    background: #1e1e1e;
+    border: 1px solid #1e1e1e;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: color 300ms,background 300ms;
+    &:active, &:hover{
+      color: #1e1e1e;
+      background: #fff;
+    }
+  }
+  #before-Android-intro{
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  #Android-intro{
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width:$screen-sm-min){
+    #before-Android-intro{
+      margin-top: 100px;
+    }
+    #Android-intro{
+      margin-bottom: 200px;
+    }
+    .img{
+      position: absolute;
+    }
+  }
+  @media screen and (min-width:$screen-sm-min) and (max-width:$screen-sm-max){
+    .img{
+      margin-top: 80px;
+    }
+  }
 }
 
-#block2 .container #Android-intro h4 {
-  font-weight: bold;
-}
-
-#block2 .container #Android-intro p {
-  margin-bottom: 20px;
-}
-
-#block3 .img-wrapper {
-  max-width: 900px;
-  min-width: 300px;
-  margin: 0 auto;
-  position: relative;
-}
-
-#block3 .img-wrapper .mac {
-  width: 100%;
-  margin-top: -20%;
-}
-
-#block3 .img-wrapper .mac + img {
-  position: absolute;
-  top: 2.5%;
-  right: 30%;
-  width: 18%;
-}
-
-#block3 h3, #block3 p {
+#block3{
   text-align: center;
-}
-
-#block3 h3 {
-  margin-top: 40px;
-  margin-bottom: 17px;
-}
-
-#block3 h3 + p {
-  max-width: 500px;
-  margin: 0 auto;
-  margin-bottom: 15px;
-}
-
-#block3 .button-box {
-  max-width: 450px;
-  min-width: 300px;
-  margin-bottom: 90px;
-}
-
-#block3 .button-box > div {
-  width: 70px;
-}
-
-#block3 .button-box img {
-  width: 70px;
-  height: 82px;
-  margin-bottom: 10px;
-}
-
-#block3 .button-box > div > p {
-  font-size: 20px;
-}
-
-#block3 #Windows {
-  position: absolute;
-  top: 0;
-  left: 12px;
-}
-
-#block3 #Windows p {
-  margin-left: -11px;
-}
-
-#block3 #OS-X {
-  margin: 0 auto;
-}
-
-#block3 #OS-X p {
-  margin-left: 7px;
-}
-
-#block3 #Linux {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-#block3 #Linux p {
-  margin-left: 2px;
-}
-
-@media (min-width: $screen-sm-min) {
-
-  #block1 {
-    height: 630px;
-  }
-
-  #block1 .container {
-    max-width: 1150px;
-    height: 1000px;
-  }
-
-  #block1 .container > div {
-    position: absolute;
-    top: 170px;
-    width: 52%;
-    max-width: 500px;
-  }
-
-  #block1 .container > div > div p {
-    float: left;
-    margin: 8px -10px 8px 20px;
-  }
-
-  #block1 .phone {
-    position: absolute;
-    top: 120px;
+  padding-bottom: 100px;
+  .img-wrapper {
+    position: relative;
+    max-width: 900px;
+    min-width: 300px;
+    left: 0;
     right: 0;
-    width: 45%;
+    margin: auto;
+    .mac {
+      width:100%;
+      margin-top: -20%;
+    }
+    .window {
+      position: absolute;
+      top: 2.5%;
+      right: 30%;
+      width: 18%;
+    }
   }
-
-  #block2 .container {
-    max-width: 1250px;
-  }
-
-  #block2 .container #Android-intro {
-    float: right;
-    margin-top: 4%;
-    margin-right: 14%;
-    width: 38%;
-    clear: both;
-  }
-
-  #block2 .phone {
-    width: 40%;
-  }
-
-  #block2 .container #before-Android-intro .small {
-    margin-left: 170px;
-  }
-
-  #block2 .phone {
-    position: absolute;
-    top: 80px;
-    min-width: 330px;
-  }
-
-}
-
-@media (max-width: $screen-xs-max) {
-
-  #block1 {
-    height: 710px;
-  }
-
-  #block1 .container {
-    max-width: 390px;
-  }
-
-  #block1 .container > div {
-    overflow: auto;
-    width: 100%;
-    margin-top: 80px;
-    padding-bottom: 60px;
-  }
-
-  #block1 .container > div > div {
-    position: relative;
-  }
-
-  #block1 .container > div > div p {
-    position: absolute;
-    top: 10px;
-    left: 80px;
-    max-width: 200px;
-  }
-
-  #block1 .code {
-    width: 60px;
-    height: 60px;
-  }
-
-  #block1 #App-Store {
-    position: absolute;
-    top: 85px;
-    left: -20px;
-  }
-
-  #block1 .container > div > h2 {
-    font-size: 19.5px;
-    font-weight: bold;
-  }
-
-  #block1 .phone {
-    margin: 10px 0 0 0;
-    width: 95%;
-  }
-
-  #block2 {
-    height: 1300px;
-    overflow: hidden;
-  }
-
-  #block2 .container {
-    max-width: 390px;
-    margin-top: 20px;
-  }
-
-  #block2 .phone {
-    width: 100%;
-  }
-
-  #block2 .container #before-Android-intro {
-  }
-
-  #block2 .container #before-Android-intro p:first-child {
-    font-size: 20px;
-  }
-
-  #block2 .container #before-Android-intro .small {
-    margin-top: 60px;
-  }
-
-  #block2 #before-Android-intro .code {
-    position: absolute;
-    top: 30px;
-    right: 40px;
-    width: 60px;
-    height: 60px;
-  }
-
-  #block2 .download-button {
-    padding-top: 7px;
-    height: 31px;
-  }
-
-  #block2 .small {
-  }
-
-  #block2 .container #Android-intro {
-    text-align: center;
-    width: 100%;
-    clear: both;
-    margin-top: 20px;
-    margin-bottom: 60px;
-    position: relative;
-  }
-
-  #block3 .button-box img {
-    width: 40px;
-    height: 50px;
-    margin-bottom: 10px;
-  }
-
-  #block3 .button-box > div > p {
-    font-size: 14px;
-    font-weight: bold;
-  }
-
-  #block3 #Windows {
-    position: absolute;
-    top: 0;
-    left: 30px;
-  }
-
-  #block3 #Windows p {
-    margin-left: -11px;
-  }
-
-  #block3 #OS-X {
-    margin: 0 auto;
-  }
-
-  #block3 #OS-X p {
-    margin-left: -17px;
-  }
-
-  #block3 #Linux {
-    position: absolute;
-    top: 0;
-    right: 28px;
-  }
-
-  #block3 #Linux p {
-    margin-left: -20px;
-  }
-
-  #block3 h3 + p {
-    padding: 20px;
-  }
-}
-
-@media (min-width: $screen-sm-min) and (max-width: $screen-md-max) {
-  #block2 .container #before-Android-intro {
-    width: 61%;
-    margin-top: 150px;
-    float: right;
-    margin-right: -5%;
-    position: relative;
-  }
-
-  #block2 #before-Android-intro .code {
-    position: absolute;
-    top: -10px;
-    right: 20px;
-    height: 50%;
-    width: auto;
-  }
-}
-
-@media (min-width: $screen-lg-min) {
-  #block2 .container #before-Android-intro {
-    width: 680px;
-    margin-top: 150px;
-    float: right;
-    position: relative;
-  }
-
-  #block2 #before-Android-intro .code {
-    position: absolute;
-    top: -10px;
-    right: 0;
-    height: 100px;
-    width: 100px;
-  }
-}
-
-@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
-  #block2 {
-    height: 950px;
-  }
-}
-
-@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-  #block2 {
-    height: 900px;
-  }
-
-  #block2 .phone {
-    margin-top: 60px;
+  .button-box{
+    .platfrom{
+      margin: 0 20px 0;
+      display: inline-block;
+      font-size: 1.5em;
+      width: 100px;
+      img{
+        width:70px;
+        height:82px;
+        margin-bottom: 10px;
+      }
+    }
   }
 }

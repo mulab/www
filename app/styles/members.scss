@@ -15,39 +15,36 @@ body {
   background-size: cover;
   background-position: 0 100%;
   background-repeat: no-repeat;
-}
-
-#head-members {
-  h5 {
-    color: white;
+  #head-members {
+    h5 {
+      color: white;
+    }
+    padding-bottom: 50px;
   }
-  padding-bottom: 50px;
-}
-
-#head-slogan {
-  p {
-    color: white;
-    font-size: 2em;
+  #head-slogan {
+    p {
+      color: white;
+      font-size: 2em;
+    }
   }
-}
 
-hr{
-  margin-top: 0;
-  border-top-width: 2px;
-}
+  hr{
+    margin-top: 0;
+    border-top-width: 2px;
+  }
 
-.slogan{
-  margin-bottom: 20px;
-}
+  .slogan{
+    margin-bottom: 20px;
+    .slogan-head {
+      color: white;
+      font-size: 1.5em;
+    }
 
-.slogan-head {
-  color: white;
-  font-size: 1.5em;
-}
-
-.slogan-content {
-  color: white;
-  font-size: 1em;
+    .slogan-content {
+      color: white;
+      font-size: 1em;
+    }
+  }
 }
 
 
@@ -55,39 +52,38 @@ hr{
 #main-content {
   background: white;
   padding-bottom: 40px;
+  #logo-img {
+    img {
+      width: 100%;
+    }
+  }
   .content {
     font-size: 1.8em;
   }
 }
 
-#logo-img {
-  img {
-    width: 100%;
-  }
-}
 
 #members {
   overflow-x: hidden;
   padding-top: 40px;
   padding-bottom: 40px;
+  .left {
+    text-align: center;
+    position: absolute;
+    margin-left: 0.6em;
+    width: 1.2em;
+  }
 
-}
-
-.left {
-  text-align: center;
-  position: absolute;
-  margin-left: 0.6em;
-  width: 1.2em;
-}
-
-.mytr {
-  margin-left: 2.4em;
-  &::before,&::after{
-    content: "";
-    display: block;
-    clear: both;
+  .mytr {
+    margin-left: 2.4em;
+    &::before,&::after{
+      content: "";
+      display: block;
+      clear: both;
+    }
   }
 }
+
 
 .headimg {
   img {

@@ -1,8 +1,9 @@
 @import "variable";
 
-.carousel-indicators li {
-  display: none;
+h1, h2, h3, h4, h5, h6 {
+  color: black;
 }
+
 
 .right-align {
   text-align: right;
@@ -24,9 +25,6 @@ header {
   color: #605C5C;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: black;
-}
 
 .top-intro {
   text-align: center;
@@ -42,6 +40,9 @@ h1, h2, h3, h4, h5, h6 {
 
   background: url(../images/Nexus_5_Front_View.png) no-repeat top left;
   background-size: 100%;
+  .carousel-indicators li {
+    display: none;
+  }
 }
 
 header + div {

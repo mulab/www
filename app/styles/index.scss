@@ -27,19 +27,24 @@ body {
   font-weight: 400;
   font-size: 24px;
   text-align: center;
+  a {
+    width: 200px;
+    vertical-align: middle;
+    border: solid white 2px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none !important;
+    font-size: 70%;
+    cursor: pointer;
+    padding: 5px 16px;
+    transition: background 200ms, color 200ms;
+    &:hover {
+      background-color: white;
+      color: black;
+    }
+  }
 }
 
-#footer > a {
-  width: 200px;
-  vertical-align: middle;
-  border: solid white 2px;
-  text-align: center;
-  color: #fff;
-  text-decoration: none !important;
-  font-size: 70%;
-  cursor: pointer;
-  padding: 5px 16px;
-}
 
 .slides {
   transform: translate(0, - $navbar-height - $navbar-margin-bottom - 2px);
@@ -49,22 +54,18 @@ body {
 .swiper-slide {
   overflow: hidden;
   height: 100vh;
+  a {
+    color: white;
+    text-decoration: none !important;
+    cursor: pointer;
+    transition: color 200ms;
+    &:hover {
+      color: yellow;
+    }
+  }
 }
 
-a {
-  color: white;
-  text-decoration: none !important;
-  cursor: pointer;
-}
 
-a:hover {
-  color: yellow;
-}
-
-#footer > a:hover {
-  background-color: white;
-  color: black;
-}
 
 .mid {
   z-index: 2;
@@ -75,10 +76,16 @@ a:hover {
   top: 40%;
   text-align: center;
   transform: translateY(-50%);
-}
+  .text-main {
+    color: #ffffff;
+    font-size: 30px;
+  }
 
-.slide1 {
-  background-color: $slider-color-1;
+  .text-link {
+    color: #ffffff;
+    margin-top: 20px;
+    font-size: 12px;
+  }
 }
 
 .pic-left {
@@ -113,21 +120,15 @@ a:hover {
   height: 0;
   margin: auto;
   z-index: 1;
+  img {
+    max-width: 100vw
+  }
 }
 
-.pic-mid>img {
-  max-width: 100vw
-}
 
-.text-main {
-  color: #ffffff;
-  font-size: 30px;
-}
 
-.text-link {
-  color: #ffffff;
-  margin-top: 20px;
-  font-size: 12px;
+.slide1 {
+  background-color: $slider-color-1;
 }
 
 #pic1-1>img {
