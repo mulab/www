@@ -100,7 +100,7 @@ body {
     transform-style: preserve-3d;
     transform-origin: right center;
     position: relative;
-    & .back::after{
+    .back::after{
       content: "";
       display: block;
       height:0;
@@ -144,6 +144,9 @@ body {
     text-align: center;
     /* back, initially hidden pane */
     transform: rotateY(180deg);
+    h3{
+      letter-spacing: 0.8rem
+    }
   }
 }
 
@@ -179,6 +182,7 @@ body {
     .top {
       color: white;
       text-align: center;
+      letter-spacing: 0.8rem;
     }
     .img {
       line-height: 0;
