@@ -1,258 +1,163 @@
-.carousel-indicators li {
-  display: none;
-}
+@import "variable";
 
-.right-align {
-  text-align: right;
-}
-
-.carousel-control {
-  display: none;
-}
-
-header {
-  letter-spacing: 0.14em;
-}
-
-.block-container {
-  position: relative;
+h1, h2, h3, h4, h5, h6 {
+  color: black;
 }
 
 .dodge {
   color: #605C5C;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: black;
-}
-
-.top-intro {
+header{
+  margin-bottom: 60px;
   text-align: center;
-  margin-top: 150px;
+  .phone-wrap{
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+  }
+  #carousel-phone {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 100% * 69px / 336px;
+    padding-left: 100% * 55px / 672px;
+    padding-right: 100% * 55px / 672px;
+    padding-bottom: 100% * 150px / 672px;
+
+    background: url(../images/Nexus_5_Front_View.png) no-repeat top left;
+    background-size: 100%;
+    .carousel-indicators li {
+      display: none;
+    }
+  }
+  .carousel-control {
+    display: none;
+  }
+  .top-intro {
+    text-align: center;
+    margin-top: 60px;
+  }
+  .row{
+    position: relative;
+  }
+  @media screen and (min-width: $screen-sm-min){
+    .intro-wrap {
+      margin-top: 15%;
+    }
+    .intro.left {
+      text-align: right;
+    }
+    .intro.right {
+      text-align: left;
+    }
+  }
 }
 
-#carousel-phone {
-  position: relative;
-  margin: 65px auto;
-  width: 336px;
-  height: 672px;
-  padding: 70px 27px 27px 27px;
-
-  background: url(../images/Nexus_5_Front_View.png) no-repeat top left;
-  background-size: 100%;
-}
-
-header + div {
+.mid-block {
   background: #EFEFEF;
   overflow: hidden;
-}
-
-header + div h1 {
   text-align: center;
-  padding-top: 30px;
-  font-size: 40px;
-  color: #585858;
-}
-
-header + div .block-container .code {
-  width: 90px;
-  height: 90px;
-  float: right;
-  margin-right: 12px;
-}
-
-header + div p.big {
-  font-size: 26px;
-}
-
-header + div p.small {
-  float: left;
-  font-size: 15px;
-}
-
-header + div .download-button, header + div .download-button:visited {
-  float: left;
-  margin-left: 20px;
-  padding: 7px 13px 13px 13px;
-
-  height: 33px;
-  color: white;
-  background: #1E1E1E;
-  text-decoration: none;
-  cursor: pointer;
-  border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-}
-
-header + div .download-button:hover {
-  background: white;
-  color: black;
-  border: solid 1px;
-}
-
-header + div + div {
-  height: 550px;
-  overflow: hidden;
-  position: relative;
-}
-
-header + div + div .block-container > div {
-  font-size: 13px;
-}
-
-header + div + div .block-container > div p {
-  margin-top: 10px;
-  font-size: 30px;
-}
-
-@media screen and (min-width: 768px) {
-  .block-container {
-    width: 800px;
+  height: 623px;
+  h1 {
+    text-align: center;
+    padding-top: 30px;
+    font-size: 40px;
+    color: #585858;
   }
-
-  .new-line {
-    display: none;
+  .left{
   }
-
-  header {
-    height: 900px;
+  .code {
+    width: 90px;
+    height: 90px;
+    float: right;
+    margin-left: 15px;
   }
-
-  header + div {
-    height: 500px;
+  .big {
+    font-size: 2em;
   }
-
-  .intro {
-    width: 336px;
-    position: absolute;
+  .small {
+    font-size: 15px;
   }
-
-  .intro.left {
-    text-align: right;
-    left: -340px;
+  .link{
+    width:280px;
+    margin: auto;
   }
-
-  .intro.right {
+  .phone{
+    width:300px;
+  }
+  .download-button,.download-button:visited {
     text-align: left;
-    right: -340px;
+    display: inline-block;
+    width:135px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 16px;
+    margin-right: 8px;
+    color: #fff;
+    background: #1e1e1e;
+    border: 1px solid #1e1e1e;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: color 300ms,background 300ms;
+    &:active, &:hover{
+      color: #1e1e1e;
+      background: #fff;
+    }
   }
-
-  .intro.top {
-    top: 200px;
-  }
-
-  .intro.bottom {
-    top: 400px;
-  }
-
-  header + div p.big {
-    text-align: right;
-  }
-
-  header + div .block-container > div {
-    position: absolute;
-    width: 300px;
-    top: 60px;
-    left: 50px;
-  }
-
-  header + div .block-container .phone {
-    width: 300px;
-    position: absolute;
-    top: 30px;
-    right: 86px;
-  }
-
-  header + div + div .block-container > div {
-    position: absolute;
-    width: 300px;
-    top: 150px;
-    right: 50px;
-  }
-
-  header + div + div .block-container .phone {
-    width: 300px;
-    position: absolute;
-    top: -230px;
-    left: 30px;
-  }
-
-  header + div + div > p {
-    position: relative;
-    top: 420px;
-    width: 600px;
+  .right{
     text-align: center;
-    margin: 0 auto;
+  }
+  @media screen and (min-width: $screen-sm-min){
+    text-align: right;
+    height: 500px;
+    .new-line {
+      display: none;
+    }
+    .left{
+      padding-top: 60px;
+      right:80px;
+    }
+    .right{
+      text-align: left;
+    }
+    .link{
+      float: right;
+    }
   }
 }
 
-@media screen and (max-width: 767px) {
-  .block-container {
-    width: 300px;
-    padding: 6px;
+.end-block {
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 60px;
+  .left{
+    padding-bottom: 30px;
   }
-
-  #footer .block-container {
-    width: 100%;
-  }
-
-  header {
-    height: 1500px;
-  }
-
-  header + div {
-    height: 623px;
-  }
-
-  header h2 {
-    line-height: 37px;
-  }
-
-  .dash {
-    display: none;
-    background: red;
-  }
-
-  .intro {
-    position: static;
-    text-align: center;
-    margin: 30px;
-  }
-
-  .intro.left.top {
-    margin-top: 100px;
-  }
-
-  header + div p.big {
-    text-align: center;
-    margin-top: 30px;
-  }
-
-  header + div .block-container > div {
-    width: 300px;
-  }
-
-  header + div .block-container .phone {
-    margin-left: 11px;
-    width: 278px;
-  }
-
-  header + div + div .block-container > div {
-    margin-top: 40px;
-    width: 300px;
-  }
-
-  header + div + div .block-container .phone {
-    width: 279px;
-    margin-left: 10px;
+  .phone {
     margin-top: -260px;
+    width:300px;
   }
-
-  header + div + div > p {
-    max-width: 400px;
-    padding: 20px;
-    text-align: center;
-    margin: 40px auto;
+  .preview{
+    text-align: left;
+    margin: auto;
+    width: 300px;
+    .big{
+      font-size: 2em;
+    }
+  }
+  @media screen and (min-width: $screen-sm-min) {
+    .left{
+      text-align: right;
+    }
+    .right{
+      padding-top: 100px;
+    }
+    .preview{
+      margin: initial;
+      margin-left: 20px;
+    }
   }
 }

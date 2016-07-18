@@ -1,326 +1,228 @@
+@import "variable";
+
 body {
   background-color: #f3f3f3;
   margin: 0;
 }
 
-.header {
-  width: 100%;
-  color: white;
-}
-
 #head {
-  margin-top: -20px;
+  margin-top: - $navbar-margin-bottom;
   width: 100%;
+  padding-top: 100px;
+  padding-bottom: 200px;
   position: relative;
-}
+  background-image: url(../images/members/members.jpg);
+  background-size: cover;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  #head-members {
+    h5 {
+      color: white;
+    }
+    padding-bottom: 50px;
+  }
+  #head-slogan {
+    p {
+      color: white;
+      font-size: 2em;
+    }
+  }
 
-#head-img {
-  width: 100%;
-  z-index: -1;
-}
+  hr{
+    margin-top: 0;
+    border-top-width: 2px;
+  }
 
-#head-members {
-  position: absolute;
-  top: 10%;
-  left: 7%;
-  h5 {
-    color: white;
+  .slogan{
+    margin-bottom: 20px;
+    .slogan-head {
+      color: white;
+      font-size: 1.5em;
+    }
+
+    .slogan-content {
+      color: white;
+      font-size: 1em;
+    }
   }
 }
 
-#head-slogan {
-  position: absolute;
-  top: 25%;
-  left: 7%;
-  width: 40%;
-  p {
-    color: white;
-    font-size: 24px;
-  }
-}
 
-#hr1 {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  width: 20%;
-}
-
-#slogan1 {
-  position: absolute;
-  top: 25%;
-  left: 50%;
-  width: 20%;
-}
-
-#hr2 {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  width: 20%;
-}
-
-#slogan2 {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  width: 20%;
-}
-
-#hr3 {
-  position: absolute;
-  top: 20%;
-  left: 75%;
-  width: 20%;
-}
-
-#slogan3 {
-  position: absolute;
-  top: 25%;
-  left: 75%;
-  width: 20%;
-}
-
-#hr4 {
-  position: absolute;
-  top: 40%;
-  left: 75%;
-  width: 20%;
-}
-
-#slogan4 {
-  position: absolute;
-  top: 45%;
-  left: 75%;
-  width: 20%;
-}
-
-.slogan-head {
-  color: white;
-  font-size: 20px;
-}
-
-.slogan-content {
-  color: white;
-  font-size: 12px;
-}
-
-.clear-both {
-  clear: both;
-}
 
 #main-content {
   background: white;
-  padding-bottom: 5%;
+  padding-bottom: 40px;
+  #logo-img {
+    img {
+      width: 100%;
+    }
+  }
   .content {
-    font-size: 36px;
+    font-size: 1.8em;
   }
 }
 
-@media screen and (max-width: 767px) {
-  #head-slogan p {
-    color: white;
-    font-size: 21px;
-  }
-
-  .slogan-head {
-    color: white;
-    font-size: 12px;
-    margin-top: 15px;
-    margin-bottom: 0;
-  }
-
-  .slogan-content {
-    color: white;
-    font-size: 8px;
-    margin-top: 5px;
-  }
-
-  #main-content .content {
-    font-size: 11px;
-  }
-}
-
-#logo-img {
-  float: left;
-  margin-left: 5%;
-  margin-right: 10%;
-  width: 15%;
-  img {
-    width: 100%;
-  }
-}
 
 #members {
-  padding: 7% 5%;
-  img {
-    width: 100%;
+  overflow-x: hidden;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  .left {
+    text-align: center;
+    position: absolute;
+    margin-left: 0.6em;
+    width: 1.2em;
+  }
+
+  .mytr {
+    margin-left: 2.4em;
+    &::before,&::after{
+      content: "";
+      display: block;
+      clear: both;
+    }
   }
 }
 
-.tag {
-  width: 100%;
+
+.headimg {
+  img {
+    width: 200px;
+    @media screen and (max-width:$screen-xs-max){
+      width:120px;
+    }
+  }
+  float: left;
+  line-height: 0;
+  /* flip speed goes here */
+  .flipper {
+    transition: 0.3s;
+    transform-style: preserve-3d;
+    transform-origin: right center;
+    position: relative;
+    .back::after{
+      content: "";
+      display: block;
+      height:0;
+      width:0;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      border-width: 0;
+      border-style: solid;
+      border-color: transparent;
+      border-bottom-color: white;
+      transition: border-width 300ms;
+    }
+  }
+  /* flip the pane when hovered */
+  .flip-container:hover .flipper, .flip-container.hover .flipper, &.selected .flipper {
+    transform: translateX(-100%) rotateY(180deg);
+  }
+  &.selected .flipper .back::after{
+    border-width: 0 12px 24px;
+    @media screen and (max-width:$screen-xs-max){
+      border-width: 0 6px 12px;
+    }
+  }
+  /* hide back of pane during swap */
+  .front, .back {
+    backface-visibility: hidden;
+    transform-origin: 50% 50%;
+  }
+  .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #8173bc;
+    color: white;
+    padding-top: 15%;
+    text-align: center;
+    /* back, initially hidden pane */
+    transform: rotateY(180deg);
+    h3{
+      letter-spacing: 0.8rem
+    }
+  }
+}
+
+
+
+.tag{
   clear: both;
   position: relative;
   background-color: #fff;
-  padding: 3%;
-}
-
-.tag em {
-  display: block;
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  border-bottom: 40px solid #FFF;
-  font-size: 0;
-  line-height: 0;
-}
-
-.tag .clear {
-  clear: both;
-}
-
-.headimg {
-  float: left;
-  line-height: 0;
-  margin-left: 5%;
-  margin-right: -5%;
-}
-
-.left {
-  text-align: center;
-  float: left;
-  width: 5%;
-  margin-right: -5%;
-}
-
-/* flip the pane when hovered */
-.flip-container:hover .flipper, .flip-container.hover .flipper {
-  transform: translateX(-100%) rotateY(180deg);
-}
-
-/* flip speed goes here */
-.flipper {
-  transition: 0.3s;
-  transform-style: preserve-3d;
-  transform-origin: right center;
-  position: relative;
-}
-
-/* hide back of pane during swap */
-.front, .back {
-  backface-visibility: hidden;
-}
-
-.back {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #8173bc;
-  color: white;
-  padding-top: 15%;
-  text-align: center;
-}
-
-/* back, initially hidden pane */
-.back {
-  transform: rotateY(180deg);
-}
-
-@media screen and (min-width: 0) {
-  .headimg {
-    width: 30%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  overflow: hidden;
+  transition-property: max-height,padding;
+  max-height: 800px;
+  transition-duration: 300ms;
+  &::after,&::before{
+    content: "";
+    display: block;
+    clear: both;
   }
-  .tag {
-    padding: 10%;
+  .card{
+    margin: 0 20px;
+    @media screen and (max-width:$screen-xs-max){
+      max-width: 300px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      margin-bottom: 20px;
+    }
+    border: 1px solid #8173bc;
+    border-radius: 3px;
+    background: #8173bc;
+    .top {
+      color: white;
+      text-align: center;
+      letter-spacing: 0.8rem;
+    }
+    .img {
+      line-height: 0;
+      img{
+        width:100%;
+      }
+    }
+    .tail {
+      background: #f3f3f3;
+      text-align: center;
+      padding: 10px;
+      border-bottom-right-radius: 3px;
+      border-bottom-left-radius: 3px;
+      .button {
+        border: none;
+        box-shadow: 0 1px 0 0 #ccc;
+        text-align: center;
+        width: 80px;
+        background-color: #8173bc;
+        border-radius: 18px;
+        cursor: pointer;
+        color: #ffffff;
+        font-size: 17px;
+        padding: 5px 10px;
+        text-decoration: none;
+        transition: background 300ms;
+        &:hover,&:active{
+          background-color: purple;
+        }
+      }
+    }
   }
-  .tag left {
-    text-align: center;
-    padding: 10%;
+  .description {
+    width: 100%;
   }
-  .tag em {
-    top: -15px;
-    border-left: 6px solid transparent;
-    border-right: 6px solid transparent;
-    border-bottom: 15px solid #FFF;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .headimg {
-    width: 18%;
-  }
-  .tag {
-    padding: 3%;
-  }
-  .tag left {
-    float: left;
-    width: 30%;
-    margin-right: 10%;
+  &.closed{
+    max-height: 0;
     padding: 0;
-  }
-  .tag right {
-    float: left;
-    width: 60%;
-  }
-  .tag em {
-    top: -30px;
-    border-left: 12px solid transparent;
-    border-right: 12px solid transparent;
-    border-bottom: 30px solid #FFF;
+    overflow: hidden;
   }
 }
 
-.card {
-  width: 100%;
-  border: 1px solid #8173bc;
-  border-radius: 3px;
-  background: #8173bc;
-}
 
-.card .top {
-  color: white;
-  text-align: center;
-}
-
-.card .img {
-  line-height: 0;
-}
-
-.card .tail {
-  background: #f3f3f3;
-  text-align: center;
-  padding: 10px;
-  border-bottom-right-radius: 3px;
-  border-bottom-left-radius: 3px;
-}
-
-.card .button {
-  border: none;
-  -moz-box-shadow: 0 1px 0 0 #ccc;
-  -webkit-box-shadow: 0 1px 0 0 #ccc;
-  box-shadow: 0 1px 0 0 #ccc;
-  text-align: center;
-  width: 80px;
-  background-color: #8173bc;
-  -moz-border-radius: 18px;
-  -webkit-border-radius: 18px;
-  border-radius: 18px;
-  cursor: pointer;
-  color: #ffffff;
-  font-size: 17px;
-  padding: 5px 10px;
-  text-decoration: none;
-}
-
-.card .button:active {
-  background-color: purple;
-}
-
-.discription {
-  width: 100%;
-}

@@ -15,76 +15,120 @@
 </div>
 
 <div id="head">
-  <img id="head-img" src="images/members/members.jpg">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12" id="head-members">
+        <h5>MEMBERS</h5>
+      </div>
+      <div class="col-xs-12 col-sm-6" id="head-slogan">
+        <p>我们由来自不同背景，不同学院的同学们组成</p>
+      </div>
+      <div class="col-xs-6 col-sm-3">
+        <div id="hr1" class="hr">
+          <hr align="left" width="80%" color=#ffffff size=40/>
+        </div>
+        <div id="slogan1" class="slogan">
+          <h5 class="slogan-head">污师</h5>
+          <h5 class="slogan-content">在那山的那边海的那边有一群拉布喵～</h5>
+        </div>
 
-  <div id="head-members">
-    <h5>MEMBERS</h5>
-  </div>
+        <div id="hr2" class="hr">
+          <hr align="left" width="80%" color=#ffffff size=40/>
+        </div>
+        <div id="slogan2" class="slogan">
+          <h5 class="slogan-head">药师</h5>
+          <h5 class="slogan-content">他们调皮又机灵～</h5>
+        </div>
+      </div>
+      <div class="col-xs-6 col-sm-3">
+        <div id="hr3" class="hr">
+          <hr align="left" width="80%" color=#ffffff size=40/>
+        </div>
+        <div id="slogan3" class="slogan">
+          <h5 class="slogan-head">膜法师</h5>
+          <h5 class="slogan-content">他们活泼又聪明～</h5>
+        </div>
 
-  <div id="head-slogan">
-    <p>我们由来自不同背景，不同学院的同学们组成</p>
-  </div>
-
-  <div id="hr1">
-    <hr align="left" width="80%" color=#ffffff size=40/>
-  </div>
-  <div id="slogan1">
-    <h5 class="slogan-head">污师</h5>
-    <h5 class="slogan-content">在那山的那边海的那边有一群拉布喵～</h5>
-  </div>
-
-  <div id="hr2">
-    <hr align="left" width="80%" color=#ffffff size=40/>
-  </div>
-  <div id="slogan2">
-    <h5 class="slogan-head">药师</h5>
-    <h5 class="slogan-content">他们调皮又机灵～</h5>
-  </div>
-
-  <div id="hr3">
-    <hr align="left" width="80%" color=#ffffff size=40/>
-  </div>
-  <div id="slogan3">
-    <h5 class="slogan-head">膜法师</h5>
-    <h5 class="slogan-content">他们活泼又聪明～</h5>
-  </div>
-
-  <div id="hr4">
-    <hr align="left" width="80%" color=#ffffff size=40/>
-  </div>
-  <div id="slogan4">
-    <h5 class="slogan-head">老司机</h5>
-    <h5 class="slogan-content">他们自由自在生活在那清华大学里～</h5>
+        <div id="hr4" class="hr">
+          <hr align="left" width="80%" color=#ffffff size=40/>
+        </div>
+        <div id="slogan4" class="slogan">
+          <h5 class="slogan-head">老司机</h5>
+          <h5 class="slogan-content">他们自由自在生活在那清华大学里～</h5>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
 <div id="main-content">
-  <div id="logo-img">
-    <img src="images/LabmU_Meow_black.svg">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-4 col-sm-2">
+        <div id="logo-img">
+          <img src="images/LabmU_Meow_black.svg">
+        </div>
+      </div>
+      <div class="col-xs-8 col-sm-10">
+        <div class="content">
+          那些码代码、赶设计、求涨粉的日日夜夜，终将铭刻我们的真诚与热爱。
+          这里是不断超越的Lab μ，谢谢您的支持。
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="content">
-    那些码代码、赶设计、求涨粉的日日夜夜，终将铭刻我们的真诚与热爱。
-    这里是不断超越的Lab μ，谢谢您的支持。
-  </div>
-  <div class="clear-both"></div>
 </div>
-
-<div id="members">
-  <div id="manager" class="clear-both">
-    <div class="left">核<br>心<br>管<br>理</div>
+<div id="members" class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="data-wrap">
+        {% for type in data %}
+        <div id="{{type.catalog}}" class="type">
+          <div class="left">{{type.name}}</div>
+          <div class="mytr">
+            {% for people in type.member %}
+            <div class="headimg" data-people="{{JSON.stringify(people)|escape}}">
+              <div class="flip-container">
+                <div class="flipper">
+                  <div class="front">
+                    <img src="{{people.url}}">
+                  </div>
+                  <div class="back">
+                    <h3>{{people.name}}</h3>
+                    <h5>{{people.post}}</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      <div class="tag row closed" id="tag">
+        <div class="tag-left col-sm-4">
+          <div class="card">
+            <div class="top">
+              <h1 id="tag-name">11酱</h1>
+            </div>
+            <div class="img">
+              <img id="tag-img" src="images/members/lisy.jpg" alt="">
+            </div>
+            <div class="tail">
+              <a class="button" id="tag-link">BLOG</a>
+            </div>
+          </div>
+        </div>
+        <div class="tag-right col-sm-8">
+          <div class="description">
+            这里什么也没有什么也没有什么也没有什么也没有什么也没有什么也没有什么也没有什么也没有什么也没有什么也没有什么也没有什么也没有什么也没有什么也没有什么也没有什么也没有什么也没有什么也没有什么也没有什么也没有什么也没有什么也没有什么也没有什么也没有什么也没有什么也没有什么也没有什么也没有
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <div id="consultant" class="clear-both">
-    <div class="left">顾<br>问<br>团</div>
-  </div>
-  <div id="developer" class="clear-both">
-    <div class="left">研<br>发<br>部</div>
-  </div>
-  <div id="others" class="clear-both">
-    <div class="left">设<br>计<br>部</div>
-  </div>
-  <div class="clear-both"></div>
 </div>
-
+</div>
 {% include 'footer.html' %}
 
 {% endblock %}

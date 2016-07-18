@@ -7,11 +7,11 @@
 This website is developed using the [Gulp Building System](http://gulpjs.com/) and
 [Bower Package Manager](http://bower.io/), which is based on [Node.js](https://nodejs.org).
 
-We use [Swig Template Engine](http://paularmstrong.github.io/swig/). All *.html file is 
+We use [Swig Template Engine](http://paularmstrong.github.io/swig/). All *.html file is
 Swig template. View the documentation before you start developing.
 
 ### Environment
-First install Node.js. Any version beyond 0.12.0 is supported (but the latest version is 
+First install Node.js. Any version beyond 0.12.0 is supported (but the latest version is
 encouraged). Make nodejs and npm is in your system path (which is automatically configured by
 the installer by default, or you can make it your self).
 
