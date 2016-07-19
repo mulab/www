@@ -29,6 +29,26 @@ gulp.task('templates', () => {
     .pipe(browserSync.stream());
 });
 
+function sassImporter(url,prev,done){
+  var localFrag = path.join(path.dirname(prev), '_' + url + '.scss')
+  if (fs.existsSync(localFrag)) {
+    return {contents: fs.readFileSync(localFrag, 'utf8')}
+  }
+  var localFile = path.join(path.dirname(prev), url + '.scss')
+  if (fs.existsSync(localFile)) {
+    return {contents: fs.readFileSync(localFile, 'utf8')}
+  }
+  var globalFrag = path.join(__dirname, '_' + url + '.scss')
+  if (fs.existsSync(globalFrag)) {
+    return {contents: fs.readFileSync(globalFrag, 'utf8')}
+  }
+  var globalFile = path.join(__dirname, url + '.scss')
+  if (fs.existsSync(globalFile)) {
+    return {contents: fs.readFileSync(globalFile, 'utf8')}
+  }
+  return null
+}
+
 gulp.task('styles', () => {
   return gulp.src('app/styles/*.scss')
     .pipe($.plumber())
@@ -36,7 +56,7 @@ gulp.task('styles', () => {
     .pipe($.sass.sync({
       outputStyle: 'expanded',
       precision: 10,
-      includePaths: ['.']
+      importer: sassImporter
     }).on('error', $.sass.logError))
     .pipe($.autoprefixer({browsers: ['> 1%', 'last 2 versions', 'Firefox ESR']}))
     .pipe($.sourcemaps.write())
