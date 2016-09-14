@@ -1,6 +1,7 @@
 'use strict';
 
 $(document).ready(function () {
+  var isRunning=false;
   var itemPerType = $('.type').map(function(){
     return $(this).find('.headimg').length;
   });
@@ -64,8 +65,13 @@ $(document).ready(function () {
       currentTypeIndex = -1;
       resetTransform();
     }
+    isRunning = false;
   };
   $('.headimg').on('click', function(event){
+    if(isRunning){
+      return;
+    }
+    isRunning = true;
     if( current === null || current !== $(event.currentTarget).data('people').name){
       removeOld(loadNew.bind(this, event.currentTarget));
     } else {
