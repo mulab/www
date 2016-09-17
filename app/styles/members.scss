@@ -6,10 +6,10 @@ body {
 }
 
 #head {
-  margin-top: - $navbar-margin-bottom;
   width: 100%;
   padding-top: 100px;
   padding-bottom: 200px;
+  margin-bottom: -40px;
   position: relative;
   background-image: url(../images/members/members.jpg);
   background-size: cover;
@@ -97,8 +97,6 @@ body {
   /* flip speed goes here */
   .flipper {
     transition: 0.3s;
-    transform-style: preserve-3d;
-    transform-origin: right center;
     position: relative;
     .back::after{
       content: "";
@@ -117,20 +115,14 @@ body {
       transition: border-width 300ms;
     }
   }
-  /* flip the pane when hovered */
-  .flip-container:hover .flipper, .flip-container.hover .flipper, &.selected .flipper {
-    transform: translateX(-100%) rotateY(180deg);
-  }
   &.selected .flipper .back::after{
     border-width: 0 12px 24px;
     @media screen and (max-width:$screen-xs-max){
       border-width: 0 6px 12px;
     }
   }
-  /* hide back of pane during swap */
-  .front, .back {
-    backface-visibility: hidden;
-    transform-origin: 50% 50%;
+  &.selected .back{
+      opacity: 1;
   }
   .back {
     position: absolute;
@@ -142,8 +134,11 @@ body {
     color: white;
     padding-top: 15%;
     text-align: center;
-    /* back, initially hidden pane */
-    transform: rotateY(180deg);
+    transition: opacity 300ms;
+    opacity: 0;
+    &:hover{
+      opacity: 1;
+    }
     h3{
       letter-spacing: 0.8rem
     }

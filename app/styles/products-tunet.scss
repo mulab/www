@@ -30,7 +30,7 @@
 #block1 {
   height: 600px;
   .left {
-    margin-top: 160px;
+    margin-top: 190px;
     &:before,&:after{
       content:"";
       display: block;
@@ -39,15 +39,15 @@
   }
   img.phone {
     width: 100%;
-    margin-top: 100px;
+    margin-top: 120px;
   }
   @media screen and (max-width:$screen-xs-max){
     height: 720px;
     .left {
-      margin-top: 60px
+      margin-top: 80px
     }
     img.phone{
-      margin-top: 0;
+      margin-top: 20px;
     }
   }
 }
