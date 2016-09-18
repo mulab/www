@@ -1,7 +1,7 @@
 'use strict';
 
 $(document).ready(function () {
-  var isRunning=false;
+  var isRunning = false;
   var itemPerType = $('.type').map(function(){
     return $(this).find('.headimg').length;
   });
