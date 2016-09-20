@@ -1,4 +1,4 @@
-FROM mulab/nginx
+FROM nginx:1.9.11
 MAINTAINER mulab.thu@gmail.com
 
-ADD . /data
+ADD . /usr/share/nginx/html
