@@ -60,7 +60,7 @@ header{
   background: #EFEFEF;
   overflow: hidden;
   text-align: center;
-  height: 623px;
+  // height: 623px;
   h1 {
     text-align: center;
     padding-top: 30px;
@@ -68,6 +68,7 @@ header{
     color: #585858;
   }
   .left{
+    margin-bottom: 20px;
   }
   .code {
     width: 90px;
@@ -88,32 +89,14 @@ header{
   .phone{
     width:300px;
   }
-  .download-button,.download-button:visited {
-    text-align: left;
-    display: inline-block;
-    width:135px;
-    height: 40px;
-    line-height: 40px;
-    padding-left: 16px;
-    margin-right: 8px;
-    color: #fff;
-    background: #1e1e1e;
-    border: 1px solid #1e1e1e;
-    text-decoration: none;
-    cursor: pointer;
-    border-radius: 3px;
-    transition: color 300ms,background 300ms;
-    &:active, &:hover{
-      color: #1e1e1e;
-      background: #fff;
-    }
-  }
   .right{
     text-align: center;
   }
   @media screen and (min-width: $screen-sm-min){
     text-align: right;
-    height: 500px;
+    // height: 500px;
+    padding-bottom: 30px;
+
     .new-line {
       display: none;
     }
@@ -160,5 +143,30 @@ header{
       margin: initial;
       margin-left: 20px;
     }
+  }
+}
+
+.tip {
+  text-align: left;
+}
+
+.download-button,.download-button:visited {
+  text-align: left;
+  display: inline-block;
+  width:135px;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 16px;
+  margin-right: 8px;
+  color: #fff;
+  background: #1e1e1e;
+  border: 1px solid #1e1e1e;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: color 300ms,background 300ms;
+  &:active, &:hover{
+    color: #1e1e1e;
+    background: #fff;
   }
 }
