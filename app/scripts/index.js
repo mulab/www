@@ -3,6 +3,7 @@
 $(document).ready(function () {
 
   window.mySwipwer = new Swiper('.swiper-container', {
+    autoplay: 3000,
     prevButton: '.swiper-button-prev',
     nextButton: '.swiper-button-next',
     simulateTouch: false,
