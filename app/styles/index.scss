@@ -1,8 +1,8 @@
 @import "variable";
-$slider-color-1:rgb(117, 101, 148);
-$slider-color-2:rgb(181, 105, 106);
-$slider-color-3:rgb(87, 151, 189);
 
+$slider-color-1: rgb(117, 101, 148);
+$slider-color-2: rgb(181, 105, 106);
+$slider-color-3: rgb(87, 151, 189);
 
 body {
   position: relative;
@@ -10,7 +10,8 @@ body {
   background-color: $slider-color-1;
 }
 
-#header,.navbar-default {
+#header, .navbar-default {
+  position: relative;
   background-color: transparent;
 }
 
@@ -45,7 +46,6 @@ body {
   }
 }
 
-
 .slides {
   transform: translate(0, - $navbar-height - $navbar-margin-bottom - 2px);
   user-select: none;
@@ -64,8 +64,6 @@ body {
     }
   }
 }
-
-
 
 .mid {
   z-index: 2;
@@ -125,54 +123,52 @@ body {
   }
 }
 
-
-
 .slide1 {
   background-color: $slider-color-1;
 }
 
-#pic1-1>img {
-  transform: translate(-68px,-384px);
+#pic1-1 > img {
+  transform: translate(-68px, -384px);
 }
 
-#pic1-2>img {
-  transform: translate(-280px,-350px);
+#pic1-2 > img {
+  transform: translate(-280px, -350px);
 }
 
-#pic1-3>img {
-  transform: translate(-50%,40px);
+#pic1-3 > img {
+  transform: translate(-50%, 40px);
 }
 
 .slide2 {
   background-color: $slider-color-2;
 }
 
-#pic2-1>img {
-  transform: translate(36px,-384px);
+#pic2-1 > img {
+  transform: translate(36px, -384px);
 }
 
-#pic2-2>img {
-  transform: translate(-320px,-360px);
+#pic2-2 > img {
+  transform: translate(-320px, -360px);
 }
 
-#pic2-3>img {
-  transform: translate(-50%,20px);
+#pic2-3 > img {
+  transform: translate(-50%, 20px);
 }
 
 .slide3 {
   background-color: $slider-color-3;
 }
 
-#pic3-1>img {
-  transform: translate(24px,-280px);
+#pic3-1 > img {
+  transform: translate(24px, -280px);
 }
 
-#pic3-2>img {
-  transform: translate(-320px,-348px);
+#pic3-2 > img {
+  transform: translate(-320px, -348px);
 }
 
-#pic3-3>img {
-  transform: translate(-50%,40px);
+#pic3-3 > img {
+  transform: translate(-50%, 40px);
 }
 
 @media screen and (max-width: $screen-xs-max) {
@@ -180,40 +176,40 @@ body {
     top: 45%;
   }
 
-  #pic1-1>img {
-    transform: translate(-212px,-224px);
+  #pic1-1 > img {
+    transform: translate(-212px, -224px);
   }
 
-  #pic1-2>img {
-    transform: translate(-160px,-328px);
+  #pic1-2 > img {
+    transform: translate(-160px, -328px);
   }
 
-  #pic1-3>img {
-    transform: translate(-50%,40px);
+  #pic1-3 > img {
+    transform: translate(-50%, 40px);
   }
 
-  #pic2-1>img {
-    transform: translate(-120px,-216px);
+  #pic2-1 > img {
+    transform: translate(-120px, -216px);
   }
 
-  #pic2-2>img {
-    transform: translate(-172px,-328px);
+  #pic2-2 > img {
+    transform: translate(-172px, -328px);
   }
 
-  #pic2-3>img {
-    transform: translate(-50%,40px);
+  #pic2-3 > img {
+    transform: translate(-50%, 40px);
   }
 
-  #pic3-1>img {
-    transform: translate(-108px,-180px);
+  #pic3-1 > img {
+    transform: translate(-108px, -180px);
   }
 
-  #pic3-2>img {
-    transform: translate(-140px,-320px);
+  #pic3-2 > img {
+    transform: translate(-140px, -320px);
   }
 
-  #pic3-3>img {
-    transform: translate(-50%,40px);
+  #pic3-3 > img {
+    transform: translate(-50%, 40px);
   }
 
 }
