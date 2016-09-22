@@ -46,6 +46,14 @@ body {
   }
 }
 
+@media screen and (max-width: 767px) {
+  #footer {
+    height: 60px;
+    line-height: 60px;
+    font-size: 16px;
+  }
+}
+
 .slides {
   transform: translate(0, - $navbar-height - $navbar-margin-bottom - 2px);
   user-select: none;
@@ -77,6 +85,12 @@ body {
   .text-main {
     color: #ffffff;
     font-size: 30px;
+  }
+
+  @media screen and (max-width: 767px) {
+    .text-main {
+      font-size: 20px;
+    }
   }
 
   .text-link {
