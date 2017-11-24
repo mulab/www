@@ -1,0 +1,11 @@
+version: '2'
+services:
+  nginx:
+    build: .
+    networks:
+     - globalproxy_default
+     - default
+    restart: always
+networks:
+  globalproxy_default:
+    external: true
