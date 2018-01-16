@@ -1,7 +1,9 @@
 version: '2'
 services:
   nginx:
-    build: .
+    image: nginx:1.13.7
+    volumes:
+     - .:/usr/share/nginx/html
     networks:
      - globalproxy_default
      - default
