@@ -43,6 +43,6 @@ function addAd(){
 
 // Main Execute
 
-if (isSpecialDay){
+if (isSpecialDay()){
   addAd();
 }
