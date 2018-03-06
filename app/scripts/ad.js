@@ -17,7 +17,7 @@ finalMotto = 'Lab μ的女神们，女生节快乐！';
 
 function isSpecialDay(){
   var today = new Date();
-  if ((today.getMonth() === 3) && (today.getDate() === 7)){
+  if ((today.getMonth() === 2) && (today.getDate() === 7)){
     return true;
   }else{
     return false;
