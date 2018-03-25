@@ -12,7 +12,7 @@ exports.assetsPath = function (_path) {
   return path.posix.join(assetsSubDirectory, _path)
 }
 
-exports.cssLoaders = function (options) {
+exports.cssLoaders = function (options, ext = ExtractTextPlugin) {
   options = options || {}
 
   const cssLoader = {
@@ -45,7 +45,7 @@ exports.cssLoaders = function (options) {
     // Extract CSS when that option is specified
     // (which is the case during production build)
     if (options.extract) {
-      return ExtractTextPlugin.extract({
+      return ext.extract({
         use: loaders,
         fallback: 'vue-style-loader'
       })
@@ -67,16 +67,38 @@ exports.cssLoaders = function (options) {
 }
 
 // Generate loaders for standalone style files (outside of .vue)
-exports.styleLoaders = function (options) {
+exports.styleLoaders = function (options, { app, vendor } = {}) {
   const output = []
-  const loaders = exports.cssLoaders(options)
+  const loaders = exports.cssLoaders(options, app)
+
+  if (options.extract) {
+    output.push({
+      test: /\.css$/,
+      include: /node_modules/,
+      exclude: /outdatedbrowser/,
+      use: vendor.extract({
+        use: [{
+          loader: 'css-loader',
+          options: { minimize: true },
+        }],
+      }),
+    });
+  } else {
+    output.push({
+      test: /\.css$/,
+      include: /node_modules/,
+      exclude: /outdatedbrowser/,
+      use: ['vue-style-loader', 'css-loader'],
+    });
+  }
 
   for (const extension in loaders) {
     const loader = loaders[extension]
     output.push({
       test: new RegExp('\\.' + extension + '$'),
-      use: loader
-    })
+      exclude: /node_modules/,
+      use: loader,
+    });
   }
 
   return output

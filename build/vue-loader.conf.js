@@ -6,11 +6,11 @@ const sourceMapEnabled = isProduction
   ? config.build.productionSourceMap
   : config.dev.cssSourceMap
 
-module.exports = {
+module.exports = (ext) => ({
   loaders: utils.cssLoaders({
     sourceMap: sourceMapEnabled,
     extract: isProduction
-  }),
+  }, ext),
   cssSourceMap: sourceMapEnabled,
   cacheBusting: config.dev.cacheBusting,
   transformToRequire: {
@@ -19,4 +19,4 @@ module.exports = {
     img: 'src',
     image: 'xlink:href'
   }
-}
+});

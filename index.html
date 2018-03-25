@@ -1,12 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
     <title>lab.mu</title>
   </head>
   <body>
     <div id="app"></div>
+    <div id="outdated">
+      <h6>Your browser is out-of-date! 您的浏览器已过时</h6>
+      <p>Update your browser to view this website correctly. 要正常浏览本网站请升级您的浏览器。<a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now <br>现在升级</a></p>
+      <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close 关闭">&times;</a></p>
+    </div>
+    <script>
+      //event listener: DOM ready
+      function addLoadEvent(func) {
+        var oldonload = window.onload;
+        if (typeof window.onload != 'function') {
+          window.onload = func;
+        } else {
+          window.onload = function() {
+            if (oldonload) {
+              oldonload();
+            }
+            func();
+          }
+        }
+      }
+      //call plugin function after DOM ready
+      addLoadEvent(function(){
+        outdatedBrowser({
+          bgColor: '#f25648',
+          color: '#ffffff',
+          lowerThan: 'boxShadow',
+          languagePath: ''
+        })
+      });
+    </script>
     <!-- built files will be auto injected -->
   </body>
 </html>

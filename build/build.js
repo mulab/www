@@ -1,6 +1,15 @@
 'use strict'
 require('./check-versions')()
 
+process.on('unhandledRejection', (e) => {
+  console.error('Unhandled rejection', e);
+  throw e;
+});
+
+process.on('uncaughtException', (e) => {
+  console.error('Uncaught exception', e);
+});
+
 process.env.NODE_ENV = 'production'
 
 const ora = require('ora')
@@ -22,9 +31,11 @@ rm(path.join(config.build.assetsRoot, config.build.assetsSubDirectory), err => {
     process.stdout.write(stats.toString({
       colors: true,
       modules: false,
-      children: false, // If you are using ts-loader, setting this to true will make TypeScript errors show up during build.
+      assets: true,
+      assetsSort: 'name',
       chunks: false,
-      chunkModules: false
+      children: false,
+      chunkModules: false,
     }) + '\n\n')
 
     if (stats.hasErrors()) {
