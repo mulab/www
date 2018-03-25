@@ -3,7 +3,10 @@
 import Vue from 'vue';
 import 'sanitize.css/sanitize.css';
 import 'element-ui/lib/theme-chalk/index.css';
+import 'element-ui/lib/theme-chalk/display.css';
 import {
+  Row,
+  Col,
   Button,
 } from 'element-ui';
 
@@ -11,6 +14,8 @@ import App from './App';
 import router from './router';
 
 Vue.use(Button);
+Vue.use(Row);
+Vue.use(Col);
 
 Vue.config.productionTip = false;
 

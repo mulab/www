@@ -6,11 +6,17 @@
     </div>
     <router-view/>
     <el-button>Button</el-button>
+    <Footer />
   </div>
 </template>
 
 <script>
+import Footer from './components/Footer';
+
 export default {
+  components: {
+    Footer,
+  },
   name: 'App',
 };
 </script>
