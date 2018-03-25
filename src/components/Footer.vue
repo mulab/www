@@ -21,12 +21,12 @@ div {
   background-color: #202020;
   color: white;
   width: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 16px 0;
   margin: 0;
 }
 .footer-text {
-  line-height: 16px;
+  line-height: 12px;
+  margin: 5px 0;
 }
 </style>
 
