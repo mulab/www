@@ -1,5 +1,8 @@
 <template>
-  <div id="footer" class="footer">
+  <div
+    class="footer"
+    :style="{ backgroundColor: backgroundColor, color: textColor }"
+    >
     <el-row>
       <el-col class="footer-text" :xl="24" :sm="12">
         <span>Created by Lab μ with all the love from world</span>
@@ -12,14 +15,9 @@
 </template>
 
 <style>
-div {
-  display: block;
-}
-#footer {
+.footer {
   font-size: 14px;
   text-align: center;
-  background-color: #202020;
-  color: white;
   width: 100%;
   padding: 16px 0;
   margin: 0;
@@ -32,6 +30,10 @@ div {
 
 <script>
 export default {
+  props: {
+    backgroundColor: String,
+    textColor: String,
+  },
 };
 </script>
 

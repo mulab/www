@@ -1,8 +1,8 @@
 <template>
   <el-menu
-    background-color="#222"
-    text-color="#fff"
-    active-text-color="#ffd04b"
+    :background-color="backgroundColor"
+    :text-color="textColor"
+    :active-text-color="activeTextColor"
     mode="horizontal"
     >
     <el-menu-item class="navLeft" index="lab-mu">Lab μ</el-menu-item>
@@ -34,6 +34,11 @@
 
 <script>
 export default {
+  props: {
+    backgroundColor: String,
+    textColor: String,
+    activeTextColor: String,
+  },
   data() {
     return {
       navItems: [

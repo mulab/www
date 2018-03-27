@@ -1,9 +1,16 @@
 <template>
   <div id="app">
-    <Navigation />
+    <Navigation
+      background-color="#222"
+      text-color="#fff"
+      active-text-color="#ffd04b"
+      />
     <router-view/>
     <el-button>Button</el-button>
-    <Footer />
+    <Footer
+      background-color="#222"
+      text-color="white"
+      />
   </div>
 </template>
 
