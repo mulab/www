@@ -8,6 +8,9 @@ import {
   Row,
   Col,
   Button,
+  Menu,
+  MenuItem,
+  Submenu,
 } from 'element-ui';
 
 import App from './App';
@@ -16,6 +19,9 @@ import router from './router';
 Vue.use(Button);
 Vue.use(Row);
 Vue.use(Col);
+Vue.use(Menu);
+Vue.use(MenuItem);
+Vue.use(Submenu);
 
 Vue.config.productionTip = false;
 

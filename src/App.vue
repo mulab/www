@@ -1,20 +1,26 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link>
-      <router-link to="/about">About</router-link>
-    </div>
+    <Navigation
+      background-color="#222"
+      text-color="#fff"
+      active-text-color="#ffd04b"
+      />
     <router-view/>
     <el-button>Button</el-button>
-    <Footer />
+    <Footer
+      background-color="#222"
+      text-color="white"
+      />
   </div>
 </template>
 
 <script>
+import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 
 export default {
   components: {
+    Navigation,
     Footer,
   },
   name: 'App',
@@ -29,18 +35,5 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav .router-link-exact-active {
-  color: #42b983;
 }
 </style>
