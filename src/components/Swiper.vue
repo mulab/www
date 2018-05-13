@@ -36,6 +36,8 @@
 .swiper
 {
   background-color: white;
+  height: 84vh;
+  overflow: hidden;
 }
 .slide-1
 {
@@ -81,7 +83,7 @@
 .pic-mid
 {
   position: absolute;
-  bottom: 20px;
+  top: 500px;
   left: 600px;
 }
 a

@@ -1,5 +1,6 @@
 <template>
   <el-menu
+    class="nav"
     :background-color="backgroundColor"
     :text-color="textColor"
     :active-text-color="activeTextColor"
@@ -35,6 +36,10 @@
 </template>
 
 <style>
+.nav
+{
+  height: 7vh;
+}
 </style>
 
 <script>
