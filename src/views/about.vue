@@ -32,7 +32,7 @@
         :xs="24"
         :sm="8"
         > 
-        <img src="../../static/images/products.svg" />
+        <img src="../../static/images/about/products.svg" />
         <p>PRODUCTS</p>
         <p>
           我们的作品在全校范围被广泛地使用。<br />
@@ -43,7 +43,7 @@
         :xs="24"
         :sm="8"
         > 
-        <img src="../../static/images/awards.svg" />
+        <img src="../../static/images/about/awards.svg" />
         <p>AWARD WINNING</p>
         <p>
           获得“挑战杯”全国大学生课外学术科技作品竞赛特等奖， “挑战杯”全国大学生创业计划竞赛金奖，华人新世界数学奖银奖，第二届清华大学校园优化创意大赛实践赛 三等奖
@@ -53,7 +53,7 @@
         :xs="24"
         :sm="8"
         > 
-        <img src="../../static/images/members.svg" />
+        <img src="../../static/images/about/members.svg" />
         <p>MEMBERS</p>
         <p>
           来自不同专业的协会成员共同合作，涵盖了项目开发过程中的方方面面。我们同样欢迎拥有创意与热情的你，来与我们一起实现各种更多的可能。
@@ -67,7 +67,7 @@
 .about-background
 {
   position: relative;
-  background-image: url(../../static/images/ex-bg.jpg);
+  background-image: url(../../static/images/about/ex-bg.jpg);
   width: 100%;
   height: 100vh;
   background-repeat: repeat;
@@ -81,7 +81,7 @@
   bottom: 10%;
   width: 100%;
   height: 90%;
-  background-image: url(../../static/images/frame.png);
+  background-image: url(../../static/images/about/frame.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 50% 50%;

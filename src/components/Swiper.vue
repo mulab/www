@@ -5,27 +5,27 @@
         <h2>All information, one place. <br /></h2>
         <router-link to="/about">LEARN MORE</router-link>
       </div>
-      <img class="pic-left" src="../../static/images/1-1.png" />
-      <img class="pic-right" src="../../static/images/1-2.png" />
-      <img class="pic-mid" src="../../static/images/ipad_1.png" />
+      <img class="pic-left" src="../../static/images/home/1-1.png" />
+      <img class="pic-right" src="../../static/images/home/1-2.png" />
+      <img class="pic-mid" src="../../static/images/home/ipad_1.png" />
     </swiper-slide>
     <swiper-slide class="slide-2">
       <div class="text">
         <h2>Hack, tinker and paint the world. <br /></h2>
         <router-link to="/about">LEARN MORE</router-link>
       </div>
-      <img class="pic-left" src="../../static/images/2-1.png" />
-      <img class="pic-right" src="../../static/images/2-2.png" />
-      <img class="pic-mid" src="../../static/images/ipad_2.png" />
+      <img class="pic-left" src="../../static/images/home/2-1.png" />
+      <img class="pic-right" src="../../static/images/home/2-2.png" />
+      <img class="pic-mid" src="../../static/images/home/ipad_2.png" />
     </swiper-slide>
     <swiper-slide class="slide-3">
       <div class="text">
         <h2>Simplify our campus life.</h2>
         <router-link to="/about">LEARN MORE</router-link>
       </div>
-      <img class="pic-left" src="../../static/images/3-1.png" />
-      <img class="pic-right" src="../../static/images/3-2.png" />
-      <img class="pic-mid" src="../../static/images/ipad_3.png" />
+      <img class="pic-left" src="../../static/images/home/3-1.png" />
+      <img class="pic-right" src="../../static/images/home/3-2.png" />
+      <img class="pic-mid" src="../../static/images/home/ipad_3.png" />
     </swiper-slide>
     <div class="swiper-button-prev" slot="button-prev"></div>
     <div class="swiper-button-next" slot="button-next"></div>

@@ -79,7 +79,7 @@
   padding-bottom: 200px;
   margin-bottom: -40px;
   position: relative;
-  background-image: url(../../static/images/members.jpg);
+  background-image: url(../../static/images/members/members.jpg);
   background-size: cover;
   background-position: 0 100%;
   background-repeat: no-repeat;
