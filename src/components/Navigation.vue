@@ -5,7 +5,11 @@
     :active-text-color="activeTextColor"
     mode="horizontal"
     >
-    <el-menu-item class="navLeft" index="lab-mu">Lab μ</el-menu-item>
+    <el-menu-item
+      class="navLeft"
+      index="lab-mu"
+      @click="() => { $router.push('/'); }"
+      >Lab μ</el-menu-item>
 
     <template v-for="item in navItems">
       <el-submenu
@@ -22,6 +26,7 @@
         v-else
         style="float: right"
         :key="item.title"
+        @click="$router.push(item.href)"
         :index="item.title">
         {{ item.title }}
       </el-menu-item>
@@ -44,7 +49,7 @@ export default {
       navItems: [
         {
           title: 'About',
-          href: '/about',
+          href: '/about'
         },
         {
           title: 'Products',

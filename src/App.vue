@@ -6,7 +6,6 @@
       active-text-color="#ffd04b"
       />
     <router-view/>
-    <el-button>Button</el-button>
     <Footer
       background-color="#222"
       text-color="white"
@@ -15,15 +14,14 @@
 </template>
 
 <script>
-import Navigation from './components/Navigation';
-import Footer from './components/Footer';
-
+import Navigation from '@/components/Navigation';
+import Footer from '@/components/Footer';
 export default {
   components: {
     Navigation,
-    Footer,
+    Footer
   },
-  name: 'App',
+  name: 'App'
 };
 </script>
 
@@ -34,6 +32,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>

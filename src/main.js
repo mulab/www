@@ -12,9 +12,13 @@ import {
   MenuItem,
   Submenu,
 } from 'element-ui';
+import VueAwesomeSwiper from 'vue-awesome-swiper';
+import 'swiper/dist/css/swiper.css';
 
 import App from './App';
 import router from './router';
+
+Vue.use(VueAwesomeSwiper);
 
 Vue.use(Button);
 Vue.use(Row);
