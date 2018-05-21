@@ -54,7 +54,7 @@ export default {
       navItems: [
         {
           title: 'About',
-          href: '/about'
+          href: '/about',
         },
         {
           title: 'Products',

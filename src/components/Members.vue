@@ -9,7 +9,7 @@ export default {
   props: {
     name: String,
     position: String,
-    photo: Object
-  }
+    photo: Object,
+  },
 };
 </script>

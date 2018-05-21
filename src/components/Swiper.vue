@@ -100,16 +100,15 @@ a:hover
 
 <script>
 export default {
-  data()
-  {
+  data() {
     return {
       swiperOption: {
         navigation: {
           nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev'
-        }
-      }
+          prevEl: '.swiper-button-prev',
+        },
+      },
     };
-  }
+  },
 };
 </script>
